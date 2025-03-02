@@ -21,14 +21,13 @@ furthering your VS Code extension development skills.
 This section includes topics that help you develop high-quality VS Code
 extension. For example, you can learn
 
--   How to add
-    [integration tests](/api/working-with-extensions/testing-extension) for your
-    extension
--   How to publish your extension to the
-    [VS Code Marketplace](HTTPS://marketplace.visualstudio.com/)
--   How to set up
-    [Continuous Integration](/api/working-with-extensions/continuous-integration)
-    for your extension
+- How to add [integration tests](/api/working-with-extensions/testing-extension)
+  for your extension
+- How to publish your extension to the
+  [VS Code Marketplace](HTTPS://marketplace.visualstudio.com/)
+- How to set up
+  [Continuous Integration](/api/working-with-extensions/continuous-integration)
+  for your extension
 
 ## Extension Capabilities
 

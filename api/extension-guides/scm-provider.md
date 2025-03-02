@@ -70,12 +70,12 @@ file has been moved to `src/test/api.ts` and that move was staged. Finally, the
 For this workspace, Git defines two resource groups: the **working tree** and
 the **index**. Each **file change** within that group is **resource state**:
 
--   **Index** - resource group
-    -   `README.md`, modified - resource state
-    -   `src/test/api.ts`, renamed from `src/api.ts` - resource state
--   **Working Tree** - resource group
-    -   `.travis.yml`, deleted - resource state
-    -   `README.md`, modified - resource state
+- **Index** - resource group
+    - `README.md`, modified - resource state
+    - `src/test/api.ts`, renamed from `src/api.ts` - resource state
+- **Working Tree** - resource group
+    - `.travis.yml`, deleted - resource state
+    - `README.md`, modified - resource state
 
 Note how the same file, `README.md`, is part of two distinct resource states.
 
@@ -83,22 +83,22 @@ Here's how Git creates this model:
 
 ```ts
 function createResourceUri(relativePath: string): vscode.Uri {
-  const absolutePath = path.join(vscode.workspace.rootPath, relativePath);
-  return vscode.Uri.file(absolutePath);
+	const absolutePath = path.join(vscode.workspace.rootPath, relativePath);
+	return vscode.Uri.file(absolutePath);
 }
 
-const gitSCM = vscode.scm.createSourceControl('git', 'Git');
+const gitSCM = vscode.scm.createSourceControl("git", "Git");
 
-const index = gitSCM.createResourceGroup('index', 'Index');
+const index = gitSCM.createResourceGroup("index", "Index");
 index.resourceStates = [
-  { resourceUri: createResourceUri('README.md') },
-  { resourceUri: createResourceUri('src/test/api.ts') }
+	{ resourceUri: createResourceUri("README.md") },
+	{ resourceUri: createResourceUri("src/test/api.ts") },
 ];
 
-const workingTree = gitSCM.createResourceGroup('workingTree', 'Changes');
+const workingTree = gitSCM.createResourceGroup("workingTree", "Changes");
 workingTree.resourceStates = [
-  { resourceUri: createResourceUri('.travis.yml') },
-  { resourceUri: createResourceUri('README.md') }
+	{ resourceUri: createResourceUri(".travis.yml") },
+	{ resourceUri: createResourceUri("README.md") },
 ];
 ```
 
@@ -113,7 +113,7 @@ changes. Resource states are customizable using
 
 ```ts
 export interface SourceControlResourceState {
-  readonly decorations?: SourceControlResourceDecorations;
+	readonly decorations?: SourceControlResourceDecorations;
 }
 ```
 
@@ -125,7 +125,7 @@ this action:
 
 ```ts
 export interface SourceControlResourceState {
-  readonly command?: Command;
+	readonly command?: Command;
 }
 ```
 
@@ -198,11 +198,11 @@ which users type in commit messages and `git commit` commands pick them up.
 
 ```ts
 export interface SourceControlInputBox {
-  value: string;
+	value: string;
 }
 
 export interface SourceControl {
-  readonly inputBox: SourceControlInputBox;
+	readonly inputBox: SourceControlInputBox;
 }
 ```
 
@@ -212,7 +212,7 @@ accept any message. You can handle this event by providing a
 
 ```ts
 export interface SourceControl {
-  readonly acceptInputCommand?: Command;
+	readonly acceptInputCommand?: Command;
 }
 ```
 
@@ -229,7 +229,7 @@ VS Code with the original contents of any given file.
 
 ```ts
 export interface SourceControl {
-  quickDiffProvider?: QuickDiffProvider;
+	quickDiffProvider?: QuickDiffProvider;
 }
 ```
 
@@ -245,13 +245,13 @@ which lets you provide contents for arbitrary resources, given a `Uri`.
 
 To learn more about VS Code extensibility model, try these topics:
 
--   [SCM API Reference](/api/references/vscode-api#scm) - Read the full SCM API
-    documentation
--   [Git Extension](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/git) -
-    Learn by reading the Git extension implementation
--   [Extension API Overview](/api) - Learn about the full VS Code extensibility
-    model.
--   [Extension Manifest File](/api/references/extension-manifest) - VS Code
-    package.json extension manifest file reference
--   [Contribution Points](/api/references/contribution-points) - VS Code
-    contribution points reference
+- [SCM API Reference](/api/references/vscode-api#scm) - Read the full SCM API
+  documentation
+- [Git Extension](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/git) -
+  Learn by reading the Git extension implementation
+- [Extension API Overview](/api) - Learn about the full VS Code extensibility
+  model.
+- [Extension Manifest File](/api/references/extension-manifest) - VS Code
+  package.json extension manifest file reference
+- [Contribution Points](/api/references/contribution-points) - VS Code
+  contribution points reference

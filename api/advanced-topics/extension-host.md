@@ -27,9 +27,9 @@ VS Code aims to deliver a stable and performant editor to end users, and
 misbehaving extensions should not impact the user experience. The Extension Host
 in VS Code prevents extensions from:
 
--   Impacting startup performance
--   Slowing down UI operations
--   Modifying the UI
+- Impacting startup performance
+- Slowing down UI operations
+- Modifying the UI
 
 Additionally, VS Code lets extensions declare its
 [Activation Events](/api/references/activation-events) and loads them lazily.

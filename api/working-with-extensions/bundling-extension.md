@@ -101,22 +101,22 @@ export a configuration object.
 
 In the sample above, the following are defined:
 
--   The `target` is 'node' because extensions run in a Node.js context.
--   The entry point webpack should use. This is similar to the `main` property
-    in `package.json` except that you provide webpack with a "source" entry
-    point, usually `src/extension.ts`, and not an "output" entry point. The
-    webpack bundler understands TypeScript, so a separate TypeScript compile
-    step is redundant.
--   The `output` configuration tells webpack where to place the generated bundle
-    file. By convention, that is the `dist` folder. In this sample, webpack will
-    produce a `dist/extension.js` file.
--   The `resolve` and `module/rules` configurations are there to support
-    TypeScript and JavaScript input files.
--   The `externals` configuration is used to declare exclusions, for example
-    files and modules that should not be included in the bundle. The `vscode`
-    module should not be bundled because it doesn't exist on disk but is created
-    by VS Code on-the-fly when required. Depending on the node modules that an
-    extension uses, more exclusion may be necessary.
+- The `target` is 'node' because extensions run in a Node.js context.
+- The entry point webpack should use. This is similar to the `main` property in
+  `package.json` except that you provide webpack with a "source" entry point,
+  usually `src/extension.ts`, and not an "output" entry point. The webpack
+  bundler understands TypeScript, so a separate TypeScript compile step is
+  redundant.
+- The `output` configuration tells webpack where to place the generated bundle
+  file. By convention, that is the `dist` folder. In this sample, webpack will
+  produce a `dist/extension.js` file.
+- The `resolve` and `module/rules` configurations are there to support
+  TypeScript and JavaScript input files.
+- The `externals` configuration is used to declare exclusions, for example files
+  and modules that should not be included in the bundle. The `vscode` module
+  should not be bundled because it doesn't exist on disk but is created by VS
+  Code on-the-fly when required. Depending on the node modules that an extension
+  uses, more exclusion may be necessary.
 
 ## Run webpack
 
@@ -208,13 +208,13 @@ Code's References view through this
 
 There you can see:
 
--   Add `webpack`, `webpack-cli`, and `ts-loader` as `devDependencies`.
--   Update npm scripts so that webpack is used for development.
--   Update the debugger configuration `launch.json` file.
--   Add and tweak the `webpack.config.js` configuration file.
--   Update `.vscodeignore` to exclude `node_modules` and intermediate output
-    files.
--   Enjoy an extension that installs and loads much faster!
+- Add `webpack`, `webpack-cli`, and `ts-loader` as `devDependencies`.
+- Update npm scripts so that webpack is used for development.
+- Update the debugger configuration `launch.json` file.
+- Add and tweak the `webpack.config.js` configuration file.
+- Update `.vscodeignore` to exclude `node_modules` and intermediate output
+  files.
+- Enjoy an extension that installs and loads much faster!
 
 ## Troubleshooting
 
@@ -237,17 +237,17 @@ usually caused by a dynamic `require` statement, for example
 
 To address the warning, you should either:
 
--   Try to make the dependency static so that it can be bundled.
--   Exclude that dependency via the `externals` configuration. Also make sure
-    that those JavaScript files aren't excluded from the packaged extension,
-    using a negated glob pattern in `.vscodeignore`, for example
-    `!node_modules/mySpecialModule`.
+- Try to make the dependency static so that it can be bundled.
+- Exclude that dependency via the `externals` configuration. Also make sure that
+  those JavaScript files aren't excluded from the packaged extension, using a
+  negated glob pattern in `.vscodeignore`, for example
+  `!node_modules/mySpecialModule`.
 
 ## Next steps
 
--   [Extension Marketplace](/docs/editor/extension-gallery) - Learn more about
-    VS Code's public extension Marketplace.
--   [Testing Extensions](/api/working-with-extensions/testing-extension) - Add
-    tests to your extension project to ensure high quality.
--   [Continuous Integration](/api/working-with-extensions/continuous-integration) -
-    Learn how to run extension CI builds on Azure Pipelines.
+- [Extension Marketplace](/docs/editor/extension-gallery) - Learn more about VS
+  Code's public extension Marketplace.
+- [Testing Extensions](/api/working-with-extensions/testing-extension) - Add
+  tests to your extension project to ensure high quality.
+- [Continuous Integration](/api/working-with-extensions/continuous-integration) -
+  Learn how to run extension CI builds on Azure Pipelines.

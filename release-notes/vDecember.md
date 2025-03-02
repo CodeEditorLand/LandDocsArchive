@@ -45,31 +45,31 @@ in a VS Code update, please check the **milestone** assigned to the issue.
 
 In regex mode:
 
--   Can now search for `^`, `$` or `^$` thanks to a
-    [`community contribution`](HTTPS://github.com/Microsoft/vscode/pull/314).
--   Can now replace with `\n` or `\t`.
+- Can now search for `^`, `$` or `^$` thanks to a
+  [`community contribution`](HTTPS://github.com/Microsoft/vscode/pull/314).
+- Can now replace with `\n` or `\t`.
 
 Keyboard shortcuts:
 
--   New Find settings commands: toggle case-sensitive
-    (`kb(toggleFindCaseSensitive)`), toggle regex (`kb(toggleFindRegex)`) and
-    toggle whole word (`kb(toggleFindWholeWord)`)
--   `kb(actions.find)` puts focus in the Find input field.
--   `kb(editor.action.startFindReplaceAction)` puts focus in the Replace input
-    field.
--   When focus is in the Find widget input fields, `kbstyle(Ctrl+Down)` put
-    focus in the editor.
+- New Find settings commands: toggle case-sensitive
+  (`kb(toggleFindCaseSensitive)`), toggle regex (`kb(toggleFindRegex)`) and
+  toggle whole word (`kb(toggleFindWholeWord)`)
+- `kb(actions.find)` puts focus in the Find input field.
+- `kb(editor.action.startFindReplaceAction)` puts focus in the Replace input
+  field.
+- When focus is in the Find widget input fields, `kbstyle(Ctrl+Down)` put focus
+  in the editor.
 
 ## Changed defaults and key bindings
 
--   Changed the defaults for `editor.insertSpaces` to `true` and
-    `editor.tabSize` to `4`. To get the previous behavior, you can change both
-    settings back to `"auto"`.
--   Changed the default key bindings on Linux for Insert Cursor Below
-    (`kb(editor.action.insertCursorBelow)`), Insert Cursor Above
-    (`kb(editor.action.insertCursorAbove)`), Move Line Down
-    (`kb(editor.action.moveLinesDownAction)`) and Move Line Up
-    (`kb(editor.action.moveLinesUpAction)`)
+- Changed the defaults for `editor.insertSpaces` to `true` and `editor.tabSize`
+  to `4`. To get the previous behavior, you can change both settings back to
+  `"auto"`.
+- Changed the default key bindings on Linux for Insert Cursor Below
+  (`kb(editor.action.insertCursorBelow)`), Insert Cursor Above
+  (`kb(editor.action.insertCursorAbove)`), Move Line Down
+  (`kb(editor.action.moveLinesDownAction)`) and Move Line Up
+  (`kb(editor.action.moveLinesUpAction)`)
 
 ## Editor - Cursor Blinking Options
 
@@ -85,24 +85,24 @@ New select current line command (`kb(expandLineSelection)`) thanks to a
 ## Editor - Scroll Viewport Commands
 
 Thanks to a
-[`community contribution`](HTTPS://github.com/Microsoft/vscode/pull/1051), VS Code
-has improved editor scroll support:
+[`community contribution`](HTTPS://github.com/Microsoft/vscode/pull/1051), VS
+Code has improved editor scroll support:
 
--   Scroll by one line up (`kb(scrollLineUp)`) / down (`kb(scrollLineDown)`)
--   Scroll by one page up (`kb(scrollPageUp)`) / down (`kb(scrollPageDown)`)
+- Scroll by one line up (`kb(scrollLineUp)`) / down (`kb(scrollLineDown)`)
+- Scroll by one page up (`kb(scrollPageUp)`) / down (`kb(scrollPageDown)`)
 
 ## Key Bindings for Numeric Keypad
 
 Added support for function keys `kbstyle(f13-f19)` and for the numeric keypad
 keys:
 
--   `kbstyle(numpad0-numpad9)`
--   `kbstyle(numpad_multiply)`
--   `kbstyle(numpad_add)`
--   `kbstyle(numpad_separator)`
--   `kbstyle(numpad_subtract)`
--   `kbstyle(numpad_decimal)`
--   `kbstyle(numpad_divide)`
+- `kbstyle(numpad0-numpad9)`
+- `kbstyle(numpad_multiply)`
+- `kbstyle(numpad_add)`
+- `kbstyle(numpad_separator)`
+- `kbstyle(numpad_subtract)`
+- `kbstyle(numpad_decimal)`
+- `kbstyle(numpad_divide)`
 
 ## Improvements for non US standard keyboard layouts
 
@@ -162,10 +162,9 @@ To improve the JavaScript and JSX support, the plan is to adopt
 progress on the Salsa project, but until VS Code has switched over to Salsa, we
 can only offer a **workaround** for using VS Code with JSX.
 
--   Install the
-    [`vscode-eslint extension`](HTTPS://marketplace.visualstudio.com/items/dbaeumer.vscode-eslint)
-    and configure JSX support. This will provide you with validation in JSX
-    files.
+- Install the
+  [`vscode-eslint extension`](HTTPS://marketplace.visualstudio.com/items/dbaeumer.vscode-eslint)
+  and configure JSX support. This will provide you with validation in JSX files.
 
 ```
 {
@@ -177,12 +176,12 @@ can only offer a **workaround** for using VS Code with JSX.
 }
 ```
 
--   If you are using React constructs inside `.js` files then you can install
-    the `js-is-jsx`
-    [`extension`](HTTPS://marketplace.visualstudio.com/items/eg2.js-is-jsx) which
-    changes the file mapping so that `.js` files are treated as `.jsx` files.
-    **Be aware** that if you install this extension, you lose the existing
-    language support for `.js` files.
+- If you are using React constructs inside `.js` files then you can install the
+  `js-is-jsx`
+  [`extension`](HTTPS://marketplace.visualstudio.com/items/eg2.js-is-jsx) which
+  changes the file mapping so that `.js` files are treated as `.jsx` files. **Be
+  aware** that if you install this extension, you lose the existing language
+  support for `.js` files.
 
 The grammars used to colorize JS and JSX are now aligned.
 
@@ -196,9 +195,9 @@ extension.
 ## Extensions Show Outdated Extensions
 
 Thanks to a
-[`community contribution`](HTTPS://github.com/Microsoft/vscode/pull/517), there is
-now a `Show Outdated Extensions` command, that shows all outdated extensions and
-lets you quickly install their updates.
+[`community contribution`](HTTPS://github.com/Microsoft/vscode/pull/517), there
+is now a `Show Outdated Extensions` command, that shows all outdated extensions
+and lets you quickly install their updates.
 
 ## Installed Extension Issues
 
@@ -296,11 +295,11 @@ We now wrap long text in the debug console.
 
 We now show breakpoints in a more intuitive way:
 
--   A red filled circle represents an active breakpoint.
--   A gray filled circle represents a disabled breakpoint.
--   A gray hollow circle represents a breakpoint which could not be successfully
-    registered with the debugger. For languages that are transpiled to
-    JavaScript, this could mean that source maps are missing or invalid.
+- A red filled circle represents an active breakpoint.
+- A gray filled circle represents a disabled breakpoint.
+- A gray hollow circle represents a breakpoint which could not be successfully
+  registered with the debugger. For languages that are transpiled to JavaScript,
+  this could mean that source maps are missing or invalid.
 
 ## JSON Schema Contributions
 
@@ -340,8 +339,8 @@ details on how to implement a language server.
 For Node.js based debug adapter development, we've made the VS Code Debug
 Protocol and an adapter default implementation available as npm modules:
 
--   [`vscode-debugprotocol`](HTTPS://www.npmjs.com/package/vscode-debugprotocol)
--   [`vscode-debugadapter`](HTTPS://www.npmjs.com/package/vscode-debugadapter)
+- [`vscode-debugprotocol`](HTTPS://www.npmjs.com/package/vscode-debugprotocol)
+- [`vscode-debugadapter`](HTTPS://www.npmjs.com/package/vscode-debugadapter)
 
 The source for these modules lives in the GitHub repository
 [`vscode-debugadapter-node`](HTTPS://github.com/Microsoft/vscode-debugadapter-node).
@@ -354,24 +353,24 @@ to use the npm modules.
 The VS Code GitHub repository supports continued integration for branches and
 pull requests:
 
--   [`Travis CI`](HTTPS://travis-ci.org/Microsoft/vscode/) - Linux and OS X
--   [`AppVeyor`](HTTPS://ci.appveyor.com/project/VSCode/vscode) - Windows
+- [`Travis CI`](HTTPS://travis-ci.org/Microsoft/vscode/) - Linux and OS X
+- [`AppVeyor`](HTTPS://ci.appveyor.com/project/VSCode/vscode) - Windows
 
 During this first iteration of VS Code being open source, we tuned and
 documented more of our development workflows:
 
--   [`How we do issue tracking`](HTTPS://github.com/Microsoft/vscode/wiki/Issue-Tracking)
--   [`How we use the different feedback channels`](HTTPS://github.com/Microsoft/vscode/wiki/Feedback-Channels)
+- [`How we do issue tracking`](HTTPS://github.com/Microsoft/vscode/wiki/Issue-Tracking)
+- [`How we use the different feedback channels`](HTTPS://github.com/Microsoft/vscode/wiki/Feedback-Channels)
 
 We updated Electron to version 0.34.5. This includes a bug fix for the issue on
 Linux where the editor font was showing blurry on certain high DPI displays.
 
 ## Notable Bug Fixes
 
--   Submitted [`pull request`](HTTPS://github.com/atom/node-oniguruma/pull/46) to
-    `atom/node-oniguruma` in order to
-    [`improve performance`](HTTPS://github.com/Microsoft/vscode/issues/94) when
-    colorizing long lines with multi-byte characters.
+- Submitted [`pull request`](HTTPS://github.com/atom/node-oniguruma/pull/46) to
+  `atom/node-oniguruma` in order to
+  [`improve performance`](HTTPS://github.com/Microsoft/vscode/issues/94) when
+  colorizing long lines with multi-byte characters.
 
 ## What's next
 

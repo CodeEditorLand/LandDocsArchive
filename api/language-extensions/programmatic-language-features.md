@@ -18,12 +18,12 @@ common ways to provide a dynamic language feature in Visual Studio Code. Let's
 take [Hover](#hover) as an example:
 
 ```ts
-vscode.languages.registerHoverProvider('javascript', {
-  provideHover(document, position, token) {
-    return {
-      contents: ['Hover Content']
-    };
-  }
+vscode.languages.registerHoverProvider("javascript", {
+	provideHover(document, position, token) {
+		return {
+			contents: ["Hover Content"],
+		};
+	},
 });
 ```
 
@@ -41,23 +41,22 @@ An alternative approach is to implement a Language Server that speaks
 [Language Server Protocol](HTTPS://microsoft.github.io/language-server-protocol/).
 The way it works is:
 
--   An extension provides a Language Client and a Language Server for
-    JavaScript.
--   The Language Client is like any other VS Code extension, running in the
-    Node.js Extension Host context. When it gets activated, it spawns the
-    Language Server in another process and communicates with it through
-    [Language Server Protocol](HTTPS://microsoft.github.io/language-server-protocol/).
--   You hover over JavaScript code in VS Code
--   VS Code informs the Language Client of the hover
--   The Language Client queries the Language Server for a hover result and sends
-    it back to VS Code
--   VS Code displays the hover result in a Hover widget
+- An extension provides a Language Client and a Language Server for JavaScript.
+- The Language Client is like any other VS Code extension, running in the
+  Node.js Extension Host context. When it gets activated, it spawns the Language
+  Server in another process and communicates with it through
+  [Language Server Protocol](HTTPS://microsoft.github.io/language-server-protocol/).
+- You hover over JavaScript code in VS Code
+- VS Code informs the Language Client of the hover
+- The Language Client queries the Language Server for a hover result and sends
+  it back to VS Code
+- VS Code displays the hover result in a Hover widget
 
 The process seems more complicated, but it provides two major benefits:
 
--   The Language Server can be written in any language
--   The Language Server can be reused to provide smart editing features for
-    multiple editors
+- The Language Server can be written in any language
+- The Language Server can be reused to provide smart editing features for
+  multiple editors
 
 For a more in-depth guide, head over to the
 [Language Server Extension Guide](/api/language-extensions/language-server-extension-guide).
@@ -68,9 +67,9 @@ For a more in-depth guide, head over to the
 
 This listing includes the following items for each language feature:
 
--   An illustration of the language feature in VS Code
--   Related VS Code API
--   Related LSP methods
+- An illustration of the language feature in VS Code
+- Related VS Code API
+- Related LSP methods
 
 | VS Code API                                                                                                                       | LSP method                                                                                                                                                                                                                               |
 | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

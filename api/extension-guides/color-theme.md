@@ -11,12 +11,12 @@ MetaDescription: A guide to creating Color Theme in Visual Studio Code
 
 Colors visible in the Visual Studio Code user interface fall in two categories:
 
--   Workbench colors used in views and editors, from the Activity Bar to the
-    Status Bar. A complete list of all these colors can be found in the
-    [theme color reference](/api/references/theme-color).
--   Syntax colors used for source code in the editor. The theming of these
-    colors is different as syntax colorization is based on TextMate grammars and
-    TextMate themes.
+- Workbench colors used in views and editors, from the Activity Bar to the
+  Status Bar. A complete list of all these colors can be found in the
+  [theme color reference](/api/references/theme-color).
+- Syntax colors used for source code in the editor. The theming of these colors
+  is different as syntax colorization is based on TextMate grammars and TextMate
+  themes.
 
 This guide will cover the different ways in which you can create themes.
 
@@ -162,4 +162,4 @@ tab.
 
 ## Further reading
 
--   [CSS Tricks - Creating a VS Code theme](HTTPS://css-tricks.com/creating-a-vs-code-theme/)
+- [CSS Tricks - Creating a VS Code theme](HTTPS://css-tricks.com/creating-a-vs-code-theme/)

@@ -34,10 +34,10 @@ cancellation token.
 
 ```ts
 const myProvider = class implements vscode.TextDocumentContentProvider {
-  provideTextDocumentContent(uri: vscode.Uri): string {
-    // simply invoke cowsay, use uri-path as text
-    return cowsay.say({ text: uri.path });
-  }
+	provideTextDocumentContent(uri: vscode.Uri): string {
+		// simply invoke cowsay, use uri-path as text
+		return cowsay.say({ text: uri.path });
+	}
 };
 ```
 
@@ -49,13 +49,13 @@ This sample uses a 'cowsay'-command that crafts an uri which the editor should
 then show:
 
 ```ts
-vscode.commands.registerCommand('cowsay.say', async () => {
-  let what = await vscode.window.showInputBox({ placeHolder: 'cow say?' });
-  if (what) {
-    let uri = vscode.Uri.parse('cowsay:' + what);
-    let doc = await vscode.workspace.openTextDocument(uri); // calls back into the provider
-    await vscode.window.showTextDocument(doc, { preview: false });
-  }
+vscode.commands.registerCommand("cowsay.say", async () => {
+	let what = await vscode.window.showInputBox({ placeHolder: "cow say?" });
+	if (what) {
+		let uri = vscode.Uri.parse("cowsay:" + what);
+		let doc = await vscode.workspace.openTextDocument(uri); // calls back into the provider
+		await vscode.window.showTextDocument(doc, { preview: false });
+	}
 });
 ```
 
@@ -80,11 +80,11 @@ easiest way to implement an event is `vscode.EventEmitter`, like so:
 
 ```ts
 const myProvider = class implements vscode.TextDocumentContentProvider {
-  // emitter and its event
-  onDidChangeEmitter = new vscode.EventEmitter<vscode.Uri>();
-  onDidChange = this.onDidChangeEmitter.event;
+	// emitter and its event
+	onDidChangeEmitter = new vscode.EventEmitter<vscode.Uri>();
+	onDidChange = this.onDidChangeEmitter.event;
 
-  //...
+	//...
 };
 ```
 
@@ -100,23 +100,20 @@ that:
 ```ts
 // register a command that updates the current cowsay
 subscriptions.push(
-  vscode.commands.registerCommand('cowsay.backwards', async () => {
-    if (!vscode.window.activeTextEditor) {
-      return; // no editor
-    }
-    let { document } = vscode.window.activeTextEditor;
-    if (document.uri.scheme !== myScheme) {
-      return; // not my scheme
-    }
-    // get path-components, reverse it, and create a new uri
-    let say = document.uri.path;
-    let newSay = say
-      .split('')
-      .reverse()
-      .join('');
-    let newUri = document.uri.with({ path: newSay });
-    await vscode.window.showTextDocument(newUri, { preview: false });
-  })
+	vscode.commands.registerCommand("cowsay.backwards", async () => {
+		if (!vscode.window.activeTextEditor) {
+			return; // no editor
+		}
+		let { document } = vscode.window.activeTextEditor;
+		if (document.uri.scheme !== myScheme) {
+			return; // not my scheme
+		}
+		// get path-components, reverse it, and create a new uri
+		let say = document.uri.path;
+		let newSay = say.split("").reverse().join("");
+		let newUri = document.uri.with({ path: newSay });
+		await vscode.window.showTextDocument(newUri, { preview: false });
+	}),
 );
 ```
 

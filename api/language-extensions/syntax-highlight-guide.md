@@ -16,8 +16,8 @@ names.
 
 There are two components to syntax highlighting:
 
--   Breaking text into a list of tokens and scopes using a grammar
--   Then using a theme to map these scopes to specific colors and styles
+- Breaking text into a list of tokens and scopes using a grammar
+- Then using a theme to map these scopes to specific colors and styles
 
 This document only discusses the first part: breaking text into tokens and
 scopes that existing color themes can colorize. For more information about
@@ -46,9 +46,9 @@ current token. The `+` operation in JavaScript for example has the scope
 `keyword.operator.arithmetic.js`.
 
 Themes map scopes to colors and styles to provide syntax highlighting. TextMate
-provides [`list of common scopes`][tm-grammars] that many themes target. In order
-to have your grammar as broadly supported as possible, try to build on existing
-scopes rather than defining new ones.
+provides [`list of common scopes`][tm-grammars] that many themes target. In
+order to have your grammar as broadly supported as possible, try to build on
+existing scopes rather than defining new ones.
 
 Scopes nest so that each token is also associated with a list of parent scopes.
 The example below uses the [scope inspector](#scope-inspector) to show the scope
@@ -216,9 +216,9 @@ To quickly create a new grammar extension, use
 Yeoman will walk you through some basic questions to scaffold the new extension.
 The important questions for creating a new grammar are:
 
--   `Language Id` - A unique identifier for your language.
--   `Language Name` - A human readable name for your language.
--   `Scope names` - Root TextMate scope name for your grammar
+- `Language Id` - A unique identifier for your language.
+- `Language Name` - A human readable name for your language.
+- `Scope names` - Root TextMate scope name for your grammar
 
 ![Filling in the 'new language' questions](images/syntax-highlighting/yo-new-language-questions.png)
 
@@ -305,9 +305,9 @@ Injection grammars let you extend an existing grammar. An injection grammar is a
 regular TextMate grammar that is injected into a specific scope within an
 existing grammar. Example applications of injection grammars:
 
--   Highlighting keywords such as `TODO` in comments.
--   Add more specific scope information to an existing grammar.
--   Adding highlighting for a new language to Markdown fenced code blocks.
+- Highlighting keywords such as `TODO` in comments.
+- Add more specific scope information to an existing grammar.
+- Adding highlighting for a new language to Markdown fenced code blocks.
 
 ### Creating a basic injection grammar
 

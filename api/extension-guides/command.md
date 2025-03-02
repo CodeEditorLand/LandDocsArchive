@@ -35,10 +35,10 @@ The `editor.action.addCommentLine` command, for example, comments the currently
 selected lines in the active text editor:
 
 ```ts
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 function commentLine() {
-  vscode.commands.executeCommand('editor.action.addCommentLine');
+	vscode.commands.executeCommand("editor.action.addCommentLine");
 }
 ```
 
@@ -49,30 +49,30 @@ document URI and a position as arguments, and returns a promise with a list of
 definitions:
 
 ```ts
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 async function printDefinitionsForActiveEditor() {
-  const activeEditor = vscode.window.activeTextEditor;
-  if (!activeEditor) {
-    return;
-  }
+	const activeEditor = vscode.window.activeTextEditor;
+	if (!activeEditor) {
+		return;
+	}
 
-  const definitions = await vscode.commands.executeCommand<vscode.Location[]>(
-    'vscode.executeDefinitionProvider',
-    activeEditor.document.uri,
-    activeEditor.selection.active
-  );
+	const definitions = await vscode.commands.executeCommand<vscode.Location[]>(
+		"vscode.executeDefinitionProvider",
+		activeEditor.document.uri,
+		activeEditor.selection.active,
+	);
 
-  for (const definition of definitions) {
-    console.log(definition);
-  }
+	for (const definition of definitions) {
+		console.log(definition);
+	}
 }
 ```
 
 To find available commands:
 
--   [Browse the keyboard shortcuts](/docs/getstarted/keybindings)
--   [Look through VS Code's built-in advanced commands api](/api/references/commands)
+- [Browse the keyboard shortcuts](/docs/getstarted/keybindings)
+- [Look through VS Code's built-in advanced commands api](/api/references/commands)
 
 ### Command URIs
 
@@ -85,29 +85,33 @@ command URI for the `editor.action.addCommentLine` command, for example, is
 link in the comments of the current line in the active text editor:
 
 ```ts
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
-  vscode.languages.registerHoverProvider(
-    'javascript',
-    new class implements vscode.HoverProvider {
-      provideHover(
-        _document: vscode.TextDocument,
-        _position: vscode.Position,
-        _token: vscode.CancellationToken
-      ): vscode.ProviderResult<vscode.Hover> {
-        const commentCommandUri = vscode.Uri.parse(`command:editor.action.addCommentLine`);
-        const contents = new vscode.MarkdownString(`[Add comment](${commentCommandUri})`);
+	vscode.languages.registerHoverProvider(
+		"javascript",
+		new (class implements vscode.HoverProvider {
+			provideHover(
+				_document: vscode.TextDocument,
+				_position: vscode.Position,
+				_token: vscode.CancellationToken,
+			): vscode.ProviderResult<vscode.Hover> {
+				const commentCommandUri = vscode.Uri.parse(
+					`command:editor.action.addCommentLine`,
+				);
+				const contents = new vscode.MarkdownString(
+					`[Add comment](${commentCommandUri})`,
+				);
 
-        // To enable command URIs in Markdown content, you must set the `isTrusted` flag.
-        // When creating trusted Markdown string, make sure to properly sanitize all the
-        // input content so that only expected command URIs can be executed
-        contents.isTrusted = true;
+				// To enable command URIs in Markdown content, you must set the `isTrusted` flag.
+				// When creating trusted Markdown string, make sure to properly sanitize all the
+				// input content so that only expected command URIs can be executed
+				contents.isTrusted = true;
 
-        return new vscode.Hover(contents);
-      }
-    }()
-  );
+				return new vscode.Hover(contents);
+			}
+		})(),
+	);
 }
 ```
 
@@ -116,27 +120,29 @@ properly URI encoded: The example below uses the `git.stage` command to create a
 hover like that stages the current file:
 
 ```ts
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
-  vscode.languages.registerHoverProvider(
-    'javascript',
-    new class implements vscode.HoverProvider {
-      provideHover(
-        document: vscode.TextDocument,
-        _position: vscode.Position,
-        _token: vscode.CancellationToken
-      ): vscode.ProviderResult<vscode.Hover> {
-        const args = [{ resourceUri: document.uri }];
-        const stageCommandUri = vscode.Uri.parse(
-          `command:git.stage?${encodeURIComponent(JSON.stringify(args))}`
-        );
-        const contents = new vscode.MarkdownString(`[Stage file](${stageCommandUri})`);
-        contents.isTrusted = true;
-        return new vscode.Hover(contents);
-      }
-    }()
-  );
+	vscode.languages.registerHoverProvider(
+		"javascript",
+		new (class implements vscode.HoverProvider {
+			provideHover(
+				document: vscode.TextDocument,
+				_position: vscode.Position,
+				_token: vscode.CancellationToken,
+			): vscode.ProviderResult<vscode.Hover> {
+				const args = [{ resourceUri: document.uri }];
+				const stageCommandUri = vscode.Uri.parse(
+					`command:git.stage?${encodeURIComponent(JSON.stringify(args))}`,
+				);
+				const contents = new vscode.MarkdownString(
+					`[Stage file](${stageCommandUri})`,
+				);
+				contents.isTrusted = true;
+				return new vscode.Hover(contents);
+			}
+		})(),
+	);
 }
 ```
 
@@ -148,16 +154,18 @@ export function activate(context: vscode.ExtensionContext) {
 binds a command id to a handler function in your extension:
 
 ```ts
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
-  const command = 'myExtension.sayHello';
+	const command = "myExtension.sayHello";
 
-  const commandHandler = (name?: string = 'world') => {
-    console.log(`Hello ${name}!!!`);
-  };
+	const commandHandler = (name?: string = "world") => {
+		console.log(`Hello ${name}!!!`);
+	};
 
-  context.subscriptions.push(vscode.commands.registerCommand(command, commandHandler));
+	context.subscriptions.push(
+		vscode.commands.registerCommand(command, commandHandler),
+	);
 }
 ```
 
@@ -210,10 +218,10 @@ Command Palette or through a keybinding, the extension will be activated and
 You do not need an `onCommand` activation event for internal commands but you
 must define them for any commands that:
 
--   Can be invoked using the Command Palette.
--   Can be invoked using a keybinding.
--   Can be invoked through the VS Code UI, such as through the editor title bar.
--   Is intended as an API for other extensions to consume.
+- Can be invoked using the Command Palette.
+- Can be invoked using a keybinding.
+- Can be invoked through the VS Code UI, such as through the editor title bar.
+- Is intended as an API for other extensions to consume.
 
 ### Controlling when a command shows up in the Command Palette
 

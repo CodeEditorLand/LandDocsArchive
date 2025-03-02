@@ -130,6 +130,6 @@ out/test/**
 
 ## Next steps
 
--   [Continuous Integration](/api/working-with-extensions/continuous-integration) -
-    Run your extension tests in a Continuous Integration service such as Azure
-    DevOps.
+- [Continuous Integration](/api/working-with-extensions/continuous-integration) -
+  Run your extension tests in a Continuous Integration service such as Azure
+  DevOps.

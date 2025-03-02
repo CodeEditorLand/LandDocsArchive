@@ -78,14 +78,14 @@ packaging container for the debug adapter without any additional code.
 A more realistic debugger extension contributes many or all of the following
 declarative items to VS Code:
 
--   List of languages supported by the debugger. VS Code enables the UI to set
-    breakpoints for those languages.
--   JSON schema for the debug configuration attributes introduced by the
-    debugger. VS Code uses this schema to verify the configuration in the
-    launch.json editor and provides IntelliSense.
--   Default debug configurations for the initial launch.json created by VS Code.
--   Debug configuration snippets that a user can add to a launch.json file.
--   Declaration of variables that can be used in debug configurations.
+- List of languages supported by the debugger. VS Code enables the UI to set
+  breakpoints for those languages.
+- JSON schema for the debug configuration attributes introduced by the debugger.
+  VS Code uses this schema to verify the configuration in the launch.json editor
+  and provides IntelliSense.
+- Default debug configurations for the initial launch.json created by VS Code.
+- Debug configuration snippets that a user can add to a launch.json file.
+- Declaration of variables that can be used in debug configurations.
 
 You can find more information in
 [`contributes.breakpoints`](/api/references/contribution-points#contributes.breakpoints)
@@ -96,13 +96,13 @@ references.
 In addition to the purely declarative contributions from above, the Debug
 Extension API enables this code-based functionality:
 
--   Dynamically generated default debug configurations for the initial
-    launch.json created by VS Code.
--   Determine the debug adapter to use dynamically.
--   Verify or modify debug configurations before they are passed to the debug
-    adapter.
--   Communicate with the debug adapter.
--   Send messages to the debug console.
+- Dynamically generated default debug configurations for the initial launch.json
+  created by VS Code.
+- Determine the debug adapter to use dynamically.
+- Verify or modify debug configurations before they are passed to the debug
+  adapter.
+- Communicate with the debug adapter.
+- Send messages to the debug console.
 
 In the rest of this document we show how to develop a debugger extension.
 
@@ -119,19 +119,19 @@ Before delving into the development setup for mock-debug, let's first install a
 [pre-built version](HTTPS://marketplace.visualstudio.com/items/andreweinand.mock-debug)
 from the VS Code Marketplace and play with it:
 
--   Switch to the Extensions viewlet and type "mock" to search for the Mock
-    Debug extension,
--   "Install" and "Reload" the extension.
+- Switch to the Extensions viewlet and type "mock" to search for the Mock Debug
+  extension,
+- "Install" and "Reload" the extension.
 
 To try Mock Debug:
 
--   Create a new empty folder `mock test` and open it in VS Code.
--   Create a file `readme.md` and enter several lines of arbitrary text.
--   Switch to the Debug view and press the gear icon.
--   VS Code will let you select an "environment" in order to create a default
-    launch configuration. Pick "Mock Debug".
--   Press the green Start button and then Enter to confirm the suggested file
-    `readme.md`.
+- Create a new empty folder `mock test` and open it in VS Code.
+- Create a file `readme.md` and enter several lines of arbitrary text.
+- Switch to the Debug view and press the gear icon.
+- VS Code will let you select an "environment" in order to create a default
+  launch configuration. Pick "Mock Debug".
+- Press the green Start button and then Enter to confirm the suggested file
+  `readme.md`.
 
 A debug session starts and you can "step" through the readme file, set and hit
 breakpoints, and run into exceptions (if the word `exception` appears in a
@@ -142,9 +142,9 @@ line).
 Before using Mock Debug as a starting point for your own development, we
 recommend to uninstall the pre-built version first:
 
--   Switch to the Extensions viewlet and click on the gear icon of the Mock
-    Debug extension.
--   Run the "Uninstall" action and then "Reload" the window.
+- Switch to the Extensions viewlet and click on the gear icon of the Mock Debug
+  extension.
+- Run the "Uninstall" action and then "Reload" the window.
 
 ## Development Setup for Mock Debug
 
@@ -161,23 +161,23 @@ Open the project folder `vscode-mock-debug` in VS Code.
 
 What's in the package?
 
--   `package.json` is the manifest for the mock-debug extension:
-    -   It lists the contributions of the mock-debug extension.
-    -   The `compile` and `watch` scripts are used to transpile the TypeScript
-        source into the `out` folder and watch for subsequent source
-        modifications.
-    -   The dependencies `vscode-debugprotocol`, `vscode-debugadapter`, and
-        `vscode-debugadapter-testsupport` are NPM modules that simplify the
-        development of node-based debug adapters.
--   `src/mockRuntime.ts` is a _mock_ runtime with a simple debug API.
--   The code that _adapts_ the runtime to the Debug Adapter Protocol lives in
-    `src/mockDebug.ts`. Here you find the handlers for the various requests of
-    the DAP.
--   Since the implementation of debugger extension lives in the debug adapter,
-    there is no need to have extension code at all (i.e. code that runs in the
-    extension host process). However, Mock Debug has a small `src/extension.ts`
-    because it illustrates what can be done in the extension code of a debugger
-    extension.
+- `package.json` is the manifest for the mock-debug extension:
+    - It lists the contributions of the mock-debug extension.
+    - The `compile` and `watch` scripts are used to transpile the TypeScript
+      source into the `out` folder and watch for subsequent source
+      modifications.
+    - The dependencies `vscode-debugprotocol`, `vscode-debugadapter`, and
+      `vscode-debugadapter-testsupport` are NPM modules that simplify the
+      development of node-based debug adapters.
+- `src/mockRuntime.ts` is a _mock_ runtime with a simple debug API.
+- The code that _adapts_ the runtime to the Debug Adapter Protocol lives in
+  `src/mockDebug.ts`. Here you find the handlers for the various requests of the
+  DAP.
+- Since the implementation of debugger extension lives in the debug adapter,
+  there is no need to have extension code at all (i.e. code that runs in the
+  extension host process). However, Mock Debug has a small `src/extension.ts`
+  because it illustrates what can be done in the extension code of a debugger
+  extension.
 
 Now build and launch the Mock Debug extension by selecting the **Extension**
 launch configuration and hitting `F5`. Initially, this will do a full transpile
@@ -446,12 +446,16 @@ of this command in `src/extension.ts` uses the `showInputBox` to let the user
 enter a program name:
 
 ```ts
-vscode.commands.registerCommand('extension.mock-debug.getProgramName', config => {
-  return vscode.window.showInputBox({
-    placeHolder: 'Please enter the name of a markdown file in the workspace folder',
-    value: 'readme.md'
-  });
-});
+vscode.commands.registerCommand(
+	"extension.mock-debug.getProgramName",
+	(config) => {
+		return vscode.window.showInputBox({
+			placeHolder:
+				"Please enter the name of a markdown file in the workspace folder",
+			value: "readme.md",
+		});
+	},
+);
 ```
 
 The variable can now be used in any string typed value of a launch configuration
@@ -463,12 +467,12 @@ If the static nature of debug contributions in the `package.json` is not
 sufficient, a `DebugConfigurationProvider` can be used to dynamically control
 the following aspects of a debug extension:
 
--   The initial debug configurations for a newly created launch.json can be
-    generated dynamically, e.g. based on some contextual information available
-    in the workspace.
--   A launch configuration can be _resolved_ (or modified) before it is used to
-    start a new debug session. This allows for filling in default values based
-    on information available in the workspace.
+- The initial debug configurations for a newly created launch.json can be
+  generated dynamically, e.g. based on some contextual information available in
+  the workspace.
+- A launch configuration can be _resolved_ (or modified) before it is used to
+  start a new debug session. This allows for filling in default values based on
+  information available in the workspace.
 
 The `MockConfigurationProvider` in `src/extension.ts` implements
 `resolveDebugConfiguration` to detect the case where a debug session is started
@@ -501,11 +505,11 @@ into account.
 A better approach for expensive debug extensions is to use more fine-grained
 activation events:
 
--   `onDebugInitialConfigurations` is fired just before the
-    `provideDebugConfigurations` method of the `DebugConfigurationProvider` is
-    called.
--   `onDebugResolve:type` is fired just before the `resolveDebugConfiguration`
-    method of the `DebugConfigurationProvider` for the specified type is called.
+- `onDebugInitialConfigurations` is fired just before the
+  `provideDebugConfigurations` method of the `DebugConfigurationProvider` is
+  called.
+- `onDebugResolve:type` is fired just before the `resolveDebugConfiguration`
+  method of the `DebugConfigurationProvider` for the specified type is called.
 
 **Rule of thumb:** If activation of a debug extensions is cheap, use `onDebug`.
 If it is expensive, use `onDebugInitialConfigurations` and/or `onDebugResolve`
@@ -518,10 +522,10 @@ corresponding methods `provideDebugConfigurations` and/or
 Once you have created your debugger extension you can publish it to the
 Marketplace:
 
--   Update the attributes in the `package.json` to reflect the naming and
-    purpose of your debugger extension.
--   Upload to the Marketplace as described in
-    [Publishing Extension](/api/working-with-extensions/publishing-extension).
+- Update the attributes in the `package.json` to reflect the naming and purpose
+  of your debugger extension.
+- Upload to the Marketplace as described in
+  [Publishing Extension](/api/working-with-extensions/publishing-extension).
 
 ## Alternative approach to develop a debugger extension
 

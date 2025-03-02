@@ -14,30 +14,30 @@ MetaDescription:
 "Workbench" refers to the overall Visual Studio Code UI that encompasses the
 following UI components:
 
--   Title Bar
--   Activity Bar
--   Side Bar
--   Panel
--   Editor Group
--   Status Bar
+- Title Bar
+- Activity Bar
+- Side Bar
+- Panel
+- Editor Group
+- Status Bar
 
 VS Code provides various APIs that allow you to add your own components to the
 Workbench. For example, in the image below:
 
 ![workbench-contribution](images/extending-workbench/workbench-contribution.png)
 
--   Activity Bar: The
-    [Azure App Service extension](HTTPS://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
-    adds a [View Container](#view-container)
--   Side Bar: The built-in
-    [NPM extension](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/npm)
-    adds a [Tree View](#tree-view) to the Explorer View
--   Editor Group: The built-in
-    [Markdown extension](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/markdown-language-features)
-    adds a [Webview](#webview) next to other editors in the Editor Group
--   Status Bar: The
-    [VSCodeVim extension](HTTPS://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-    adds a [Status Bar Item](#status-bar-item) in the Status Bar
+- Activity Bar: The
+  [Azure App Service extension](HTTPS://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
+  adds a [View Container](#view-container)
+- Side Bar: The built-in
+  [NPM extension](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/npm)
+  adds a [Tree View](#tree-view) to the Explorer View
+- Editor Group: The built-in
+  [Markdown extension](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/markdown-language-features)
+  adds a [Webview](#webview) next to other editors in the Editor Group
+- Status Bar: The
+  [VSCodeVim extension](HTTPS://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+  adds a [Status Bar Item](#status-bar-item) in the Status Bar
 
 ## Views Container
 
@@ -68,8 +68,8 @@ Extensions can create custom
 Status Bar. Status Bar Items can show text and icons and run commands on click
 events.
 
--   Show text and icons
--   Run a command on click
+- Show text and icons
+- Run a command on click
 
 A Status Bar extension sample can be found
 [here](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/statusbar-sample).

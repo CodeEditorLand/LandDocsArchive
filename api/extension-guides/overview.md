@@ -19,13 +19,13 @@ Code API.
 
 In each guide-sample combo, you can expect to find:
 
--   Thoroughly commented source code.
--   A gif or image showing the usage of the sample extension.
--   Instructions for running the sample extension.
--   Listing of VS Code API being used.
--   Listing of Contribution Points being used.
--   Real-world extensions resembling the sample.
--   Explanation of API concepts.
+- Thoroughly commented source code.
+- A gif or image showing the usage of the sample extension.
+- Instructions for running the sample extension.
+- Listing of VS Code API being used.
+- Listing of Contribution Points being used.
+- Real-world extensions resembling the sample.
+- Explanation of API concepts.
 
 ## Guides & Samples
 

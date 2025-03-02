@@ -27,10 +27,10 @@ You'll need [Node.js and npm](HTTPS://nodejs.org/en/download/) and
 Install the Azure Command Line Interface (CLI) which you will use the CLI to do
 the following:
 
--   Create an Azure Website.
--   Set up a deployment pipeline between a local/remote Git repository and the
-    Website.
--   View your application's logs (`console.log` output).
+- Create an Azure Website.
+- Set up a deployment pipeline between a local/remote Git repository and the
+  Website.
+- View your application's logs (`console.log` output).
 
 > **Tip:** If you prefer, you can use Azure
 > [Cloud Shell](HTTPS://docs.microsoft.com/en-us/azure/cloud-shell/overview)

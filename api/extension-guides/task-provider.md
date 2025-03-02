@@ -61,19 +61,19 @@ extension can register a task provider to compute all available tasks. This is
 done using the `vscode.tasks` namespace as shown in the following code snippet:
 
 ```ts
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 let rakePromise: Thenable<vscode.Task[]> | undefined = undefined;
-const taskProvider = vscode.tasks.registerTaskProvider('rake', {
-  provideTasks: () => {
-    if (!rakePromise) {
-      rakePromise = getRakeTasks();
-    }
-    return rakePromise;
-  },
-  resolveTask(_task: vscode.Task): vscode.Task | undefined {
-    return undefined;
-  }
+const taskProvider = vscode.tasks.registerTaskProvider("rake", {
+	provideTasks: () => {
+		if (!rakePromise) {
+			rakePromise = getRakeTasks();
+		}
+		return rakePromise;
+	},
+	resolveTask(_task: vscode.Task): vscode.Task | undefined {
+		return undefined;
+	},
 });
 ```
 
@@ -82,10 +82,10 @@ Code. It is there to optimize task loading in the future.
 
 The `getRakeTasks` implementation does the following:
 
--   Lists all rake tasks defined in a rake file using the `rake -AT -f Rakefile`
-    command.
--   Parses the stdio output.
--   For every listed task, creates a `vscode.Task` implementation.
+- Lists all rake tasks defined in a rake file using the `rake -AT -f Rakefile`
+  command.
+- Parses the stdio output.
+- For every listed task, creates a `vscode.Task` implementation.
 
 Since a Rake task instantiation needs a task definition as defined in the
 `package.json` file, VS Code also defines the structure using a TypeScript
@@ -93,15 +93,15 @@ interface like this:
 
 ```typescript
 interface RakeTaskDefinition extends vscode.TaskDefinition {
-  /**
-   * The task name
-   */
-  task: string;
+	/**
+	 * The task name
+	 */
+	task: string;
 
-  /**
-   * The rake file containing the task
-   */
-  file?: string;
+	/**
+	 * The rake file containing the task
+	 */
+	file?: string;
 }
 ```
 
@@ -110,10 +110,10 @@ task creation then looks like this:
 
 ```typescript
 let task = new vscode.Task(
-  { type: 'rake', task: 'compile' },
-  'compile',
-  'rake',
-  new vscode.ShellExecution('rake compile')
+	{ type: "rake", task: "compile" },
+	"compile",
+	"rake",
+	new vscode.ShellExecution("rake compile"),
 );
 ```
 

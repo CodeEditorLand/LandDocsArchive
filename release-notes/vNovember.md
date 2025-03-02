@@ -41,8 +41,8 @@ then `'ext inst'`) to let you find and install new extensions and manage
 ![`extension commands`](images/0_10_0/extension-commands.png)
 
 The VS Code also has a
-[`Marketplace`](HTTPS://marketplace.visualstudio.com/VSCode) where you can browse
-and learn more about extensions.
+[`Marketplace`](HTTPS://marketplace.visualstudio.com/VSCode) where you can
+browse and learn more about extensions.
 
 ## Extensibility SDK
 
@@ -87,12 +87,12 @@ source on [`GitHub`](HTTPS://github.com/microsoft/vscode).
 
 You can now contribute to VS Code:
 
--   Submit [`bugs`](HTTPS://github.com/microsoft/vscode/issues) and help us verify
-    fixes as they are checked in.
--   Review the source code changes.
--   Contribute bug fixes through pull requests.
--   Update and add to the
-    [`documentation`](HTTPS://github.com/microsoft/vscode-docs).
+- Submit [`bugs`](HTTPS://github.com/microsoft/vscode/issues) and help us verify
+  fixes as they are checked in.
+- Review the source code changes.
+- Contribute bug fixes through pull requests.
+- Update and add to the
+  [`documentation`](HTTPS://github.com/microsoft/vscode-docs).
 
 ## Add TextMate Snippets
 
@@ -105,9 +105,9 @@ use or to share on the gallery. The generator also supports Sublime snippets
 
 ## Debugging - Debug Console Improvements
 
--   Colored text output to highlight diagnostic errors and warnings
--   Support file path links with line and column information for quick source
-    code navigation.
+- Colored text output to highlight diagnostic errors and warnings
+- Support file path links with line and column information for quick source code
+  navigation.
 
 ![`Colored Output`](images/0_10_0/colored-output.png)
 
@@ -116,8 +116,8 @@ use or to share on the gallery. The generator also supports Sublime snippets
 Directly add selections to the Debug Console and Watch window with two new
 editor commands:
 
--   `Debug: Evaluate` - add the text selection to the Debug Console
--   `Debug: Add to Watch` - add the text selection to the Debug Watch window
+- `Debug: Evaluate` - add the text selection to the Debug Console
+- `Debug: Add to Watch` - add the text selection to the Debug Watch window
 
 ![`add to watch`](images/0_10_0/add-to-watch.png)
 
@@ -171,10 +171,10 @@ diagnostics. VS Code will now stay current with PHP linter improvements.
 
 There are two new settings to control the PHP linter:
 
--   _php.validate.executablePath_: points to the PHP executable on disk. Set
-    this if the PHP executable is not on the system path.
--   _php.validate.run_: controls whether the validation is triggered on save
-    (value: "onSave") or on type (value: "onType"). Default is on save.
+- _php.validate.executablePath_: points to the PHP executable on disk. Set this
+  if the PHP executable is not on the system path.
+- _php.validate.run_: controls whether the validation is triggered on save
+  (value: "onSave") or on type (value: "onType"). Default is on save.
 
 ## Languages - Workspace relative TypeScript version
 
@@ -188,10 +188,10 @@ team and use the latest TypeScript version (`npm install typescript@next`).
 
 You can now set your diff view preferences with two new settings:
 
--   `diffEditor.renderSideBySide` - Control whether to show differences in a
-    side by side or inline view.
--   `diffEditor.ignoreTrimWhitespace` - Ignore leading and trailing (trim)
-    whitespace when showing differences.
+- `diffEditor.renderSideBySide` - Control whether to show differences in a side
+  by side or inline view.
+- `diffEditor.ignoreTrimWhitespace` - Ignore leading and trailing (trim)
+  whitespace when showing differences.
 
 ![`inline-diff-view`](images/0_10_0/inline-diff-view.png)
 
@@ -203,5 +203,5 @@ As always we fixed many issues.
 
 Here are a few of the notable ones:
 
--   Editor code completion is slow with large completion lists, e.g. 30000
-    suggestions.
+- Editor code completion is slow with large completion lists, e.g. 30000
+  suggestions.

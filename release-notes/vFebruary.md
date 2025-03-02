@@ -12,9 +12,9 @@ February is our last full iteration before we start the end game for the
 [`Build 2016 conference`](HTTPS://build.microsoft.com/) milestone at the end of
 March. It comes with many improvements:
 
--   Salsa is now the default JavaScript language service.
--   Folding, the most requested feature, is now available.
--   There is support for localization and accessibility.
+- Salsa is now the default JavaScript language service.
+- Folding, the most requested feature, is now available.
+- There is support for localization and accessibility.
 
 In addition, we continued to listen to your issues and feature requests.
 
@@ -115,12 +115,12 @@ configured in your linter of choice.
 
 Here are the steps to set up `eslint`:
 
--   `npm install eslint` to install `eslint` into your workspace or
-    `npm install -g eslint` to install it globally.
--   install the VS Code
-    [`eslint extension`](HTTPS://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
--   use `eslint --init` to create an initial eslint configuration by answering
-    questions or by picking a popular configuration.
+- `npm install eslint` to install `eslint` into your workspace or
+  `npm install -g eslint` to install it globally.
+- install the VS Code
+  [`eslint extension`](HTTPS://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+- use `eslint --init` to create an initial eslint configuration by answering
+  questions or by picking a popular configuration.
 
 **Tip:** If you use JSON as the format of the eslint configuration file, then VS
 Code can provide you with IntelliSense when you edit the `.eslintrc.json` file.
@@ -138,11 +138,11 @@ should be excluded from the project context. This list included the folders:
 implicit behavior has changed in favor of an explicit list defined by the user.
 Therefore if you use...
 
--   `node` exclude the `node_modules` folder
--   `bower` exclude the `bower_components` folder
--   `ember` exclude the `tmp` and `temp` folder
--   `jspm` exclude the `jspm_packages` folder
--   `webpack` then exclude the output folder, e.g., `dist`.
+- `node` exclude the `node_modules` folder
+- `bower` exclude the `bower_components` folder
+- `ember` exclude the `tmp` and `temp` folder
+- `jspm` exclude the `jspm_packages` folder
+- `webpack` then exclude the output folder, e.g., `dist`.
 
 **Tip:** After editing the `jsconfig.json`, do not forget to run the **Reload
 JavaScript** command to ensure that everything is up to date.
@@ -152,8 +152,8 @@ JavaScript** command to ensure that everything is up to date.
 If you do not have a `jsconfig.json` in your workspace then the following
 defaults are used:
 
--   the `exclude` list includes the `node_modules` folder and the folder defined
-    by the `out` attribute.
+- the `exclude` list includes the `node_modules` folder and the folder defined
+  by the `out` attribute.
 
 Be aware that if you have no `jsconfig.json` defined to mark the root of your
 project, then each JavaScript file is considered an island by Salsa. Without a
@@ -171,24 +171,24 @@ Salsa undoubtedly provides a much better experience writing JavaScript
 applications in VS Code. By moving to Salsa, we give up a few features
 previously available with our old JavaScript language service:
 
--   The source language level is now always ECMAScript 6. Previously, there was
-    support to define a lower level using the `target` attribute inside
-    `jsconfig.json`. This support has been removed and the `target` attribute is
-    now only used by `tsc` to define the target version when a JavaScript file
-    is compiled to a lower ECMAScript version.
--   The previous JavaScript infrastructure attempted to resolve references for
-    `AMD` modules. This hasn't worked in all cases and support for `AMD` to
-    resolve references across files is currently no longer supported.
--   There is no longer support for IntelliSense in `script` sections inside HTML
-    documents.
--   The `javascript.validate.*` settings are no longer supported and are ignored
-    (see above).
--   The previous JavaScript infrastructure provided quick fixes to add an
-    undefined variable as a global and to fetch a type definition from
-    definitely typed. These quick fixes are no longer available.
--   A file without a .js suffix that VS Code identifies as a JavaScript file is
-    now treated as a .ts file and you get unexpected type errors
-    ([`#issue 7291`](HTTPS://github.com/Microsoft/TypeScript/issues/7291)).
+- The source language level is now always ECMAScript 6. Previously, there was
+  support to define a lower level using the `target` attribute inside
+  `jsconfig.json`. This support has been removed and the `target` attribute is
+  now only used by `tsc` to define the target version when a JavaScript file is
+  compiled to a lower ECMAScript version.
+- The previous JavaScript infrastructure attempted to resolve references for
+  `AMD` modules. This hasn't worked in all cases and support for `AMD` to
+  resolve references across files is currently no longer supported.
+- There is no longer support for IntelliSense in `script` sections inside HTML
+  documents.
+- The `javascript.validate.*` settings are no longer supported and are ignored
+  (see above).
+- The previous JavaScript infrastructure provided quick fixes to add an
+  undefined variable as a global and to fetch a type definition from definitely
+  typed. These quick fixes are no longer available.
+- A file without a .js suffix that VS Code identifies as a JavaScript file is
+  now treated as a .ts file and you get unexpected type errors
+  ([`#issue 7291`](HTTPS://github.com/Microsoft/TypeScript/issues/7291)).
 
 ## Languages - TypeScript
 
@@ -242,11 +242,10 @@ icon. The `-` icon only shows when the mouse is over the gutter.
 Additionally you can use the following commands from the commands menu (F1) or
 with keyboard shortcuts:
 
--   Fold (`kb(editor.fold)`) folds the innermost uncollapsed region at the
-    cursor
--   Unfold (`kb(editor.unfold)`) unfolds the collapsed region at the cursor
--   Fold All (`kb(editor.foldAll)`) folds all region in the editor
--   Unfold All (`kb(editor.unfoldAll)`) unfolds all regions in the editor
+- Fold (`kb(editor.fold)`) folds the innermost uncollapsed region at the cursor
+- Unfold (`kb(editor.unfold)`) unfolds the collapsed region at the cursor
+- Fold All (`kb(editor.foldAll)`) folds all region in the editor
+- Unfold All (`kb(editor.unfoldAll)`) unfolds all regions in the editor
 
 The folding regions are evaluated solely based on the indentation of each line.
 This first version does not yet support language agnostic folding regions, or
@@ -361,15 +360,15 @@ problem.
 We have improved the `preLaunchTask` based on user feedback and feature
 requests:
 
--   If `preLaunchTask` produces an error, debugging does not start and a message
-    with an option to continue debugging despite the error is shown.
+- If `preLaunchTask` produces an error, debugging does not start and a message
+  with an option to continue debugging despite the error is shown.
 
     ![`pre-launch-task-error`](images/February/pre-launch-task-error.png)
 
--   If a `preLaunchTask` is a watching task, debugging does not start before the
-    watching task becomes inactive.
--   If a `tasks.json` is missing and a `preLaunchTask` is set, we offer to
-    create a `tasks.json` for the user.
+- If a `preLaunchTask` is a watching task, debugging does not start before the
+  watching task becomes inactive.
+- If a `tasks.json` is missing and a `preLaunchTask` is set, we offer to create
+  a `tasks.json` for the user.
 
 ### Support for Node.js 'nodemon' Development Setup
 
@@ -421,9 +420,9 @@ view header:
 
 **Please note**: Node.js support for function breakpoints is limited because:
 
--   function breakpoints only work for global, non-native functions and
--   function breakpoints can only be created if the function has been defined
-    (seen by Node.js).
+- function breakpoints only work for global, non-native functions and
+- function breakpoints can only be created if the function has been defined
+  (seen by Node.js).
 
 ### Mono Debugging is now an Optional Install
 
@@ -506,11 +505,11 @@ Based on
 [`user feedback`](HTTPS://github.com/Microsoft/vscode/issues/2108#issuecomment-183373356),
 we have improved debugger accessibility:
 
--   Changes in debug state are read out (e.g. 'started', 'breakpoint hit',
-    'terminated', ...)
--   All debug actions are keyboard accessible
--   Focus intuitively moves inside the Debug View and Debug Console
--   Debug hover is keyboard accessible (`kb(editor.action.showHover)`)
+- Changes in debug state are read out (e.g. 'started', 'breakpoint hit',
+  'terminated', ...)
+- All debug actions are keyboard accessible
+- Focus intuitively moves inside the Debug View and Debug Console
+- Debug hover is keyboard accessible (`kb(editor.action.showHover)`)
 
 ## Localization
 
@@ -551,56 +550,54 @@ addition to `win`, `linux`, and `osx`, adapters can now use `winx86` in their
 
 We have changed the debug protocol in the following (backward compatible) ways:
 
--   _Feature negotiation_:
+- _Feature negotiation_:
 
-    -   A boolean `supportsConditionalBreakpoints` in `Capabilities` indicates
-        whether the debug adapter supports conditional breakpoints. If a debug
-        adapter does not support conditional breakpoints, a breakpoint which has
-        a condition set is shown with an exclamation mark:
+    - A boolean `supportsConditionalBreakpoints` in `Capabilities` indicates
+      whether the debug adapter supports conditional breakpoints. If a debug
+      adapter does not support conditional breakpoints, a breakpoint which has a
+      condition set is shown with an exclamation mark:
 
         ![`breakpoint-with-exclamation-mark`](images/February/breakpoint-exclam.png)
 
-    -   A boolean `supportsFunctionBreakpoints` in `Capabilities` indicates
-        whether the debug adapter implements function breakpoints. VS Code will
-        only use the new function breakpoint request of the debug protocol if
-        this feature is enabled.
+    - A boolean `supportsFunctionBreakpoints` in `Capabilities` indicates
+      whether the debug adapter implements function breakpoints. VS Code will
+      only use the new function breakpoint request of the debug protocol if this
+      feature is enabled.
 
-    -   A boolean `supportsEvaluateForHovers` indicates whether the debug
-        adapter supports a side effect free `EvaluateRequest`. If this feature
-        is enabled, VS Code will use the `evaluate` request to populate the
-        hover with information about the object under the mouse pointer. If it
-        is disabled, VS Code uses the information from the Variables viewlet.
+    - A boolean `supportsEvaluateForHovers` indicates whether the debug adapter
+      supports a side effect free `EvaluateRequest`. If this feature is enabled,
+      VS Code will use the `evaluate` request to populate the hover with
+      information about the object under the mouse pointer. If it is disabled,
+      VS Code uses the information from the Variables viewlet.
 
-    -   An optional `exceptionBreakpointFilters` capability that lists the
-        filters available for the `setExceptionBreakpoints` request. With this,
-        a debug adapter can contribute the options shown in the breakpoint
-        viewlet:
+    - An optional `exceptionBreakpointFilters` capability that lists the filters
+      available for the `setExceptionBreakpoints` request. With this, a debug
+      adapter can contribute the options shown in the breakpoint viewlet:
 
         ![`breakpoint-options`](images/February/breakpoint-options.png)
 
--   An optional `restart` attribute has been added to the `TerminatedEvent`
-    which a debug adapter can use to request a session restart.
+- An optional `restart` attribute has been added to the `TerminatedEvent` which
+  a debug adapter can use to request a session restart.
 
 ## Notable Bug Fixes
 
--   [`105`](HTTPS://github.com/Microsoft/vscode/issues/105): Enable code folding
-    and collapsing
--   [`439`](HTTPS://github.com/Microsoft/vscode/issues/439): `ext install` is slow
--   [`1228`](HTTPS://github.com/Microsoft/vscode/issues/1228): Add option to
-    convert tabs to spaces
--   [`2490`](HTTPS://github.com/Microsoft/vscode/issues/2490): Improve
-    IntelliSense perf
--   [`3127`](HTTPS://github.com/Microsoft/vscode/issues/3127): `code .` opens the
-    current directory, `code ..` also opens the current directory - not the
-    parent
--   [`3894`](HTTPS://github.com/Microsoft/vscode/issues/3894): [Handlebars] Curly
-    braces edit issuess
--   [`3899`](HTTPS://github.com/Microsoft/vscode/issues/3899): [folding] sections
-    are still folded when disabled in preferences
--   [`3903`](HTTPS://github.com/Microsoft/vscode/issues/3903): [js] syntax
-    highlight for 'var' and 'function' not working in Default VS theme
--   [`3509`](HTTPS://github.com/Microsoft/vscode/issues/3509): Smoke Test: Don't
-    get cross file intellisense in JS
+- [`105`](HTTPS://github.com/Microsoft/vscode/issues/105): Enable code folding
+  and collapsing
+- [`439`](HTTPS://github.com/Microsoft/vscode/issues/439): `ext install` is slow
+- [`1228`](HTTPS://github.com/Microsoft/vscode/issues/1228): Add option to
+  convert tabs to spaces
+- [`2490`](HTTPS://github.com/Microsoft/vscode/issues/2490): Improve
+  IntelliSense perf
+- [`3127`](HTTPS://github.com/Microsoft/vscode/issues/3127): `code .` opens the
+  current directory, `code ..` also opens the current directory - not the parent
+- [`3894`](HTTPS://github.com/Microsoft/vscode/issues/3894): [Handlebars] Curly
+  braces edit issuess
+- [`3899`](HTTPS://github.com/Microsoft/vscode/issues/3899): [folding] sections
+  are still folded when disabled in preferences
+- [`3903`](HTTPS://github.com/Microsoft/vscode/issues/3903): [js] syntax
+  highlight for 'var' and 'function' not working in Default VS theme
+- [`3509`](HTTPS://github.com/Microsoft/vscode/issues/3509): Smoke Test: Don't
+  get cross file intellisense in JS
 
 Here are the
 [`closed bugs`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aissue+label%3Abug+milestone%3A%22Feb+2016%22+is%3Aclosed)
@@ -613,22 +610,22 @@ for the February update.
 Last but certainly not least, a big _**Thank You!**_ to the following folks that
 helped to make VS Code even better:
 
--   [`sparecycles`](HTTPS://github.com/sparecycles): fix replacing end of line
-    with newline [`2587`](HTTPS://github.com/Microsoft/vscode/pull/2587).
--   [`SamVerschueren`](HTTPS://github.com/SamVerschueren): fix TextEditorOptions
-    declaration [`2935`](HTTPS://github.com/Microsoft/vscode/pull/2935).
--   [`Alexis Aubry`](HTTPS://github.com/alexaubry): Updated Swift Autocompletion
-    Syntax [`3198`](HTTPS://github.com/Microsoft/vscode/pull/3198).
--   [`Xaver Hellauer`](HTTPS://github.com/xaverh): Fixes to C++ and C syntax
-    [`2649`](HTTPS://github.com/Microsoft/vscode/pull/2649).
--   [`mkosieradzki`](HTTPS://github.com/mkosieradzki): Add support for jsonSchema
-    integer type in IntelliSense
-    [`2844`](HTTPS://github.com/Microsoft/vscode/pull/2844).
--   [`SrTobi`](HTTPS://github.com/SrTobi): Misc fixes in
-    [`vsce`](HTTPS://github.com/Microsoft/vscode-vsce):
-    [`65`](HTTPS://github.com/Microsoft/vscode-vsce/pull/65)
-    [`71`](HTTPS://github.com/Microsoft/vscode-vsce/pull/71)
-    [`73`](HTTPS://github.com/Microsoft/vscode-vsce/pull/73)
+- [`sparecycles`](HTTPS://github.com/sparecycles): fix replacing end of line
+  with newline [`2587`](HTTPS://github.com/Microsoft/vscode/pull/2587).
+- [`SamVerschueren`](HTTPS://github.com/SamVerschueren): fix TextEditorOptions
+  declaration [`2935`](HTTPS://github.com/Microsoft/vscode/pull/2935).
+- [`Alexis Aubry`](HTTPS://github.com/alexaubry): Updated Swift Autocompletion
+  Syntax [`3198`](HTTPS://github.com/Microsoft/vscode/pull/3198).
+- [`Xaver Hellauer`](HTTPS://github.com/xaverh): Fixes to C++ and C syntax
+  [`2649`](HTTPS://github.com/Microsoft/vscode/pull/2649).
+- [`mkosieradzki`](HTTPS://github.com/mkosieradzki): Add support for jsonSchema
+  integer type in IntelliSense
+  [`2844`](HTTPS://github.com/Microsoft/vscode/pull/2844).
+- [`SrTobi`](HTTPS://github.com/SrTobi): Misc fixes in
+  [`vsce`](HTTPS://github.com/Microsoft/vscode-vsce):
+  [`65`](HTTPS://github.com/Microsoft/vscode-vsce/pull/65)
+  [`71`](HTTPS://github.com/Microsoft/vscode-vsce/pull/71)
+  [`73`](HTTPS://github.com/Microsoft/vscode-vsce/pull/73)
 
 ## VS Code Blog
 

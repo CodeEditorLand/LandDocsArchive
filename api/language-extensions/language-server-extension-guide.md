@@ -19,11 +19,11 @@ way of implementing such language support.
 
 This topic:
 
--   Explains the benefits of Language Server Extension.
--   Walks you through building a Language Server using the
-    [`Microsoft/vscode-languageserver-node`](HTTPS://github.com/Microsoft/vscode-languageserver-node)
-    library. You can also jump directly to the code in
-    [lsp-sample](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample).
+- Explains the benefits of Language Server Extension.
+- Walks you through building a Language Server using the
+  [`Microsoft/vscode-languageserver-node`](HTTPS://github.com/Microsoft/vscode-languageserver-node)
+  library. You can also jump directly to the code in
+  [lsp-sample](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample).
 
 ## Why Language Server?
 
@@ -68,11 +68,10 @@ vendors!
 
 In this guide, we will:
 
--   Explain how to build a Language Server extension in VS Code using the
-    provided
-    [Node SDK](HTTPS://github.com/Microsoft/vscode-languageserver-node).
--   Explain how to run, debug, log and test the Language Server extension.
--   Point you to some advanced topics on Language Servers.
+- Explain how to build a Language Server extension in VS Code using the provided
+  [Node SDK](HTTPS://github.com/Microsoft/vscode-languageserver-node).
+- Explain how to run, debug, log and test the Language Server extension.
+- Point you to some advanced topics on Language Servers.
 
 ## Implementing a Language Server
 
@@ -80,18 +79,18 @@ In this guide, we will:
 
 In VS Code, a language server has two parts:
 
--   Language Client: A normal VS Code extension written in JavaScript /
-    TypeScript. This extension has access to all
-    [VS Code Namespace API](/api/references/vscode-api).
--   Language Server: A language analysis tool running in a separate process.
+- Language Client: A normal VS Code extension written in JavaScript /
+  TypeScript. This extension has access to all
+  [VS Code Namespace API](/api/references/vscode-api).
+- Language Server: A language analysis tool running in a separate process.
 
 As briefly stated above there are two benefits of running the Language Server in
 a separate process:
 
--   The analysis tool can be implemented in any languages, as long as it can
-    communicate with the Language Client following the Language Server Protocol.
--   As language analysis tools are often heavy on CPU and Memory usage, running
-    them in separate process avoids performance cost.
+- The analysis tool can be implemented in any languages, as long as it can
+  communicate with the Language Client following the Language Server Protocol.
+- As language analysis tools are often heavy on CPU and Memory usage, running
+  them in separate process avoids performance cost.
 
 Here is an illustration of VS Code running two Language Server extensions. The
 HTML Language Client and PHP Language Client are normal VS Code extensions
@@ -115,13 +114,12 @@ configurations between Client / Server.
 
 If you prefer to jump right into the code:
 
--   **[lsp-sample](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample)**:
-    Heavily documented source code for this guide.
--   **[lsp-multi-server-sample](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample)**:
-    A heavily documented, advanced version of **lsp-sample** that starts a
-    different server instance per workspace folder to support the
-    [multi-root workspace](/docs/editor/multi-root-workspaces) feature in VS
-    Code.
+- **[lsp-sample](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample)**:
+  Heavily documented source code for this guide.
+- **[lsp-multi-server-sample](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample)**:
+  A heavily documented, advanced version of **lsp-sample** that starts a
+  different server instance per workspace folder to support the
+  [multi-root workspace](/docs/editor/multi-root-workspaces) feature in VS Code.
 
 Clone the repository
 [Microsoft/vscode-extension-samples](HTTPS://github.com/Microsoft/vscode-extension-samples)
@@ -209,63 +207,64 @@ Below is the content of the corresponding extension.ts file, which is the entry
 of the **lsp-sample** extension:
 
 ```typescript
-import * as path from 'path';
-import { workspace, ExtensionContext } from 'vscode';
-
+import * as path from "path";
+import { ExtensionContext, workspace } from "vscode";
 import {
-  LanguageClient,
-  LanguageClientOptions,
-  ServerOptions,
-  TransportKind
-} from 'vscode-languageclient';
+	LanguageClient,
+	LanguageClientOptions,
+	ServerOptions,
+	TransportKind,
+} from "vscode-languageclient";
 
 let client: LanguageClient;
 
 export function activate(context: ExtensionContext) {
-  // The server is implemented in node
-  let serverModule = context.asAbsolutePath(path.join('server', 'out', 'server.js'));
-  // The debug options for the server
-  // --inspect=6009: runs the server in Node's Inspector mode so VS Code can attach to the server for debugging
-  let debugOptions = { execArgv: ['--nolazy', '--inspect=6009'] };
+	// The server is implemented in node
+	let serverModule = context.asAbsolutePath(
+		path.join("server", "out", "server.js"),
+	);
+	// The debug options for the server
+	// --inspect=6009: runs the server in Node's Inspector mode so VS Code can attach to the server for debugging
+	let debugOptions = { execArgv: ["--nolazy", "--inspect=6009"] };
 
-  // If the extension is launched in debug mode then the debug server options are used
-  // Otherwise the run options are used
-  let serverOptions: ServerOptions = {
-    run: { module: serverModule, transport: TransportKind.ipc },
-    debug: {
-      module: serverModule,
-      transport: TransportKind.ipc,
-      options: debugOptions
-    }
-  };
+	// If the extension is launched in debug mode then the debug server options are used
+	// Otherwise the run options are used
+	let serverOptions: ServerOptions = {
+		run: { module: serverModule, transport: TransportKind.ipc },
+		debug: {
+			module: serverModule,
+			transport: TransportKind.ipc,
+			options: debugOptions,
+		},
+	};
 
-  // Options to control the language client
-  let clientOptions: LanguageClientOptions = {
-    // Register the server for plain text documents
-    documentSelector: [{ scheme: 'file', language: 'plaintext' }],
-    synchronize: {
-      // Notify the server about file changes to '.clientrc files contained in the workspace
-      fileEvents: workspace.createFileSystemWatcher('**/.clientrc')
-    }
-  };
+	// Options to control the language client
+	let clientOptions: LanguageClientOptions = {
+		// Register the server for plain text documents
+		documentSelector: [{ scheme: "file", language: "plaintext" }],
+		synchronize: {
+			// Notify the server about file changes to '.clientrc files contained in the workspace
+			fileEvents: workspace.createFileSystemWatcher("**/.clientrc"),
+		},
+	};
 
-  // Create the language client and start the client.
-  client = new LanguageClient(
-    'languageServerExample',
-    'Language Server Example',
-    serverOptions,
-    clientOptions
-  );
+	// Create the language client and start the client.
+	client = new LanguageClient(
+		"languageServerExample",
+		"Language Server Example",
+		serverOptions,
+		clientOptions,
+	);
 
-  // Start the client. This will also launch the server
-  client.start();
+	// Start the client. This will also launch the server
+	client.start();
 }
 
 export function deactivate(): Thenable<void> {
-  if (!client) {
-    return undefined;
-  }
-  return client.stop();
+	if (!client) {
+		return undefined;
+	}
+	return client.stop();
 }
 ```
 
@@ -296,18 +295,18 @@ content from VS Code to the server.
 
 ```typescript
 import {
-  createConnection,
-  TextDocuments,
-  TextDocument,
-  Diagnostic,
-  DiagnosticSeverity,
-  ProposedFeatures,
-  InitializeParams,
-  DidChangeConfigurationNotification,
-  CompletionItem,
-  CompletionItemKind,
-  TextDocumentPositionParams
-} from 'vscode-languageserver';
+	CompletionItem,
+	CompletionItemKind,
+	createConnection,
+	Diagnostic,
+	DiagnosticSeverity,
+	DidChangeConfigurationNotification,
+	InitializeParams,
+	ProposedFeatures,
+	TextDocument,
+	TextDocumentPositionParams,
+	TextDocuments,
+} from "vscode-languageserver";
 
 // Create a connection for the server. The connection uses Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
@@ -322,45 +321,48 @@ let hasWorkspaceFolderCapability: boolean = false;
 let hasDiagnosticRelatedInformationCapability: boolean = false;
 
 connection.onInitialize((params: InitializeParams) => {
-  let capabilities = params.capabilities;
+	let capabilities = params.capabilities;
 
-  // Does the client support the `workspace/configuration` request?
-  // If not, we will fall back using global settings
-  hasConfigurationCapability =
-    capabilities.workspace && !!capabilities.workspace.configuration;
-  hasWorkspaceFolderCapability =
-    capabilities.workspace && !!capabilities.workspace.workspaceFolders;
-  hasDiagnosticRelatedInformationCapability =
-    capabilities.textDocument &&
-    capabilities.textDocument.publishDiagnostics &&
-    capabilities.textDocument.publishDiagnostics.relatedInformation;
+	// Does the client support the `workspace/configuration` request?
+	// If not, we will fall back using global settings
+	hasConfigurationCapability =
+		capabilities.workspace && !!capabilities.workspace.configuration;
+	hasWorkspaceFolderCapability =
+		capabilities.workspace && !!capabilities.workspace.workspaceFolders;
+	hasDiagnosticRelatedInformationCapability =
+		capabilities.textDocument &&
+		capabilities.textDocument.publishDiagnostics &&
+		capabilities.textDocument.publishDiagnostics.relatedInformation;
 
-  return {
-    capabilities: {
-      textDocumentSync: documents.syncKind,
-      // Tell the client that the server supports code completion
-      completionProvider: {
-        resolveProvider: true
-      }
-    }
-  };
+	return {
+		capabilities: {
+			textDocumentSync: documents.syncKind,
+			// Tell the client that the server supports code completion
+			completionProvider: {
+				resolveProvider: true,
+			},
+		},
+	};
 });
 
 connection.onInitialized(() => {
-  if (hasConfigurationCapability) {
-    // Register for all configuration changes.
-    connection.client.register(DidChangeConfigurationNotification.type, undefined);
-  }
-  if (hasWorkspaceFolderCapability) {
-    connection.workspace.onDidChangeWorkspaceFolders(_event => {
-      connection.console.log('Workspace folder change event received.');
-    });
-  }
+	if (hasConfigurationCapability) {
+		// Register for all configuration changes.
+		connection.client.register(
+			DidChangeConfigurationNotification.type,
+			undefined,
+		);
+	}
+	if (hasWorkspaceFolderCapability) {
+		connection.workspace.onDidChangeWorkspaceFolders((_event) => {
+			connection.console.log("Workspace folder change event received.");
+		});
+	}
 });
 
 // The example settings
 interface ExampleSettings {
-  maxNumberOfProblems: number;
+	maxNumberOfProblems: number;
 }
 
 // The global settings, used when the `workspace/configuration` request is not supported by the client.
@@ -372,133 +374,134 @@ let globalSettings: ExampleSettings = defaultSettings;
 // Cache the settings of all open documents
 let documentSettings: Map<string, Thenable<ExampleSettings>> = new Map();
 
-connection.onDidChangeConfiguration(change => {
-  if (hasConfigurationCapability) {
-    // Reset all cached document settings
-    documentSettings.clear();
-  } else {
-    globalSettings = <ExampleSettings>(
-      (change.settings.languageServerExample || defaultSettings)
-    );
-  }
+connection.onDidChangeConfiguration((change) => {
+	if (hasConfigurationCapability) {
+		// Reset all cached document settings
+		documentSettings.clear();
+	} else {
+		globalSettings = <ExampleSettings>(
+			(change.settings.languageServerExample || defaultSettings)
+		);
+	}
 
-  // Revalidate all open text documents
-  documents.all().forEach(validateTextDocument);
+	// Revalidate all open text documents
+	documents.all().forEach(validateTextDocument);
 });
 
 function getDocumentSettings(resource: string): Thenable<ExampleSettings> {
-  if (!hasConfigurationCapability) {
-    return Promise.resolve(globalSettings);
-  }
-  let result = documentSettings.get(resource);
-  if (!result) {
-    result = connection.workspace.getConfiguration({
-      scopeUri: resource,
-      section: 'languageServerExample'
-    });
-    documentSettings.set(resource, result);
-  }
-  return result;
+	if (!hasConfigurationCapability) {
+		return Promise.resolve(globalSettings);
+	}
+	let result = documentSettings.get(resource);
+	if (!result) {
+		result = connection.workspace.getConfiguration({
+			scopeUri: resource,
+			section: "languageServerExample",
+		});
+		documentSettings.set(resource, result);
+	}
+	return result;
 }
 
 // Only keep settings for open documents
-documents.onDidClose(e => {
-  documentSettings.delete(e.document.uri);
+documents.onDidClose((e) => {
+	documentSettings.delete(e.document.uri);
 });
 
 // The content of a text document has changed. This event is emitted
 // when the text document first opened or when its content has changed.
-documents.onDidChangeContent(change => {
-  validateTextDocument(change.document);
+documents.onDidChangeContent((change) => {
+	validateTextDocument(change.document);
 });
 
 async function validateTextDocument(textDocument: TextDocument): Promise<void> {
-  // In this simple example we get the settings for every validate run.
-  let settings = await getDocumentSettings(textDocument.uri);
+	// In this simple example we get the settings for every validate run.
+	let settings = await getDocumentSettings(textDocument.uri);
 
-  // The validator creates diagnostics for all uppercase words length 2 and more
-  let text = textDocument.getText();
-  let pattern = /\b[A-Z]{2,}\b/g;
-  let m: RegExpExecArray;
+	// The validator creates diagnostics for all uppercase words length 2 and more
+	let text = textDocument.getText();
+	let pattern = /\b[A-Z]{2,}\b/g;
+	let m: RegExpExecArray;
 
-  let problems = 0;
-  let diagnostics: Diagnostic[] = [];
-  while ((m = pattern.exec(text)) && problems < settings.maxNumberOfProblems) {
-    problems++;
-    let diagnostic: Diagnostic = {
-      severity: DiagnosticSeverity.Warning,
-      range: {
-        start: textDocument.positionAt(m.index),
-        end: textDocument.positionAt(m.index + m[0].length)
-      },
-      message: `${m[0]} is all uppercase.`,
-      source: 'ex'
-    };
-    if (hasDiagnosticRelatedInformationCapability) {
-      diagnostic.relatedInformation = [
-        {
-          location: {
-            uri: textDocument.uri,
-            range: Object.assign({}, diagnostic.range)
-          },
-          message: 'Spelling matters'
-        },
-        {
-          location: {
-            uri: textDocument.uri,
-            range: Object.assign({}, diagnostic.range)
-          },
-          message: 'Particularly for names'
-        }
-      ];
-    }
-    diagnostics.push(diagnostic);
-  }
+	let problems = 0;
+	let diagnostics: Diagnostic[] = [];
+	while (
+		(m = pattern.exec(text)) &&
+		problems < settings.maxNumberOfProblems
+	) {
+		problems++;
+		let diagnostic: Diagnostic = {
+			severity: DiagnosticSeverity.Warning,
+			range: {
+				start: textDocument.positionAt(m.index),
+				end: textDocument.positionAt(m.index + m[0].length),
+			},
+			message: `${m[0]} is all uppercase.`,
+			source: "ex",
+		};
+		if (hasDiagnosticRelatedInformationCapability) {
+			diagnostic.relatedInformation = [
+				{
+					location: {
+						uri: textDocument.uri,
+						range: Object.assign({}, diagnostic.range),
+					},
+					message: "Spelling matters",
+				},
+				{
+					location: {
+						uri: textDocument.uri,
+						range: Object.assign({}, diagnostic.range),
+					},
+					message: "Particularly for names",
+				},
+			];
+		}
+		diagnostics.push(diagnostic);
+	}
 
-  // Send the computed diagnostics to VS Code.
-  connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
+	// Send the computed diagnostics to VS Code.
+	connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
 }
 
-connection.onDidChangeWatchedFiles(_change => {
-  // Monitored files have change in VS Code
-  connection.console.log('We received an file change event');
+connection.onDidChangeWatchedFiles((_change) => {
+	// Monitored files have change in VS Code
+	connection.console.log("We received an file change event");
 });
 
 // This handler provides the initial list of the completion items.
 connection.onCompletion(
-  (_textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
-    // The pass parameter contains the position of the text document in
-    // which code complete got requested. For the example we ignore this
-    // info and always provide the same completion items.
-    return [
-      {
-        label: 'TypeScript',
-        kind: CompletionItemKind.Text,
-        data: 1
-      },
-      {
-        label: 'JavaScript',
-        kind: CompletionItemKind.Text,
-        data: 2
-      }
-    ];
-  }
+	(_textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
+		// The pass parameter contains the position of the text document in
+		// which code complete got requested. For the example we ignore this
+		// info and always provide the same completion items.
+		return [
+			{
+				label: "TypeScript",
+				kind: CompletionItemKind.Text,
+				data: 1,
+			},
+			{
+				label: "JavaScript",
+				kind: CompletionItemKind.Text,
+				data: 2,
+			},
+		];
+	},
 );
 
 // This handler resolves additional information for the item selected in
 // the completion list.
-connection.onCompletionResolve(
-  (item: CompletionItem): CompletionItem => {
-    if (item.data === 1) {
-      item.detail = 'TypeScript details';
-      item.documentation = 'TypeScript documentation';
-    } else if (item.data === 2) {
-      item.detail = 'JavaScript details';
-      item.documentation = 'JavaScript documentation';
-    }
-    return item;
-  }
-);
+connection.onCompletionResolve((item: CompletionItem): CompletionItem => {
+	if (item.data === 1) {
+		item.detail = "TypeScript details";
+		item.documentation = "TypeScript documentation";
+	} else if (item.data === 2) {
+		item.detail = "JavaScript details";
+		item.documentation = "JavaScript documentation";
+	}
+	return item;
+});
 
 /*
 connection.onDidOpenTextDocument((params) => {
@@ -590,20 +593,20 @@ documents.onDidChangeContent(async (change) => {
 
 ### Diagnostics Tips and Tricks
 
--   If the start and end positions are the same, VS Code will underline with a
-    squiggle the word at that position.
--   If you want to underline with a squiggle until the end of the line, then set
-    the character of the end position to Number.MAX_VALUE.
+- If the start and end positions are the same, VS Code will underline with a
+  squiggle the word at that position.
+- If you want to underline with a squiggle until the end of the line, then set
+  the character of the end position to Number.MAX_VALUE.
 
 To run the Language Server, do the following:
 
--   press `kb(workbench.action.tasks.build)` to start the build task. The task
-    compiles both the client and the server.
--   open the debug viewlet, select the `Launch Client` launch configuration and
-    press the `Start Debugging` button to launch an additional
-    `Extension Development Host` instance of VS Code that executes the extension
-    code.
--   Create a test.txt file in the root folder and paste the following content:
+- press `kb(workbench.action.tasks.build)` to start the build task. The task
+  compiles both the client and the server.
+- open the debug viewlet, select the `Launch Client` launch configuration and
+  press the `Start Debugging` button to launch an additional
+  `Extension Development Host` instance of VS Code that executes the extension
+  code.
+- Create a test.txt file in the root folder and paste the following content:
 
 ```bash
 TypeScript lets you write JavaScript the way you really want to.
@@ -662,18 +665,18 @@ server side to read these settings from the client:
 
 ```typescript
 function getDocumentSettings(resource: string): Thenable<ExampleSettings> {
-  if (!hasConfigurationCapability) {
-    return Promise.resolve(globalSettings);
-  }
-  let result = documentSettings.get(resource);
-  if (!result) {
-    result = connection.workspace.getConfiguration({
-      scopeUri: resource,
-      section: 'languageServerExample'
-    });
-    documentSettings.set(resource, result);
-  }
-  return result;
+	if (!hasConfigurationCapability) {
+		return Promise.resolve(globalSettings);
+	}
+	let result = documentSettings.get(resource);
+	if (!result) {
+		result = connection.workspace.getConfiguration({
+			scopeUri: resource,
+			section: "languageServerExample",
+		});
+		documentSettings.set(resource, result);
+	}
+	return result;
 }
 ```
 
@@ -685,50 +688,53 @@ honor a `maxNumberOfProblems` variable:
 
 ```typescript
 async function validateTextDocument(textDocument: TextDocument): Promise<void> {
-  // In this simple example we get the settings for every validate run.
-  let settings = await getDocumentSettings(textDocument.uri);
+	// In this simple example we get the settings for every validate run.
+	let settings = await getDocumentSettings(textDocument.uri);
 
-  // The validator creates diagnostics for all uppercase words length 2 and more
-  let text = textDocument.getText();
-  let pattern = /\b[A-Z]{2,}\b/g;
-  let m: RegExpExecArray;
+	// The validator creates diagnostics for all uppercase words length 2 and more
+	let text = textDocument.getText();
+	let pattern = /\b[A-Z]{2,}\b/g;
+	let m: RegExpExecArray;
 
-  let problems = 0;
-  let diagnostics: Diagnostic[] = [];
-  while ((m = pattern.exec(text)) && problems < settings.maxNumberOfProblems) {
-    problems++;
-    let diagnostic: Diagnostic = {
-      severity: DiagnosticSeverity.Warning,
-      range: {
-        start: textDocument.positionAt(m.index),
-        end: textDocument.positionAt(m.index + m[0].length)
-      },
-      message: `${m[0]} is all uppercase.`,
-      source: 'ex'
-    };
-    if (hasDiagnosticRelatedInformationCapability) {
-      diagnostic.relatedInformation = [
-        {
-          location: {
-            uri: textDocument.uri,
-            range: Object.assign({}, diagnostic.range)
-          },
-          message: 'Spelling matters'
-        },
-        {
-          location: {
-            uri: textDocument.uri,
-            range: Object.assign({}, diagnostic.range)
-          },
-          message: 'Particularly for names'
-        }
-      ];
-    }
-    diagnostics.push(diagnostic);
-  }
+	let problems = 0;
+	let diagnostics: Diagnostic[] = [];
+	while (
+		(m = pattern.exec(text)) &&
+		problems < settings.maxNumberOfProblems
+	) {
+		problems++;
+		let diagnostic: Diagnostic = {
+			severity: DiagnosticSeverity.Warning,
+			range: {
+				start: textDocument.positionAt(m.index),
+				end: textDocument.positionAt(m.index + m[0].length),
+			},
+			message: `${m[0]} is all uppercase.`,
+			source: "ex",
+		};
+		if (hasDiagnosticRelatedInformationCapability) {
+			diagnostic.relatedInformation = [
+				{
+					location: {
+						uri: textDocument.uri,
+						range: Object.assign({}, diagnostic.range),
+					},
+					message: "Spelling matters",
+				},
+				{
+					location: {
+						uri: textDocument.uri,
+						range: Object.assign({}, diagnostic.range),
+					},
+					message: "Particularly for names",
+				},
+			];
+		}
+		diagnostics.push(diagnostic);
+	}
 
-  // Send the computed diagnostics to VS Code.
-  connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
+	// Send the computed diagnostics to VS Code.
+	connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
 }
 ```
 
@@ -737,18 +743,18 @@ handler for configuration changes to the connection. The corresponding code
 looks like this:
 
 ```typescript
-connection.onDidChangeConfiguration(change => {
-  if (hasConfigurationCapability) {
-    // Reset all cached document settings
-    documentSettings.clear();
-  } else {
-    globalSettings = <ExampleSettings>(
-      (change.settings.languageServerExample || defaultSettings)
-    );
-  }
+connection.onDidChangeConfiguration((change) => {
+	if (hasConfigurationCapability) {
+		// Reset all cached document settings
+		documentSettings.clear();
+	} else {
+		globalSettings = <ExampleSettings>(
+			(change.settings.languageServerExample || defaultSettings)
+		);
+	}
 
-  // Revalidate all open text documents
-  documents.all().forEach(validateTextDocument);
+	// Revalidate all open text documents
+	documents.all().forEach(validateTextDocument);
 });
 ```
 
@@ -771,39 +777,37 @@ It proposes the two words 'TypeScript' and 'JavaScript'.
 ```typescript
 // This handler provides the initial list of the completion items.
 connection.onCompletion(
-  (_textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
-    // The pass parameter contains the position of the text document in
-    // which code complete got requested. For the example we ignore this
-    // info and always provide the same completion items.
-    return [
-      {
-        label: 'TypeScript',
-        kind: CompletionItemKind.Text,
-        data: 1
-      },
-      {
-        label: 'JavaScript',
-        kind: CompletionItemKind.Text,
-        data: 2
-      }
-    ];
-  }
+	(_textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
+		// The pass parameter contains the position of the text document in
+		// which code complete got requested. For the example we ignore this
+		// info and always provide the same completion items.
+		return [
+			{
+				label: "TypeScript",
+				kind: CompletionItemKind.Text,
+				data: 1,
+			},
+			{
+				label: "JavaScript",
+				kind: CompletionItemKind.Text,
+				data: 2,
+			},
+		];
+	},
 );
 
 // This handler resolves additional information for the item selected in
 // the completion list.
-connection.onCompletionResolve(
-  (item: CompletionItem): CompletionItem => {
-    if (item.data === 1) {
-      (item.detail = 'TypeScript details'),
-        (item.documentation = 'TypeScript documentation');
-    } else if (item.data === 2) {
-      (item.detail = 'JavaScript details'),
-        (item.documentation = 'JavaScript documentation');
-    }
-    return item;
-  }
-);
+connection.onCompletionResolve((item: CompletionItem): CompletionItem => {
+	if (item.data === 1) {
+		(item.detail = "TypeScript details"),
+			(item.documentation = "TypeScript documentation");
+	} else if (item.data === 2) {
+		(item.detail = "JavaScript details"),
+			(item.documentation = "JavaScript documentation");
+	}
+	return item;
+});
 ```
 
 The `data` fields is used to uniquely identify a completion item in the resolve
@@ -839,24 +843,24 @@ To create a high-quality Language Server, we need to build a good test suite
 covering its functionalities. There are two common ways of testing Language
 Servers:
 
--   Unit Test: This is useful if you want to test specific functionalities in
-    Language Servers by mocking up all the information being sent to it. VS
-    Code's [HTML](HTTPS://github.com/Microsoft/vscode-html-languageservice) /
-    [CSS](HTTPS://github.com/Microsoft/vscode-css-languageservice) /
-    [JSON](HTTPS://github.com/Microsoft/vscode-json-languageservice) Language
-    Servers take this approach to testing. The LSP npm modules itself use the
-    approach. See
-    [here](HTTPS://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/test/connection.test.ts)
-    for some unit test written using the npm protocol module.
--   End-to-End Test: This is similar to
-    [VS Code extension test](/api/working-with-extensions/testing-extension).
-    The benefit of this approach is that it runs the test by instantiating a VS
-    Code instance with a workspace, opening the file, activating the Language
-    Client / Server and running [VS Code commands](/api/references/commands).
-    This approach is superior if you have files, settings or dependencies (such
-    as `node_modules`) which are hard or impossible to mock. The popular
-    [Python](HTTPS://github.com/Microsoft/vscode-python) extension takes this
-    approach to testing.
+- Unit Test: This is useful if you want to test specific functionalities in
+  Language Servers by mocking up all the information being sent to it. VS Code's
+  [HTML](HTTPS://github.com/Microsoft/vscode-html-languageservice) /
+  [CSS](HTTPS://github.com/Microsoft/vscode-css-languageservice) /
+  [JSON](HTTPS://github.com/Microsoft/vscode-json-languageservice) Language
+  Servers take this approach to testing. The LSP npm modules itself use the
+  approach. See
+  [here](HTTPS://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/test/connection.test.ts)
+  for some unit test written using the npm protocol module.
+- End-to-End Test: This is similar to
+  [VS Code extension test](/api/working-with-extensions/testing-extension). The
+  benefit of this approach is that it runs the test by instantiating a VS Code
+  instance with a workspace, opening the file, activating the Language Client /
+  Server and running [VS Code commands](/api/references/commands). This approach
+  is superior if you have files, settings or dependencies (such as
+  `node_modules`) which are hard or impossible to mock. The popular
+  [Python](HTTPS://github.com/Microsoft/vscode-python) extension takes this
+  approach to testing.
 
 It is possible to do Unit Test in any testing framework of your choice. Here we
 describe how to do End-to-End testing for Language Server Extension.
@@ -888,59 +892,63 @@ breakpoints in TypeScript files in `client/src/test` and they will be hit.
 Let's take a look at the `completion.test.ts` file:
 
 ```ts
-import * as vscode from 'vscode';
-import * as assert from 'assert';
-import { getDocUri, activate } from './helper';
+import * as assert from "assert";
+import * as vscode from "vscode";
 
-describe('Should do completion', () => {
-  const docUri = getDocUri('completion.txt');
+import { activate, getDocUri } from "./helper";
 
-  it('Completes JS/TS in txt file', async () => {
-    await testCompletion(docUri, new vscode.Position(0, 0), {
-      items: [
-        { label: 'JavaScript', kind: vscode.CompletionItemKind.Text },
-        { label: 'TypeScript', kind: vscode.CompletionItemKind.Text }
-      ]
-    });
-  });
+describe("Should do completion", () => {
+	const docUri = getDocUri("completion.txt");
+
+	it("Completes JS/TS in txt file", async () => {
+		await testCompletion(docUri, new vscode.Position(0, 0), {
+			items: [
+				{ label: "JavaScript", kind: vscode.CompletionItemKind.Text },
+				{ label: "TypeScript", kind: vscode.CompletionItemKind.Text },
+			],
+		});
+	});
 });
 
 async function testCompletion(
-  docUri: vscode.Uri,
-  position: vscode.Position,
-  expectedCompletionList: vscode.CompletionList
+	docUri: vscode.Uri,
+	position: vscode.Position,
+	expectedCompletionList: vscode.CompletionList,
 ) {
-  await activate(docUri);
+	await activate(docUri);
 
-  // Executing the command `vscode.executeCompletionItemProvider` to simulate triggering completion
-  const actualCompletionList = (await vscode.commands.executeCommand(
-    'vscode.executeCompletionItemProvider',
-    docUri,
-    position
-  )) as vscode.CompletionList;
+	// Executing the command `vscode.executeCompletionItemProvider` to simulate triggering completion
+	const actualCompletionList = (await vscode.commands.executeCommand(
+		"vscode.executeCompletionItemProvider",
+		docUri,
+		position,
+	)) as vscode.CompletionList;
 
-  assert.equal(actualCompletionList.items.length, expectedCompletionList.items.length);
-  expectedCompletionList.items.forEach((expectedItem, i) => {
-    const actualItem = actualCompletionList.items[i];
-    assert.equal(actualItem.label, expectedItem.label);
-    assert.equal(actualItem.kind, expectedItem.kind);
-  });
+	assert.equal(
+		actualCompletionList.items.length,
+		expectedCompletionList.items.length,
+	);
+	expectedCompletionList.items.forEach((expectedItem, i) => {
+		const actualItem = actualCompletionList.items[i];
+		assert.equal(actualItem.label, expectedItem.label);
+		assert.equal(actualItem.kind, expectedItem.kind);
+	});
 }
 ```
 
 In this test, we:
 
--   Activate the extension.
--   Run the command `vscode.executeCompletionItemProvider` with a URI and a
-    position to simulate completion trigger.
--   Assert the returned completion items against our expected completion items.
+- Activate the extension.
+- Run the command `vscode.executeCompletionItemProvider` with a URI and a
+  position to simulate completion trigger.
+- Assert the returned completion items against our expected completion items.
 
 Let's dive a bit deeper into the `activate(docURI)` function. It is defined in
 `client/src/test/helper.ts`:
 
 ```ts
-import * as vscode from 'vscode';
-import * as path from 'path';
+import * as path from "path";
+import * as vscode from "vscode";
 
 export let doc: vscode.TextDocument;
 export let editor: vscode.TextEditor;
@@ -951,29 +959,29 @@ export let platformEol: string;
  * Activates the vscode.lsp-sample extension
  */
 export async function activate(docUri: vscode.Uri) {
-  // The extensionId is `publisher.name` from package.json
-  const ext = vscode.extensions.getExtension('vscode.lsp-sample');
-  await ext.activate();
-  try {
-    doc = await vscode.workspace.openTextDocument(docUri);
-    editor = await vscode.window.showTextDocument(doc);
-    await sleep(2000); // Wait for server activation
-  } catch (e) {
-    console.error(e);
-  }
+	// The extensionId is `publisher.name` from package.json
+	const ext = vscode.extensions.getExtension("vscode.lsp-sample");
+	await ext.activate();
+	try {
+		doc = await vscode.workspace.openTextDocument(docUri);
+		editor = await vscode.window.showTextDocument(doc);
+		await sleep(2000); // Wait for server activation
+	} catch (e) {
+		console.error(e);
+	}
 }
 
 async function sleep(ms: number) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+	return new Promise((resolve) => setTimeout(resolve, ms));
 }
 ```
 
 In the activation part, we:
 
--   Get the extension using the `{publisher.name}.{extensionId}`, as defined in
-    `package.json`.
--   Open the specified document, and show it in the active text editor.
--   Sleep for 2 seconds, so we are sure the Language Server is instantiated.
+- Get the extension using the `{publisher.name}.{extensionId}`, as defined in
+  `package.json`.
+- Open the specified document, and show it in the active text editor.
+- Sleep for 2 seconds, so we are sure the Language Server is instantiated.
 
 After the preparation, we can run the
 [VS Code Commands](/api/references/commands) corresponding to each language
@@ -986,9 +994,9 @@ implemented. Check it out at `client/src/test/diagnostics.test.ts`.
 
 So far, this guide covered:
 
--   A brief overview of Language Server and Language Server Protocol.
--   Architecture of a Language Server extension in VS Code
--   The **lsp-sample** extension, and how to develop/debug/inspect/test it.
+- A brief overview of Language Server and Language Server Protocol.
+- Architecture of a Language Server extension in VS Code
+- The **lsp-sample** extension, and how to develop/debug/inspect/test it.
 
 There are some more advanced topics we could not fit in to this guide. We will
 include links to these resources for further studying of Language Server
@@ -999,30 +1007,29 @@ development.
 The following language features are currently supported in a language server
 along with code completions:
 
--   _Document Highlights_: highlights all 'equal' symbols in a text document.
--   _Hover_: provides hover information for a symbol selected in a text
-    document.
--   _Signature Help_: provides signature help for a symbol selected in a text
-    document.
--   _Goto Definition_: provides go to definition support for a symbol selected
-    in a text document.
--   _Goto Type Definition_: provides go to type/interface definition support for
-    a symbol selected in a text document.
--   _Goto Implementation_: provides go to implementation definition support for
-    a symbol selected in a text document.
--   _Find References_: finds all project-wide references for a symbol selected
-    in a text document.
--   _List Document Symbols_: lists all symbols defined in a text document.
--   _List Workspace Symbols_: lists all project-wide symbols.
--   _Code Actions_: compute commands to run (typically beautify/refactor) for a
-    given text document and range.
--   _CodeLens_: compute CodeLens statistics for a given text document.
--   _Document Formatting_: this includes formatting of whole documents, document
-    ranges and formatting on type.
--   _Rename_: project-wide rename of a symbol.
--   _Document Links_: compute and resolve links inside a document.
--   _Document Colors_: compute and resolve colors inside a document to provide
-    color picker in editor.
+- _Document Highlights_: highlights all 'equal' symbols in a text document.
+- _Hover_: provides hover information for a symbol selected in a text document.
+- _Signature Help_: provides signature help for a symbol selected in a text
+  document.
+- _Goto Definition_: provides go to definition support for a symbol selected in
+  a text document.
+- _Goto Type Definition_: provides go to type/interface definition support for a
+  symbol selected in a text document.
+- _Goto Implementation_: provides go to implementation definition support for a
+  symbol selected in a text document.
+- _Find References_: finds all project-wide references for a symbol selected in
+  a text document.
+- _List Document Symbols_: lists all symbols defined in a text document.
+- _List Workspace Symbols_: lists all project-wide symbols.
+- _Code Actions_: compute commands to run (typically beautify/refactor) for a
+  given text document and range.
+- _CodeLens_: compute CodeLens statistics for a given text document.
+- _Document Formatting_: this includes formatting of whole documents, document
+  ranges and formatting on type.
+- _Rename_: project-wide rename of a symbol.
+- _Document Links_: compute and resolve links inside a document.
+- _Document Colors_: compute and resolve colors inside a document to provide
+  color picker in editor.
 
 The
 [Programatic Language Features](/api/language-extensions/programmatic-language-features)
@@ -1038,23 +1045,21 @@ language server.
 
 This has two drawbacks:
 
--   Lots of data transfer since the whole content of a text document is sent to
-    the server repeatedly.
--   If an existing language library is used, such libraries usually support
-    incremental document updates to avoid unnecessary parsing and abstract
-    syntax tree creation.
+- Lots of data transfer since the whole content of a text document is sent to
+  the server repeatedly.
+- If an existing language library is used, such libraries usually support
+  incremental document updates to avoid unnecessary parsing and abstract syntax
+  tree creation.
 
 The protocol therefore supports incremental document synchronization as well.
 
 To make use of incremental document synchronization, a server needs to install
 three notification handlers:
 
--   _onDidOpenTextDocument_: is called when a text document is opened in VS
-    Code.
--   _onDidChangeTextDocument_: is called when the content of a text document
-    changes in VS Code.
--   _onDidCloseTextDocument_: is called when a text document is closed in VS
-    Code.
+- _onDidOpenTextDocument_: is called when a text document is opened in VS Code.
+- _onDidChangeTextDocument_: is called when the content of a text document
+  changes in VS Code.
+- _onDidCloseTextDocument_: is called when a text document is closed in VS Code.
 
 Below is a code snippet that illustrates how to hook these notification handlers
 on a connection and how to return the right capability on initialize:

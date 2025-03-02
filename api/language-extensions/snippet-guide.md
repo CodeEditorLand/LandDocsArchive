@@ -22,11 +22,11 @@ topic contains all information for creating snippets. This guide / sample just
 shows how you can turn your own snippets into an extension for sharing. The
 suggested workflow is:
 
--   Create and test your snippets using `Preferences: Configure User Snippets`
-    command
--   Once you are happy with the snippets, copy the whole JSON file into an
-    extension folder, such as `snippets.json`
--   Add the following snippet contribution to your `package.json`
+- Create and test your snippets using `Preferences: Configure User Snippets`
+  command
+- Once you are happy with the snippets, copy the whole JSON file into an
+  extension folder, such as `snippets.json`
+- Add the following snippet contribution to your `package.json`
 
 ```json
 {

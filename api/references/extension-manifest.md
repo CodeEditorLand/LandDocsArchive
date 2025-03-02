@@ -184,42 +184,42 @@ Due to security concerns, we only allow badges from trusted services.
 
 We allow badges from the following URL prefixes:
 
--   api.bintray.com
--   api.travis-ci.com
--   api.travis-ci.org
--   app.fossa.io
--   badge.fury.io
--   badge.waffle.io
--   badgen.net
--   badges.frapsoft.com
--   badges.gitter.im
--   badges.greenkeeper.io
--   cdn.travis-ci.com
--   cdn.travis-ci.org
--   ci.appveyor.com
--   cla.opensource.microsoft.com
--   codacy.com
--   codeclimate.com
--   codecov.io
--   coveralls.io
--   david-dm.org
--   deepscan.io
--   gemnasium.com
--   githost.io
--   gitlab.com
--   godoc.org
--   goreportcard.com
--   img.shields.io
--   isitmaintained.com
--   marketplace.visualstudio.com
--   nodesecurity.io
--   opencollective.com
--   snyk.io
--   travis-ci.com
--   travis-ci.org
--   vsmarketplacebadge.apphb.com
--   www.bithound.io
--   www.versioneye.com
+- api.bintray.com
+- api.travis-ci.com
+- api.travis-ci.org
+- app.fossa.io
+- badge.fury.io
+- badge.waffle.io
+- badgen.net
+- badges.frapsoft.com
+- badges.gitter.im
+- badges.greenkeeper.io
+- cdn.travis-ci.com
+- cdn.travis-ci.org
+- ci.appveyor.com
+- cla.opensource.microsoft.com
+- codacy.com
+- codeclimate.com
+- codecov.io
+- coveralls.io
+- david-dm.org
+- deepscan.io
+- gemnasium.com
+- githost.io
+- gitlab.com
+- godoc.org
+- goreportcard.com
+- img.shields.io
+- isitmaintained.com
+- marketplace.visualstudio.com
+- nodesecurity.io
+- opencollective.com
+- snyk.io
+- travis-ci.com
+- travis-ci.org
+- vsmarketplacebadge.apphb.com
+- www.bithound.io
+- www.versioneye.com
 
 If you have other badges you would like to use, please open a Github
 [issue](HTTPS://github.com/Microsoft/vscode/issues) and we're happy to take a
@@ -360,27 +360,27 @@ There are several Node.js modules available on npmjs to help with writing VS
 Code extensions. You can include these in your extension's `dependencies`
 section.
 
--   [vscode-nls](HTTPS://www.npmjs.com/package/vscode-nls) - Support for
-    externalization and localization.
--   [vscode-uri](HTTPS://www.npmjs.com/package/vscode-uri) - The URI
-    implementation used by VS Code and its extensions.
--   [jsonc-parser](HTTPS://www.npmjs.com/package/jsonc-parser) - A scanner and
-    fault tolerant parser to process JSON with or without comments.
--   [request-light](HTTPS://www.npmjs.com/package/request-light) - A light
-    weight Node.js request library with proxy support
--   [vscode-extension-telemetry](HTTPS://www.npmjs.com/package/vscode-extension-telemetry) -
-    Consistent telemetry reporting for VS Code extensions.
--   [vscode-languageclient](HTTPS://www.npmjs.com/package/vscode-languageclient) -
-    Easily integrate language servers adhering to the
-    [language server protocol](HTTPS://microsoft.github.io/language-server-protocol).
+- [vscode-nls](HTTPS://www.npmjs.com/package/vscode-nls) - Support for
+  externalization and localization.
+- [vscode-uri](HTTPS://www.npmjs.com/package/vscode-uri) - The URI
+  implementation used by VS Code and its extensions.
+- [jsonc-parser](HTTPS://www.npmjs.com/package/jsonc-parser) - A scanner and
+  fault tolerant parser to process JSON with or without comments.
+- [request-light](HTTPS://www.npmjs.com/package/request-light) - A light weight
+  Node.js request library with proxy support
+- [vscode-extension-telemetry](HTTPS://www.npmjs.com/package/vscode-extension-telemetry) -
+  Consistent telemetry reporting for VS Code extensions.
+- [vscode-languageclient](HTTPS://www.npmjs.com/package/vscode-languageclient) -
+  Easily integrate language servers adhering to the
+  [language server protocol](HTTPS://microsoft.github.io/language-server-protocol).
 
 ## Next steps
 
 To learn more about VS Code extensibility model, try these topic:
 
--   [Contribution Points](/api/references/contribution-points) - VS Code
-    contribution points reference
--   [Activation Events](/api/references/activation-events) - VS Code activation
-    events reference
--   [Extension Marketplace](/docs/editor/extension-gallery) - Read more about
-    the VS Code Extension Marketplace
+- [Contribution Points](/api/references/contribution-points) - VS Code
+  contribution points reference
+- [Activation Events](/api/references/activation-events) - VS Code activation
+  events reference
+- [Extension Marketplace](/docs/editor/extension-gallery) - Read more about the
+  VS Code Extension Marketplace

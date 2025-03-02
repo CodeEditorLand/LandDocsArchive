@@ -3541,7 +3541,8 @@ opening and closing brackets.</p>
 </div>
 
 <a name="CharacterPair"></a><span class="ts" id=1999 data-target="#details-1999" data-toggle="collapse"><span class="ident">CharacterPair</span><span>:
-</span>[<a class="type-intrinsic">string</a>, <a class="type-intrinsic">string</a>]</span>
+</span>[<a class="type-intrinsic">string</a>, <a
+class="type-intrinsic">string</a>]</span>
 
 ### <a name="Clipboard"></a><span class="code-item" id=1600>Clipboard</span>
 
@@ -7622,11 +7623,11 @@ the copy operation.</p>
 
 <a name="FileSystemProvider.readDirectory"></a><span class="ts" id=1523 data-target="#details-1523" data-toggle="collapse"><span class="ident">readDirectory</span><span>(</span><span class="ident">uri</span><span>:
 </span><a class="type-ref" href="#Uri">Uri</a><span>)</span><span>: </span>[<a
-class="type-intrinsic">string</a>, <a
-class="type-ref" href="#FileType">FileType</a>][] &#124;
+class="type-intrinsic">string</a>, <a class="type-ref"
+href="#FileType">FileType</a>][] &#124;
 <a class="type-ref" href="#Thenable">Thenable</a>&lt;[<a
-class="type-intrinsic">string</a>, <a
-class="type-ref" href="#FileType">FileType</a>][]&gt;</span>
+class="type-intrinsic">string</a>, <a class="type-ref"
+href="#FileType">FileType</a>][]&gt;</span>
 
 <div class="details collapse" id="details-1523">
 <div class="comment"><p>Retrieve all entries of a <a href="#FileType.Directory">directory</a>.</p>
@@ -8673,7 +8674,8 @@ UI will first fire an <a href="#QuickInput.onDidHide">QuickInput.onDidHide</a> e
 </div>
 
 <a name="InputBoxOptions.valueSelection"></a><span class="ts" id=531 data-target="#details-531" data-toggle="collapse"><span class="ident">valueSelection</span><span>?</span><span>:
-</span>[<a class="type-intrinsic">number</a>, <a class="type-intrinsic">number</a>]</span>
+</span>[<a class="type-intrinsic">number</a>, <a
+class="type-intrinsic">number</a>]</span>
 
 <div class="details collapse" id="details-531">
 <div class="comment"><p>Selection of the prefilled <a href="#InputBoxOptions.value"><code>value</code></a>. Defined as tuple of two number where the
@@ -9470,8 +9472,10 @@ have a label and a doc-comment.</p>
 <a name="ParameterInformation.new ParameterInformation"></a><span class="ts" id=904 data-target="#details-904" data-toggle="collapse"><span class="ident">new
 ParameterInformation</span><span>(</span><span class="ident">label</span><span>:
 </span><a class="type-intrinsic">string</a> &#124; [<a
-class="type-intrinsic">number</a>, <a class="type-intrinsic">number</a>], <span class="ident">documentation</span><span>?</span><span>:
-</span><a class="type-intrinsic">string</a> &#124; <a class="type-ref" href="#MarkdownString">MarkdownString</a><span>)</span><span>:
+class="type-intrinsic">number</a>, <a class="type-intrinsic">number</a>],
+<span class="ident">documentation</span><span>?</span><span>:
+</span><a class="type-intrinsic">string</a> &#124;
+<a class="type-ref" href="#MarkdownString">MarkdownString</a><span>)</span><span>:
 </span><a class="type-ref" href="#ParameterInformation">ParameterInformation</a></span>
 
 <div class="details collapse" id="details-904">

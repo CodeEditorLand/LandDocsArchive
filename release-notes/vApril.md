@@ -18,16 +18,16 @@ new features and fixes in April. We hope you enjoy it.
 
 Here is an overview of some of the updates contained in this release:
 
--   Quickly resize panes by double-clicking editor borders
--   Reopen the last closed file using `kb(workbench.action.reopenClosedEditor)`
--   Launch your favorite shell when opening a new Terminal from the Explorer or
-    Command Palette
+- Quickly resize panes by double-clicking editor borders
+- Reopen the last closed file using `kb(workbench.action.reopenClosedEditor)`
+- Launch your favorite shell when opening a new Terminal from the Explorer or
+  Command Palette
 
 Extension authors will be especially happy with these updates:
 
--   Language Server protocol 2.0 is now consistent with core VS Code API
--   Automated test support for authoring Debug Adapters
--   New APIs for working with folders and JSON files
+- Language Server protocol 2.0 is now consistent with core VS Code API
+- Automated test support for authoring Debug Adapters
+- New APIs for working with folders and JSON files
 
 Downloads:
 [`Windows`](HTTPS://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/VSCodeSetup-stable.exe)
@@ -66,16 +66,16 @@ active file in the Explorer.
 You can now double-click on some resize borders (sashes) in the workbench to
 quickly resize them:
 
--   Double click on the Explorer resize border to size the sidebar to show file
-    paths without being trimmed.
--   Double clicking the resize border of other Views (Search, Git, Debug) will
-    cause the sidebar to shrink to its minimum width.
--   If you have multiple editors open, double clicking the resize border between
-    them will resize the open editors to equal width.
--   Double clicking the resize border of the side by side diff editor will
-    resize the diffs to equal width.
--   Double clicking the resize border of the lower **OUTPUT**/**DEBUG CONSOLE**
-    panel will resize the panel to its minimum height.
+- Double click on the Explorer resize border to size the sidebar to show file
+  paths without being trimmed.
+- Double clicking the resize border of other Views (Search, Git, Debug) will
+  cause the sidebar to shrink to its minimum width.
+- If you have multiple editors open, double clicking the resize border between
+  them will resize the open editors to equal width.
+- Double clicking the resize border of the side by side diff editor will resize
+  the diffs to equal width.
+- Double clicking the resize border of the lower **OUTPUT**/**DEBUG CONSOLE**
+  panel will resize the panel to its minimum height.
 
 ### Reopen closed file command
 
@@ -239,9 +239,9 @@ completion support that requires a database lookup, or you want validation that
 cannot be expressed by a regular expression. To implement your own completion,
 validation, and hover support, you can use the regular VS Code APIs. To make
 this easier, we moved our JSON scanner and parsers to a node-module,
-[`jsonc-parser`](HTTPS://www.npmjs.com/package/jsonc-parser), that you can reuse.
-You can see this module in action with the dependency completion support for
-`package.json` and `bower.json` that is now part of the
+[`jsonc-parser`](HTTPS://www.npmjs.com/package/jsonc-parser), that you can
+reuse. You can see this module in action with the dependency completion support
+for `package.json` and `bower.json` that is now part of the
 [`JavaScript extension`](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/javascript)
 and for `project.json` soon to be part of the
 [`C# extension`](HTTPS://github.com/OmniSharp/omnisharp-vscode/).
@@ -263,9 +263,9 @@ The source for this module lives in the GitHub repository
 
 You can find examples of how to use the module here:
 
--   [`Node Debug`](HTTPS://github.com/Microsoft/vscode-node-debug/blob/master/src/tests/adapter.test.ts)
--   [`Mono Debug`](HTTPS://github.com/Microsoft/vscode-mono-debug/blob/master/tests/adapter.test.ts)
--   [`Mock Debug`](HTTPS://github.com/Microsoft/vscode-mock-debug/blob/master/src/tests/adapter.test.ts)
+- [`Node Debug`](HTTPS://github.com/Microsoft/vscode-node-debug/blob/master/src/tests/adapter.test.ts)
+- [`Mono Debug`](HTTPS://github.com/Microsoft/vscode-mono-debug/blob/master/tests/adapter.test.ts)
+- [`Mock Debug`](HTTPS://github.com/Microsoft/vscode-mock-debug/blob/master/src/tests/adapter.test.ts)
 
 ## Electron Shell
 
@@ -276,44 +276,44 @@ We updated the Electron shell to 0.37.6.
 Version 2.x of the
 [`language server protocol`](HTTPS://microsoft.github.io/language-server-protocol)
 was released together with a corresponding
-[`client library`](HTTPS://github.com/Microsoft/vscode-languageserver-node) to be
-used in extensions and a
+[`client library`](HTTPS://github.com/Microsoft/vscode-languageserver-node) to
+be used in extensions and a
 [`server library`](HTTPS://github.com/Microsoft/vscode-languageserver-node) for
 Node.js.
 
 The major changes are:
 
--   Alignment of the protocol with the VS Code extension API.
--   Consistent support for language identifiers. This means that the language ID
-    is passed to the server via the open notification.
--   Support for version numbers on documents.
--   Text document save notifications.
--   Support for request cancellation.
+- Alignment of the protocol with the VS Code extension API.
+- Consistent support for language identifiers. This means that the language ID
+  is passed to the server via the open notification.
+- Support for version numbers on documents.
+- Text document save notifications.
+- Support for request cancellation.
 
 ## Bug Fixes
 
 This release has a number of notable bug fixes.
 
--   [`3928`](HTTPS://github.com/Microsoft/vscode/issues/3928): VS Code corrupts
-    multiline environment variables
--   [`4426`](HTTPS://github.com/Microsoft/vscode/issues/4426): Include CLI in
-    Linux zip archive and support custom install locations
--   [`4478`](HTTPS://github.com/Microsoft/vscode/issues/4478): "Open in Terminal"
-    not working on Fedora
--   [`4691`](HTTPS://github.com/Microsoft/vscode/issues/4691): Command palette's
-    camel case matching does not work for non ASCII characters
--   [`4679`](HTTPS://github.com/Microsoft/vscode/issues/4679): Don't localize
-    command names on the command palette
--   [`5260`](HTTPS://github.com/Microsoft/vscode/issues/5260): Use proper font
-    family for East Asian languages (CJK)
--   [`4400`](HTTPS://github.com/Microsoft/vscode/issues/4400): Add update
-    notifications for Linux
--   [`1796`](HTTPS://github.com/Microsoft/vscode/issues/1796): HTTPS
-    Authentication not working on Linux
--   [`6281`](HTTPS://github.com/Microsoft/vscode/issues/6281): Edits fail to
-    validate ranges correctly before applying
--   [`6304`](HTTPS://github.com/Microsoft/vscode/issues/6304): Debug: continue
-    action is broken when target app has multiple threads
+- [`3928`](HTTPS://github.com/Microsoft/vscode/issues/3928): VS Code corrupts
+  multiline environment variables
+- [`4426`](HTTPS://github.com/Microsoft/vscode/issues/4426): Include CLI in
+  Linux zip archive and support custom install locations
+- [`4478`](HTTPS://github.com/Microsoft/vscode/issues/4478): "Open in Terminal"
+  not working on Fedora
+- [`4691`](HTTPS://github.com/Microsoft/vscode/issues/4691): Command palette's
+  camel case matching does not work for non ASCII characters
+- [`4679`](HTTPS://github.com/Microsoft/vscode/issues/4679): Don't localize
+  command names on the command palette
+- [`5260`](HTTPS://github.com/Microsoft/vscode/issues/5260): Use proper font
+  family for East Asian languages (CJK)
+- [`4400`](HTTPS://github.com/Microsoft/vscode/issues/4400): Add update
+  notifications for Linux
+- [`1796`](HTTPS://github.com/Microsoft/vscode/issues/1796): HTTPS
+  Authentication not working on Linux
+- [`6281`](HTTPS://github.com/Microsoft/vscode/issues/6281): Edits fail to
+  validate ranges correctly before applying
+- [`6304`](HTTPS://github.com/Microsoft/vscode/issues/6304): Debug: continue
+  action is broken when target app has multiple threads
 
 These are the
 [`closed bugs`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aissue+label%3Abug+milestone%3A%22April+2016%22+is%3Aclosed)
@@ -326,35 +326,35 @@ for the 1.1.0 update.
 Last but certainly not least, a big _**Thank You!**_ to the following folks that
 helped to make VS Code even better:
 
--   [`Maxime Quandalle (@mquandalle)](HTTPS://github.com/mquandalle): Implement
-    double-click on sashes for optimal resizing.
-    [`PR #4702`](HTTPS://github.com/Microsoft/vscode/pull/4702)
--   [`Christian Oetterli (@krizzdewizz)](HTTPS://github.com/krizzdewizz): Honor
-    the %COMSPEC% environment variable on Windows when spawning a shell.
-    [`PR #743`](HTTPS://github.com/Microsoft/vscode/issues/743)
--   [`Peter Flannery (@pflannery)](HTTPS://github.com/pflannery): Add custom
-    terminal launch settings.
-    [`PR #3495`](HTTPS://github.com/Microsoft/vscode/pull/3495)
--   [`Xaver Hellauer (@xaverh)](HTTPS://github.com/xaverh): Add "new window"
-    action to code.desktop.
-    [`PR #4916`](HTTPS://github.com/Microsoft/vscode/pull/4916)
--   [`Sam Verschueren (@SamVerschueren)](HTTPS://github.com/SamVerschueren):
-    -   Show move file to trash key binding in context menu - resolves #5603.
-        [`PR #5622`](HTTPS://github.com/Microsoft/vscode/pull/5622)
-    -   Add a global action to add a new file in the explorer - resolves #5547.
-        [`PR #5597`](HTTPS://github.com/Microsoft/vscode/pull/5597)
--   [`Denis Gladkikh (@outcoldman)](HTTPS://github.com/outcoldman): Create new
-    conf files with right indent settings (fixes #5550).
-    [`PR #5527`](HTTPS://github.com/Microsoft/vscode/pull/5527)
--   [`Peng Lv (@rebornix)](HTTPS://github.com/rebornix): uninstall outdated
-    extension with correct version #5502.
-    [`PR #5502`](HTTPS://github.com/Microsoft/vscode/pull/5502)
--   [`xzper (@f111fei)](HTTPS://github.com/f111fei): Context menu is positioned
-    wrongly when zoomed in.
-    [`PR #5158`](HTTPS://github.com/Microsoft/vscode/pull/5158)
--   [`Belleve Invis (@be5invis)](HTTPS://github.com/be5invis): Add CJK-aware line
-    wrapping, and basic Kinsoku Shori (禁則処理) to Visual Studio Code.
-    [`PR #4825`](HTTPS://github.com/Microsoft/vscode/pull/4825)
--   [`Jonathan Edwards (@JonathanMEdwards)](HTTPS://github.com/JonathanMEdwards):
-    Make mouse cursor visible in dark themes. Fixes #754.
-    [`PR #4654`](HTTPS://github.com/Microsoft/vscode/pull/4654)
+- [`Maxime Quandalle (@mquandalle)](HTTPS://github.com/mquandalle): Implement
+  double-click on sashes for optimal resizing.
+  [`PR #4702`](HTTPS://github.com/Microsoft/vscode/pull/4702)
+- [`Christian Oetterli (@krizzdewizz)](HTTPS://github.com/krizzdewizz): Honor
+  the %COMSPEC% environment variable on Windows when spawning a shell.
+  [`PR #743`](HTTPS://github.com/Microsoft/vscode/issues/743)
+- [`Peter Flannery (@pflannery)](HTTPS://github.com/pflannery): Add custom
+  terminal launch settings.
+  [`PR #3495`](HTTPS://github.com/Microsoft/vscode/pull/3495)
+- [`Xaver Hellauer (@xaverh)](HTTPS://github.com/xaverh): Add "new window"
+  action to code.desktop.
+  [`PR #4916`](HTTPS://github.com/Microsoft/vscode/pull/4916)
+- [`Sam Verschueren (@SamVerschueren)](HTTPS://github.com/SamVerschueren):
+    - Show move file to trash key binding in context menu - resolves #5603.
+      [`PR #5622`](HTTPS://github.com/Microsoft/vscode/pull/5622)
+    - Add a global action to add a new file in the explorer - resolves #5547.
+      [`PR #5597`](HTTPS://github.com/Microsoft/vscode/pull/5597)
+- [`Denis Gladkikh (@outcoldman)](HTTPS://github.com/outcoldman): Create new
+  conf files with right indent settings (fixes #5550).
+  [`PR #5527`](HTTPS://github.com/Microsoft/vscode/pull/5527)
+- [`Peng Lv (@rebornix)](HTTPS://github.com/rebornix): uninstall outdated
+  extension with correct version #5502.
+  [`PR #5502`](HTTPS://github.com/Microsoft/vscode/pull/5502)
+- [`xzper (@f111fei)](HTTPS://github.com/f111fei): Context menu is positioned
+  wrongly when zoomed in.
+  [`PR #5158`](HTTPS://github.com/Microsoft/vscode/pull/5158)
+- [`Belleve Invis (@be5invis)](HTTPS://github.com/be5invis): Add CJK-aware line
+  wrapping, and basic Kinsoku Shori (禁則処理) to Visual Studio Code.
+  [`PR #4825`](HTTPS://github.com/Microsoft/vscode/pull/4825)
+- [`Jonathan Edwards (@JonathanMEdwards)](HTTPS://github.com/JonathanMEdwards):
+  Make mouse cursor visible in dark themes. Fixes #754.
+  [`PR #4654`](HTTPS://github.com/Microsoft/vscode/pull/4654)

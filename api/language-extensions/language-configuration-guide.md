@@ -16,13 +16,13 @@ The
 Contribution Point allows you to define a language configuration that controls
 the following Declarative Language Features:
 
--   Comment toggling
--   Brackets definition
--   Autoclosing
--   Autosurrounding
--   Folding
--   Word pattern
--   Indentation Rules
+- Comment toggling
+- Brackets definition
+- Autoclosing
+- Autosurrounding
+- Folding
+- Word pattern
+- Indentation Rules
 
 Here is a
 [Language Configuration Sample](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/language-configuration-sample)
@@ -191,13 +191,13 @@ setting.
 
 In VS Code, there are three kinds of folding:
 
--   Indentation based folding: This is VS Code's default folding behavior. When
-    it sees two lines of the same indentation level, it creates a folding marker
-    that allows you to collapse that region.
--   Language configuration folding: When VS Code finds both the `start` and
-    `end` regex defined in `folding.markers`, it creates a folding marker
-    enclosing the content inside the pair. The following JSON creates folding
-    markers for `//#region` and `//#endregion`.
+- Indentation based folding: This is VS Code's default folding behavior. When it
+  sees two lines of the same indentation level, it creates a folding marker that
+  allows you to collapse that region.
+- Language configuration folding: When VS Code finds both the `start` and `end`
+  regex defined in `folding.markers`, it creates a folding marker enclosing the
+  content inside the pair. The following JSON creates folding markers for
+  `//#region` and `//#endregion`.
 
 ```json
 {
@@ -210,13 +210,13 @@ In VS Code, there are three kinds of folding:
 }
 ```
 
--   Language server folding: The Language Server responds to the
-    [`textDocument/foldingRange`](HTTPS://microsoft.github.io/language-server-protocol/specification#textDocument_foldingRange)
-    request with a list of folding ranges, and VS Code would render the ranges
-    as folding markers. Learn more about the folding support in Language Server
-    Protocol at the
-    [Programmatic Language Feature](/api/language-extensions/programmatic-language-features)
-    topic.
+- Language server folding: The Language Server responds to the
+  [`textDocument/foldingRange`](HTTPS://microsoft.github.io/language-server-protocol/specification#textDocument_foldingRange)
+  request with a list of folding ranges, and VS Code would render the ranges as
+  folding markers. Learn more about the folding support in Language Server
+  Protocol at the
+  [Programmatic Language Feature](/api/language-extensions/programmatic-language-features)
+  topic.
 
 ## Word Pattern
 

@@ -10,8 +10,8 @@ DateApproved: 6/27/2018
 # Deploy a static website to Azure
 
 This tutorial walks you through deploying a static website, such as an Angular
-or React [`SPA`](HTTPS://en.wikipedia.org/wiki/Single-page_application) or simple
-HTML/CSS/JavaScript site, to Azure using
+or React [`SPA`](HTTPS://en.wikipedia.org/wiki/Single-page_application) or
+simple HTML/CSS/JavaScript site, to Azure using
 [`Azure Storage`](HTTPS://docs.microsoft.com/en-us/azure/storage).
 
 > **Note**: If you have your own server code, such as a Node.js/Express server,
@@ -69,9 +69,9 @@ Bar, click on the Azure logo to show the **AZURE STORAGE** explorer. Click
 Before we continue, ensure that you have all the prerequisites installed and
 configured.
 
--   Log in to [`Azure Portal`](HTTPS://portal.azure.com) to make sure your Azure
-    Account is working.
--   From a terminal, execute:
+- Log in to [`Azure Portal`](HTTPS://portal.azure.com) to make sure your Azure
+  Account is working.
+- From a terminal, execute:
 
 ```bash
 node -v

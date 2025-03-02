@@ -18,17 +18,17 @@ MetaDescription:
 activated when the **Activation Event** happens. Here is a list of all available
 **Activation Events**:
 
--   [`onLanguage`](/api/references/activation-events#onLanguage)
--   [`onCommand`](/api/references/activation-events#onCommand)
--   [`onDebug`](/api/references/activation-events#onDebug)
-    -   [`onDebugInitialConfigurations`](/api/references/activation-events#onDebugInitialConfigurations)
-    -   [`onDebugResolve`](/api/references/activation-events#onDebugResolve)
--   [`workspaceContains`](/api/references/activation-events#workspaceContains)
--   [`onFileSystem`](/api/references/activation-events#onFileSystem)
--   [`onView`](/api/references/activation-events#onView)
--   [`onUri`](/api/references/activation-events#onUri)
--   [`onWebviewPanel`](/api/references/activation-events#onWebviewPanel)
--   [`*`](/api/references/activation-events#Start-up)
+- [`onLanguage`](/api/references/activation-events#onLanguage)
+- [`onCommand`](/api/references/activation-events#onCommand)
+- [`onDebug`](/api/references/activation-events#onDebug)
+    - [`onDebugInitialConfigurations`](/api/references/activation-events#onDebugInitialConfigurations)
+    - [`onDebugResolve`](/api/references/activation-events#onDebugResolve)
+- [`workspaceContains`](/api/references/activation-events#workspaceContains)
+- [`onFileSystem`](/api/references/activation-events#onFileSystem)
+- [`onView`](/api/references/activation-events#onView)
+- [`onUri`](/api/references/activation-events#onUri)
+- [`onWebviewPanel`](/api/references/activation-events#onWebviewPanel)
+- [`*`](/api/references/activation-events#Start-up)
 
 We also provide a reference of all fields in the
 [`package.json` extension manifest](/api/references/extension-manifest).
@@ -93,11 +93,11 @@ before a debug session is started:
 
 These are two more fine-grained `onDebug` activation events:
 
--   `onDebugInitialConfigurations` is fired just before the
-    `provideDebugConfigurations` method of the `DebugConfigurationProvider` is
-    called.
--   `onDebugResolve:type` is fired just before the `resolveDebugConfiguration`
-    method of the `DebugConfigurationProvider` for the specified type is called.
+- `onDebugInitialConfigurations` is fired just before the
+  `provideDebugConfigurations` method of the `DebugConfigurationProvider` is
+  called.
+- `onDebugResolve:type` is fired just before the `resolveDebugConfiguration`
+  method of the `DebugConfigurationProvider` for the specified type is called.
 
 **Rule of thumb:** If activation of a debug extension is lightweight, use
 `onDebug`. If it is heavyweight, use `onDebugInitialConfigurations` and/or
@@ -167,9 +167,9 @@ extension's identifier. The rest of the Uri is arbitrary.
 If the `vscode.git` extension defines `onUri` as an activation event, it will be
 activated in any of the following Uris are open:
 
--   `vscode://vscode.git/init`
--   `vscode://vscode.git/clone?url=https%3A%2F%2Fgithub.com%2FMicrosoft%2Fvscode-vsce.git`
--   `vscode-insiders://vscode.git/init` (for VS Code Insiders)
+- `vscode://vscode.git/init`
+- `vscode://vscode.git/clone?url=https%3A%2F%2Fgithub.com%2FMicrosoft%2Fvscode-vsce.git`
+- `vscode-insiders://vscode.git/init` (for VS Code Insiders)
 
 ## onWebviewPanel
 

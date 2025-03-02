@@ -36,10 +36,10 @@ The snippet below registers a
 and the document selector is the `typescript` language identifier string.
 
 ```ts
-vscode.languages.registerHoverProvider('typescript', {
-  provideHover(doc: vscode.TextDocument) {
-    return new vscode.Hover('For *all* TypeScript documents.');
-  }
+vscode.languages.registerHoverProvider("typescript", {
+	provideHover(doc: vscode.TextDocument) {
+		return new vscode.Hover("For *all* TypeScript documents.");
+	},
 });
 ```
 
@@ -50,12 +50,12 @@ glob-pattern:
 
 ```ts
 vscode.languages.registerHoverProvider(
-  { pattern: '**/test/**' },
-  {
-    provideHover(doc: vscode.TextDocument) {
-      return new vscode.Hover('For documents inside `test`-folders only');
-    }
-  }
+	{ pattern: "**/test/**" },
+	{
+		provideHover(doc: vscode.TextDocument) {
+			return new vscode.Hover("For documents inside `test`-folders only");
+		},
+	},
 );
 ```
 
@@ -65,12 +65,14 @@ to disk.
 
 ```ts
 vscode.languages.registerHoverProvider(
-  { scheme: 'untitled', language: 'typescript' },
-  {
-    provideHover(doc: vscode.TextDocument) {
-      return new vscode.Hover('For new, unsaved TypeScript documents only');
-    }
-  }
+	{ scheme: "untitled", language: "typescript" },
+	{
+		provideHover(doc: vscode.TextDocument) {
+			return new vscode.Hover(
+				"For new, unsaved TypeScript documents only",
+			);
+		},
+	},
 );
 ```
 
@@ -88,11 +90,11 @@ files from/to disk. Check out the snippet below:
 
 ```ts
 // 👎 too lax
-vscode.languages.registerHoverProvider('typescript', {
-  provideHover(doc: vscode.TextDocument) {
-    const { size } = fs.statSync(doc.uri.fsPath); // ⚠️ what about 'untitled:/Untitled1.ts' or others?
-    return new vscode.Hover(`Size in bytes is ${size}`);
-  }
+vscode.languages.registerHoverProvider("typescript", {
+	provideHover(doc: vscode.TextDocument) {
+		const { size } = fs.statSync(doc.uri.fsPath); // ⚠️ what about 'untitled:/Untitled1.ts' or others?
+		return new vscode.Hover(`Size in bytes is ${size}`);
+	},
 });
 ```
 
@@ -104,13 +106,13 @@ Code that the provider can only work with files on disk.
 ```ts
 // 👍 only works with files on disk
 vscode.languages.registerHoverProvider(
-  { scheme: 'file', language: 'typescript' },
-  {
-    provideHover(doc: vscode.TextDocument) {
-      const { size } = fs.statSync(doc.uri.fsPath);
-      return new vscode.Hover(`Size in bytes is ${size}`);
-    }
-  }
+	{ scheme: "file", language: "typescript" },
+	{
+		provideHover(doc: vscode.TextDocument) {
+			const { size } = fs.statSync(doc.uri.fsPath);
+			return new vscode.Hover(`Size in bytes is ${size}`);
+		},
+	},
 );
 ```
 
@@ -125,7 +127,7 @@ to use a document selector with the `file` scheme.
 
 To learn more about VS Code extensibility model, try these topic:
 
--   [Extension Manifest File](/api/references/extension-manifest) - VS Code
-    package.json extension manifest file reference
--   [Contribution Points](/api/references/contribution-points) - VS Code
-    contribution points reference
+- [Extension Manifest File](/api/references/extension-manifest) - VS Code
+  package.json extension manifest file reference
+- [Contribution Points](/api/references/contribution-points) - VS Code
+  contribution points reference

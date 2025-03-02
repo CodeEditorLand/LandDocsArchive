@@ -18,12 +18,12 @@ care about and streamlined some common tasks.
 
 Here are a few highlights in this release:
 
--   Added 9 localized display languages.
--   Improved JavaScript support with new TypeScript language service, codename
-    "Salsa".
--   Simplified `jsconfig.json` and `tasks.json` file creation.
--   Support adding new file extensions to existing languages.
--   Implemented editor column text selection.
+- Added 9 localized display languages.
+- Improved JavaScript support with new TypeScript language service, codename
+  "Salsa".
+- Simplified `jsconfig.json` and `tasks.json` file creation.
+- Support adding new file extensions to existing languages.
+- Implemented editor column text selection.
 
 Downloads:
 [`Windows`](HTTPS://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/VSCodeSetup-stable.exe)
@@ -43,8 +43,8 @@ Read on to get into the details...
 ## Languages - JavaScript
 
 **Please note**: If you have tested the
-[`Salsa`](HTTPS://github.com/Microsoft/TypeScript/issues/4789) preview in the past
-and have configured the `typescript.tsdk` setting, then please make sure to
+[`Salsa`](HTTPS://github.com/Microsoft/TypeScript/issues/4789) preview in the
+past and have configured the `typescript.tsdk` setting, then please make sure to
 remove it. Otherwise you might be using an older version of TypeScript. When you
 have `typescript.tsdk` set, then the TypeScript version is shown in the bottom
 right of the Status Bar.
@@ -224,16 +224,16 @@ The following formatter settings are now available for TypeScript:
 The HTML formatter is based on the **beautifyjs** library. The formatting
 options offered by that library are now surfaced in the VS Code settings:
 
--   `html.format.wrapLineLength`: Maximum amount of characters per line.
--   `html.format.unformatted`: List of tags that shouldn't be reformatted.
--   `html.format.extraLiners`: List of tags that should have an extra newline
-    before them.
--   `html.format.preserveNewLines`: Whether existing line breaks before elements
-    should be preserved.
--   `html.format.maxPreserveNewLines`: Maximum number of line breaks to be
-    preserved in one chunk.
--   `html.format.endWithNewline`: End with a newline.
--   `html.format.indentInnerHtml`: Indent `<head>` and `<body>` sections.
+- `html.format.wrapLineLength`: Maximum amount of characters per line.
+- `html.format.unformatted`: List of tags that shouldn't be reformatted.
+- `html.format.extraLiners`: List of tags that should have an extra newline
+  before them.
+- `html.format.preserveNewLines`: Whether existing line breaks before elements
+  should be preserved.
+- `html.format.maxPreserveNewLines`: Maximum number of line breaks to be
+  preserved in one chunk.
+- `html.format.endWithNewline`: End with a newline.
+- `html.format.indentInnerHtml`: Indent `<head>` and `<body>` sections.
 
 ## Localization
 
@@ -446,8 +446,8 @@ already support 'Run').
 
 ### Improved thread handling
 
-Thanks to this [`pull request`](HTTPS://github.com/Microsoft/vscode/pull/3990), VS
-Code debugger UI now supports multiple stopped threads and the call stack for
+Thanks to this [`pull request`](HTTPS://github.com/Microsoft/vscode/pull/3990),
+VS Code debugger UI now supports multiple stopped threads and the call stack for
 each thread is now requested lazily. This improves the debugger's stepping
 performance in multi-threaded programs.
 
@@ -525,11 +525,11 @@ files side by side.
 
 To summarize, here are some examples of where you can use Git with VS Code:
 
--   `git rebase HEAD~3 -i` allows to interactive rebase using VS Code
--   `git commit` allows to use VS Code for the commit message
--   `git add -p` followed by `kbstyle(e)` for interactive add
--   `git difftool <commit>^ <commit>` allows to use VS Code as diff editor for
-    changes
+- `git rebase HEAD~3 -i` allows to interactive rebase using VS Code
+- `git commit` allows to use VS Code for the commit message
+- `git add -p` followed by `kbstyle(e)` for interactive add
+- `git difftool <commit>^ <commit>` allows to use VS Code as diff editor for
+  changes
 
 ## Accessibility
 
@@ -547,18 +547,18 @@ suggestion, as they are selected, to screen readers.
 
 ### Extension API additions
 
--   Added `setEndOfLine` on the `TextEditorEdit` builder interface to allow
-    changing the line ending sequence of a file from an extension.
--   Added `cursorStyle` to `TextEditorOptions` to set the cursor style (vertical
-    line, block or underline) for a specific editor.
--   Added a `setContext` command for customizing key binding rules. This command
-    takes two arguments, a key and a value.
--   All typing in an editor now goes through a `type` command that can be
-    overwritten by an extension to implement different editor emulation modes
-    such as **Vim** emulation mode.
--   Added a
-    [`**Vim** emulation sample`](HTTPS://github.com/alexandrudima/vscode-vim) that
-    shows how a **Vim** emulation extension can use the VS Code API.
+- Added `setEndOfLine` on the `TextEditorEdit` builder interface to allow
+  changing the line ending sequence of a file from an extension.
+- Added `cursorStyle` to `TextEditorOptions` to set the cursor style (vertical
+  line, block or underline) for a specific editor.
+- Added a `setContext` command for customizing key binding rules. This command
+  takes two arguments, a key and a value.
+- All typing in an editor now goes through a `type` command that can be
+  overwritten by an extension to implement different editor emulation modes such
+  as **Vim** emulation mode.
+- Added a
+  [`**Vim** emulation sample`](HTTPS://github.com/alexandrudima/vscode-vim) that
+  shows how a **Vim** emulation extension can use the VS Code API.
 
 ## Licensing Changes
 
@@ -566,16 +566,16 @@ There are several licensing changes for the Stable and Insiders builds.
 
 For Stable 1.0, these are the differences:
 
--   The TIME-SENSITIVE SOFTWARE clause has been removed and the product will no
-    longer stop running on 31/12/2016 (day/month/year).
--   The PRE-RELEASE SOFTWARE qualification has been removed.
--   The license no longer prohibits you from opting out of data collection. You
-    can turn off
-    [`crash reporting`](/docs/supporting/faq.md#how-to-disable-crash-reporting)
-    and
-    [`usage reporting`](/docs/supporting/faq.md#how-to-disable-telemetry-reporting).
--   The license clarifies that extensions downloaded are covered by the license
-    provided by the extension author, not the VS Code license.
+- The TIME-SENSITIVE SOFTWARE clause has been removed and the product will no
+  longer stop running on 31/12/2016 (day/month/year).
+- The PRE-RELEASE SOFTWARE qualification has been removed.
+- The license no longer prohibits you from opting out of data collection. You
+  can turn off
+  [`crash reporting`](/docs/supporting/faq.md#how-to-disable-crash-reporting)
+  and
+  [`usage reporting`](/docs/supporting/faq.md#how-to-disable-telemetry-reporting).
+- The license clarifies that extensions downloaded are covered by the license
+  provided by the extension author, not the VS Code license.
 
 You can view the Stable license at HTTPS://code.visualstudio.com/license?lang=
 where lang is the two or three character language code ('en', 'de', 'fr',
@@ -583,11 +583,11 @@ where lang is the two or three character language code ('en', 'de', 'fr',
 
 For Insiders, these are the changes:
 
--   The TIME-SENSITIVE SOFTWARE clause which indicated that the software will
-    stop running on 31/12/2016 (day/month/year) has been changed to a TERM
-    clause which specifies the license agreement is for 90 days.
--   The license clarifies that extensions downloaded are covered by the license
-    provided by the extension author, not the VS Code license (same as Stable).
+- The TIME-SENSITIVE SOFTWARE clause which indicated that the software will stop
+  running on 31/12/2016 (day/month/year) has been changed to a TERM clause which
+  specifies the license agreement is for 90 days.
+- The license clarifies that extensions downloaded are covered by the license
+  provided by the extension author, not the VS Code license (same as Stable).
 
 You can view the Insiders license at
 HTTPS://code.visualstudio.com/license/insiders, there are no localized Insider
@@ -595,12 +595,12 @@ licenses.
 
 ## Notable Bug Fixes
 
--   [`2116`](HTTPS://github.com/Microsoft/vscode/issues/2116): Inconsistent
-    de-indentation behavior while closing html tags using Autocomplete
--   [`2808`](HTTPS://github.com/Microsoft/vscode/issues/2808): Make it easier to
-    add more file extensions to an existing colorizer/language
--   [`2912`](HTTPS://github.com/Microsoft/vscode/issues/2912) Html code returned
-    from a TextDocumentContentProvider can now embed JavaScript code.
+- [`2116`](HTTPS://github.com/Microsoft/vscode/issues/2116): Inconsistent
+  de-indentation behavior while closing html tags using Autocomplete
+- [`2808`](HTTPS://github.com/Microsoft/vscode/issues/2808): Make it easier to
+  add more file extensions to an existing colorizer/language
+- [`2912`](HTTPS://github.com/Microsoft/vscode/issues/2912) Html code returned
+  from a TextDocumentContentProvider can now embed JavaScript code.
 
 Here are the
 [`closed bugs`](HTTPS://github.com/Microsoft/vscode/issues?q=milestone%3A%22March+2016%22+is%3Aclosed)
@@ -613,25 +613,25 @@ for the March update.
 Last but certainly not least, a big _**Thank You!**_ to the following folks that
 helped to make VS Code even better:
 
--   [`Joe Martella (@martellaj)](HTTPS://github.com/martellaj): Adds sort lines
-    (ascending and descending) command
-    [`2796`](HTTPS://github.com/Microsoft/vscode/pull/2796).
--   [`Ivan Enderlin (@Hywan)](HTTPS://github.com/Hywan): Improved PHP support
-    [`4323`](HTTPS://github.com/Microsoft/vscode/pull/4323)
-    [`4322`](HTTPS://github.com/Microsoft/vscode/pull/4322).
+- [`Joe Martella (@martellaj)](HTTPS://github.com/martellaj): Adds sort lines
+  (ascending and descending) command
+  [`2796`](HTTPS://github.com/Microsoft/vscode/pull/2796).
+- [`Ivan Enderlin (@Hywan)](HTTPS://github.com/Hywan): Improved PHP support
+  [`4323`](HTTPS://github.com/Microsoft/vscode/pull/4323)
+  [`4322`](HTTPS://github.com/Microsoft/vscode/pull/4322).
 
-*   [`Sanders Lauture (@golf1052)](HTTPS://github.com/golf1052): Fix markdown
-    highlighting for C# [`4225`](HTTPS://github.com/Microsoft/vscode/pull/4225).
-*   [`Phillip Johnsen (@phillipj)](HTTPS://github.com/phillipj): Multiple script
-    enhancements [`3691`](HTTPS://github.com/Microsoft/vscode/pull/3691)
-    [`3649`](HTTPS://github.com/Microsoft/vscode/pull/3649)
-    [`3636`](HTTPS://github.com/Microsoft/vscode/pull/3636).
-*   [`Ed Muñoz (@edumunoz)](HTTPS://github.com/edumunoz): Support
-    stop-all-threads mode debugging for multi-threaded debuggers
-    [`3990`](HTTPS://github.com/Microsoft/vscode/pull/3990).
-*   [`Pierson Lee (@pieandcakes)](HTTPS://github.com/pieandcakes): Added
-    telemetry for debugging scenarios
-    [`3687`](HTTPS://github.com/Microsoft/vscode/pull/3687).
-*   [`Guillaume Jenkins (@guillaumejenkins)](HTTPS://github.com/guillaumejenkins):
-    Adding descriptions of Ionic HTML tags
-    [`3734`](HTTPS://github.com/Microsoft/vscode/pull/3734).
+* [`Sanders Lauture (@golf1052)](HTTPS://github.com/golf1052): Fix markdown
+  highlighting for C# [`4225`](HTTPS://github.com/Microsoft/vscode/pull/4225).
+* [`Phillip Johnsen (@phillipj)](HTTPS://github.com/phillipj): Multiple script
+  enhancements [`3691`](HTTPS://github.com/Microsoft/vscode/pull/3691)
+  [`3649`](HTTPS://github.com/Microsoft/vscode/pull/3649)
+  [`3636`](HTTPS://github.com/Microsoft/vscode/pull/3636).
+* [`Ed Muñoz (@edumunoz)](HTTPS://github.com/edumunoz): Support stop-all-threads
+  mode debugging for multi-threaded debuggers
+  [`3990`](HTTPS://github.com/Microsoft/vscode/pull/3990).
+* [`Pierson Lee (@pieandcakes)](HTTPS://github.com/pieandcakes): Added telemetry
+  for debugging scenarios
+  [`3687`](HTTPS://github.com/Microsoft/vscode/pull/3687).
+* [`Guillaume Jenkins (@guillaumejenkins)](HTTPS://github.com/guillaumejenkins):
+  Adding descriptions of Ionic HTML tags
+  [`3734`](HTTPS://github.com/Microsoft/vscode/pull/3734).

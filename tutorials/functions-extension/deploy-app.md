@@ -83,11 +83,11 @@ Congratulations, you've successfully completed this walkthrough!
 
 Next, check out the other Azure extensions.
 
--   [Azure App Service](HTTPS://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
--   [Cosmos DB](HTTPS://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
--   [Docker Tools](HTTPS://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
--   [Azure CLI Tools](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
--   [Azure Resource Manager (ARM) Tools](HTTPS://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
+- [Azure App Service](HTTPS://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
+- [Cosmos DB](HTTPS://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
+- [Docker Tools](HTTPS://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
+- [Azure CLI Tools](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
+- [Azure Resource Manager (ARM) Tools](HTTPS://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
 
 Or get them all by installing the
 [Node Pack for Azure](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)

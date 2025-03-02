@@ -57,9 +57,9 @@ You should see the `Hello World` notification showing up. Success!
 
 Let's make a change to the message:
 
--   Change the message from `Hello World` to `Hello VS Code` in `extension.ts`
--   Run `Reload Window` in the new window
--   Run the command `Hello World` again
+- Change the message from `Hello World` to `Hello VS Code` in `extension.ts`
+- Run `Reload Window` in the new window
+- Run the command `Hello World` again
 
 You should see the updated message showing up.
 
@@ -69,11 +69,11 @@ You should see the updated message showing up.
 
 Here are some ideas for you to try:
 
--   Give the `Hello World` command a new name in the Command Palette.
--   [Contribute](/api/references/contribution-points) another command that
-    displays current time in an information message.
--   Replace the `vscode.window.showInformationMessage` with another
-    [VS Code API](/api/references/vscode-api) call to show a warning message.
+- Give the `Hello World` command a new name in the Command Palette.
+- [Contribute](/api/references/contribution-points) another command that
+  displays current time in an information message.
+- Replace the `vscode.window.showInformationMessage` with another
+  [VS Code API](/api/references/vscode-api) call to show a warning message.
 
 ## Debugging the extension
 

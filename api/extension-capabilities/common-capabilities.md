@@ -23,11 +23,11 @@ commands in Context Menus.
 
 An extension could:
 
--   Register and execute commands with the
-    [`vscode.commands`](/api/references/vscode-api#commands) API.
--   Make commands available in the Command Palette with the
-    [`contributes.commands`](/api/references/contribution-points#contributes.commands)
-    Contribution Point.
+- Register and execute commands with the
+  [`vscode.commands`](/api/references/vscode-api#commands) API.
+- Make commands available in the Command Palette with the
+  [`contributes.commands`](/api/references/contribution-points#contributes.commands)
+  Contribution Point.
 
 Learn more about commands at the
 [Extension Guides / Command](/api/extension-guides/command) topic.
@@ -57,20 +57,20 @@ Contribution Point.
 
 There are three options for storing data:
 
--   [`ExtensionContext.workspaceState`](/api/references/vscode-api#ExtensionContext.workspaceState):
-    A workspace storage where you can write key/value pairs. VS Code manages the
-    storage and will restore it when the same workspace is opened again.
--   [`ExtensionContext.globalState`](/api/references/vscode-api#ExtensionContext.globalState):
-    A global storage where you can write key/value pairs. VS Code manages the
-    storage and will restore it for each extension activation.
--   [`ExtensionContext.storagePath`](/api/references/vscode-api#ExtensionContext.storagePath):
-    A workspace specific storage path pointing to a local directory where your
-    extension has write/read access. This is a good option if you need to store
-    large files that is accessible only from current workspace.
--   [`ExtensionContext.globalStoragePath`](/api/references/vscode-api#ExtensionContext.globalStoragePath):
-    A global storage path pointing to a local directory where your extension has
-    write/read access. This is a good option if you need to store large files
-    that is accessible from all workspaces.
+- [`ExtensionContext.workspaceState`](/api/references/vscode-api#ExtensionContext.workspaceState):
+  A workspace storage where you can write key/value pairs. VS Code manages the
+  storage and will restore it when the same workspace is opened again.
+- [`ExtensionContext.globalState`](/api/references/vscode-api#ExtensionContext.globalState):
+  A global storage where you can write key/value pairs. VS Code manages the
+  storage and will restore it for each extension activation.
+- [`ExtensionContext.storagePath`](/api/references/vscode-api#ExtensionContext.storagePath):
+  A workspace specific storage path pointing to a local directory where your
+  extension has write/read access. This is a good option if you need to store
+  large files that is accessible only from current workspace.
+- [`ExtensionContext.globalStoragePath`](/api/references/vscode-api#ExtensionContext.globalStoragePath):
+  A global storage path pointing to a local directory where your extension has
+  write/read access. This is a good option if you need to store large files that
+  is accessible from all workspaces.
 
 The extension context is available to the `activate` function in the
 [Extension Entry File](/api/get-started/extension-anatomy#extension-entry-file).
@@ -81,9 +81,9 @@ Almost all extensions need to present information to the user at some point. VS
 Code offers three APIs for displaying notification messages of different
 severity:
 
--   [`window.showInformationMessage`](/api/references/vscode-api#window.showInformationMessage)
--   [`window.showWarningMessage`](/api/references/vscode-api#window.showWarningMessage)
--   [`window.showErrorMessage`](/api/references/vscode-api#window.showErrorMessage)
+- [`window.showInformationMessage`](/api/references/vscode-api#window.showInformationMessage)
+- [`window.showWarningMessage`](/api/references/vscode-api#window.showWarningMessage)
+- [`window.showErrorMessage`](/api/references/vscode-api#window.showErrorMessage)
 
 ## Quick Pick
 
@@ -115,9 +115,9 @@ reporting progress updates to the user.
 Progress can be shown in different locations using the
 [`ProgressLocation`](/api/references/vscode-api#ProgressLocation) option:
 
--   In the Notifications area
--   In the Source Control view
--   General progress in the VS Code window
+- In the Notifications area
+- In the Source Control view
+- General progress in the VS Code window
 
 The
 [Progress Sample](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/progress-sample)

@@ -33,28 +33,28 @@ include [html](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/html),
 extensions bundled with VS Code, which offer a subset of the following
 Declarative Language Features:
 
--   Syntax highlighting
--   Snippet completion
--   Bracket matching
--   Bracket autoclosing
--   Bracket autosurrounding
--   Comment toggling
--   Auto indentation
--   Folding (by markers)
+- Syntax highlighting
+- Snippet completion
+- Bracket matching
+- Bracket autoclosing
+- Bracket autosurrounding
+- Comment toggling
+- Auto indentation
+- Folding (by markers)
 
 We have three guides for writing Language Extensions that provide Declarative
 Language Features.
 
--   [Syntax Highlight Guide](/api/language-extensions/syntax-highlight-guide):
-    VS Code uses TextMate grammar for syntax highlighting. This guide will walk
-    you through writing a simple TextMate grammar and converting it into a VS
-    Code extension.
--   [Snippet Completion Guide](/api/language-extensions/snippet-guide): This
-    guide explains how to bundle a set of snippets into an extension.
--   [Language Configuration Guide](/api/language-extensions/language-configuration-guide):
-    VS Code allows extensions to define a **language configuration** for any
-    programming language. This file controls basic editing features such as
-    comment toggling, bracket matching/surrounding and region folding (legacy).
+- [Syntax Highlight Guide](/api/language-extensions/syntax-highlight-guide): VS
+  Code uses TextMate grammar for syntax highlighting. This guide will walk you
+  through writing a simple TextMate grammar and converting it into a VS Code
+  extension.
+- [Snippet Completion Guide](/api/language-extensions/snippet-guide): This guide
+  explains how to bundle a set of snippets into an extension.
+- [Language Configuration Guide](/api/language-extensions/language-configuration-guide):
+  VS Code allows extensions to define a **language configuration** for any
+  programming language. This file controls basic editing features such as
+  comment toggling, bracket matching/surrounding and region folding (legacy).
 
 ## Programmatic language features
 
@@ -66,16 +66,16 @@ extension bundled in VS Code. It utilizes the
 [TypeScript Language Service](HTTPS://github.com/Microsoft/TypeScript/wiki/Using-the-Language-Service-API)
 to offer Programmatic Language Features such as:
 
--   Hover information
-    ([`vscode.languages.registerHoverProvider`](/api/references/vscode-api#languages.registerHoverProvider))
--   Auto completion
-    ([`vscode.languages.registerCompletionItemProvider`](/api/references/vscode-api#languages.registerCompletionItemProvider))
--   Jump to definition
-    ([`vscode.languages.registerDefinitionProvider`](/api/references/vscode-api#languages.registerDefinitionProvider))
--   Error checking
--   Formatting
--   Refactoring
--   Folding
+- Hover information
+  ([`vscode.languages.registerHoverProvider`](/api/references/vscode-api#languages.registerHoverProvider))
+- Auto completion
+  ([`vscode.languages.registerCompletionItemProvider`](/api/references/vscode-api#languages.registerCompletionItemProvider))
+- Jump to definition
+  ([`vscode.languages.registerDefinitionProvider`](/api/references/vscode-api#languages.registerDefinitionProvider))
+- Error checking
+- Formatting
+- Refactoring
+- Folding
 
 Here is a complete list of
 [Programmatic Language Features](/api/language-extensions/programmatic-language-features).
@@ -99,7 +99,7 @@ map to the
 We offer an in-depth guide that explains how to implement a Language Server
 extension in VS Code:
 
--   [Language Server Extension Guide](/api/language-extensions/language-server-extension-guide)
+- [Language Server Extension Guide](/api/language-extensions/language-server-extension-guide)
 
 ![multi-editor](images/overview/multi-editor.png)
 

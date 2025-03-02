@@ -27,10 +27,10 @@ To contribute a View Container, you should first register it using
 Contribution Point in `package.json`. You have to specify following required
 fields:
 
--   `id`: The name of the new view container you're creating
--   `title`: The name which will show up at the top of the view container
--   `icon`: an image which will be displayed for the view container in the
-    activity bar
+- `id`: The name of the new view container you're creating
+- `title`: The name which will show up at the top of the view container
+- `icon`: an image which will be displayed for the view container in the
+  activity bar
 
 ```json
 "contributes": {
@@ -60,11 +60,11 @@ To contribute a view, you should first register it using
 `package.json`. You must specify an identifier and name for the view, and you
 can contribute to following locations:
 
--   `explorer`: Explorer view in the Side Bar
--   `debug`: Debug view in the Side Bar
--   `scm`: Source Control view in the Side Bar
--   `test`: Test explorer view in the Side Bar
--   Contributed View Containers
+- `explorer`: Explorer view in the Side Bar
+- `debug`: Debug view in the Side Bar
+- `scm`: Source Control view in the Side Bar
+- `test`: Test explorer view in the Side Bar
+- Contributed View Containers
 
 Example:
 
@@ -91,12 +91,12 @@ visibility of the view by providing the `when` context value.
 
 You can contribute actions at the following locations in the view
 
--   `view/title`: Location to show actions in the view title. Primary or inline
-    actions use `"group": "navigation"` and rest are secondary actions which are
-    in `...` menu.
--   `view/item/context`: Location to show actions for the tree item. Inline
-    actions use `"group": "inline"` and rest are secondary actions which are in
-    `...` menu.
+- `view/title`: Location to show actions in the view title. Primary or inline
+  actions use `"group": "navigation"` and rest are secondary actions which are
+  in `...` menu.
+- `view/item/context`: Location to show actions for the tree item. Inline
+  actions use `"group": "inline"` and rest are secondary actions which are in
+  `...` menu.
 
 You can control the visibility of these actions using the `when` property.
 
@@ -185,7 +185,10 @@ Extension writers should register a
 programmatically to populate data in the view.
 
 ```typescript
-vscode.window.registerTreeDataProvider('nodeDependencies', new DepNodeProvider());
+vscode.window.registerTreeDataProvider(
+	"nodeDependencies",
+	new DepNodeProvider(),
+);
 ```
 
 See
@@ -200,8 +203,8 @@ This will give access to the view which you can use for performing view
 operations.
 
 ```typescript
-vscode.window.createTreeView('ftpExplorer', {
-  treeDataProvider: new FtpTreeDataProvider()
+vscode.window.createTreeView("ftpExplorer", {
+	treeDataProvider: new FtpTreeDataProvider(),
 });
 ```
 

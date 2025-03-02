@@ -63,14 +63,14 @@ function named `extendMarkdownIt`. This function takes the current markdown-it
 instance and must return a new markdown-it instance:
 
 ```ts
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
-  return {
-    extendMarkdownIt(md: any) {
-      return md.use(require('markdown-it-emoji'));
-    }
-  };
+	return {
+		extendMarkdownIt(md: any) {
+			return md.use(require("markdown-it-emoji"));
+		},
+	};
 }
 ```
 
@@ -78,7 +78,7 @@ To contribute multiple markdown-it plugins, simply return multiple `use`
 statements chained together:
 
 ```ts
-return md.use(require('markdown-it-emoji')).use(require('markdown-it-hashtag'));
+return md.use(require("markdown-it-emoji")).use(require("markdown-it-hashtag"));
 ```
 
 Extensions that contribute markdown-it plugins are activated lazily, when a
@@ -92,9 +92,9 @@ markdown preview. You can review the Emoji extension's source code on
 
 You may also want to review:
 
--   [Guidelines](HTTPS://github.com/markdown-it/markdown-it/blob/master/docs/development.md)
-    for markdown-it plugin developers
--   [Existing markdown-it plugins](HTTPS://www.npmjs.com/browse/keyword/markdown-it-plugin)
+- [Guidelines](HTTPS://github.com/markdown-it/markdown-it/blob/master/docs/development.md)
+  for markdown-it plugin developers
+- [Existing markdown-it plugins](HTTPS://www.npmjs.com/browse/keyword/markdown-it-plugin)
 
 ## Adding advanced functionality with scripts
 

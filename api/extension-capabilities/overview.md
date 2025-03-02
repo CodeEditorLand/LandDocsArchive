@@ -17,9 +17,9 @@ It can sometimes be hard to find the right
 [VS Code API](/api/references/vscode-api) to use. This topic splits extension
 capabilities into a few categories. Each category describes:
 
--   Some functionalities your extension could use
--   Links to more detailed topics for using these functionalities
--   A few extension ideas
+- Some functionalities your extension could use
+- Links to more detailed topics for using these functionalities
+- A few extension ideas
 
 However, we also impose [restrictions](#restrictions) upon extensions to ensure
 the stability and performance of VS Code. For example, extensions cannot access
@@ -32,12 +32,12 @@ that you can use in any extension.
 
 Some of these capabilities include:
 
--   Registering commands, configurations, keybindings, or context menu items.
--   Storing workspace or global data.
--   Displaying notification messages.
--   Using Quick Pick to collect user input.
--   Open the system file picker to let users select files or folders.
--   Use the Progress API to indicate long-running operations.
+- Registering commands, configurations, keybindings, or context menu items.
+- Storing workspace or global data.
+- Displaying notification messages.
+- Using Quick Pick to collect user input.
+- Open the system file picker to let users select files or folders.
+- Use the Progress API to indicate long-running operations.
 
 ## Theming
 
@@ -49,10 +49,10 @@ then themes are for you.
 
 **Extension Ideas**
 
--   Change colors of your source code.
--   Change colors of the VS Code UI.
--   Port an existing TextMate theme to VS Code.
--   Add custom file icons.
+- Change colors of your source code.
+- Change colors of the VS Code UI.
+- Port an existing TextMate theme to VS Code.
+- Add custom file icons.
 
 ## Declarative Language Features
 
@@ -65,11 +65,11 @@ or debugging, see
 
 **Extension Ideas**
 
--   Bundle common JavaScript snippets into an extension.
--   Tell VS Code about a new programming language.
--   Add or replace the grammar for a programming language.
--   Extend an existing grammar with grammar injections.
--   Port an existing TextMate grammar to VS Code.
+- Bundle common JavaScript snippets into an extension.
+- Tell VS Code about a new programming language.
+- Add or replace the grammar for a programming language.
+- Extend an existing grammar with grammar injections.
+- Port an existing TextMate grammar to VS Code.
 
 ## Programmatic Language Features
 
@@ -90,11 +90,11 @@ errors.
 
 **Extension Ideas**
 
--   Add hovers that show sample usage of an API.
--   Report spelling or linter errors in source code using diagnostics.
--   Register a new code formatter for HTML.
--   Provide rich, context-aware IntelliSense.
--   Add folding, breadcrumbs and outline support for a language.
+- Add hovers that show sample usage of an API.
+- Report spelling or linter errors in source code using diagnostics.
+- Register a new code formatter for HTML.
+- Provide rich, context-aware IntelliSense.
+- Add folding, breadcrumbs and outline support for a language.
 
 ## Workbench Extensions
 
@@ -107,12 +107,12 @@ or UI using standard HTML, CSS, and JavaScript.
 
 **Extension Ideas**
 
--   Add custom context menu actions to the File Explorer.
--   Create a new, interactive TreeView in the Side Bar.
--   Define a new Activity Bar view.
--   Show new information in the Status Bar.
--   Render custom content using the `WebView` API.
--   Contribute Source Control providers.
+- Add custom context menu actions to the File Explorer.
+- Create a new, interactive TreeView in the Side Bar.
+- Define a new Activity Bar view.
+- Show new information in the Status Bar.
+- Render custom content using the `WebView` API.
+- Contribute Source Control providers.
 
 ## Debugging
 
@@ -123,12 +123,12 @@ Code's debugging UI to a specific debugger or runtime.
 
 **Extension Ideas**
 
--   Connect VS Code's debugging UI to a debugger or runtime by contributing a
-    [Debug Adapter implementation](HTTPS://microsoft.github.io/debug-adapter-protocol/implementors/adapters/).
--   Specify the languages supported by a debugger extension.
--   Provide rich IntelliSense and hover information for the debug configuration
-    attributes used by the debugger.
--   Provide debug configuration snippets.
+- Connect VS Code's debugging UI to a debugger or runtime by contributing a
+  [Debug Adapter implementation](HTTPS://microsoft.github.io/debug-adapter-protocol/implementors/adapters/).
+- Specify the languages supported by a debugger extension.
+- Provide rich IntelliSense and hover information for the debug configuration
+  attributes used by the debugger.
+- Provide debug configuration snippets.
 
 On the other hand, VS Code also offers a set of
 [Debug Extension API](/api/references/vscode-api#debug), with which you can
@@ -137,9 +137,9 @@ to automate users' debugging experience.
 
 **Extension Ideas**
 
--   Start debug sessions based on dynamically created debug configurations.
--   Track the lifecycle of debug sessions.
--   Create and manage breakpoints programmatically.
+- Start debug sessions based on dynamically created debug configurations.
+- Track the lifecycle of debug sessions.
+- Create and manage breakpoints programmatically.
 
 <!-- Add below content back after writing ./extending-core-functionalities.md  -->
 <!-- ## Core Extensions

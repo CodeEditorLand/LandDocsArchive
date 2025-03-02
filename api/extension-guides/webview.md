@@ -23,12 +23,12 @@ powerful, and opens up a whole new range of extension possibilities.
 
 ## Links
 
--   [Webview Sample](HTTPS://github.com/Microsoft/vscode-extension-samples/blob/master/webview-sample/README.md)
+- [Webview Sample](HTTPS://github.com/Microsoft/vscode-extension-samples/blob/master/webview-sample/README.md)
 
 ### VS Code API Usage
 
--   [`window.createWebviewPanel`](/api/references/vscode-api#window.createWebviewPanel)
--   [`window.registerWebviewPanelSerializer`](/api/references/vscode-api#window.registerWebviewPanelSerializer)
+- [`window.createWebviewPanel`](/api/references/vscode-api#window.createWebviewPanel)
+- [`window.registerWebviewPanelSerializer`](/api/references/vscode-api#window.registerWebviewPanelSerializer)
 
 ## Should I use a webview?
 
@@ -39,13 +39,13 @@ easily feel out of place within VS Code.
 
 Before using a webview, please consider the following:
 
--   Does this functionality really need to live within VS Code? Would it be
-    better as a separate application or website?
+- Does this functionality really need to live within VS Code? Would it be better
+  as a separate application or website?
 
--   Is a webview the only way to implement your feature? Can you use the regular
-    VS Code APIs instead?
+- Is a webview the only way to implement your feature? Can you use the regular
+  VS Code APIs instead?
 
--   Will your webview add enough user value to justify its high resource cost?
+- Will your webview add enough user value to justify its high resource cost?
 
 Remember: Just because you can do something with webviews, doesn't mean you
 should. However, if you are confident that you need to use webviews, then this
@@ -109,20 +109,20 @@ Now let's implement the `catCoding.start` command. In our extension's main file,
 we register the `catCoding.start` command and use it to show a basic webview:
 
 ```ts
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
-  context.subscriptions.push(
-    vscode.commands.registerCommand('catCoding.start', () => {
-      // Create and show a new webview
-      const panel = vscode.window.createWebviewPanel(
-        'catCoding', // Identifies the type of the webview. Used internally
-        'Cat Coding', // Title of the panel displayed to the user
-        vscode.ViewColumn.One, // Editor column to show the new webview panel in.
-        {} // Webview options. More on these later.
-      );
-    })
-  );
+	context.subscriptions.push(
+		vscode.commands.registerCommand("catCoding.start", () => {
+			// Create and show a new webview
+			const panel = vscode.window.createWebviewPanel(
+				"catCoding", // Identifies the type of the webview. Used internally
+				"Cat Coding", // Title of the panel displayed to the user
+				vscode.ViewColumn.One, // Editor column to show the new webview panel in.
+				{}, // Webview options. More on these later.
+			);
+		}),
+	);
 }
 ```
 
@@ -137,27 +137,27 @@ content! To add our cat to new panel, we also need to set the HTML content of
 the webview using `webview.html`:
 
 ```ts
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
-  context.subscriptions.push(
-    vscode.commands.registerCommand('catCoding.start', () => {
-      // Create and show panel
-      const panel = vscode.window.createWebviewPanel(
-        'catCoding',
-        'Cat Coding',
-        vscode.ViewColumn.One,
-        {}
-      );
+	context.subscriptions.push(
+		vscode.commands.registerCommand("catCoding.start", () => {
+			// Create and show panel
+			const panel = vscode.window.createWebviewPanel(
+				"catCoding",
+				"Cat Coding",
+				vscode.ViewColumn.One,
+				{},
+			);
 
-      // And set its HTML content
-      panel.webview.html = getWebviewContent();
-    })
-  );
+			// And set its HTML content
+			panel.webview.html = getWebviewContent();
+		}),
+	);
 }
 
 function getWebviewContent() {
-  return `<!DOCTYPE html>
+	return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -187,41 +187,41 @@ Let's use this to make **Cat Coding** more dynamic by introducing a rotation of
 cats:
 
 ```ts
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 const cats = {
-  'Coding Cat': 'HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif',
-  'Compiling Cat': 'HTTPS://media.giphy.com/media/mlvseq9yvZhba/giphy.gif'
+	"Coding Cat": "HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif",
+	"Compiling Cat": "HTTPS://media.giphy.com/media/mlvseq9yvZhba/giphy.gif",
 };
 
 export function activate(context: vscode.ExtensionContext) {
-  context.subscriptions.push(
-    vscode.commands.registerCommand('catCoding.start', () => {
-      const panel = vscode.window.createWebviewPanel(
-        'catCoding',
-        'Cat Coding',
-        vscode.ViewColumn.One,
-        {}
-      );
+	context.subscriptions.push(
+		vscode.commands.registerCommand("catCoding.start", () => {
+			const panel = vscode.window.createWebviewPanel(
+				"catCoding",
+				"Cat Coding",
+				vscode.ViewColumn.One,
+				{},
+			);
 
-      let iteration = 0;
-      const updateWebview = () => {
-        const cat = iteration++ % 2 ? 'Compiling Cat' : 'Coding Cat';
-        panel.title = cat;
-        panel.webview.html = getWebviewContent(cat);
-      };
+			let iteration = 0;
+			const updateWebview = () => {
+				const cat = iteration++ % 2 ? "Compiling Cat" : "Coding Cat";
+				panel.title = cat;
+				panel.webview.html = getWebviewContent(cat);
+			};
 
-      // Set initial content
-      updateWebview();
+			// Set initial content
+			updateWebview();
 
-      // And schedule updates to the content every second
-      setInterval(updateWebview, 1000);
-    })
-  );
+			// And schedule updates to the content every second
+			setInterval(updateWebview, 1000);
+		}),
+	);
 }
 
 function getWebviewContent(cat: keyof typeof cats) {
-  return `<!DOCTYPE html>
+	return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -265,43 +265,43 @@ The `onDidDispose` event is fired when a webview is destroyed. We can use this
 event to cancel further updates and clean up the webview's resources:
 
 ```ts
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 const cats = {
-  'Coding Cat': 'HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif',
-  'Compiling Cat': 'HTTPS://media.giphy.com/media/mlvseq9yvZhba/giphy.gif'
+	"Coding Cat": "HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif",
+	"Compiling Cat": "HTTPS://media.giphy.com/media/mlvseq9yvZhba/giphy.gif",
 };
 
 export function activate(context: vscode.ExtensionContext) {
-  context.subscriptions.push(
-    vscode.commands.registerCommand('catCoding.start', () => {
-      const panel = vscode.window.createWebviewPanel(
-        'catCoding',
-        'Cat Coding',
-        vscode.ViewColumn.One,
-        {}
-      );
+	context.subscriptions.push(
+		vscode.commands.registerCommand("catCoding.start", () => {
+			const panel = vscode.window.createWebviewPanel(
+				"catCoding",
+				"Cat Coding",
+				vscode.ViewColumn.One,
+				{},
+			);
 
-      let iteration = 0;
-      const updateWebview = () => {
-        const cat = iteration++ % 2 ? 'Compiling Cat' : 'Coding Cat';
-        panel.title = cat;
-        panel.webview.html = getWebviewContent(cat);
-      };
+			let iteration = 0;
+			const updateWebview = () => {
+				const cat = iteration++ % 2 ? "Compiling Cat" : "Coding Cat";
+				panel.title = cat;
+				panel.webview.html = getWebviewContent(cat);
+			};
 
-      updateWebview();
-      const interval = setInterval(updateWebview, 1000);
+			updateWebview();
+			const interval = setInterval(updateWebview, 1000);
 
-      panel.onDidDispose(
-        () => {
-          // When the panel is closed, cancel any future updates to the webview content
-          clearInterval(interval);
-        },
-        null,
-        context.subscriptions
-      );
-    })
-  );
+			panel.onDidDispose(
+				() => {
+					// When the panel is closed, cancel any future updates to the webview content
+					clearInterval(interval);
+				},
+				null,
+				context.subscriptions,
+			);
+		}),
+	);
 }
 ```
 
@@ -310,30 +310,30 @@ them. If, for example, we wanted to restrict our cat's workday to five seconds:
 
 ```ts
 export function activate(context: vscode.ExtensionContext) {
-  context.subscriptions.push(
-    vscode.commands.registerCommand('catCoding.start', () => {
-      const panel = vscode.window.createWebviewPanel(
-        'catCoding',
-        'Cat Coding',
-        vscode.ViewColumn.One,
-        {}
-      );
+	context.subscriptions.push(
+		vscode.commands.registerCommand("catCoding.start", () => {
+			const panel = vscode.window.createWebviewPanel(
+				"catCoding",
+				"Cat Coding",
+				vscode.ViewColumn.One,
+				{},
+			);
 
-      panel.webview.html = getWebviewContent(cats['Coding Cat']);
+			panel.webview.html = getWebviewContent(cats["Coding Cat"]);
 
-      // After 5sec, pragmatically close the webview panel
-      const timeout = setTimeout(() => panel.dispose(), 5000);
+			// After 5sec, pragmatically close the webview panel
+			const timeout = setTimeout(() => panel.dispose(), 5000);
 
-      panel.onDidDispose(
-        () => {
-          // Handle user closing panel before the 5sec have passed
-          clearTimeout(timeout);
-        },
-        null,
-        context.subscriptions
-      );
-    })
-  );
+			panel.onDidDispose(
+				() => {
+					// Handle user closing panel before the 5sec have passed
+					clearTimeout(timeout);
+				},
+				null,
+				context.subscriptions,
+			);
+		}),
+	);
 }
 ```
 
@@ -362,39 +362,41 @@ to the foreground:
 
 ```ts
 export function activate(context: vscode.ExtensionContext) {
-  // Track currently webview panel
-  let currentPanel: vscode.WebviewPanel | undefined = undefined;
+	// Track currently webview panel
+	let currentPanel: vscode.WebviewPanel | undefined = undefined;
 
-  context.subscriptions.push(
-    vscode.commands.registerCommand('catCoding.start', () => {
-      const columnToShowIn = vscode.window.activeTextEditor
-        ? vscode.window.activeTextEditor.viewColumn
-        : undefined;
+	context.subscriptions.push(
+		vscode.commands.registerCommand("catCoding.start", () => {
+			const columnToShowIn = vscode.window.activeTextEditor
+				? vscode.window.activeTextEditor.viewColumn
+				: undefined;
 
-      if (currentPanel) {
-        // If we already have a panel, show it in the target column
-        currentPanel.reveal(columnToShowIn);
-      } else {
-        // Otherwise, create a new panel
-        currentPanel = vscode.window.createWebviewPanel(
-          'catCoding',
-          'Cat Coding',
-          columnToShowIn,
-          {}
-        );
-        currentPanel.webview.html = getWebviewContent(cats['Coding Cat']);
+			if (currentPanel) {
+				// If we already have a panel, show it in the target column
+				currentPanel.reveal(columnToShowIn);
+			} else {
+				// Otherwise, create a new panel
+				currentPanel = vscode.window.createWebviewPanel(
+					"catCoding",
+					"Cat Coding",
+					columnToShowIn,
+					{},
+				);
+				currentPanel.webview.html = getWebviewContent(
+					cats["Coding Cat"],
+				);
 
-        // Reset when the current panel is closed
-        currentPanel.onDidDispose(
-          () => {
-            currentPanel = undefined;
-          },
-          null,
-          context.subscriptions
-        );
-      }
-    })
-  );
+				// Reset when the current panel is closed
+				currentPanel.onDidDispose(
+					() => {
+						currentPanel = undefined;
+					},
+					null,
+					context.subscriptions,
+				);
+			}
+		}),
+	);
 }
 ```
 
@@ -408,50 +410,53 @@ event to change cats based on which column the webview is showing in:
 
 ```ts
 const cats = {
-  'Coding Cat': 'HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif',
-  'Compiling Cat': 'HTTPS://media.giphy.com/media/mlvseq9yvZhba/giphy.gif',
-  'Testing Cat': 'HTTPS://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif'
+	"Coding Cat": "HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif",
+	"Compiling Cat": "HTTPS://media.giphy.com/media/mlvseq9yvZhba/giphy.gif",
+	"Testing Cat": "HTTPS://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif",
 };
 
 export function activate(context: vscode.ExtensionContext) {
-  context.subscriptions.push(
-    vscode.commands.registerCommand('catCoding.start', () => {
-      const panel = vscode.window.createWebviewPanel(
-        'catCoding',
-        'Cat Coding',
-        vscode.ViewColumn.One,
-        {}
-      );
-      panel.webview.html = getWebviewContent(cats['Coding Cat']);
+	context.subscriptions.push(
+		vscode.commands.registerCommand("catCoding.start", () => {
+			const panel = vscode.window.createWebviewPanel(
+				"catCoding",
+				"Cat Coding",
+				vscode.ViewColumn.One,
+				{},
+			);
+			panel.webview.html = getWebviewContent(cats["Coding Cat"]);
 
-      // Update contents based on view state changes
-      panel.onDidChangeViewState(
-        e => {
-          const panel = e.webviewPanel;
-          switch (panel.viewColumn) {
-            case vscode.ViewColumn.One:
-              updateWebviewForCat(panel, 'Coding Cat');
-              return;
+			// Update contents based on view state changes
+			panel.onDidChangeViewState(
+				(e) => {
+					const panel = e.webviewPanel;
+					switch (panel.viewColumn) {
+						case vscode.ViewColumn.One:
+							updateWebviewForCat(panel, "Coding Cat");
+							return;
 
-            case vscode.ViewColumn.Two:
-              updateWebviewForCat(panel, 'Compiling Cat');
-              return;
+						case vscode.ViewColumn.Two:
+							updateWebviewForCat(panel, "Compiling Cat");
+							return;
 
-            case vscode.ViewColumn.Three:
-              updateWebviewForCat(panel, 'Testing Cat');
-              return;
-          }
-        },
-        null,
-        context.subscriptions
-      );
-    })
-  );
+						case vscode.ViewColumn.Three:
+							updateWebviewForCat(panel, "Testing Cat");
+							return;
+					}
+				},
+				null,
+				context.subscriptions,
+			);
+		}),
+	);
 }
 
-function updateWebviewForCat(panel: vscode.WebviewPanel, catName: keyof typeof cats) {
-  panel.title = catName;
-  panel.webview.html = getWebviewContent(cats[catName]);
+function updateWebviewForCat(
+	panel: vscode.WebviewPanel,
+	catName: keyof typeof cats,
+) {
+	panel.title = catName;
+	panel.webview.html = getWebviewContent(cats[catName]);
 }
 ```
 
@@ -499,30 +504,30 @@ pulling them from Giphy. To do this, we first create a URI to the file on disk
 and then update this URI to use the `vscode-resource` scheme:
 
 ```ts
-import * as vscode from 'vscode';
-import * as path from 'path';
+import * as path from "path";
+import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
-  context.subscriptions.push(
-    vscode.commands.registerCommand('catCoding.start', () => {
-      const panel = vscode.window.createWebviewPanel(
-        'catCoding',
-        'Cat Coding',
-        vscode.ViewColumn.One,
-        {}
-      );
+	context.subscriptions.push(
+		vscode.commands.registerCommand("catCoding.start", () => {
+			const panel = vscode.window.createWebviewPanel(
+				"catCoding",
+				"Cat Coding",
+				vscode.ViewColumn.One,
+				{},
+			);
 
-      // Get path to resource on disk
-      const onDiskPath = vscode.Uri.file(
-        path.join(context.extensionPath, 'media', 'cat.gif')
-      );
+			// Get path to resource on disk
+			const onDiskPath = vscode.Uri.file(
+				path.join(context.extensionPath, "media", "cat.gif"),
+			);
 
-      // And get the special URI to use with the webview
-      const catGifSrc = onDiskPath.with({ scheme: 'vscode-resource' });
+			// And get the special URI to use with the webview
+			const catGifSrc = onDiskPath.with({ scheme: "vscode-resource" });
 
-      panel.webview.html = getWebviewContent(catGifSrc);
-    })
-  );
+			panel.webview.html = getWebviewContent(catGifSrc);
+		}),
+	);
 }
 ```
 
@@ -535,8 +540,8 @@ vscode-resource:/Users/toonces/projects/vscode-cat-coding/media/cat.gif
 By default, `vscode-resource:` can only access resources in the following
 locations:
 
--   Within your extension's install directory.
--   Within the user's currently active workspace.
+- Within your extension's install directory.
+- Within the user's currently active workspace.
 
 You can also always use data URIs to embed resources directly within the
 webview.
@@ -551,30 +556,34 @@ We can use `localResourceRoots` to restrict **Cat Coding** webviews to only load
 resources from a `media` directory in our extension:
 
 ```ts
-import * as vscode from 'vscode';
-import * as path from 'path';
+import * as path from "path";
+import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
-  context.subscriptions.push(
-    vscode.commands.registerCommand('catCoding.start', () => {
-      const panel = vscode.window.createWebviewPanel(
-        'catCoding',
-        'Cat Coding',
-        vscode.ViewColumn.One,
-        {
-          // Only allow the webview to access resources in our extension's media directory
-          localResourceRoots: [vscode.Uri.file(path.join(context.extensionPath, 'media'))]
-        }
-      );
+	context.subscriptions.push(
+		vscode.commands.registerCommand("catCoding.start", () => {
+			const panel = vscode.window.createWebviewPanel(
+				"catCoding",
+				"Cat Coding",
+				vscode.ViewColumn.One,
+				{
+					// Only allow the webview to access resources in our extension's media directory
+					localResourceRoots: [
+						vscode.Uri.file(
+							path.join(context.extensionPath, "media"),
+						),
+					],
+				},
+			);
 
-      const onDiskPath = vscode.Uri.file(
-        path.join(context.extensionPath, 'media', 'cat.gif')
-      );
-      const catGifSrc = onDiskPath.with({ scheme: 'vscode-resource' });
+			const onDiskPath = vscode.Uri.file(
+				path.join(context.extensionPath, "media", "cat.gif"),
+			);
+			const catGifSrc = onDiskPath.with({ scheme: "vscode-resource" });
 
-      panel.webview.html = getWebviewContent(catGifSrc);
-    })
-  );
+			panel.webview.html = getWebviewContent(catGifSrc);
+		}),
+	);
 }
 ```
 
@@ -593,9 +602,9 @@ Webview can use CSS to change their appearance based on VS Code's current theme.
 VS Code groups themes into three categories, and adds a special class to the
 `body` element to indicate the current theme:
 
--   `vscode-light` - Light themes.
--   `vscode-dark` - Dark themes.
--   `vscode-high-contrast` - High contrast themes.
+- `vscode-light` - Light themes.
+- `vscode-dark` - Dark themes.
+- `vscode-high-contrast` - High contrast themes.
 
 The following CSS changes the text color of the webview based on the user's
 current theme:
@@ -634,12 +643,12 @@ available theme variables.
 
 The following font related variables are also defined:
 
--   `-vscode-editor-font-family` - Editor font family (from the
-    `editor.fontFamily` setting).
--   `-vscode-editor-font-weight` - Editor font size (from the
-    `editor.fontWeight` setting).
--   `-vscode-editor-font-size` - Editor font weight (from the
-    `editor.fontWeight` setting).
+- `-vscode-editor-font-family` - Editor font family (from the
+  `editor.fontFamily` setting).
+- `-vscode-editor-font-weight` - Editor font size (from the `editor.fontWeight`
+  setting).
+- `-vscode-editor-font-size` - Editor font weight (from the `editor.fontWeight`
+  setting).
 
 ## Scripts and message passing
 
@@ -654,29 +663,29 @@ disable inline scripts using a
 [content security policy](#content-security-policy):
 
 ```ts
-import * as path from 'path';
-import * as vscode from 'vscode';
+import * as path from "path";
+import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
-  context.subscriptions.push(
-    vscode.commands.registerCommand('catCoding.start', () => {
-      const panel = vscode.window.createWebviewPanel(
-        'catCoding',
-        'Cat Coding',
-        vscode.ViewColumn.One,
-        {
-          // Enable scripts in the webview
-          enableScripts: true
-        }
-      );
+	context.subscriptions.push(
+		vscode.commands.registerCommand("catCoding.start", () => {
+			const panel = vscode.window.createWebviewPanel(
+				"catCoding",
+				"Cat Coding",
+				vscode.ViewColumn.One,
+				{
+					// Enable scripts in the webview
+					enableScripts: true,
+				},
+			);
 
-      panel.webview.html = getWebviewContent();
-    })
-  );
+			panel.webview.html = getWebviewContent();
+		}),
+	);
 }
 
 function getWebviewContent() {
-  return `<!DOCTYPE html>
+	return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -724,50 +733,50 @@ to handle the message:
 
 ```ts
 export function activate(context: vscode.ExtensionContext) {
-  // Only allow a single Cat Coder
-  let currentPanel: vscode.WebviewPanel | undefined = undefined;
+	// Only allow a single Cat Coder
+	let currentPanel: vscode.WebviewPanel | undefined = undefined;
 
-  context.subscriptions.push(
-    vscode.commands.registerCommand('catCoding.start', () => {
-      if (currentPanel) {
-        currentPanel.reveal(vscode.ViewColumn.One);
-      } else {
-        currentPanel = vscode.window.createWebviewPanel(
-          'catCoding',
-          'Cat Coding',
-          vscode.ViewColumn.One,
-          {
-            enableScripts: true
-          }
-        );
-        currentPanel.webview.html = getWebviewContent();
-        currentPanel.onDidDispose(
-          () => {
-            currentPanel = undefined;
-          },
-          undefined,
-          context.subscriptions
-        );
-      }
-    })
-  );
+	context.subscriptions.push(
+		vscode.commands.registerCommand("catCoding.start", () => {
+			if (currentPanel) {
+				currentPanel.reveal(vscode.ViewColumn.One);
+			} else {
+				currentPanel = vscode.window.createWebviewPanel(
+					"catCoding",
+					"Cat Coding",
+					vscode.ViewColumn.One,
+					{
+						enableScripts: true,
+					},
+				);
+				currentPanel.webview.html = getWebviewContent();
+				currentPanel.onDidDispose(
+					() => {
+						currentPanel = undefined;
+					},
+					undefined,
+					context.subscriptions,
+				);
+			}
+		}),
+	);
 
-  // Our new command
-  context.subscriptions.push(
-    vscode.commands.registerCommand('catCoding.doRefactor', () => {
-      if (!currentPanel) {
-        return;
-      }
+	// Our new command
+	context.subscriptions.push(
+		vscode.commands.registerCommand("catCoding.doRefactor", () => {
+			if (!currentPanel) {
+				return;
+			}
 
-      // Send a message to our webview.
-      // You can send any JSON serializable data.
-      currentPanel.webview.postMessage({ command: 'refactor' });
-    })
-  );
+			// Send a message to our webview.
+			// You can send any JSON serializable data.
+			currentPanel.webview.postMessage({ command: "refactor" });
+		}),
+	);
 }
 
 function getWebviewContent() {
-  return `<!DOCTYPE html>
+	return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -918,7 +927,7 @@ webview's `<head>`
 
 ```ts
 function getWebviewContent() {
-  return `<!DOCTYPE html>
+	return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -967,9 +976,9 @@ can allow content injections, which may open your users up to a security risk.
 
 Example values that must be sanitized:
 
--   File contents.
--   File and folder paths.
--   User and workspace settings.
+- File contents.
+- File and folder paths.
+- User and workspace settings.
 
 Consider using a helper library to construct your HTML strings, or at least
 ensure that all content from the user's workspace is properly sanitized.
@@ -1049,23 +1058,29 @@ contents set using `setState`.
 
 ```ts
 export function activate(context: vscode.ExtensionContext) {
-  // Normal setup...
+	// Normal setup...
 
-  // And make sure we register a serializer for our webview type
-  vscode.window.registerWebviewPanelSerializer('catCoding', new CatCodingSerializer());
+	// And make sure we register a serializer for our webview type
+	vscode.window.registerWebviewPanelSerializer(
+		"catCoding",
+		new CatCodingSerializer(),
+	);
 }
 
 class CatCodingSerializer implements vscode.WebviewPanelSerializer {
-  async deserializeWebviewPanel(webviewPanel: vscode.WebviewPanel, state: any) {
-    // `state` is the state persisted using `setState` inside the webview
-    console.log(`Got state: ${state}`);
+	async deserializeWebviewPanel(
+		webviewPanel: vscode.WebviewPanel,
+		state: any,
+	) {
+		// `state` is the state persisted using `setState` inside the webview
+		console.log(`Got state: ${state}`);
 
-    // Restore the content of our webview.
-    //
-    // Make sure we hold on to the `webviewPanel` passed in here and
-    // also restore any event listeners we need on it.
-    webviewPanel.webview.html = getWebviewContent();
-  }
+		// Restore the content of our webview.
+		//
+		// Make sure we hold on to the `webviewPanel` passed in here and
+		// also restore any event listeners we need on it.
+		webviewPanel.webview.html = getWebviewContent();
+	}
 }
 ```
 
@@ -1084,27 +1099,27 @@ enabling `retainContextWhenHidden` to see how the option changes a webview's
 behavior:
 
 ```ts
-import * as vscode from 'vscode';
+import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
-  context.subscriptions.push(
-    vscode.commands.registerCommand('catCoding.start', () => {
-      const panel = vscode.window.createWebviewPanel(
-        'catCoding',
-        'Cat Coding',
-        vscode.ViewColumn.One,
-        {
-          enableScripts: true,
-          retainContextWhenHidden: true
-        }
-      );
-      panel.webview.html = getWebviewContent();
-    })
-  );
+	context.subscriptions.push(
+		vscode.commands.registerCommand("catCoding.start", () => {
+			const panel = vscode.window.createWebviewPanel(
+				"catCoding",
+				"Cat Coding",
+				vscode.ViewColumn.One,
+				{
+					enableScripts: true,
+					retainContextWhenHidden: true,
+				},
+			);
+			panel.webview.html = getWebviewContent();
+		}),
+	);
 }
 
 function getWebviewContent() {
-  return `<!DOCTYPE html>
+	return `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1145,6 +1160,6 @@ will not work.
 
 If you'd like to learn more about VS Code extensibility, try these topics:
 
--   [Extension API](/api) - Learn about the full VS Code Extension API.
--   [Extension Capabilities](/api/extension-capabilities/overview) - Take a look
-    at other ways to extend VS Code.
+- [Extension API](/api) - Learn about the full VS Code Extension API.
+- [Extension Capabilities](/api/extension-capabilities/overview) - Take a look
+  at other ways to extend VS Code.
