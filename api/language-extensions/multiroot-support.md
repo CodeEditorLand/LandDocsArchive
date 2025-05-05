@@ -5,4 +5,4 @@ MetaDescription:
 
 # Multiroot Support
 
-HTTPS://github.com/Microsoft/vscode/wiki/Extension-Authoring:-Adopting-Multi-Root-Workspace-APIs
+https://github.com/Microsoft/vscode/wiki/Extension-Authoring:-Adopting-Multi-Root-Workspace-APIs

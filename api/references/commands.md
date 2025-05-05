@@ -9,17 +9,15 @@ MetaDescription: Visual Studio Code built-in commands reference.
 
 # Built-in Commands
 
-This document lists a subset of Visual Studio Code commands that you might use
-with `vscode.commands.executeCommand` API.
+This document lists a subset of Visual Studio Code commands that you might use with `vscode.commands.executeCommand` API.
 
-Read the [Commands Guide](/api/extension-guides/command) for how to use the
-commands API.
+Read the [Commands Guide](/api/extension-guides/command) for how to use the commands API.
 
 The following is a sample of how to open a new folder in VS Code:
 
 ```javascript
-let uri = Uri.file("/some/path/to/folder");
-let success = await commands.executeCommand("vscode.openFolder", uri);
+let uri = Uri.file('/some/path/to/folder');
+let success = await commands.executeCommand('vscode.openFolder', uri);
 ```
 
 ## Commands
@@ -27,8 +25,7 @@ let success = await commands.executeCommand("vscode.openFolder", uri);
 `vscode.executeWorkspaceSymbolProvider` - Execute all workspace symbol provider.
 
 - _query_ - Search string
-- _(returns)_ - A promise that resolves to an array of SymbolInformation and
-  DocumentSymbol instances.
+- _(returns)_ - A promise that resolves to an array of SymbolInformation and DocumentSymbol instances.
 
 `vscode.executeDefinitionProvider` - Execute all definition provider.
 
@@ -64,8 +61,7 @@ let success = await commands.executeCommand("vscode.openFolder", uri);
 
 - _uri_ - Uri of a text document
 - _position_ - Position in a text document
-- _(returns)_ - A promise that resolves to an array of DocumentHighlight
-  instances.
+- _(returns)_ - A promise that resolves to an array of DocumentHighlight instances.
 
 `vscode.executeReferenceProvider` - Execute reference provider.
 
@@ -84,24 +80,20 @@ let success = await commands.executeCommand("vscode.openFolder", uri);
 
 - _uri_ - Uri of a text document
 - _position_ - Position in a text document
-- _triggerCharacter_ - (optional) Trigger signature help when the user types the
-  character, like `,` or `(`
+- _triggerCharacter_ - (optional) Trigger signature help when the user types the character, like `,` or `(`
 - _(returns)_ - A promise that resolves to SignatureHelp.
 
 `vscode.executeDocumentSymbolProvider` - Execute document symbol provider.
 
 - _uri_ - Uri of a text document
-- _(returns)_ - A promise that resolves to an array of SymbolInformation and
-  DocumentSymbol instances.
+- _(returns)_ - A promise that resolves to an array of SymbolInformation and DocumentSymbol instances.
 
 `vscode.executeCompletionItemProvider` - Execute completion item provider.
 
 - _uri_ - Uri of a text document
 - _position_ - Position in a text document
-- _triggerCharacter_ - (optional) Trigger completion when the user types the
-  character, like `,` or `(`
-- _itemResolveCount_ - (optional) Number of completions to resolve (too large
-  numbers slow down completions)
+- _triggerCharacter_ - (optional) Trigger completion when the user types the character, like `,` or `(`
+- _itemResolveCount_ - (optional) Number of completions to resolve (too large numbers slow down completions)
 - _(returns)_ - A promise that resolves to a CompletionList instance.
 
 `vscode.executeCodeActionProvider` - Execute code action provider.
@@ -113,8 +105,7 @@ let success = await commands.executeCommand("vscode.openFolder", uri);
 `vscode.executeCodeLensProvider` - Execute CodeLens provider.
 
 - _uri_ - Uri of a text document
-- _itemResolveCount_ - (optional) Number of lenses that should be resolved and
-  returned. Will only return resolved lenses, will impact performance)
+- _itemResolveCount_ - (optional) Number of lenses that should be resolved and returned. Will only return resolved lenses, will impact performance)
 - _(returns)_ - A promise that resolves to an array of CodeLens instances.
 
 `vscode.executeFormatDocumentProvider` - Execute document format provider.
@@ -152,34 +143,25 @@ let success = await commands.executeCommand("vscode.openFolder", uri);
 
 - _color_ - The color to show and insert
 - _context_ - Context object with uri and range
-- _(returns)_ - A promise that resolves to an array of ColorPresentation
-  objects.
+- _(returns)_ - A promise that resolves to an array of ColorPresentation objects.
 
 `vscode.previewHtml` - Render the HTML of the resource in an editor view.
 
-**🚨 The previewHtml command is deprecated. Please use the
-[Webview API](/api/extension-guides/webview) instead**
+**🚨 The previewHtml command is deprecated. Please use the [Webview API](/api/extension-guides/webview) instead**
 
 - _uri_ - Uri of the resource to preview.
 - _column_ - (optional) Column in which to preview.
-- _label_ - (optional) An human readable string that is used as title for the
-  preview.
+- _label_ - (optional) An human readable string that is used as title for the preview.
 - _options_ - (optional) Options for controlling webview environment.
 
-`vscode.openFolder` - Open a folder or workspace in the current window or new
-window depending on the newWindow argument.
+`vscode.openFolder` - Open a folder or workspace in the current window or new window depending on the newWindow argument.
 
-- _uri_ - (optional) Uri of the folder or workspace file to open. If not
-  provided, a native dialog will ask the user for the folder
-- _newWindow_ - (optional) Whether to open the folder/workspace in a new window
-  or the same. Defaults to opening in the same window.
+- _uri_ - (optional) Uri of the folder or workspace file to open. If not provided, a native dialog will ask the user for the folder
+- _newWindow_ - (optional) Whether to open the folder/workspace in a new window or the same. Defaults to opening in the same window.
 
-Note that opening in the same window will shutdown the current extension host
-process and start a new one on the given folder/workspace unless the newWindow
-parameter is set to true.
+Note that opening in the same window will shutdown the current extension host process and start a new one on the given folder/workspace unless the newWindow parameter is set to true.
 
-`vscode.diff` - Opens the provided resources in the diff editor to compare their
-contents.
+`vscode.diff` - Opens the provided resources in the diff editor to compare their contents.
 
 - _left_ - Left-hand side resource of the diff editor
 - _right_ - Right-hand side resource of the diff editor
@@ -189,14 +171,11 @@ contents.
 `vscode.open` - Opens the provided resource in the editor.
 
 - _resource_ - Resource to open
-- _columnOrOptions_ - (optional) Either the column in which to open or editor
-  options, see vscode.TextDocumentShowOptions
+- _columnOrOptions_ - (optional) Either the column in which to open or editor options, see vscode.TextDocumentShowOptions
 
-Can be a text or binary file, or a http(s) url. If you need more control over
-the options for opening a text file, use vscode.window.showTextDocument instead.
+Can be a text or binary file, or a http(s) url. If you need more control over the options for opening a text file, use vscode.window.showTextDocument instead.
 
-`vscode.removeFromRecentlyOpened` - Removes an entry with the given path from
-the recently opened list.
+`vscode.removeFromRecentlyOpened` - Removes an entry with the given path from the recently opened list.
 
 - _path_ - Path to remove from recently opened.
 
@@ -204,88 +183,76 @@ the recently opened list.
 
 - _layout_ - The editor layout to set.
 
-The layout is described as object with an initial (optional) orientation (0 =
-horizontal, 1 = vertical) and an array of editor groups within. Each editor
-group can have a size and another array of editor groups that will be laid out
-orthogonal to the orientation. If editor group sizes are provided, their sum
-must be 1 to be applied per row or column. Example for a 2x2 grid:
-`{ orientation: 0, groups: [{ groups: [{}, {}], size: 0.5 }, { groups: [{}, {}], size: 0.5 }] }`
+The layout is described as object with an initial (optional) orientation (0 = horizontal, 1 = vertical) and an array of editor groups within. Each editor group can have a size and another array of editor groups that will be laid out orthogonal to the orientation. If editor group sizes are provided, their sum must be 1 to be applied per row or column. Example for a 2x2 grid: `{ orientation: 0, groups: [{ groups: [{}, {}], size: 0.5 }, { groups: [{}, {}], size: 0.5 }] }`
 
 `cursorMove` - Move cursor to a logical position in the view
 
 - _Cursor move argument object_
 
-    Property-value pairs that can be passed through this argument:
+  Property-value pairs that can be passed through this argument:
 
-    - 'to': A mandatory logical position value providing where to move the
-      cursor.
-        ```
-        'left', 'right', 'up', 'down'
-        'wrappedLineStart', 'wrappedLineEnd', 'wrappedLineColumnCenter'
-        'wrappedLineFirstNonWhitespaceCharacter', 'wrappedLineLastNonWhitespaceCharacter'
-        'viewPortTop', 'viewPortCenter', 'viewPortBottom', 'viewPortIfOutside'
-        ```
-    - 'by': Unit to move. Default is computed based on 'to' value.
-        ```
-        'line', 'wrappedLine', 'character', 'halfLine'
-        ```
-    - 'value': Number of units to move. Default is '1'.
-    - 'select': If 'true' makes the selection. Default is 'false'.
+  - 'to': A mandatory logical position value providing where to move the cursor.
+    ```
+    'left', 'right', 'up', 'down'
+    'wrappedLineStart', 'wrappedLineEnd', 'wrappedLineColumnCenter'
+    'wrappedLineFirstNonWhitespaceCharacter', 'wrappedLineLastNonWhitespaceCharacter'
+    'viewPortTop', 'viewPortCenter', 'viewPortBottom', 'viewPortIfOutside'
+    ```
+  - 'by': Unit to move. Default is computed based on 'to' value.
+    ```
+    'line', 'wrappedLine', 'character', 'halfLine'
+    ```
+  - 'value': Number of units to move. Default is '1'.
+  - 'select': If 'true' makes the selection. Default is 'false'.
 
 `editorScroll` - Scroll editor in the given direction
 
 - _Editor scroll argument object_
 
-    Property-value pairs that can be passed through this argument:
+  Property-value pairs that can be passed through this argument:
 
-    - 'to': A mandatory direction value.
-        ```
-        'up', 'down'
-        ```
-    - 'by': Unit to move. Default is computed based on 'to' value.
-        ```
-        'line', 'wrappedLine', 'page', 'halfPage'
-        ```
-    - 'value': Number of units to move. Default is '1'.
-    - 'revealCursor': If 'true' reveals the cursor if it is outside view port.
+  - 'to': A mandatory direction value.
+    ```
+    'up', 'down'
+    ```
+  - 'by': Unit to move. Default is computed based on 'to' value.
+    ```
+    'line', 'wrappedLine', 'page', 'halfPage'
+    ```
+  - 'value': Number of units to move. Default is '1'.
+  - 'revealCursor': If 'true' reveals the cursor if it is outside view port.
 
 `revealLine` - Reveal the given line at the given logical position
 
 - _Reveal line argument object_
 
-    Property-value pairs that can be passed through this argument:
+  Property-value pairs that can be passed through this argument:
 
-    - 'lineNumber': A mandatory line number value.
-    - 'at': Logical position at which line has to be revealed .
-        ```
-        'top', 'center', 'bottom'
-        ```
+  - 'lineNumber': A mandatory line number value.
+  - 'at': Logical position at which line has to be revealed .
+    ```
+    'top', 'center', 'bottom'
+    ```
 
 `editor.unfold` - Unfold the content in the editor
 
 - _Unfold editor argument_
 
-    Property-value pairs that can be passed through this argument:
+  Property-value pairs that can be passed through this argument:
 
-    - 'levels': Number of levels to unfold. If not set, defaults to 1.
-    - 'direction': If 'up', unfold given number of levels up otherwise unfolds
-      down.
-    - 'selectionLines': The start lines (0-based) of the editor selections to
-      apply the unfold action to. If not set, the active selection(s) will be
-      used.
+  - 'levels': Number of levels to unfold. If not set, defaults to 1.
+  - 'direction': If 'up', unfold given number of levels up otherwise unfolds down.
+  - 'selectionLines': The start lines (0-based) of the editor selections to apply the unfold action to. If not set, the active selection(s) will be used.
 
 `editor.fold` - Fold the content in the editor
 
 - _Fold editor argument_
 
-    Property-value pairs that can be passed through this argument:
+  Property-value pairs that can be passed through this argument:
 
-    - 'levels': Number of levels to fold. Defaults to 1.
-    - 'direction': If 'up', folds given number of levels up otherwise folds
-      down.
-    - 'selectionLines': The start lines (0-based) of the editor selections to
-      apply the fold action to. If not set, the active selection(s) will be
-      used.
+  - 'levels': Number of levels to fold. Defaults to 1.
+  - 'direction': If 'up', folds given number of levels up otherwise folds down.
+  - 'selectionLines': The start lines (0-based) of the editor selections to apply the fold action to. If not set, the active selection(s) will be used.
 
 `editor.action.showReferences` - Show references at a position in a file
 
@@ -297,23 +264,19 @@ must be 1 to be applied per row or column. Example for a 2x2 grid:
 
 - _Active editor move argument_
 
-    Argument Properties:
+  Argument Properties:
 
-    - 'to': String value providing where to move.
-    - 'by': String value providing the unit for move (by tab or by group).
-    - 'value': Number value providing how many positions or an absolute position
-      to move.
+  - 'to': String value providing where to move.
+  - 'by': String value providing the unit for move (by tab or by group).
+  - 'value': Number value providing how many positions or an absolute position to move.
 
 ## Simple commands
 
-Simple commands that do not require parameters can be found in the Keyboard
-Shortcuts list in the default `keybindings.json` file. The unbound commands are
-listed in a comment block at the bottom of the file.
+Simple commands that do not require parameters can be found in the Keyboard Shortcuts list in the default `keybindings.json` file. The unbound commands are listed in a comment block at the bottom of the file.
 
 To review `keybindings.json`:
 
-Windows, Linux: **File** > **Preferences** > **Keyboard Shortcuts** >
-`keybindings.json` link
+Windows, Linux: **File** > **Preferences** > **Keyboard Shortcuts** > `keybindings.json` link
 
-macOS: **Code** > **Preferences** > **Keyboard Shortcuts** > `keybindings.json`
-link
+macOS:
+**Code** > **Preferences** > **Keyboard Shortcuts** > `keybindings.json` link
