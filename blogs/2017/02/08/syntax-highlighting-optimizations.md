@@ -204,66 +204,243 @@ scopes = ['source.js', 'meta.definition.function.js', 'entity.name.function.js']
 Here are some simple selectors that would match, sorted by their rank (descending):
 
 <table class="table table-striped" style="font-size: 80%">
-<tr>
-    <th>Selector</th>
-    <th>C</th>
-    <th>B</th>
-    <th>A</th>
-</tr>
-<tr>
-    <td><samp>source</samp></td>
-    <td><samp><span style="color:blue">source</span>.js</samp></td>
-    <td><samp>meta.definition.function.js</samp></td>
-    <td><samp>entity.name.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>source.js</samp></td>
-    <td><samp><span style="color:blue">source.js</span></samp></td>
-    <td><samp>meta.definition.function.js</samp></td>
-    <td><samp>entity.name.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>meta</samp></td>
-    <td><samp>source.js</samp></td>
-    <td><samp><span style="color:blue">meta</span>.definition.function.js</samp></td>
-    <td><samp>entity.name.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>meta.definition</samp></td>
-    <td><samp>source.js</samp></td>
-    <td><samp><span style="color:blue">meta.definition</span>.function.js</samp></td>
-    <td><samp>entity.name.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>meta.definition.function</samp></td>
-    <td><samp>source.js</samp></td>
-    <td><samp><span style="color:blue">meta.definition.function</span>.js</samp></td>
-    <td><samp>entity.name.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>entity</samp></td>
-    <td><samp>source.js</samp></td>
-    <td><samp>meta.definition.function.js</samp></td>
-    <td><samp><span style="color:blue">entity</span>.name.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>entity.name</samp></td>
-    <td><samp>source.js</samp></td>
-    <td><samp>meta.definition.function.js</samp></td>
-    <td><samp><span style="color:blue">entity.name</span>.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>entity.name.function</samp></td>
-    <td><samp>source.js</samp></td>
-    <td><samp>meta.definition.function.js</samp></td>
-    <td><samp><span style="color:blue">entity.name.function</span>.js</samp></td>
-</tr>
-<tr>
-    <td><samp>entity.name.function.js</samp></td>
-    <td><samp>source.js</samp></td>
-    <td><samp>meta.definition.function.js</samp></td>
-    <td><samp><span style="color:blue">entity.name.function.js</span></samp></td>
-</tr>
+	<tr>
+		<th>
+			Selector
+		</th>
+		<th>
+			C
+		</th>
+		<th>
+			B
+		</th>
+		<th>
+			A
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				source
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					source
+				</span>
+				.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				meta.definition.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				entity.name.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				source.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					source.js
+				</span>
+			</samp>
+		</td>
+		<td>
+			<samp>
+				meta.definition.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				entity.name.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				meta
+			</samp>
+		</td>
+		<td>
+			<samp>
+				source.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					meta
+				</span>
+				.definition.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				entity.name.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				meta.definition
+			</samp>
+		</td>
+		<td>
+			<samp>
+				source.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					meta.definition
+				</span>
+				.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				entity.name.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				meta.definition.function
+			</samp>
+		</td>
+		<td>
+			<samp>
+				source.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					meta.definition.function
+				</span>
+				.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				entity.name.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				entity
+			</samp>
+		</td>
+		<td>
+			<samp>
+				source.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				meta.definition.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					entity
+				</span>
+				.name.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				entity.name
+			</samp>
+		</td>
+		<td>
+			<samp>
+				source.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				meta.definition.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					entity.name
+				</span>
+				.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				entity.name.function
+			</samp>
+		</td>
+		<td>
+			<samp>
+				source.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				meta.definition.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					entity.name.function
+				</span>
+				.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				entity.name.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				source.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				meta.definition.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					entity.name.function.js
+				</span>
+			</samp>
+		</td>
+	</tr>
 </table>
 <br>
 
@@ -276,72 +453,287 @@ Here are some simple selectors that would match, sorted by their rank (descendin
 To make things a bit more complicated, TextMate themes also support parent selectors. Here are some examples of using both simple selectors and parent selectors (again sorted by their rank descending):
 
 <table class="table table-striped" style="font-size: 80%">
-<tr>
-    <th>Selector</th>
-    <th>C</th>
-    <th>B</th>
-    <th>A</th>
-</tr>
-<tr>
-    <td><samp>meta</samp></td>
-    <td><samp>source.js</samp></td>
-    <td><samp><span style="color:blue">meta</span>.definition.function.js</samp></td>
-    <td><samp>entity.name.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>source meta</samp></td>
-    <td><samp><span style="color:blue">source</span>.js</samp></td>
-    <td><samp><span style="color:blue">meta</span>.definition.function.js</samp></td>
-    <td><samp>entity.name.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>source.js meta</samp></td>
-    <td><samp><span style="color:blue">source.js</span></samp></td>
-    <td><samp><span style="color:blue">meta</span>.definition.function.js</samp></td>
-    <td><samp>entity.name.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>meta.definition</samp></td>
-    <td><samp>source.js</samp></td>
-    <td><samp><span style="color:blue">meta.definition</span>.function.js</samp></td>
-    <td><samp>entity.name.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>source meta.definition</samp></td>
-    <td><samp><span style="color:blue">source</span>.js</samp></td>
-    <td><samp><span style="color:blue">meta.definition</span>.function.js</samp></td>
-    <td><samp>entity.name.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>entity</samp></td>
-    <td><samp>source.js</samp></td>
-    <td><samp>meta.definition.function.js</samp></td>
-    <td><samp><span style="color:blue">entity</span>.name.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>source entity</samp></td>
-    <td><samp><span style="color:blue">source</span>.js</samp></td>
-    <td><samp>meta.definition.function.js</samp></td>
-    <td><samp><span style="color:blue">entity</span>.name.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>meta.definition entity</samp></td>
-    <td><samp>source.js</samp></td>
-    <td><samp><span style="color:blue">meta.definition</span>.function.js</samp></td>
-    <td><samp><span style="color:blue">entity</span>.name.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>entity.name</samp></td>
-    <td><samp>source.js</samp></td>
-    <td><samp>meta.definition.function.js</samp></td>
-    <td><samp><span style="color:blue">entity.name</span>.function.js</samp></td>
-</tr>
-<tr>
-    <td><samp>source entity.name</samp></td>
-    <td><samp><span style="color:blue">source</span>.js</samp></td>
-    <td><samp>meta.definition.function.js</samp></td>
-    <td><samp><span style="color:blue">entity.name</span>.function.js</samp></td>
-</tr>
+	<tr>
+		<th>
+			Selector
+		</th>
+		<th>
+			C
+		</th>
+		<th>
+			B
+		</th>
+		<th>
+			A
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				meta
+			</samp>
+		</td>
+		<td>
+			<samp>
+				source.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					meta
+				</span>
+				.definition.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				entity.name.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				source meta
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					source
+				</span>
+				.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					meta
+				</span>
+				.definition.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				entity.name.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				source.js meta
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					source.js
+				</span>
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					meta
+				</span>
+				.definition.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				entity.name.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				meta.definition
+			</samp>
+		</td>
+		<td>
+			<samp>
+				source.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					meta.definition
+				</span>
+				.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				entity.name.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				source meta.definition
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					source
+				</span>
+				.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					meta.definition
+				</span>
+				.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				entity.name.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				entity
+			</samp>
+		</td>
+		<td>
+			<samp>
+				source.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				meta.definition.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					entity
+				</span>
+				.name.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				source entity
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					source
+				</span>
+				.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				meta.definition.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					entity
+				</span>
+				.name.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				meta.definition entity
+			</samp>
+		</td>
+		<td>
+			<samp>
+				source.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					meta.definition
+				</span>
+				.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					entity
+				</span>
+				.name.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				entity.name
+			</samp>
+		</td>
+		<td>
+			<samp>
+				source.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				meta.definition.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					entity.name
+				</span>
+				.function.js
+			</samp>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<samp>
+				source entity.name
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					source
+				</span>
+				.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				meta.definition.function.js
+			</samp>
+		</td>
+		<td>
+			<samp>
+				<span style="color:blue">
+					entity.name
+				</span>
+				.function.js
+			</samp>
+		</td>
+	</tr>
 </table>
 <br>
 
