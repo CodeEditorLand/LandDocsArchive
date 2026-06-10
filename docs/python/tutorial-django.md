@@ -771,25 +771,35 @@ With your models in place and the database migrated, you can store and retrieve 
 
         {% if message_list %}
             <table class="message_list">
-                <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Message</th>
-                </tr>
-                </thead>
-                <tbody>
-                {% for message in message_list %}
-                    <tr>
-                        <td>\{{ message.log_date | date:'d M Y' }}</td>
-                        <td>\{{ message.log_date | time:'H:i:s' }}</td>
-                        <td>
-                            \{{ message.message }}
-                        </td>
-                    </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+	<thead>
+		<tr>
+			<th>
+				Date
+			</th>
+			<th>
+				Time
+			</th>
+			<th>
+				Message
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for message in message_list %}
+		<tr>
+			<td>
+				\{{ message.log_date | date:'d M Y' }}
+			</td>
+			<td>
+				\{{ message.log_date | time:'H:i:s' }}
+			</td>
+			<td>
+				\{{ message.message }}
+			</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
         {% else %}
             <p>No messages have been logged. Use the <a href="{% url 'log' %}">Log Message form</a>.</p>
         {% endif %}
