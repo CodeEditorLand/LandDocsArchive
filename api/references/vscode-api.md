@@ -137,91 +137,91 @@ by extensions.</li>
 	<tr>
 		<td>
 			<a name="command">
-			</a>
-			<span class="ts" id="2045" data-target="#details-2045" data-toggle="collapse">
-				<span class="ident">
-					command
+				<span class="ts" id="2045" data-target="#details-2045" data-toggle="collapse">
+					<span class="ident">
+						command
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Identifier of the command to execute.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="rest">
-			</a>
-			<span class="ts" id="2046" data-target="#details-2046" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					rest
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					any
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Parameters passed to the command function.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to the returned value of the given command.
-					<code>
-						undefined
-					</code>
-					when
+				<td>
+					<div class="comment">
+						<p>
+							Identifier of the command to execute.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="rest">
+							<span class="ts" id="2046" data-target="#details-2046" data-toggle="collapse">
+								<span>
+									...
+								</span>
+								<span class="ident">
+									rest
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									any
+								</a>
+								[]
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Parameters passed to the command function.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-intrinsic">
+											T
+										</a>
+										|
+										<a class="type-intrinsic">
+											undefined
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A thenable that resolves to the returned value of the given command.
+											<code>
+												undefined
+											</code>
+											when
 the command handler function doesn't return anything.
-				</p>
-			</div>
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -248,61 +248,61 @@ treated as internal commands.</p>
 	<tr>
 		<td>
 			<a name="filterInternal">
+				<span class="ts" id="2049" data-target="#details-2049" data-toggle="collapse">
+					<span class="ident">
+						filterInternal
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						boolean
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Set
+							<code>
+								true
+							</code>
+							to not see internal commands (starting with an underscore)
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-intrinsic">
+								string
+							</a>
+							[]>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								Thenable that resolves to a list of command ids.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2049" data-target="#details-2049" data-toggle="collapse">
-				<span class="ident">
-					filterInternal
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Set
-					<code>
-						true
-					</code>
-					to not see internal commands (starting with an underscore)
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Thenable that resolves to a list of command ids.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -331,109 +331,109 @@ will cause an error.</p>
 	<tr>
 		<td>
 			<a name="command">
+				<span class="ts" id="2026" data-target="#details-2026" data-toggle="collapse">
+					<span class="ident">
+						command
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A unique identifier for the command.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="callback">
+							<span class="ts" id="2027" data-target="#details-2027" data-toggle="collapse">
+								<span class="ident">
+									callback
+								</span>
+								<span>
+									:
+								</span>
+								(args:
+								<a class="type-intrinsic">
+									any
+								</a>
+								[]) =>
+								<a class="type-intrinsic">
+									any
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A command handler function.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="thisArg">
+										<span class="ts" id="2031" data-target="#details-2031" data-toggle="collapse">
+											<span class="ident">
+												thisArg
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												any
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													The
+													<code>
+														this
+													</code>
+													context used when invoking the handler function.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Disposable">
+														Disposable
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														Disposable which unregisters this command on disposal.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2026" data-target="#details-2026" data-toggle="collapse">
-				<span class="ident">
-					command
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A unique identifier for the command.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="callback">
-			</a>
-			<span class="ts" id="2027" data-target="#details-2027" data-toggle="collapse">
-				<span class="ident">
-					callback
-				</span>
-				<span>
-					:
-				</span>
-				(args:
-				<a class="type-intrinsic">
-					any
-				</a>
-				[]) =>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A command handler function.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="thisArg">
-			</a>
-			<span class="ts" id="2031" data-target="#details-2031" data-toggle="collapse">
-				<span class="ident">
-					thisArg
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<code>
-						this
-					</code>
-					context used when invoking the handler function.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Disposable which unregisters this command on disposal.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -464,125 +464,125 @@ command handler of an editor command has access to the active editor and to an
 	<tr>
 		<td>
 			<a name="command">
-			</a>
-			<span class="ts" id="2034" data-target="#details-2034" data-toggle="collapse">
-				<span class="ident">
-					command
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A unique identifier for the command.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="callback">
-			</a>
-			<span class="ts" id="2035" data-target="#details-2035" data-toggle="collapse">
-				<span class="ident">
-					callback
-				</span>
-				<span>
-					:
-				</span>
-				(textEditor:
-				<a class="type-ref" href="#TextEditor">
-					TextEditor
-				</a>
-				, edit:
-				<a class="type-ref" href="#TextEditorEdit">
-					TextEditorEdit
-				</a>
-				, args:
-				<a class="type-intrinsic">
-					any
-				</a>
-				[]) =>
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A command handler function with access to an
-					<a href="#TextEditor">
-						editor
+				<span class="ts" id="2034" data-target="#details-2034" data-toggle="collapse">
+					<span class="ident">
+						command
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					and an
-					<a href="#TextEditorEdit">
-						edit
-					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="thisArg">
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A unique identifier for the command.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="callback">
+							<span class="ts" id="2035" data-target="#details-2035" data-toggle="collapse">
+								<span class="ident">
+									callback
+								</span>
+								<span>
+									:
+								</span>
+								(textEditor:
+								<a class="type-ref" href="#TextEditor">
+									TextEditor
+								</a>
+								, edit:
+								<a class="type-ref" href="#TextEditorEdit">
+									TextEditorEdit
+								</a>
+								, args:
+								<a class="type-intrinsic">
+									any
+								</a>
+								[]) =>
+								<a class="type-intrinsic">
+									void
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A command handler function with access to an
+										<a href="#TextEditor">
+											editor
+										</a>
+										and an
+										<a href="#TextEditorEdit">
+											edit
+										</a>
+										.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="thisArg">
+										<span class="ts" id="2041" data-target="#details-2041" data-toggle="collapse">
+											<span class="ident">
+												thisArg
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												any
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													The
+													<code>
+														this
+													</code>
+													context used when invoking the handler function.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Disposable">
+														Disposable
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														Disposable which unregisters this command on disposal.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2041" data-target="#details-2041" data-toggle="collapse">
-				<span class="ident">
-					thisArg
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<code>
-						this
-					</code>
-					context used when invoking the handler function.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Disposable which unregisters this command on disposal.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -690,47 +690,47 @@ to <code>undefined</code>.</p>
 	<tr>
 		<td>
 			<a name="breakpoints">
+				<span class="ts" id="2462" data-target="#details-2462" data-toggle="collapse">
+					<span class="ident">
+						breakpoints
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Breakpoint">
+						Breakpoint
+					</a>
+					[]
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The breakpoints to add.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2462" data-target="#details-2462" data-toggle="collapse">
-				<span class="ident">
-					breakpoints
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Breakpoint">
-					Breakpoint
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The breakpoints to add.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -758,81 +758,81 @@ Registering more than one DebugAdapterDescriptorFactory for a debug type results
 	<tr>
 		<td>
 			<a name="debugType">
-			</a>
-			<span class="ts" id="2450" data-target="#details-2450" data-toggle="collapse">
-				<span class="ident">
-					debugType
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The debug type for which the factory is registered.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="factory">
-			</a>
-			<span class="ts" id="2451" data-target="#details-2451" data-toggle="collapse">
-				<span class="ident">
-					factory
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DebugAdapterDescriptorFactory">
-					DebugAdapterDescriptorFactory
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<a href="#DebugAdapterDescriptorFactory">
-						debug adapter descriptor factory
+				<span class="ts" id="2450" data-target="#details-2450" data-toggle="collapse">
+					<span class="ident">
+						debugType
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					to register.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
-					</a>
-					that unregisters this factory when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The debug type for which the factory is registered.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="factory">
+							<span class="ts" id="2451" data-target="#details-2451" data-toggle="collapse">
+								<span class="ident">
+									factory
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#DebugAdapterDescriptorFactory">
+									DebugAdapterDescriptorFactory
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The
+										<a href="#DebugAdapterDescriptorFactory">
+											debug adapter descriptor factory
+										</a>
+										to register.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this factory when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -858,81 +858,81 @@ Registering more than one DebugAdapterDescriptorFactory for a debug type results
 	<tr>
 		<td>
 			<a name="debugType">
-			</a>
-			<span class="ts" id="2454" data-target="#details-2454" data-toggle="collapse">
-				<span class="ident">
-					debugType
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The debug type for which the factory is registered or '*' for matching all debug types.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="factory">
-			</a>
-			<span class="ts" id="2455" data-target="#details-2455" data-toggle="collapse">
-				<span class="ident">
-					factory
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DebugAdapterTrackerFactory">
-					DebugAdapterTrackerFactory
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<a href="#DebugAdapterTrackerFactory">
-						debug adapter tracker factory
+				<span class="ts" id="2454" data-target="#details-2454" data-toggle="collapse">
+					<span class="ident">
+						debugType
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					to register.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
-					</a>
-					that unregisters this factory when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The debug type for which the factory is registered or '*' for matching all debug types.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="factory">
+							<span class="ts" id="2455" data-target="#details-2455" data-toggle="collapse">
+								<span class="ident">
+									factory
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#DebugAdapterTrackerFactory">
+									DebugAdapterTrackerFactory
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The
+										<a href="#DebugAdapterTrackerFactory">
+											debug adapter tracker factory
+										</a>
+										to register.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this factory when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -959,78 +959,78 @@ More than one provider can be registered for the same type.</p>
 	<tr>
 		<td>
 			<a name="debugType">
-			</a>
-			<span class="ts" id="2446" data-target="#details-2446" data-toggle="collapse">
-				<span class="ident">
-					debugType
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2447" data-target="#details-2447" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DebugConfigurationProvider">
-					DebugConfigurationProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<a href="#DebugConfigurationProvider">
-						debug configuration provider
+				<span class="ts" id="2446" data-target="#details-2446" data-toggle="collapse">
+					<span class="ident">
+						debugType
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					to register.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
-					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="provider">
+									<span class="ts" id="2447" data-target="#details-2447" data-toggle="collapse">
+										<span class="ident">
+											provider
+										</span>
+										<span>
+											:
+										</span>
+										<a class="type-ref" href="#DebugConfigurationProvider">
+											DebugConfigurationProvider
+										</a>
+									</span>
+									<td>
+										<div class="comment">
+											<p>
+												The
+												<a href="#DebugConfigurationProvider">
+													debug configuration provider
+												</a>
+												to register.
+											</p>
+										</div>
+									</td>
+									<tr>
+										<th>
+											Returns
+										</th>
+										<th>
+											Description
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<span class="ts">
+												<a class="type-ref" href="#Disposable">
+													Disposable
+												</a>
+											</span>
+										</td>
+										<td>
+											<div class="comment">
+												<p>
+													A
+													<a href="#Disposable">
+														disposable
+													</a>
+													that unregisters this provider when being disposed.
+												</p>
+											</div>
+										</td>
+									</tr>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -1056,47 +1056,47 @@ More than one provider can be registered for the same type.</p>
 	<tr>
 		<td>
 			<a name="breakpoints">
+				<span class="ts" id="2465" data-target="#details-2465" data-toggle="collapse">
+					<span class="ident">
+						breakpoints
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Breakpoint">
+						Breakpoint
+					</a>
+					[]
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The breakpoints to remove.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2465" data-target="#details-2465" data-toggle="collapse">
-				<span class="ident">
-					breakpoints
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Breakpoint">
-					Breakpoint
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The breakpoints to remove.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -1126,98 +1126,98 @@ Folder specific variables used in the configuration (e.g. &#39;${workspaceFolder
 	<tr>
 		<td>
 			<a name="folder">
-			</a>
-			<span class="ts" id="2458" data-target="#details-2458" data-toggle="collapse">
-				<span class="ident">
-					folder
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#WorkspaceFolder">
-					WorkspaceFolder
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<a href="#WorkspaceFolder">
-						workspace folder
+				<span class="ts" id="2458" data-target="#details-2458" data-toggle="collapse">
+					<span class="ident">
+						folder
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#WorkspaceFolder">
+						WorkspaceFolder
 					</a>
-					for looking up named configurations and resolving variables or
-					<code>
+					|
+					<a class="type-intrinsic">
 						undefined
-					</code>
-					for a non-folder setup.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="nameOrConfiguration">
-			</a>
-			<span class="ts" id="2459" data-target="#details-2459" data-toggle="collapse">
-				<span class="ident">
-					nameOrConfiguration
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-ref" href="#DebugConfiguration">
-					DebugConfiguration
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Either the name of a debug or compound configuration or a
-					<a href="#DebugConfiguration">
-						DebugConfiguration
 					</a>
-					object.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves when debugging could be successfully started.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The
+							<a href="#WorkspaceFolder">
+								workspace folder
+							</a>
+							for looking up named configurations and resolving variables or
+							<code>
+								undefined
+							</code>
+							for a non-folder setup.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="nameOrConfiguration">
+							<span class="ts" id="2459" data-target="#details-2459" data-toggle="collapse">
+								<span class="ident">
+									nameOrConfiguration
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+								|
+								<a class="type-ref" href="#DebugConfiguration">
+									DebugConfiguration
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Either the name of a debug or compound configuration or a
+										<a href="#DebugConfiguration">
+											DebugConfiguration
+										</a>
+										object.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-intrinsic">
+											boolean
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A thenable that resolves when debugging could be successfully started.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -1361,61 +1361,61 @@ console.log(importedApi.mul(42, 1));
 	<tr>
 		<td>
 			<a name="extensionId">
+				<span class="ts" id="2469" data-target="#details-2469" data-toggle="collapse">
+					<span class="ident">
+						extensionId
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							An extension identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Extension">
+								Extension
+							</a>
+							<
+							<a class="type-intrinsic">
+								any
+							</a>
+							> |
+							<a class="type-intrinsic">
+								undefined
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								An extension or
+								<code>
+									undefined
+								</code>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2469" data-target="#details-2469" data-toggle="collapse">
-				<span class="ident">
-					extensionId
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An extension identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Extension">
-					Extension
-				</a>
-				<
-				<a class="type-intrinsic">
-					any
-				</a>
-				> |
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An extension or
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -1441,61 +1441,61 @@ console.log(importedApi.mul(42, 1));
 	<tr>
 		<td>
 			<a name="extensionId">
+				<span class="ts" id="2472" data-target="#details-2472" data-toggle="collapse">
+					<span class="ident">
+						extensionId
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							An extension identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Extension">
+								Extension
+							</a>
+							<
+							<a class="type-intrinsic">
+								T
+							</a>
+							> |
+							<a class="type-intrinsic">
+								undefined
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								An extension or
+								<code>
+									undefined
+								</code>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2472" data-target="#details-2472" data-toggle="collapse">
-				<span class="ident">
-					extensionId
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An extension identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Extension">
-					Extension
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				> |
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An extension or
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -1562,56 +1562,56 @@ newly added and removed diagnostics.</p>
 	<tr>
 		<td>
 			<a name="name">
-			</a>
-			<span class="ts" id="2333" data-target="#details-2333" data-toggle="collapse">
-				<span class="ident">
-					name
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<a href="#DiagnosticCollection.name">
+				<span class="ts" id="2333" data-target="#details-2333" data-toggle="collapse">
+					<span class="ident">
 						name
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					of the collection.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#DiagnosticCollection">
-					DiagnosticCollection
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A new diagnostic collection.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The
+							<a href="#DiagnosticCollection.name">
+								name
+							</a>
+							of the collection.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#DiagnosticCollection">
+								DiagnosticCollection
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A new diagnostic collection.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -1638,54 +1638,54 @@ all extensions but <em>not yet</em> from the task framework.</p>
 	<tr>
 		<td>
 			<a name="resource">
-			</a>
-			<span class="ts" id="2329" data-target="#details-2329" data-toggle="collapse">
-				<span class="ident">
-					resource
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A resource
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Diagnostic">
-					Diagnostic
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of
-					<a href="#Diagnostic">
-						diagnostics
+				<span class="ts" id="2329" data-target="#details-2329" data-toggle="collapse">
+					<span class="ident">
+						resource
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
 					</a>
-					objects or an empty array.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A resource
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Diagnostic">
+								Diagnostic
+							</a>
+							[]
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								An array of
+								<a href="#Diagnostic">
+									diagnostics
+								</a>
+								objects or an empty array.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -1827,81 +1827,81 @@ match(&#39;*&#39;, doc); // 5
 	<tr>
 		<td>
 			<a name="selector">
+				<span class="ts" id="2324" data-target="#details-2324" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A document selector.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="document">
+							<span class="ts" id="2325" data-target="#details-2325" data-toggle="collapse">
+								<span class="ident">
+									document
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#TextDocument">
+									TextDocument
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A text document.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											number
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A number
+											<code>
+												>0
+											</code>
+											when the selector matches and
+											<code>
+												0
+											</code>
+											when the selector does not match.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2324" data-target="#details-2324" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A document selector.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="document">
-			</a>
-			<span class="ts" id="2325" data-target="#details-2325" data-toggle="collapse">
-				<span class="ident">
-					document
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A text document.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A number
-					<code>
-						>0
-					</code>
-					when the selector matches and
-					<code>
-						0
-					</code>
-					when the selector does not match.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -1930,104 +1930,104 @@ not cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2341" data-target="#details-2341" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2342" data-target="#details-2342" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CodeActionProvider">
-					CodeActionProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A code action provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="metadata">
-			</a>
-			<span class="ts" id="2343" data-target="#details-2343" data-toggle="collapse">
-				<span class="ident">
-					metadata
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CodeActionProviderMetadata">
-					CodeActionProviderMetadata
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Metadata about the kind of code actions the provider providers.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2341" data-target="#details-2341" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2342" data-target="#details-2342" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CodeActionProvider">
+									CodeActionProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A code action provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="metadata">
+										<span class="ts" id="2343" data-target="#details-2343" data-toggle="collapse">
+											<span class="ident">
+												metadata
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CodeActionProviderMetadata">
+												CodeActionProviderMetadata
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Metadata about the kind of code actions the provider providers.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Disposable">
+														Disposable
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A
+														<a href="#Disposable">
+															disposable
+														</a>
+														that unregisters this provider when being disposed.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -2056,77 +2056,77 @@ not cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2346" data-target="#details-2346" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2347" data-target="#details-2347" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CodeLensProvider">
-					CodeLensProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A code lens provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2346" data-target="#details-2346" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2347" data-target="#details-2347" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CodeLensProvider">
+									CodeLensProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A code lens provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -2155,77 +2155,77 @@ not cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2417" data-target="#details-2417" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2418" data-target="#details-2418" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentColorProvider">
-					DocumentColorProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A color provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2417" data-target="#details-2417" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2418" data-target="#details-2418" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#DocumentColorProvider">
+									DocumentColorProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A color provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -2256,113 +2256,113 @@ operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2336" data-target="#details-2336" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2337" data-target="#details-2337" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CompletionItemProvider">
-					CompletionItemProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A completion provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="triggerCharacters">
-			</a>
-			<span class="ts" id="2338" data-target="#details-2338" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					triggerCharacters
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Trigger completion when the user types one of the characters, like
-					<code>
-						.
-					</code>
-					or
-					<code>
+				<span class="ts" id="2336" data-target="#details-2336" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
 						:
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2337" data-target="#details-2337" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CompletionItemProvider">
+									CompletionItemProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A completion provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="triggerCharacters">
+										<span class="ts" id="2338" data-target="#details-2338" data-toggle="collapse">
+											<span>
+												...
+											</span>
+											<span class="ident">
+												triggerCharacters
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												string
+											</a>
+											[]
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Trigger completion when the user types one of the characters, like
+													<code>
+														.
+													</code>
+													or
+													<code>
+														:
+													</code>
+													.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Disposable">
+														Disposable
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A
+														<a href="#Disposable">
+															disposable
+														</a>
+														that unregisters this provider when being disposed.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -2391,77 +2391,77 @@ not cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2362" data-target="#details-2362" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2363" data-target="#details-2363" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DeclarationProvider">
-					DeclarationProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A declaration provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2362" data-target="#details-2362" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2363" data-target="#details-2363" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#DeclarationProvider">
+									DeclarationProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A declaration provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -2490,77 +2490,77 @@ not cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2350" data-target="#details-2350" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2351" data-target="#details-2351" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DefinitionProvider">
-					DefinitionProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A definition provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2350" data-target="#details-2350" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2351" data-target="#details-2351" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#DefinitionProvider">
+									DefinitionProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A definition provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -2589,77 +2589,77 @@ of the selected provider will cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2390" data-target="#details-2390" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2391" data-target="#details-2391" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentFormattingEditProvider">
-					DocumentFormattingEditProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A document formatting edit provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2390" data-target="#details-2390" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2391" data-target="#details-2391" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#DocumentFormattingEditProvider">
+									DocumentFormattingEditProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A document formatting edit provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -2688,77 +2688,77 @@ The process stops when a provider returns a <code>non-falsy</code> or <code>non-
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2370" data-target="#details-2370" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2371" data-target="#details-2371" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentHighlightProvider">
-					DocumentHighlightProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A document highlight provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2370" data-target="#details-2370" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2371" data-target="#details-2371" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#DocumentHighlightProvider">
+									DocumentHighlightProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A document highlight provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -2787,77 +2787,77 @@ not cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2413" data-target="#details-2413" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2414" data-target="#details-2414" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentLinkProvider">
-					DocumentLinkProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A document link provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2413" data-target="#details-2413" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2414" data-target="#details-2414" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#DocumentLinkProvider">
+									DocumentLinkProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A document link provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -2889,77 +2889,77 @@ of the selected provider will cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2394" data-target="#details-2394" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2395" data-target="#details-2395" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentRangeFormattingEditProvider">
-					DocumentRangeFormattingEditProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A document range formatting edit provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2394" data-target="#details-2394" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2395" data-target="#details-2395" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#DocumentRangeFormattingEditProvider">
+									DocumentRangeFormattingEditProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A document range formatting edit provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -2988,104 +2988,104 @@ not cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2374" data-target="#details-2374" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2375" data-target="#details-2375" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSymbolProvider">
-					DocumentSymbolProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A document symbol provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="metaData">
-			</a>
-			<span class="ts" id="2376" data-target="#details-2376" data-toggle="collapse">
-				<span class="ident">
-					metaData
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSymbolProviderMetadata">
-					DocumentSymbolProviderMetadata
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					metadata about the provider
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2374" data-target="#details-2374" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2375" data-target="#details-2375" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#DocumentSymbolProvider">
+									DocumentSymbolProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A document symbol provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="metaData">
+										<span class="ts" id="2376" data-target="#details-2376" data-toggle="collapse">
+											<span class="ident">
+												metaData
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#DocumentSymbolProviderMetadata">
+												DocumentSymbolProviderMetadata
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													metadata about the provider
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Disposable">
+														Disposable
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A
+														<a href="#Disposable">
+															disposable
+														</a>
+														that unregisters this provider when being disposed.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -3117,77 +3117,77 @@ not cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2421" data-target="#details-2421" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2422" data-target="#details-2422" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#FoldingRangeProvider">
-					FoldingRangeProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A folding range provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2421" data-target="#details-2421" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2422" data-target="#details-2422" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#FoldingRangeProvider">
+									FoldingRangeProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A folding range provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -3216,77 +3216,77 @@ not cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2366" data-target="#details-2366" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2367" data-target="#details-2367" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#HoverProvider">
-					HoverProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A hover provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2366" data-target="#details-2366" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2367" data-target="#details-2367" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#HoverProvider">
+									HoverProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A hover provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -3315,77 +3315,77 @@ not cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2354" data-target="#details-2354" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2355" data-target="#details-2355" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ImplementationProvider">
-					ImplementationProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An implementation provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2354" data-target="#details-2354" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2355" data-target="#details-2355" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#ImplementationProvider">
+									ImplementationProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										An implementation provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -3414,133 +3414,133 @@ of the selected provider will cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2398" data-target="#details-2398" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2399" data-target="#details-2399" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#OnTypeFormattingEditProvider">
-					OnTypeFormattingEditProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An on type formatting edit provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="firstTriggerCharacter">
-			</a>
-			<span class="ts" id="2400" data-target="#details-2400" data-toggle="collapse">
-				<span class="ident">
-					firstTriggerCharacter
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A character on which formatting should be triggered, like
-					<code>
-						}
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="moreTriggerCharacter">
-			</a>
-			<span class="ts" id="2401" data-target="#details-2401" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					moreTriggerCharacter
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					More trigger characters.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2398" data-target="#details-2398" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2399" data-target="#details-2399" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#OnTypeFormattingEditProvider">
+									OnTypeFormattingEditProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										An on type formatting edit provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="firstTriggerCharacter">
+										<span class="ts" id="2400" data-target="#details-2400" data-toggle="collapse">
+											<span class="ident">
+												firstTriggerCharacter
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												string
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A character on which formatting should be triggered, like
+													<code>
+														}
+													</code>
+													.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="moreTriggerCharacter">
+													<span class="ts" id="2401" data-target="#details-2401" data-toggle="collapse">
+														<span>
+															...
+														</span>
+														<span class="ident">
+															moreTriggerCharacter
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-intrinsic">
+															string
+														</a>
+														[]
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																More trigger characters.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<th>
+															Returns
+														</th>
+														<th>
+															Description
+														</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="ts">
+																<a class="type-ref" href="#Disposable">
+																	Disposable
+																</a>
+															</span>
+														</td>
+														<td>
+															<div class="comment">
+																<p>
+																	A
+																	<a href="#Disposable">
+																		disposable
+																	</a>
+																	that unregisters this provider when being disposed.
+																</p>
+															</div>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -3569,77 +3569,77 @@ not cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2382" data-target="#details-2382" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2383" data-target="#details-2383" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ReferenceProvider">
-					ReferenceProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A reference provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2382" data-target="#details-2382" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2383" data-target="#details-2383" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#ReferenceProvider">
+									ReferenceProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A reference provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -3668,77 +3668,77 @@ of the selected provider will cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2386" data-target="#details-2386" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2387" data-target="#details-2387" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#RenameProvider">
-					RenameProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A rename provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2386" data-target="#details-2386" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2387" data-target="#details-2387" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#RenameProvider">
+									RenameProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A rename provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -3767,113 +3767,113 @@ valid result.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2404" data-target="#details-2404" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2405" data-target="#details-2405" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#SignatureHelpProvider">
-					SignatureHelpProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A signature help provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="triggerCharacters">
-			</a>
-			<span class="ts" id="2406" data-target="#details-2406" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					triggerCharacters
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Trigger signature help when the user types one of the characters, like
-					<code>
-						,
-					</code>
-					or
-					<code>
-						(
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2404" data-target="#details-2404" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2405" data-target="#details-2405" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#SignatureHelpProvider">
+									SignatureHelpProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A signature help provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="triggerCharacters">
+										<span class="ts" id="2406" data-target="#details-2406" data-toggle="collapse">
+											<span>
+												...
+											</span>
+											<span class="ident">
+												triggerCharacters
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												string
+											</a>
+											[]
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Trigger signature help when the user types one of the characters, like
+													<code>
+														,
+													</code>
+													or
+													<code>
+														(
+													</code>
+													.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Disposable">
+														Disposable
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A
+														<a href="#Disposable">
+															disposable
+														</a>
+														that unregisters this provider when being disposed.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -3898,85 +3898,85 @@ valid result.</p>
 	<tr>
 		<td>
 			<a name="selector">
+				<span class="ts" id="2408" data-target="#details-2408" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="provider">
+									<span class="ts" id="2409" data-target="#details-2409" data-toggle="collapse">
+										<span class="ident">
+											provider
+										</span>
+										<span>
+											:
+										</span>
+										<a class="type-ref" href="#SignatureHelpProvider">
+											SignatureHelpProvider
+										</a>
+									</span>
+									<td>
+										<div class="comment">
+											<tr>
+												<td>
+													<a name="metadata">
+														<span class="ts" id="2410" data-target="#details-2410" data-toggle="collapse">
+															<span class="ident">
+																metadata
+															</span>
+															<span>
+																:
+															</span>
+															<a class="type-ref" href="#SignatureHelpProviderMetadata">
+																SignatureHelpProviderMetadata
+															</a>
+														</span>
+														<td>
+															<div class="comment">
+																<tr>
+																	<th>
+																		Returns
+																	</th>
+																	<th>
+																		Description
+																	</th>
+																</tr>
+																<tr>
+																	<td>
+																		<span class="ts">
+																			<a class="type-ref" href="#Disposable">
+																				Disposable
+																			</a>
+																		</span>
+																	</td>
+																	<td>
+																		<div class="comment">
+																		</div>
+																	</td>
+																</tr>
+															</div>
+														</td>
+													</a>
+												</td>
+											</tr>
+										</div>
+									</td>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="2408" data-target="#details-2408" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2409" data-target="#details-2409" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#SignatureHelpProvider">
-					SignatureHelpProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="metadata">
-			</a>
-			<span class="ts" id="2410" data-target="#details-2410" data-toggle="collapse">
-				<span class="ident">
-					metadata
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#SignatureHelpProviderMetadata">
-					SignatureHelpProviderMetadata
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -4005,77 +4005,77 @@ not cause a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="selector">
-			</a>
-			<span class="ts" id="2358" data-target="#details-2358" data-toggle="collapse">
-				<span class="ident">
-					selector
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentSelector">
-					DocumentSelector
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A selector that defines the documents this provider is applicable to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2359" data-target="#details-2359" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TypeDefinitionProvider">
-					TypeDefinitionProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A type definition provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2358" data-target="#details-2358" data-toggle="collapse">
+					<span class="ident">
+						selector
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentSelector">
+						DocumentSelector
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A selector that defines the documents this provider is applicable to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2359" data-target="#details-2359" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#TypeDefinitionProvider">
+									TypeDefinitionProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A type definition provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -4104,53 +4104,53 @@ a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="provider">
-			</a>
-			<span class="ts" id="2379" data-target="#details-2379" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#WorkspaceSymbolProvider">
-					WorkspaceSymbolProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A workspace symbol provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2379" data-target="#details-2379" data-toggle="collapse">
+					<span class="ident">
+						provider
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#WorkspaceSymbolProvider">
+						WorkspaceSymbolProvider
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A workspace symbol provider.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Disposable">
+								Disposable
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A
+								<a href="#Disposable">
+									disposable
+								</a>
+								that unregisters this provider when being disposed.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -4176,81 +4176,81 @@ a failure of the whole operation.</p>
 	<tr>
 		<td>
 			<a name="language">
-			</a>
-			<span class="ts" id="2425" data-target="#details-2425" data-toggle="collapse">
-				<span class="ident">
-					language
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A language identifier like
-					<code>
-						typescript
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="configuration">
-			</a>
-			<span class="ts" id="2426" data-target="#details-2426" data-toggle="collapse">
-				<span class="ident">
-					configuration
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#LanguageConfiguration">
-					LanguageConfiguration
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Language configuration.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2425" data-target="#details-2425" data-toggle="collapse">
+					<span class="ident">
+						language
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					that unsets this configuration.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A language identifier like
+							<code>
+								typescript
+							</code>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="configuration">
+							<span class="ts" id="2426" data-target="#details-2426" data-toggle="collapse">
+								<span class="ident">
+									configuration
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#LanguageConfiguration">
+									LanguageConfiguration
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Language configuration.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unsets this configuration.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -4279,78 +4279,78 @@ followed by the <a href="#workspace.onDidOpenTextDocument"><code>onDidOpenTextDo
 	<tr>
 		<td>
 			<a name="document">
+				<span class="ts" id="2320" data-target="#details-2320" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The document which language is to be changed
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="languageId">
+							<span class="ts" id="2321" data-target="#details-2321" data-toggle="collapse">
+								<span class="ident">
+									languageId
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The new language identifier.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-ref" href="#TextDocument">
+											TextDocument
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A thenable that resolves with the updated document.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2320" data-target="#details-2320" data-toggle="collapse">
-				<span class="ident">
-					document
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document which language is to be changed
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="languageId">
-			</a>
-			<span class="ts" id="2321" data-target="#details-2321" data-toggle="collapse">
-				<span class="ident">
-					languageId
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The new language identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves with the updated document.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -4398,120 +4398,120 @@ created by the extension.</del></p>
 	<tr>
 		<td>
 			<a name="id">
-			</a>
-			<span class="ts" id="2431" data-target="#details-2431" data-toggle="collapse">
-				<span class="ident">
-					id
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An
-					<code>
+				<span class="ts" id="2431" data-target="#details-2431" data-toggle="collapse">
+					<span class="ident">
 						id
-					</code>
-					for the source control. Something short, eg:
-					<code>
-						git
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="label">
-			</a>
-			<span class="ts" id="2432" data-target="#details-2432" data-toggle="collapse">
-				<span class="ident">
-					label
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A human-readable string for the source control. Eg:
-					<code>
-						Git
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="rootUri">
-			</a>
-			<span class="ts" id="2433" data-target="#details-2433" data-toggle="collapse">
-				<span class="ident">
-					rootUri
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An optional Uri of the root of the source control. Eg:
-					<code>
-						Uri.parse(workspaceRoot)
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#SourceControl">
-					SourceControl
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An instance of
-					<a href="#SourceControl">
-						source control
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							An
+							<code>
+								id
+							</code>
+							for the source control. Something short, eg:
+							<code>
+								git
+							</code>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="label">
+							<span class="ts" id="2432" data-target="#details-2432" data-toggle="collapse">
+								<span class="ident">
+									label
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A human-readable string for the source control. Eg:
+										<code>
+											Git
+										</code>
+										.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="rootUri">
+										<span class="ts" id="2433" data-target="#details-2433" data-toggle="collapse">
+											<span class="ident">
+												rootUri
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#Uri">
+												Uri
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													An optional Uri of the root of the source control. Eg:
+													<code>
+														Uri.parse(workspaceRoot)
+													</code>
+													.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#SourceControl">
+														SourceControl
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														An instance of
+														<a href="#SourceControl">
+															source control
+														</a>
+														.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -4598,51 +4598,51 @@ task execution can be used to terminate the task.</p>
 	<tr>
 		<td>
 			<a name="task">
+				<span class="ts" id="2010" data-target="#details-2010" data-toggle="collapse">
+					<span class="ident">
+						task
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Task">
+						Task
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							the task to execute
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-ref" href="#TaskExecution">
+								TaskExecution
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2010" data-target="#details-2010" data-toggle="collapse">
-				<span class="ident">
-					task
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Task">
-					Task
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					the task to execute
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#TaskExecution">
-					TaskExecution
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -4670,54 +4670,54 @@ contributed through extensions.</p>
 	<tr>
 		<td>
 			<a name="filter">
+				<span class="ts" id="2007" data-target="#details-2007" data-toggle="collapse">
+					<span class="ident">
+						filter
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TaskFilter">
+						TaskFilter
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							a filter to filter the return tasks.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-ref" href="#Task">
+								Task
+							</a>
+							[]>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2007" data-target="#details-2007" data-toggle="collapse">
-				<span class="ident">
-					filter
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TaskFilter">
-					TaskFilter
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					a filter to filter the return tasks.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#Task">
-					Task
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -4743,77 +4743,77 @@ contributed through extensions.</p>
 	<tr>
 		<td>
 			<a name="type">
-			</a>
-			<span class="ts" id="2003" data-target="#details-2003" data-toggle="collapse">
-				<span class="ident">
-					type
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The task kind type this provider is registered for.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2004" data-target="#details-2004" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TaskProvider">
-					TaskProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A task provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2003" data-target="#details-2003" data-toggle="collapse">
+					<span class="ident">
+						type
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The task kind type this provider is registered for.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2004" data-target="#details-2004" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#TaskProvider">
+									TaskProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A task provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -5030,46 +5030,46 @@ when <a href="#window.showInputBox">window.showInputBox</a> does not offer the r
 	<tr>
 		<td>
 			<a name="name">
+				<span class="ts" id="2174" data-target="#details-2174" data-toggle="collapse">
+					<span class="ident">
+						name
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Human-readable string which will be used to represent the channel in the UI.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#OutputChannel">
+								OutputChannel
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2174" data-target="#details-2174" data-toggle="collapse">
-				<span class="ident">
-					name
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Human-readable string which will be used to represent the channel in the UI.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#OutputChannel">
-					OutputChannel
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -5144,79 +5144,79 @@ when <a href="#window.showQuickPick">window.showQuickPick</a> does not offer the
 	<tr>
 		<td>
 			<a name="alignment">
+				<span class="ts" id="2214" data-target="#details-2214" data-toggle="collapse">
+					<span class="ident">
+						alignment
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#StatusBarAlignment">
+						StatusBarAlignment
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The alignment of the item.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="priority">
+							<span class="ts" id="2215" data-target="#details-2215" data-toggle="collapse">
+								<span class="ident">
+									priority
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									number
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The priority of the item. Higher values mean the item should be shown more to the left.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#StatusBarItem">
+											StatusBarItem
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A new status bar item.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2214" data-target="#details-2214" data-toggle="collapse">
-				<span class="ident">
-					alignment
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#StatusBarAlignment">
-					StatusBarAlignment
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The alignment of the item.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="priority">
-			</a>
-			<span class="ts" id="2215" data-target="#details-2215" data-toggle="collapse">
-				<span class="ident">
-					priority
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The priority of the item. Higher values mean the item should be shown more to the left.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#StatusBarItem">
-					StatusBarItem
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A new status bar item.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -5243,107 +5243,107 @@ if it exists, regardless of whether an explicit customStartPath setting exists.<
 	<tr>
 		<td>
 			<a name="name">
+				<span class="ts" id="2218" data-target="#details-2218" data-toggle="collapse">
+					<span class="ident">
+						name
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Optional human-readable string which will be used to represent the terminal in the UI.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="shellPath">
+							<span class="ts" id="2219" data-target="#details-2219" data-toggle="collapse">
+								<span class="ident">
+									shellPath
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Optional path to a custom shell executable to be used in the terminal.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="shellArgs">
+										<span class="ts" id="2220" data-target="#details-2220" data-toggle="collapse">
+											<span class="ident">
+												shellArgs
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												string
+											</a>
+											[]
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Optional args for the custom shell executable, this does not work on Windows (see #8429)
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Terminal">
+														Terminal
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A new Terminal.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2218" data-target="#details-2218" data-toggle="collapse">
-				<span class="ident">
-					name
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Optional human-readable string which will be used to represent the terminal in the UI.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="shellPath">
-			</a>
-			<span class="ts" id="2219" data-target="#details-2219" data-toggle="collapse">
-				<span class="ident">
-					shellPath
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Optional path to a custom shell executable to be used in the terminal.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="shellArgs">
-			</a>
-			<span class="ts" id="2220" data-target="#details-2220" data-toggle="collapse">
-				<span class="ident">
-					shellArgs
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Optional args for the custom shell executable, this does not work on Windows (see #8429)
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Terminal">
-					Terminal
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A new Terminal.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -5370,49 +5370,49 @@ if it exists, regardless of whether an explicit customStartPath setting exists.<
 	<tr>
 		<td>
 			<a name="options">
+				<span class="ts" id="2222" data-target="#details-2222" data-toggle="collapse">
+					<span class="ident">
+						options
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TerminalOptions">
+						TerminalOptions
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A TerminalOptions object describing the characteristics of the new terminal.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Terminal">
+								Terminal
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A new Terminal.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2222" data-target="#details-2222" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TerminalOptions">
-					TerminalOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A TerminalOptions object describing the characteristics of the new terminal.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Terminal">
-					Terminal
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A new Terminal.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -5438,49 +5438,49 @@ if it exists, regardless of whether an explicit customStartPath setting exists.<
 	<tr>
 		<td>
 			<a name="options">
+				<span class="ts" id="2079" data-target="#details-2079" data-toggle="collapse">
+					<span class="ident">
+						options
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DecorationRenderOptions">
+						DecorationRenderOptions
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Rendering options for the decoration type.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#TextEditorDecorationType">
+								TextEditorDecorationType
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A new decoration type instance.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2079" data-target="#details-2079" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DecorationRenderOptions">
-					DecorationRenderOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Rendering options for the decoration type.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TextEditorDecorationType">
-					TextEditorDecorationType
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A new decoration type instance.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -5506,94 +5506,94 @@ if it exists, regardless of whether an explicit customStartPath setting exists.<
 	<tr>
 		<td>
 			<a name="viewId">
-			</a>
-			<span class="ts" id="2231" data-target="#details-2231" data-toggle="collapse">
-				<span class="ident">
-					viewId
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Id of the view contributed using the extension point
-					<code>
-						views
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2232" data-target="#details-2232" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TreeViewOptions">
-					TreeViewOptions
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Options for creating the
-					<a href="#TreeView">
-						TreeView
+				<span class="ts" id="2231" data-target="#details-2231" data-toggle="collapse">
+					<span class="ident">
+						viewId
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TreeView">
-					TreeView
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					a
-					<a href="#TreeView">
-						TreeView
-					</a>
-					.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Id of the view contributed using the extension point
+							<code>
+								views
+							</code>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="2232" data-target="#details-2232" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#TreeViewOptions">
+									TreeViewOptions
+								</a>
+								<
+								<a class="type-intrinsic">
+									T
+								</a>
+								>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Options for creating the
+										<a href="#TreeView">
+											TreeView
+										</a>
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#TreeView">
+											TreeView
+										</a>
+										<
+										<a class="type-intrinsic">
+											T
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											a
+											<a href="#TreeView">
+												TreeView
+											</a>
+											.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -5619,137 +5619,137 @@ if it exists, regardless of whether an explicit customStartPath setting exists.<
 	<tr>
 		<td>
 			<a name="viewType">
+				<span class="ts" id="2177" data-target="#details-2177" data-toggle="collapse">
+					<span class="ident">
+						viewType
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Identifies the type of the webview panel.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="title">
+							<span class="ts" id="2178" data-target="#details-2178" data-toggle="collapse">
+								<span class="ident">
+									title
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Title of the panel.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="showOptions">
+										<span class="ts" id="2179" data-target="#details-2179" data-toggle="collapse">
+											<span class="ident">
+												showOptions
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#ViewColumn">
+												ViewColumn
+											</a>
+											| {preserveFocus:
+											<a class="type-intrinsic">
+												boolean
+											</a>
+											, viewColumn:
+											<a class="type-ref" href="#ViewColumn">
+												ViewColumn
+											</a>
+											}
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Where to show the webview in the editor. If preserveFocus is set, the new webview will not take focus.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="options">
+													<span class="ts" id="2183" data-target="#details-2183" data-toggle="collapse">
+														<span class="ident">
+															options
+														</span>
+														<span>
+															?
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-ref" href="#WebviewPanelOptions">
+															WebviewPanelOptions
+														</a>
+														&
+														<a class="type-ref" href="#WebviewOptions">
+															WebviewOptions
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																Settings for the new panel.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<th>
+															Returns
+														</th>
+														<th>
+															Description
+														</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="ts">
+																<a class="type-ref" href="#WebviewPanel">
+																	WebviewPanel
+																</a>
+															</span>
+														</td>
+														<td>
+															<div class="comment">
+																<p>
+																	New webview panel.
+																</p>
+															</div>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2177" data-target="#details-2177" data-toggle="collapse">
-				<span class="ident">
-					viewType
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Identifies the type of the webview panel.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="title">
-			</a>
-			<span class="ts" id="2178" data-target="#details-2178" data-toggle="collapse">
-				<span class="ident">
-					title
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Title of the panel.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="showOptions">
-			</a>
-			<span class="ts" id="2179" data-target="#details-2179" data-toggle="collapse">
-				<span class="ident">
-					showOptions
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ViewColumn">
-					ViewColumn
-				</a>
-				| {preserveFocus:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				, viewColumn:
-				<a class="type-ref" href="#ViewColumn">
-					ViewColumn
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Where to show the webview in the editor. If preserveFocus is set, the new webview will not take focus.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2183" data-target="#details-2183" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#WebviewPanelOptions">
-					WebviewPanelOptions
-				</a>
-				&
-				<a class="type-ref" href="#WebviewOptions">
-					WebviewOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Settings for the new panel.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#WebviewPanel">
-					WebviewPanel
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					New webview panel.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -5777,83 +5777,83 @@ This will allow you to contribute data to the <a href="#TreeView">TreeView</a> a
 	<tr>
 		<td>
 			<a name="viewId">
-			</a>
-			<span class="ts" id="2226" data-target="#details-2226" data-toggle="collapse">
-				<span class="ident">
-					viewId
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Id of the view contributed using the extension point
-					<code>
-						views
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="treeDataProvider">
-			</a>
-			<span class="ts" id="2227" data-target="#details-2227" data-toggle="collapse">
-				<span class="ident">
-					treeDataProvider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TreeDataProvider">
-					TreeDataProvider
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#TreeDataProvider">
-						TreeDataProvider
+				<span class="ts" id="2226" data-target="#details-2226" data-toggle="collapse">
+					<span class="ident">
+						viewId
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					that provides tree data for the view
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Id of the view contributed using the extension point
+							<code>
+								views
+							</code>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="treeDataProvider">
+							<span class="ts" id="2227" data-target="#details-2227" data-toggle="collapse">
+								<span class="ident">
+									treeDataProvider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#TreeDataProvider">
+									TreeDataProvider
+								</a>
+								<
+								<a class="type-intrinsic">
+									T
+								</a>
+								>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A
+										<a href="#TreeDataProvider">
+											TreeDataProvider
+										</a>
+										that provides tree data for the view
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -5895,46 +5895,46 @@ the current extension is about to be handled.</li>
 	<tr>
 		<td>
 			<a name="handler">
+				<span class="ts" id="2235" data-target="#details-2235" data-toggle="collapse">
+					<span class="ident">
+						handler
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#UriHandler">
+						UriHandler
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The uri handler to register for this extension.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Disposable">
+								Disposable
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2235" data-target="#details-2235" data-toggle="collapse">
-				<span class="ident">
-					handler
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#UriHandler">
-					UriHandler
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The uri handler to register for this extension.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -5963,70 +5963,70 @@ make sure that <a href="#registerWebviewPanelSerializer">registerWebviewPanelSer
 	<tr>
 		<td>
 			<a name="viewType">
+				<span class="ts" id="2238" data-target="#details-2238" data-toggle="collapse">
+					<span class="ident">
+						viewType
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Type of the webview panel that can be serialized.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="serializer">
+							<span class="ts" id="2239" data-target="#details-2239" data-toggle="collapse">
+								<span class="ident">
+									serializer
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#WebviewPanelSerializer">
+									WebviewPanelSerializer
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Webview serializer.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2238" data-target="#details-2238" data-toggle="collapse">
-				<span class="ident">
-					viewType
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Type of the webview panel that can be serialized.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="serializer">
-			</a>
-			<span class="ts" id="2239" data-target="#details-2239" data-toggle="collapse">
-				<span class="ident">
-					serializer
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#WebviewPanelSerializer">
-					WebviewPanelSerializer
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Webview serializer.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -6053,77 +6053,77 @@ status bar <a href="#window.createStatusBarItem">items</a>.</p>
 	<tr>
 		<td>
 			<a name="text">
-			</a>
-			<span class="ts" id="2186" data-target="#details-2186" data-toggle="collapse">
-				<span class="ident">
-					text
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show, supports icon substitution as in status bar
-					<a href="#StatusBarItem.text">
-						items
+				<span class="ts" id="2186" data-target="#details-2186" data-toggle="collapse">
+					<span class="ident">
+						text
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="hideAfterTimeout">
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show, supports icon substitution as in status bar
+							<a href="#StatusBarItem.text">
+								items
+							</a>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="hideAfterTimeout">
+							<span class="ts" id="2187" data-target="#details-2187" data-toggle="collapse">
+								<span class="ident">
+									hideAfterTimeout
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									number
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Timeout in milliseconds after which the message will be disposed.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A disposable which hides the status bar message.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2187" data-target="#details-2187" data-toggle="collapse">
-				<span class="ident">
-					hideAfterTimeout
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Timeout in milliseconds after which the message will be disposed.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A disposable which hides the status bar message.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -6150,82 +6150,82 @@ status bar <a href="#window.createStatusBarItem">items</a>.</p>
 	<tr>
 		<td>
 			<a name="text">
-			</a>
-			<span class="ts" id="2189" data-target="#details-2189" data-toggle="collapse">
-				<span class="ident">
-					text
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show, supports icon substitution as in status bar
-					<a href="#StatusBarItem.text">
-						items
+				<span class="ts" id="2189" data-target="#details-2189" data-toggle="collapse">
+					<span class="ident">
+						text
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="hideWhenDone">
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show, supports icon substitution as in status bar
+							<a href="#StatusBarItem.text">
+								items
+							</a>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="hideWhenDone">
+							<span class="ts" id="2190" data-target="#details-2190" data-toggle="collapse">
+								<span class="ident">
+									hideWhenDone
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Thenable">
+									Thenable
+								</a>
+								<
+								<a class="type-intrinsic">
+									any
+								</a>
+								>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Thenable on which completion (resolve or reject) the message will be disposed.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A disposable which hides the status bar message.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2190" data-target="#details-2190" data-toggle="collapse">
-				<span class="ident">
-					hideWhenDone
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					any
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Thenable on which completion (resolve or reject) the message will be disposed.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A disposable which hides the status bar message.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -6254,53 +6254,53 @@ longer used.</p>
 	<tr>
 		<td>
 			<a name="text">
-			</a>
-			<span class="ts" id="2192" data-target="#details-2192" data-toggle="collapse">
-				<span class="ident">
-					text
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show, supports icon substitution as in status bar
-					<a href="#StatusBarItem.text">
-						items
+				<span class="ts" id="2192" data-target="#details-2192" data-toggle="collapse">
+					<span class="ident">
+						text
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A disposable which hides the status bar message.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show, supports icon substitution as in status bar
+							<a href="#StatusBarItem.text">
+								items
+							</a>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Disposable">
+								Disposable
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A disposable which hides the status bar message.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -6329,90 +6329,90 @@ longer used.</p>
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="2116" data-target="#details-2116" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="items">
+							<span class="ts" id="2117" data-target="#details-2117" data-toggle="collapse">
+								<span>
+									...
+								</span>
+								<span class="ident">
+									items
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+								[]
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A set of items that will be rendered as actions in the message.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-intrinsic">
+											string
+										</a>
+										|
+										<a class="type-intrinsic">
+											undefined
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A thenable that resolves to the selected item or
+											<code>
+												undefined
+											</code>
+											when being dismissed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2116" data-target="#details-2116" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="items">
-			</a>
-			<span class="ts" id="2117" data-target="#details-2117" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of items that will be rendered as actions in the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to the selected item or
-					<code>
-						undefined
-					</code>
-					when being dismissed.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -6441,114 +6441,114 @@ longer used.</p>
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="2119" data-target="#details-2119" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="2120" data-target="#details-2120" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#MessageOptions">
+									MessageOptions
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Configures the behaviour of the message.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="items">
+										<span class="ts" id="2121" data-target="#details-2121" data-toggle="collapse">
+											<span>
+												...
+											</span>
+											<span class="ident">
+												items
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												string
+											</a>
+											[]
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A set of items that will be rendered as actions in the message.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														string
+													</a>
+													|
+													<a class="type-intrinsic">
+														undefined
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A thenable that resolves to the selected item or
+														<code>
+															undefined
+														</code>
+														when being dismissed.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2119" data-target="#details-2119" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2120" data-target="#details-2120" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#MessageOptions">
-					MessageOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configures the behaviour of the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="items">
-			</a>
-			<span class="ts" id="2121" data-target="#details-2121" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of items that will be rendered as actions in the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to the selected item or
-					<code>
-						undefined
-					</code>
-					when being dismissed.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -6577,90 +6577,90 @@ longer used.</p>
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="2124" data-target="#details-2124" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="items">
+							<span class="ts" id="2125" data-target="#details-2125" data-toggle="collapse">
+								<span>
+									...
+								</span>
+								<span class="ident">
+									items
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									T
+								</a>
+								[]
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A set of items that will be rendered as actions in the message.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-intrinsic">
+											T
+										</a>
+										|
+										<a class="type-intrinsic">
+											undefined
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A thenable that resolves to the selected item or
+											<code>
+												undefined
+											</code>
+											when being dismissed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2124" data-target="#details-2124" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="items">
-			</a>
-			<span class="ts" id="2125" data-target="#details-2125" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of items that will be rendered as actions in the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to the selected item or
-					<code>
-						undefined
-					</code>
-					when being dismissed.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -6689,114 +6689,114 @@ longer used.</p>
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="2128" data-target="#details-2128" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="2129" data-target="#details-2129" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#MessageOptions">
+									MessageOptions
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Configures the behaviour of the message.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="items">
+										<span class="ts" id="2130" data-target="#details-2130" data-toggle="collapse">
+											<span>
+												...
+											</span>
+											<span class="ident">
+												items
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												T
+											</a>
+											[]
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A set of items that will be rendered as actions in the message.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														T
+													</a>
+													|
+													<a class="type-intrinsic">
+														undefined
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A thenable that resolves to the selected item or
+														<code>
+															undefined
+														</code>
+														when being dismissed.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2128" data-target="#details-2128" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2129" data-target="#details-2129" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#MessageOptions">
-					MessageOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configures the behaviour of the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="items">
-			</a>
-			<span class="ts" id="2130" data-target="#details-2130" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of items that will be rendered as actions in the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to the selected item or
-					<code>
-						undefined
-					</code>
-					when being dismissed.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -6823,90 +6823,90 @@ clickable buttons.</p>
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="2082" data-target="#details-2082" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="items">
+							<span class="ts" id="2083" data-target="#details-2083" data-toggle="collapse">
+								<span>
+									...
+								</span>
+								<span class="ident">
+									items
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+								[]
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A set of items that will be rendered as actions in the message.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-intrinsic">
+											string
+										</a>
+										|
+										<a class="type-intrinsic">
+											undefined
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A thenable that resolves to the selected item or
+											<code>
+												undefined
+											</code>
+											when being dismissed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2082" data-target="#details-2082" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="items">
-			</a>
-			<span class="ts" id="2083" data-target="#details-2083" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of items that will be rendered as actions in the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to the selected item or
-					<code>
-						undefined
-					</code>
-					when being dismissed.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -6933,114 +6933,114 @@ clickable buttons.</p>
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="2085" data-target="#details-2085" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="2086" data-target="#details-2086" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#MessageOptions">
+									MessageOptions
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Configures the behaviour of the message.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="items">
+										<span class="ts" id="2087" data-target="#details-2087" data-toggle="collapse">
+											<span>
+												...
+											</span>
+											<span class="ident">
+												items
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												string
+											</a>
+											[]
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A set of items that will be rendered as actions in the message.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														string
+													</a>
+													|
+													<a class="type-intrinsic">
+														undefined
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A thenable that resolves to the selected item or
+														<code>
+															undefined
+														</code>
+														when being dismissed.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2085" data-target="#details-2085" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2086" data-target="#details-2086" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#MessageOptions">
-					MessageOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configures the behaviour of the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="items">
-			</a>
-			<span class="ts" id="2087" data-target="#details-2087" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of items that will be rendered as actions in the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to the selected item or
-					<code>
-						undefined
-					</code>
-					when being dismissed.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -7069,90 +7069,90 @@ clickable buttons.</p>
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="2090" data-target="#details-2090" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="items">
+							<span class="ts" id="2091" data-target="#details-2091" data-toggle="collapse">
+								<span>
+									...
+								</span>
+								<span class="ident">
+									items
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									T
+								</a>
+								[]
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A set of items that will be rendered as actions in the message.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-intrinsic">
+											T
+										</a>
+										|
+										<a class="type-intrinsic">
+											undefined
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A thenable that resolves to the selected item or
+											<code>
+												undefined
+											</code>
+											when being dismissed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2090" data-target="#details-2090" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="items">
-			</a>
-			<span class="ts" id="2091" data-target="#details-2091" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of items that will be rendered as actions in the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to the selected item or
-					<code>
-						undefined
-					</code>
-					when being dismissed.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -7181,114 +7181,114 @@ clickable buttons.</p>
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="2094" data-target="#details-2094" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="2095" data-target="#details-2095" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#MessageOptions">
+									MessageOptions
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Configures the behaviour of the message.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="items">
+										<span class="ts" id="2096" data-target="#details-2096" data-toggle="collapse">
+											<span>
+												...
+											</span>
+											<span class="ident">
+												items
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												T
+											</a>
+											[]
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A set of items that will be rendered as actions in the message.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														T
+													</a>
+													|
+													<a class="type-intrinsic">
+														undefined
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A thenable that resolves to the selected item or
+														<code>
+															undefined
+														</code>
+														when being dismissed.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2094" data-target="#details-2094" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2095" data-target="#details-2095" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#MessageOptions">
-					MessageOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configures the behaviour of the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="items">
-			</a>
-			<span class="ts" id="2096" data-target="#details-2096" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of items that will be rendered as actions in the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to the selected item or
-					<code>
-						undefined
-					</code>
-					when being dismissed.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -7317,92 +7317,92 @@ anything but dismissed the input box with OK.</p>
 	<tr>
 		<td>
 			<a name="options">
+				<span class="ts" id="2165" data-target="#details-2165" data-toggle="collapse">
+					<span class="ident">
+						options
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#InputBoxOptions">
+						InputBoxOptions
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Configures the behavior of the input box.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="token">
+							<span class="ts" id="2166" data-target="#details-2166" data-toggle="collapse">
+								<span class="ident">
+									token
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CancellationToken">
+									CancellationToken
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A token that can be used to signal cancellation.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-intrinsic">
+											string
+										</a>
+										|
+										<a class="type-intrinsic">
+											undefined
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A promise that resolves to a string the user provided or to
+											<code>
+												undefined
+											</code>
+											in case of dismissal.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2165" data-target="#details-2165" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#InputBoxOptions">
-					InputBoxOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configures the behavior of the input box.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="2166" data-target="#details-2166" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A token that can be used to signal cancellation.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves to a string the user provided or to
-					<code>
-						undefined
-					</code>
-					in case of dismissal.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -7429,62 +7429,62 @@ for opening-purposes.</p>
 	<tr>
 		<td>
 			<a name="options">
+				<span class="ts" id="2159" data-target="#details-2159" data-toggle="collapse">
+					<span class="ident">
+						options
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#OpenDialogOptions">
+						OpenDialogOptions
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Options that control the dialog.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-ref" href="#Uri">
+								Uri
+							</a>
+							[] |
+							<a class="type-intrinsic">
+								undefined
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A promise that resolves to the selected resources or
+								<code>
+									undefined
+								</code>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2159" data-target="#details-2159" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#OpenDialogOptions">
-					OpenDialogOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Options that control the dialog.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-				[] |
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves to the selected resources or
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -7510,127 +7510,127 @@ for opening-purposes.</p>
 	<tr>
 		<td>
 			<a name="items">
+				<span class="ts" id="2133" data-target="#details-2133" data-toggle="collapse">
+					<span class="ident">
+						items
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+					[] |
+					<a class="type-ref" href="#Thenable">
+						Thenable
+					</a>
+					<
+					<a class="type-intrinsic">
+						string
+					</a>
+					[]>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							An array of strings, or a promise that resolves to an array of strings.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="2134" data-target="#details-2134" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#QuickPickOptions">
+									QuickPickOptions
+								</a>
+								& {canPickMany:
+								<a class="type-intrinsic">
+									true
+								</a>
+								}
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Configures the behavior of the selection list.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="2137" data-target="#details-2137" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A token that can be used to signal cancellation.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														string
+													</a>
+													[] |
+													<a class="type-intrinsic">
+														undefined
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A promise that resolves to the selected items or
+														<code>
+															undefined
+														</code>
+														.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2133" data-target="#details-2133" data-toggle="collapse">
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				[] |
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of strings, or a promise that resolves to an array of strings.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2134" data-target="#details-2134" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#QuickPickOptions">
-					QuickPickOptions
-				</a>
-				& {canPickMany:
-				<a class="type-intrinsic">
-					true
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configures the behavior of the selection list.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="2137" data-target="#details-2137" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A token that can be used to signal cancellation.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					string
-				</a>
-				[] |
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves to the selected items or
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -7656,125 +7656,125 @@ for opening-purposes.</p>
 	<tr>
 		<td>
 			<a name="items">
+				<span class="ts" id="2139" data-target="#details-2139" data-toggle="collapse">
+					<span class="ident">
+						items
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+					[] |
+					<a class="type-ref" href="#Thenable">
+						Thenable
+					</a>
+					<
+					<a class="type-intrinsic">
+						string
+					</a>
+					[]>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							An array of strings, or a promise that resolves to an array of strings.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="2140" data-target="#details-2140" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#QuickPickOptions">
+									QuickPickOptions
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Configures the behavior of the selection list.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="2141" data-target="#details-2141" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A token that can be used to signal cancellation.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														string
+													</a>
+													|
+													<a class="type-intrinsic">
+														undefined
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A promise that resolves to the selection or
+														<code>
+															undefined
+														</code>
+														.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2139" data-target="#details-2139" data-toggle="collapse">
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				[] |
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of strings, or a promise that resolves to an array of strings.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2140" data-target="#details-2140" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#QuickPickOptions">
-					QuickPickOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configures the behavior of the selection list.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="2141" data-target="#details-2141" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A token that can be used to signal cancellation.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves to the selection or
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -7800,127 +7800,127 @@ for opening-purposes.</p>
 	<tr>
 		<td>
 			<a name="items">
+				<span class="ts" id="2144" data-target="#details-2144" data-toggle="collapse">
+					<span class="ident">
+						items
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						T
+					</a>
+					[] |
+					<a class="type-ref" href="#Thenable">
+						Thenable
+					</a>
+					<
+					<a class="type-intrinsic">
+						T
+					</a>
+					[]>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							An array of items, or a promise that resolves to an array of items.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="2145" data-target="#details-2145" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#QuickPickOptions">
+									QuickPickOptions
+								</a>
+								& {canPickMany:
+								<a class="type-intrinsic">
+									true
+								</a>
+								}
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Configures the behavior of the selection list.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="2148" data-target="#details-2148" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A token that can be used to signal cancellation.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														T
+													</a>
+													[] |
+													<a class="type-intrinsic">
+														undefined
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A promise that resolves to the selected items or
+														<code>
+															undefined
+														</code>
+														.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2144" data-target="#details-2144" data-toggle="collapse">
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-				[] |
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of items, or a promise that resolves to an array of items.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2145" data-target="#details-2145" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#QuickPickOptions">
-					QuickPickOptions
-				</a>
-				& {canPickMany:
-				<a class="type-intrinsic">
-					true
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configures the behavior of the selection list.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="2148" data-target="#details-2148" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A token that can be used to signal cancellation.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				[] |
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves to the selected items or
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -7946,125 +7946,125 @@ for opening-purposes.</p>
 	<tr>
 		<td>
 			<a name="items">
+				<span class="ts" id="2151" data-target="#details-2151" data-toggle="collapse">
+					<span class="ident">
+						items
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						T
+					</a>
+					[] |
+					<a class="type-ref" href="#Thenable">
+						Thenable
+					</a>
+					<
+					<a class="type-intrinsic">
+						T
+					</a>
+					[]>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							An array of items, or a promise that resolves to an array of items.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="2152" data-target="#details-2152" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#QuickPickOptions">
+									QuickPickOptions
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Configures the behavior of the selection list.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="2153" data-target="#details-2153" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A token that can be used to signal cancellation.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														T
+													</a>
+													|
+													<a class="type-intrinsic">
+														undefined
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A promise that resolves to the selected item or
+														<code>
+															undefined
+														</code>
+														.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2151" data-target="#details-2151" data-toggle="collapse">
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-				[] |
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of items, or a promise that resolves to an array of items.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2152" data-target="#details-2152" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#QuickPickOptions">
-					QuickPickOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configures the behavior of the selection list.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="2153" data-target="#details-2153" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A token that can be used to signal cancellation.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves to the selected item or
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -8091,62 +8091,62 @@ for saving-purposes.</p>
 	<tr>
 		<td>
 			<a name="options">
+				<span class="ts" id="2162" data-target="#details-2162" data-toggle="collapse">
+					<span class="ident">
+						options
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#SaveDialogOptions">
+						SaveDialogOptions
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Options that control the dialog.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-ref" href="#Uri">
+								Uri
+							</a>
+							|
+							<a class="type-intrinsic">
+								undefined
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A promise that resolves to the selected resource or
+								<code>
+									undefined
+								</code>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2162" data-target="#details-2162" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#SaveDialogOptions">
-					SaveDialogOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Options that control the dialog.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves to the selected resource or
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -8173,139 +8173,139 @@ to control where the editor is being shown. Might change the <a href="#window.ac
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="2068" data-target="#details-2068" data-toggle="collapse">
-				<span class="ident">
-					document
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A text document to be shown.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="column">
-			</a>
-			<span class="ts" id="2069" data-target="#details-2069" data-toggle="collapse">
-				<span class="ident">
-					column
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ViewColumn">
-					ViewColumn
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A view column in which the
-					<a href="#TextEditor">
-						editor
+				<span class="ts" id="2068" data-target="#details-2068" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
 					</a>
-					should be shown. The default is the
-					<a href="#ViewColumn.Active">
-						active
-					</a>
-					, other values
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A text document to be shown.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="column">
+							<span class="ts" id="2069" data-target="#details-2069" data-toggle="collapse">
+								<span class="ident">
+									column
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#ViewColumn">
+									ViewColumn
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A view column in which the
+										<a href="#TextEditor">
+											editor
+										</a>
+										should be shown. The default is the
+										<a href="#ViewColumn.Active">
+											active
+										</a>
+										, other values
 are adjusted to be
-					<code>
-						Min(column, columnCount + 1)
-					</code>
-					, the
-					<a href="#ViewColumn.Active">
-						active
-					</a>
-					-column is not adjusted. Use
-					<a href="#ViewColumn.Beside">
-						<code>
-							ViewColumn.Beside
-						</code>
-					</a>
-					to open the editor to the side of the currently active one.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="preserveFocus">
+										<code>
+											Min(column, columnCount + 1)
+										</code>
+										, the
+										<a href="#ViewColumn.Active">
+											active
+										</a>
+										-column is not adjusted. Use
+										<a href="#ViewColumn.Beside">
+											<code>
+												ViewColumn.Beside
+											</code>
+										</a>
+										to open the editor to the side of the currently active one.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="preserveFocus">
+										<span class="ts" id="2070" data-target="#details-2070" data-toggle="collapse">
+											<span class="ident">
+												preserveFocus
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												boolean
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													When
+													<code>
+														true
+													</code>
+													the editor will not take focus.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-ref" href="#TextEditor">
+														TextEditor
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A promise that resolves to an
+														<a href="#TextEditor">
+															editor
+														</a>
+														.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2070" data-target="#details-2070" data-toggle="collapse">
-				<span class="ident">
-					preserveFocus
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					When
-					<code>
-						true
-					</code>
-					the editor will not take focus.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#TextEditor">
-					TextEditor
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves to an
-					<a href="#TextEditor">
-						editor
-					</a>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -8332,89 +8332,89 @@ to control options of the editor is being shown. Might change the <a href="#wind
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="2072" data-target="#details-2072" data-toggle="collapse">
-				<span class="ident">
-					document
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A text document to be shown.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2073" data-target="#details-2073" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocumentShowOptions">
-					TextDocumentShowOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					(#TextDocumentShowOptions) to configure the behavior of showing the
-					<a href="#TextEditor">
-						editor
+				<span class="ts" id="2072" data-target="#details-2072" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
 					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#TextEditor">
-					TextEditor
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves to an
-					<a href="#TextEditor">
-						editor
-					</a>
-					.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A text document to be shown.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="2073" data-target="#details-2073" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#TextDocumentShowOptions">
+									TextDocumentShowOptions
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										(#TextDocumentShowOptions) to configure the behavior of showing the
+										<a href="#TextEditor">
+											editor
+										</a>
+										.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-ref" href="#TextEditor">
+											TextEditor
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A promise that resolves to an
+											<a href="#TextEditor">
+												editor
+											</a>
+											.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -8443,89 +8443,89 @@ to control options of the editor is being shown. Might change the <a href="#wind
 	<tr>
 		<td>
 			<a name="uri">
-			</a>
-			<span class="ts" id="2075" data-target="#details-2075" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A resource identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2076" data-target="#details-2076" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocumentShowOptions">
-					TextDocumentShowOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					(#TextDocumentShowOptions) to configure the behavior of showing the
-					<a href="#TextEditor">
-						editor
+				<span class="ts" id="2075" data-target="#details-2075" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
 					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#TextEditor">
-					TextEditor
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves to an
-					<a href="#TextEditor">
-						editor
-					</a>
-					.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A resource identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="2076" data-target="#details-2076" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#TextDocumentShowOptions">
+									TextDocumentShowOptions
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										(#TextDocumentShowOptions) to configure the behavior of showing the
+										<a href="#TextEditor">
+											editor
+										</a>
+										.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-ref" href="#TextEditor">
+											TextEditor
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A promise that resolves to an
+											<a href="#TextEditor">
+												editor
+											</a>
+											.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -8554,90 +8554,90 @@ to control options of the editor is being shown. Might change the <a href="#wind
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="2099" data-target="#details-2099" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="items">
+							<span class="ts" id="2100" data-target="#details-2100" data-toggle="collapse">
+								<span>
+									...
+								</span>
+								<span class="ident">
+									items
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+								[]
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A set of items that will be rendered as actions in the message.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-intrinsic">
+											string
+										</a>
+										|
+										<a class="type-intrinsic">
+											undefined
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A thenable that resolves to the selected item or
+											<code>
+												undefined
+											</code>
+											when being dismissed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2099" data-target="#details-2099" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="items">
-			</a>
-			<span class="ts" id="2100" data-target="#details-2100" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of items that will be rendered as actions in the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to the selected item or
-					<code>
-						undefined
-					</code>
-					when being dismissed.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -8666,114 +8666,114 @@ to control options of the editor is being shown. Might change the <a href="#wind
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="2102" data-target="#details-2102" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="2103" data-target="#details-2103" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#MessageOptions">
+									MessageOptions
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Configures the behaviour of the message.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="items">
+										<span class="ts" id="2104" data-target="#details-2104" data-toggle="collapse">
+											<span>
+												...
+											</span>
+											<span class="ident">
+												items
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												string
+											</a>
+											[]
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A set of items that will be rendered as actions in the message.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														string
+													</a>
+													|
+													<a class="type-intrinsic">
+														undefined
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A thenable that resolves to the selected item or
+														<code>
+															undefined
+														</code>
+														when being dismissed.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2102" data-target="#details-2102" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2103" data-target="#details-2103" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#MessageOptions">
-					MessageOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configures the behaviour of the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="items">
-			</a>
-			<span class="ts" id="2104" data-target="#details-2104" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of items that will be rendered as actions in the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to the selected item or
-					<code>
-						undefined
-					</code>
-					when being dismissed.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -8802,90 +8802,90 @@ to control options of the editor is being shown. Might change the <a href="#wind
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="2107" data-target="#details-2107" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="items">
+							<span class="ts" id="2108" data-target="#details-2108" data-toggle="collapse">
+								<span>
+									...
+								</span>
+								<span class="ident">
+									items
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									T
+								</a>
+								[]
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A set of items that will be rendered as actions in the message.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-intrinsic">
+											T
+										</a>
+										|
+										<a class="type-intrinsic">
+											undefined
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A thenable that resolves to the selected item or
+											<code>
+												undefined
+											</code>
+											when being dismissed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2107" data-target="#details-2107" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="items">
-			</a>
-			<span class="ts" id="2108" data-target="#details-2108" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of items that will be rendered as actions in the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to the selected item or
-					<code>
-						undefined
-					</code>
-					when being dismissed.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -8914,114 +8914,114 @@ to control options of the editor is being shown. Might change the <a href="#wind
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="2111" data-target="#details-2111" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The message to show.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="2112" data-target="#details-2112" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#MessageOptions">
+									MessageOptions
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Configures the behaviour of the message.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="items">
+										<span class="ts" id="2113" data-target="#details-2113" data-toggle="collapse">
+											<span>
+												...
+											</span>
+											<span class="ident">
+												items
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												T
+											</a>
+											[]
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A set of items that will be rendered as actions in the message.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														T
+													</a>
+													|
+													<a class="type-intrinsic">
+														undefined
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A thenable that resolves to the selected item or
+														<code>
+															undefined
+														</code>
+														when being dismissed.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2111" data-target="#details-2111" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message to show.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2112" data-target="#details-2112" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#MessageOptions">
-					MessageOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configures the behaviour of the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="items">
-			</a>
-			<span class="ts" id="2113" data-target="#details-2113" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					items
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of items that will be rendered as actions in the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to the selected item or
-					<code>
-						undefined
-					</code>
-					when being dismissed.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -9048,65 +9048,65 @@ Returns <code>undefined</code> if no folder is open.</p>
 	<tr>
 		<td>
 			<a name="options">
+				<span class="ts" id="2156" data-target="#details-2156" data-toggle="collapse">
+					<span class="ident">
+						options
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#WorkspaceFolderPickOptions">
+						WorkspaceFolderPickOptions
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Configures the behavior of the workspace folder list.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-ref" href="#WorkspaceFolder">
+								WorkspaceFolder
+							</a>
+							|
+							<a class="type-intrinsic">
+								undefined
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A promise that resolves to the workspace folder or
+								<code>
+									undefined
+								</code>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2156" data-target="#details-2156" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#WorkspaceFolderPickOptions">
-					WorkspaceFolderPickOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configures the behavior of the workspace folder list.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#WorkspaceFolder">
-					WorkspaceFolder
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves to the workspace folder or
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -9134,143 +9134,144 @@ progress should show (and other details) is defined via the passed <a href="#Pro
 	<tr>
 		<td>
 			<a name="options">
-			</a>
-			<span class="ts" id="2203" data-target="#details-2203" data-toggle="collapse">
-				<span class="ident">
-					options
+				<span class="ts" id="2203" data-target="#details-2203" data-toggle="collapse">
+					<span class="ident">
+						options
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#ProgressOptions">
+						ProgressOptions
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ProgressOptions">
-					ProgressOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="task">
-			</a>
-			<span class="ts" id="2204" data-target="#details-2204" data-toggle="collapse">
-				<span class="ident">
-					task
-				</span>
-				<span>
-					:
-				</span>
-				(progress:
-				<a class="type-ref" href="#Progress">
-					Progress
-				</a>
-				<{increment:
-				<a class="type-intrinsic">
-					number
-				</a>
-				, message:
-				<a class="type-intrinsic">
-					string
-				</a>
-				}>, token:
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-				) =>
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					R
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A callback returning a promise. Progress state can be reported with
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="task">
+									<span class="ts" id="2204" data-target="#details-2204" data-toggle="collapse">
+										<span class="ident">
+											task
+										</span>
+										<span>
+											:
+										</span>
+										(progress:
+										<a class="type-ref" href="#Progress">
+											Progress
+										</a>
+										<
+										{increment:
+										<a class="type-intrinsic">
+											number
+										</a>
+										, message:
+										<a class="type-intrinsic">
+											string
+										</a>
+										}>, token:
+										<a class="type-ref" href="#CancellationToken">
+											CancellationToken
+										</a>
+										) =>
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-intrinsic">
+											R
+										</a>
+										>
+									</span>
+									<td>
+										<div class="comment">
+											<p>
+												A callback returning a promise. Progress state can be reported with
 the provided
-					<a href="#Progress">
-						progress
-					</a>
-					-object.
-				</p>
-				<p>
-					To report discrete progress, use
-					<code>
-						increment
-					</code>
-					to indicate how much work has been completed. Each call with
+												<a href="#Progress">
+													progress
+												</a>
+												-object.
+											</p>
+											<p>
+												To report discrete progress, use
+												<code>
+													increment
+												</code>
+												to indicate how much work has been completed. Each call with
 a
-					<code>
-						increment
-					</code>
-					value will be summed up and reflected as overall progress until 100% is reached (a value of
+												<code>
+													increment
+												</code>
+												value will be summed up and reflected as overall progress until 100% is reached (a value of
 e.g.
-					<code>
-						10
-					</code>
-					accounts for
-					<code>
-						10%
-					</code>
-					of work done).
+												<code>
+													10
+												</code>
+												accounts for
+												<code>
+													10%
+												</code>
+												of work done).
 Note that currently only
-					<code>
-						ProgressLocation.Notification
-					</code>
-					is capable of showing discrete progress.
-				</p>
-				<p>
-					To monitor if the operation has been cancelled by the user, use the provided
-					<a href="#CancellationToken">
-						<code>
-							CancellationToken
-						</code>
-					</a>
-					.
+												<code>
+													ProgressLocation.Notification
+												</code>
+												is capable of showing discrete progress.
+											</p>
+											<p>
+												To monitor if the operation has been cancelled by the user, use the provided
+												<a href="#CancellationToken">
+													<code>
+														CancellationToken
+													</code>
+												</a>
+												.
 Note that currently only
-					<code>
-						ProgressLocation.Notification
-					</code>
-					is supporting to show a cancel button to cancel the
+												<code>
+													ProgressLocation.Notification
+												</code>
+												is supporting to show a cancel button to cancel the
 long running operation.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					R
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The thenable the task-callback returned.
-				</p>
-			</div>
+											</p>
+										</div>
+									</td>
+									<tr>
+										<th>
+											Returns
+										</th>
+										<th>
+											Description
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<span class="ts">
+												<a class="type-ref" href="#Thenable">
+													Thenable
+												</a>
+												<
+												<a class="type-intrinsic">
+													R
+												</a>
+												>
+											</span>
+										</td>
+										<td>
+											<div class="comment">
+												<p>
+													The thenable the task-callback returned.
+												</p>
+											</div>
+										</td>
+									</tr>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -9300,73 +9301,73 @@ its returned promise isn&#39;t resolve or rejected.</del></p>
 	<tr>
 		<td>
 			<a name="task">
-			</a>
-			<span class="ts" id="2196" data-target="#details-2196" data-toggle="collapse">
-				<span class="ident">
-					task
-				</span>
-				<span>
-					:
-				</span>
-				(progress:
-				<a class="type-ref" href="#Progress">
-					Progress
-				</a>
-				<
-				<a class="type-intrinsic">
-					number
-				</a>
-				>) =>
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					R
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A callback returning a promise. Progress increments can be reported with
-the provided
-					<a href="#Progress">
-						progress
+				<span class="ts" id="2196" data-target="#details-2196" data-toggle="collapse">
+					<span class="ident">
+						task
+					</span>
+					<span>
+						:
+					</span>
+					(progress:
+					<a class="type-ref" href="#Progress">
+						Progress
 					</a>
-					-object.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					R
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The thenable the task did return.
-				</p>
-			</div>
+					<
+					<a class="type-intrinsic">
+						number
+					</a>
+					>) =>
+					<a class="type-ref" href="#Thenable">
+						Thenable
+					</a>
+					<
+					<a class="type-intrinsic">
+						R
+					</a>
+					>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A callback returning a promise. Progress increments can be reported with
+the provided
+							<a href="#Progress">
+								progress
+							</a>
+							-object.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-intrinsic">
+								R
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								The thenable the task did return.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -9547,54 +9548,54 @@ not be attempted, when a single edit fails.</p>
 	<tr>
 		<td>
 			<a name="edit">
+				<span class="ts" id="2277" data-target="#details-2277" data-toggle="collapse">
+					<span class="ident">
+						edit
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#WorkspaceEdit">
+						WorkspaceEdit
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A workspace edit.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-intrinsic">
+								boolean
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A thenable that resolves when the edit could be applied.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2277" data-target="#details-2277" data-toggle="collapse">
-				<span class="ident">
-					edit
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#WorkspaceEdit">
-					WorkspaceEdit
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A workspace edit.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves when the edit could be applied.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -9622,98 +9623,98 @@ is not contained in them, the input is returned.</p>
 	<tr>
 		<td>
 			<a name="pathOrUri">
-			</a>
-			<span class="ts" id="2250" data-target="#details-2250" data-toggle="collapse">
-				<span class="ident">
-					pathOrUri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A path or uri. When a uri is given its
-					<a href="#Uri.fsPath">
-						fsPath
+				<span class="ts" id="2250" data-target="#details-2250" data-toggle="collapse">
+					<span class="ident">
+						pathOrUri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					is used.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="includeWorkspaceFolder">
-			</a>
-			<span class="ts" id="2251" data-target="#details-2251" data-toggle="collapse">
-				<span class="ident">
-					includeWorkspaceFolder
+					|
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
 				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					When
-					<code>
-						true
-					</code>
-					and when the given path is contained inside a
+				<td>
+					<div class="comment">
+						<p>
+							A path or uri. When a uri is given its
+							<a href="#Uri.fsPath">
+								fsPath
+							</a>
+							is used.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="includeWorkspaceFolder">
+							<span class="ts" id="2251" data-target="#details-2251" data-toggle="collapse">
+								<span class="ident">
+									includeWorkspaceFolder
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									boolean
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										When
+										<code>
+											true
+										</code>
+										and when the given path is contained inside a
 workspace folder the name of the workspace is prepended. Defaults to
-					<code>
-						true
-					</code>
-					when there are
+										<code>
+											true
+										</code>
+										when there are
 multiple workspace folders and
-					<code>
-						false
-					</code>
-					otherwise.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A path relative to the root or the input.
-				</p>
-			</div>
+										<code>
+											false
+										</code>
+										otherwise.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											string
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A path relative to the root or the input.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -9742,143 +9743,143 @@ flags to ignore certain kinds of events can be provided. To stop listening to ev
 	<tr>
 		<td>
 			<a name="globPattern">
-			</a>
-			<span class="ts" id="2262" data-target="#details-2262" data-toggle="collapse">
-				<span class="ident">
-					globPattern
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#GlobPattern">
-					GlobPattern
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#GlobPattern">
-						glob pattern
+				<span class="ts" id="2262" data-target="#details-2262" data-toggle="collapse">
+					<span class="ident">
+						globPattern
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#GlobPattern">
+						GlobPattern
 					</a>
-					that is applied to the absolute paths of created, changed,
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A
+							<a href="#GlobPattern">
+								glob pattern
+							</a>
+							that is applied to the absolute paths of created, changed,
 and deleted files. Use a
-					<a href="#RelativePattern">
-						relative pattern
-					</a>
-					to limit events to a certain
-					<a href="#WorkspaceFolder">
-						workspace folder
-					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="ignoreCreateEvents">
+							<a href="#RelativePattern">
+								relative pattern
+							</a>
+							to limit events to a certain
+							<a href="#WorkspaceFolder">
+								workspace folder
+							</a>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="ignoreCreateEvents">
+							<span class="ts" id="2263" data-target="#details-2263" data-toggle="collapse">
+								<span class="ident">
+									ignoreCreateEvents
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									boolean
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Ignore when files have been created.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="ignoreChangeEvents">
+										<span class="ts" id="2264" data-target="#details-2264" data-toggle="collapse">
+											<span class="ident">
+												ignoreChangeEvents
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												boolean
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Ignore when files have been changed.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="ignoreDeleteEvents">
+													<span class="ts" id="2265" data-target="#details-2265" data-toggle="collapse">
+														<span class="ident">
+															ignoreDeleteEvents
+														</span>
+														<span>
+															?
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-intrinsic">
+															boolean
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																Ignore when files have been deleted.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<th>
+															Returns
+														</th>
+														<th>
+															Description
+														</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="ts">
+																<a class="type-ref" href="#FileSystemWatcher">
+																	FileSystemWatcher
+																</a>
+															</span>
+														</td>
+														<td>
+															<div class="comment">
+																<p>
+																	A new file system watcher instance.
+																</p>
+															</div>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2263" data-target="#details-2263" data-toggle="collapse">
-				<span class="ident">
-					ignoreCreateEvents
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Ignore when files have been created.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="ignoreChangeEvents">
-			</a>
-			<span class="ts" id="2264" data-target="#details-2264" data-toggle="collapse">
-				<span class="ident">
-					ignoreChangeEvents
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Ignore when files have been changed.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="ignoreDeleteEvents">
-			</a>
-			<span class="ts" id="2265" data-target="#details-2265" data-toggle="collapse">
-				<span class="ident">
-					ignoreDeleteEvents
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Ignore when files have been deleted.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#FileSystemWatcher">
-					FileSystemWatcher
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A new file system watcher instance.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -9907,170 +9908,170 @@ and deleted files. Use a
 	<tr>
 		<td>
 			<a name="include">
-			</a>
-			<span class="ts" id="2268" data-target="#details-2268" data-toggle="collapse">
-				<span class="ident">
-					include
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#GlobPattern">
-					GlobPattern
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#GlobPattern">
-						glob pattern
+				<span class="ts" id="2268" data-target="#details-2268" data-toggle="collapse">
+					<span class="ident">
+						include
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#GlobPattern">
+						GlobPattern
 					</a>
-					that defines the files to search for. The glob pattern
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A
+							<a href="#GlobPattern">
+								glob pattern
+							</a>
+							that defines the files to search for. The glob pattern
 will be matched against the file paths of resulting matches relative to their workspace. Use a
-					<a href="#RelativePattern">
-						relative pattern
-					</a>
-					to restrict the search results to a
-					<a href="#WorkspaceFolder">
-						workspace folder
-					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="exclude">
-			</a>
-			<span class="ts" id="2269" data-target="#details-2269" data-toggle="collapse">
-				<span class="ident">
-					exclude
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#GlobPattern">
-					GlobPattern
-				</a>
-				|
-				<a class="type-intrinsic">
-					null
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#GlobPattern">
-						glob pattern
-					</a>
-					that defines files and folders to exclude. The glob pattern
+							<a href="#RelativePattern">
+								relative pattern
+							</a>
+							to restrict the search results to a
+							<a href="#WorkspaceFolder">
+								workspace folder
+							</a>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="exclude">
+							<span class="ts" id="2269" data-target="#details-2269" data-toggle="collapse">
+								<span class="ident">
+									exclude
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#GlobPattern">
+									GlobPattern
+								</a>
+								|
+								<a class="type-intrinsic">
+									null
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A
+										<a href="#GlobPattern">
+											glob pattern
+										</a>
+										that defines files and folders to exclude. The glob pattern
 will be matched against the file paths of resulting matches relative to their workspace. When
-					<code>
-						undefined
-					</code>
-					only default excludes will
+										<code>
+											undefined
+										</code>
+										only default excludes will
 apply, when
-					<code>
-						null
-					</code>
-					no excludes will apply.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="maxResults">
+										<code>
+											null
+										</code>
+										no excludes will apply.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="maxResults">
+										<span class="ts" id="2270" data-target="#details-2270" data-toggle="collapse">
+											<span class="ident">
+												maxResults
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												number
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													An upper-bound for the result.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="token">
+													<span class="ts" id="2271" data-target="#details-2271" data-toggle="collapse">
+														<span class="ident">
+															token
+														</span>
+														<span>
+															?
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-ref" href="#CancellationToken">
+															CancellationToken
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																A token that can be used to signal cancellation to the underlying search engine.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<th>
+															Returns
+														</th>
+														<th>
+															Description
+														</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="ts">
+																<a class="type-ref" href="#Thenable">
+																	Thenable
+																</a>
+																<
+																<a class="type-ref" href="#Uri">
+																	Uri
+																</a>
+																[]>
+															</span>
+														</td>
+														<td>
+															<div class="comment">
+																<p>
+																	A thenable that resolves to an array of resource identifiers. Will return no results if no
+																	<a href="#workspace.workspaceFolders">
+																		workspace folders
+																	</a>
+																	are opened.
+																</p>
+															</div>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2270" data-target="#details-2270" data-toggle="collapse">
-				<span class="ident">
-					maxResults
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An upper-bound for the result.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="2271" data-target="#details-2271" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A token that can be used to signal cancellation to the underlying search engine.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to an array of resource identifiers. Will return no results if no
-					<a href="#workspace.workspaceFolders">
-						workspace folders
-					</a>
-					are opened.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -10100,83 +10101,83 @@ like <code>{ myExt: { setting: { doIt: true }}}</code> and <code>getConfiguratio
 	<tr>
 		<td>
 			<a name="section">
+				<span class="ts" id="2300" data-target="#details-2300" data-toggle="collapse">
+					<span class="ident">
+						section
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A dot-separated identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="resource">
+							<span class="ts" id="2301" data-target="#details-2301" data-toggle="collapse">
+								<span class="ident">
+									resource
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Uri">
+									Uri
+								</a>
+								|
+								<a class="type-intrinsic">
+									null
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A resource for which the configuration is asked for
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#WorkspaceConfiguration">
+											WorkspaceConfiguration
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											The full configuration or a subset.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2300" data-target="#details-2300" data-toggle="collapse">
-				<span class="ident">
-					section
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A dot-separated identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="resource">
-			</a>
-			<span class="ts" id="2301" data-target="#details-2301" data-toggle="collapse">
-				<span class="ident">
-					resource
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-				|
-				<a class="type-intrinsic">
-					null
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A resource for which the configuration is asked for
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#WorkspaceConfiguration">
-					WorkspaceConfiguration
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The full configuration or a subset.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -10206,56 +10207,56 @@ like <code>{ myExt: { setting: { doIt: true }}}</code> and <code>getConfiguratio
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="2247" data-target="#details-2247" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							An uri.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#WorkspaceFolder">
+								WorkspaceFolder
+							</a>
+							|
+							<a class="type-intrinsic">
+								undefined
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A workspace folder or
+								<code>
+									undefined
+								</code>
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2247" data-target="#details-2247" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An uri.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#WorkspaceFolder">
-					WorkspaceFolder
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A workspace folder or
-					<code>
-						undefined
-					</code>
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -10292,58 +10293,58 @@ will be derived from the file name.</li>
 	<tr>
 		<td>
 			<a name="uri">
-			</a>
-			<span class="ts" id="2281" data-target="#details-2281" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Identifies the resource to open.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves to a
-					<a href="#TextDocument">
-						document
+				<span class="ts" id="2281" data-target="#details-2281" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
 					</a>
-					.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Identifies the resource to open.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-ref" href="#TextDocument">
+								TextDocument
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A promise that resolves to a
+								<a href="#TextDocument">
+									document
+								</a>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -10372,58 +10373,58 @@ will be derived from the file name.</li>
 	<tr>
 		<td>
 			<a name="fileName">
-			</a>
-			<span class="ts" id="2283" data-target="#details-2283" data-toggle="collapse">
-				<span class="ident">
-					fileName
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A name of a file on disk.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves to a
-					<a href="#TextDocument">
-						document
+				<span class="ts" id="2283" data-target="#details-2283" data-toggle="collapse">
+					<span class="ident">
+						fileName
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A name of a file on disk.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-ref" href="#TextDocument">
+								TextDocument
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A promise that resolves to a
+								<a href="#TextDocument">
+									document
+								</a>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -10451,67 +10452,67 @@ specify the <em>language</em> and/or the <em>content</em> of the document.</p>
 	<tr>
 		<td>
 			<a name="options">
-			</a>
-			<span class="ts" id="2285" data-target="#details-2285" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				{content:
-				<a class="type-intrinsic">
-					string
-				</a>
-				, language:
-				<a class="type-intrinsic">
-					string
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Options to control how the document will be created.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves to a
-					<a href="#TextDocument">
-						document
+				<span class="ts" id="2285" data-target="#details-2285" data-toggle="collapse">
+					<span class="ident">
+						options
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					{content:
+					<a class="type-intrinsic">
+						string
 					</a>
-					.
-				</p>
-			</div>
+					, language:
+					<a class="type-intrinsic">
+						string
+					</a>
+					}
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Options to control how the document will be created.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-ref" href="#TextDocument">
+								TextDocument
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A promise that resolves to a
+								<a href="#TextDocument">
+									document
+								</a>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -10539,114 +10540,114 @@ has been claimed by another provider or when it is reserved.</p>
 	<tr>
 		<td>
 			<a name="scheme">
-			</a>
-			<span class="ts" id="2309" data-target="#details-2309" data-toggle="collapse">
-				<span class="ident">
-					scheme
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The uri-
-					<a href="#Uri.scheme">
+				<span class="ts" id="2309" data-target="#details-2309" data-toggle="collapse">
+					<span class="ident">
 						scheme
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					the provider registers for.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The uri-
+							<a href="#Uri.scheme">
+								scheme
+							</a>
+							the provider registers for.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2310" data-target="#details-2310" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#FileSystemProvider">
+									FileSystemProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The filesystem provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="options">
+										<span class="ts" id="2311" data-target="#details-2311" data-toggle="collapse">
+											<span class="ident">
+												options
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											{isCaseSensitive:
+											<a class="type-intrinsic">
+												boolean
+											</a>
+											, isReadonly:
+											<a class="type-intrinsic">
+												boolean
+											</a>
+											}
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Immutable metadata about the provider.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Disposable">
+														Disposable
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A
+														<a href="#Disposable">
+															disposable
+														</a>
+														that unregisters this provider when being disposed.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2310" data-target="#details-2310" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#FileSystemProvider">
-					FileSystemProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The filesystem provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="2311" data-target="#details-2311" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				{isCaseSensitive:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				, isReadonly:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Immutable metadata about the provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
-					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -10675,77 +10676,77 @@ has been claimed by another provider or when it is reserved.</p>
 	<tr>
 		<td>
 			<a name="type">
-			</a>
-			<span class="ts" id="2305" data-target="#details-2305" data-toggle="collapse">
-				<span class="ident">
-					type
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The task kind type this provider is registered for.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2306" data-target="#details-2306" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TaskProvider">
-					TaskProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A task provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2305" data-target="#details-2305" data-toggle="collapse">
+					<span class="ident">
+						type
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The task kind type this provider is registered for.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2306" data-target="#details-2306" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#TaskProvider">
+									TaskProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A task provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -10772,77 +10773,77 @@ has been claimed by another provider or when it is reserved.</p>
 	<tr>
 		<td>
 			<a name="scheme">
-			</a>
-			<span class="ts" id="2291" data-target="#details-2291" data-toggle="collapse">
-				<span class="ident">
-					scheme
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The uri-scheme to register for.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="provider">
-			</a>
-			<span class="ts" id="2292" data-target="#details-2292" data-toggle="collapse">
-				<span class="ident">
-					provider
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocumentContentProvider">
-					TextDocumentContentProvider
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A content provider.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="2291" data-target="#details-2291" data-toggle="collapse">
+					<span class="ident">
+						scheme
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					that unregisters this provider when being disposed.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The uri-scheme to register for.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="provider">
+							<span class="ts" id="2292" data-target="#details-2292" data-toggle="collapse">
+								<span class="ident">
+									provider
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#TextDocumentContentProvider">
+									TextDocumentContentProvider
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A content provider.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A
+											<a href="#Disposable">
+												disposable
+											</a>
+											that unregisters this provider when being disposed.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -10868,57 +10869,57 @@ has been claimed by another provider or when it is reserved.</p>
 	<tr>
 		<td>
 			<a name="includeUntitled">
+				<span class="ts" id="2274" data-target="#details-2274" data-toggle="collapse">
+					<span class="ident">
+						includeUntitled
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						boolean
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Also save files that have been created during this session.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-intrinsic">
+								boolean
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A thenable that resolves when the files have been saved.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="2274" data-target="#details-2274" data-toggle="collapse">
-				<span class="ident">
-					includeUntitled
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Also save files that have been created during this session.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves when the files have been saved.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -10967,120 +10968,120 @@ without waiting for the <a href="#onDidChangeWorkspaceFolders"><code>onDidChange
 	<tr>
 		<td>
 			<a name="start">
-			</a>
-			<span class="ts" id="2254" data-target="#details-2254" data-toggle="collapse">
-				<span class="ident">
-					start
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					the zero-based location in the list of currently opened
-					<a href="#WorkspaceFolder">
-						workspace folders
+				<span class="ts" id="2254" data-target="#details-2254" data-toggle="collapse">
+					<span class="ident">
+						start
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						number
 					</a>
-					from which to start deleting workspace folders.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="deleteCount">
-			</a>
-			<span class="ts" id="2255" data-target="#details-2255" data-toggle="collapse">
-				<span class="ident">
-					deleteCount
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				|
-				<a class="type-intrinsic">
-					null
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					the optional number of workspace folders to remove.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="workspaceFoldersToAdd">
-			</a>
-			<span class="ts" id="2256" data-target="#details-2256" data-toggle="collapse">
-				<span>
-					...
-				</span>
-				<span class="ident">
-					workspaceFoldersToAdd
-				</span>
-				<span>
-					:
-				</span>
-				{name:
-				<a class="type-intrinsic">
-					string
-				</a>
-				, uri:
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-				}[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					the optional variable set of workspace folders to add in place of the deleted ones.
+				<td>
+					<div class="comment">
+						<p>
+							the zero-based location in the list of currently opened
+							<a href="#WorkspaceFolder">
+								workspace folders
+							</a>
+							from which to start deleting workspace folders.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="deleteCount">
+							<span class="ts" id="2255" data-target="#details-2255" data-toggle="collapse">
+								<span class="ident">
+									deleteCount
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									number
+								</a>
+								|
+								<a class="type-intrinsic">
+									undefined
+								</a>
+								|
+								<a class="type-intrinsic">
+									null
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										the optional number of workspace folders to remove.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="workspaceFoldersToAdd">
+										<span class="ts" id="2256" data-target="#details-2256" data-toggle="collapse">
+											<span>
+												...
+											</span>
+											<span class="ident">
+												workspaceFoldersToAdd
+											</span>
+											<span>
+												:
+											</span>
+											{name:
+											<a class="type-intrinsic">
+												string
+											</a>
+											, uri:
+											<a class="type-ref" href="#Uri">
+												Uri
+											</a>
+											}[]
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													the optional variable set of workspace folders to add in place of the deleted ones.
 Each workspace is identified with a mandatory URI and an optional name.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					true if the operation was successfully started and false otherwise if arguments were used that would result
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-intrinsic">
+														boolean
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														true if the operation was successfully started and false otherwise if arguments were used that would result
 in invalid workspace folder state (e.g. 2 folders with the same URI).
-				</p>
-			</div>
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -11114,118 +11115,118 @@ in invalid workspace folder state (e.g. 2 folders with the same URI).
 	<tr>
 		<td>
 			<a name="enabled">
+				<span class="ts" id="1955" data-target="#details-1955" data-toggle="collapse">
+					<span class="ident">
+						enabled
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						boolean
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="condition">
+									<span class="ts" id="1956" data-target="#details-1956" data-toggle="collapse">
+										<span class="ident">
+											condition
+										</span>
+										<span>
+											?
+										</span>
+										<span>
+											:
+										</span>
+										<a class="type-intrinsic">
+											string
+										</a>
+									</span>
+									<td>
+										<div class="comment">
+											<tr>
+												<td>
+													<a name="hitCondition">
+														<span class="ts" id="1957" data-target="#details-1957" data-toggle="collapse">
+															<span class="ident">
+																hitCondition
+															</span>
+															<span>
+																?
+															</span>
+															<span>
+																:
+															</span>
+															<a class="type-intrinsic">
+																string
+															</a>
+														</span>
+														<td>
+															<div class="comment">
+																<tr>
+																	<td>
+																		<a name="logMessage">
+																			<span class="ts" id="1958" data-target="#details-1958" data-toggle="collapse">
+																				<span class="ident">
+																					logMessage
+																				</span>
+																				<span>
+																					?
+																				</span>
+																				<span>
+																					:
+																				</span>
+																				<a class="type-intrinsic">
+																					string
+																				</a>
+																			</span>
+																			<td>
+																				<div class="comment">
+																					<tr>
+																						<th>
+																							Returns
+																						</th>
+																						<th>
+																							Description
+																						</th>
+																					</tr>
+																					<tr>
+																						<td>
+																							<span class="ts">
+																								<a class="type-ref" href="#Breakpoint">
+																									Breakpoint
+																								</a>
+																							</span>
+																						</td>
+																						<td>
+																							<div class="comment">
+																							</div>
+																						</td>
+																					</tr>
+																				</div>
+																			</td>
+																		</a>
+																	</td>
+																</tr>
+															</div>
+														</td>
+													</a>
+												</td>
+											</tr>
+										</div>
+									</td>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="1955" data-target="#details-1955" data-toggle="collapse">
-				<span class="ident">
-					enabled
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="condition">
-			</a>
-			<span class="ts" id="1956" data-target="#details-1956" data-toggle="collapse">
-				<span class="ident">
-					condition
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="hitCondition">
-			</a>
-			<span class="ts" id="1957" data-target="#details-1957" data-toggle="collapse">
-				<span class="ident">
-					hitCondition
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="logMessage">
-			</a>
-			<span class="ts" id="1958" data-target="#details-1958" data-toggle="collapse">
-				<span class="ident">
-					logMessage
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Breakpoint">
-					Breakpoint
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -11502,51 +11503,51 @@ opening and closing brackets.</p>
 	<tr>
 		<td>
 			<a name="value">
+				<span class="ts" id="1605" data-target="#details-1605" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<th>
+								Returns
+							</th>
+							<th>
+								Description
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="ts">
+									<a class="type-ref" href="#Thenable">
+										Thenable
+									</a>
+									<
+									<a class="type-intrinsic">
+										void
+									</a>
+									>
+								</span>
+							</td>
+							<td>
+								<div class="comment">
+									<p>
+										A thenable that resolves when writing happened.
+									</p>
+								</div>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="1605" data-target="#details-1605" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					void
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves when writing happened.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -11585,73 +11586,73 @@ and/or a <a href="#CodeAction.command">command</a>.</p>
 	<tr>
 		<td>
 			<a name="title">
+				<span class="ts" id="580" data-target="#details-580" data-toggle="collapse">
+					<span class="ident">
+						title
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The title of the code action.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="kind">
+							<span class="ts" id="581" data-target="#details-581" data-toggle="collapse">
+								<span class="ident">
+									kind
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CodeActionKind">
+									CodeActionKind
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The kind of the code action.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#CodeAction">
+											CodeAction
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="580" data-target="#details-580" data-toggle="collapse">
-				<span class="ident">
-					title
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The title of the code action.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="kind">
-			</a>
-			<span class="ts" id="581" data-target="#details-581" data-toggle="collapse">
-				<span class="ident">
-					kind
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CodeActionKind">
-					CodeActionKind
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The kind of the code action.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#CodeAction">
-					CodeAction
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -11854,43 +11855,43 @@ using <code>editor.codeActionsOnSave</code>. They also are shown in <code>source
 	<tr>
 		<td>
 			<a name="value">
+				<span class="ts" id="561" data-target="#details-561" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<th>
+								Returns
+							</th>
+							<th>
+								Description
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="ts">
+									<a class="type-ref" href="#CodeActionKind">
+										CodeActionKind
+									</a>
+								</span>
+							</td>
+							<td>
+								<div class="comment">
+								</div>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="561" data-target="#details-561" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#CodeActionKind">
-					CodeActionKind
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -11929,43 +11930,43 @@ using <code>editor.codeActionsOnSave</code>. They also are shown in <code>source
 	<tr>
 		<td>
 			<a name="parts">
+				<span class="ts" id="565" data-target="#details-565" data-toggle="collapse">
+					<span class="ident">
+						parts
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<th>
+								Returns
+							</th>
+							<th>
+								Description
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="ts">
+									<a class="type-ref" href="#CodeActionKind">
+										CodeActionKind
+									</a>
+								</span>
+							</td>
+							<td>
+								<div class="comment">
+								</div>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="565" data-target="#details-565" data-toggle="collapse">
-				<span class="ident">
-					parts
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#CodeActionKind">
-					CodeActionKind
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -11992,46 +11993,46 @@ using <code>editor.codeActionsOnSave</code>. They also are shown in <code>source
 	<tr>
 		<td>
 			<a name="other">
+				<span class="ts" id="568" data-target="#details-568" data-toggle="collapse">
+					<span class="ident">
+						other
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#CodeActionKind">
+						CodeActionKind
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Kind to check.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								boolean
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="568" data-target="#details-568" data-toggle="collapse">
-				<span class="ident">
-					other
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CodeActionKind">
-					CodeActionKind
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Kind to check.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -12068,144 +12069,144 @@ the <a href="https://code.visualstudio.com/docs/editor/editingevolved#_code-acti
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="585" data-target="#details-585" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="585" data-target="#details-585" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="range">
-			</a>
-			<span class="ts" id="586" data-target="#details-586" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-				|
-				<a class="type-ref" href="#Selection">
-					Selection
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The selector or range for which the command was invoked. This will always be a selection if
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="range">
+							<span class="ts" id="586" data-target="#details-586" data-toggle="collapse">
+								<span class="ident">
+									range
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Range">
+									Range
+								</a>
+								|
+								<a class="type-ref" href="#Selection">
+									Selection
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The selector or range for which the command was invoked. This will always be a selection if
 there is a currently active editor.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="context">
-			</a>
-			<span class="ts" id="587" data-target="#details-587" data-toggle="collapse">
-				<span class="ident">
-					context
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CodeActionContext">
-					CodeActionContext
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Context carrying additional information.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="588" data-target="#details-588" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#Command">
-					Command
-				</a>
-				|
-				<a class="type-ref" href="#CodeAction">
-					CodeAction
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of commands, quick fixes, or refactorings or a thenable of such. The lack of a result can be
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="context">
+										<span class="ts" id="587" data-target="#details-587" data-toggle="collapse">
+											<span class="ident">
+												context
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CodeActionContext">
+												CodeActionContext
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Context carrying additional information.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="token">
+													<span class="ts" id="588" data-target="#details-588" data-toggle="collapse">
+														<span class="ident">
+															token
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-ref" href="#CancellationToken">
+															CancellationToken
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																A cancellation token.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<th>
+															Returns
+														</th>
+														<th>
+															Description
+														</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="ts">
+																<a class="type-ref" href="#ProviderResult">
+																	ProviderResult
+																</a>
+																<
+																<a class="type-ref" href="#Command">
+																	Command
+																</a>
+																|
+																<a class="type-ref" href="#CodeAction">
+																	CodeAction
+																</a>
+																[]>
+															</span>
+														</td>
+														<td>
+															<div class="comment">
+																<p>
+																	An array of commands, quick fixes, or refactorings or a thenable of such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					,
-					<code>
-						null
-					</code>
-					, or an empty array.
-				</p>
-			</div>
+																	<code>
+																		undefined
+																	</code>
+																	,
+																	<code>
+																		null
+																	</code>
+																	, or an empty array.
+																</p>
+															</div>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -12268,73 +12269,73 @@ reasons the creation of a code lens and resolving should be done to two stages.<
 	<tr>
 		<td>
 			<a name="range">
+				<span class="ts" id="597" data-target="#details-597" data-toggle="collapse">
+					<span class="ident">
+						range
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The range to which this code lens applies.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="command">
+							<span class="ts" id="598" data-target="#details-598" data-toggle="collapse">
+								<span class="ident">
+									command
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Command">
+									Command
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The command associated to this code lens.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#CodeLens">
+											CodeLens
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="597" data-target="#details-597" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The range to which this code lens applies.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="command">
-			</a>
-			<span class="ts" id="598" data-target="#details-598" data-toggle="collapse">
-				<span class="ident">
-					command
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Command">
-					Command
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The command associated to this code lens.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#CodeLens">
-					CodeLens
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -12408,87 +12409,87 @@ range set and implement <a href="#CodeLensProvider.resolveCodeLens">resolve</a>.
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="603" data-target="#details-603" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="603" data-target="#details-603" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="604" data-target="#details-604" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#CodeLens">
-					CodeLens
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of code lenses or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="token">
+							<span class="ts" id="604" data-target="#details-604" data-toggle="collapse">
+								<span class="ident">
+									token
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CancellationToken">
+									CancellationToken
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A cancellation token.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProviderResult">
+											ProviderResult
+										</a>
+										<
+										<a class="type-ref" href="#CodeLens">
+											CodeLens
+										</a>
+										[]>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											An array of code lenses or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					,
-					<code>
-						null
-					</code>
-					, or an empty array.
-				</p>
-			</div>
+											<code>
+												undefined
+											</code>
+											,
+											<code>
+												null
+											</code>
+											, or an empty array.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -12515,78 +12516,78 @@ calls to <a href="#CodeLensProvider.provideCodeLenses">compute</a>-lenses.</p>
 	<tr>
 		<td>
 			<a name="codeLens">
+				<span class="ts" id="607" data-target="#details-607" data-toggle="collapse">
+					<span class="ident">
+						codeLens
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#CodeLens">
+						CodeLens
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							code lens that must be resolved.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="token">
+							<span class="ts" id="608" data-target="#details-608" data-toggle="collapse">
+								<span class="ident">
+									token
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CancellationToken">
+									CancellationToken
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A cancellation token.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProviderResult">
+											ProviderResult
+										</a>
+										<
+										<a class="type-ref" href="#CodeLens">
+											CodeLens
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											The given, resolved code lens or thenable that resolves to such.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="607" data-target="#details-607" data-toggle="collapse">
-				<span class="ident">
-					codeLens
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CodeLens">
-					CodeLens
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					code lens that must be resolved.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="608" data-target="#details-608" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#CodeLens">
-					CodeLens
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The given, resolved code lens or thenable that resolves to such.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -12621,118 +12622,118 @@ calls to <a href="#CodeLensProvider.provideCodeLenses">compute</a>-lenses.</p>
 	<tr>
 		<td>
 			<a name="red">
+				<span class="ts" id="1030" data-target="#details-1030" data-toggle="collapse">
+					<span class="ident">
+						red
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						number
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The red component.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="green">
+							<span class="ts" id="1031" data-target="#details-1031" data-toggle="collapse">
+								<span class="ident">
+									green
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									number
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The green component.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="blue">
+										<span class="ts" id="1032" data-target="#details-1032" data-toggle="collapse">
+											<span class="ident">
+												blue
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												number
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													The blue component.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="alpha">
+													<span class="ts" id="1033" data-target="#details-1033" data-toggle="collapse">
+														<span class="ident">
+															alpha
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-intrinsic">
+															number
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																The alpha component.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<th>
+															Returns
+														</th>
+														<th>
+															Description
+														</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="ts">
+																<a class="type-ref" href="#Color">
+																	Color
+																</a>
+															</span>
+														</td>
+														<td>
+															<div class="comment">
+															</div>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1030" data-target="#details-1030" data-toggle="collapse">
-				<span class="ident">
-					red
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The red component.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="green">
-			</a>
-			<span class="ts" id="1031" data-target="#details-1031" data-toggle="collapse">
-				<span class="ident">
-					green
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The green component.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="blue">
-			</a>
-			<span class="ts" id="1032" data-target="#details-1032" data-toggle="collapse">
-				<span class="ident">
-					blue
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The blue component.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="alpha">
-			</a>
-			<span class="ts" id="1033" data-target="#details-1033" data-toggle="collapse">
-				<span class="ident">
-					alpha
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The alpha component.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Color">
-					Color
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -12801,70 +12802,70 @@ calls to <a href="#CodeLensProvider.provideCodeLenses">compute</a>-lenses.</p>
 	<tr>
 		<td>
 			<a name="range">
+				<span class="ts" id="1039" data-target="#details-1039" data-toggle="collapse">
+					<span class="ident">
+						range
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The range the color appears in. Must not be empty.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="color">
+							<span class="ts" id="1040" data-target="#details-1040" data-toggle="collapse">
+								<span class="ident">
+									color
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Color">
+									Color
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The value of the color.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ColorInformation">
+											ColorInformation
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1039" data-target="#details-1039" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The range the color appears in. Must not be empty.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="color">
-			</a>
-			<span class="ts" id="1040" data-target="#details-1040" data-toggle="collapse">
-				<span class="ident">
-					color
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Color">
-					Color
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The value of the color.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ColorInformation">
-					ColorInformation
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -12921,46 +12922,46 @@ apply, e.g <code>System.Drawing.Color.Red</code>.</p>
 	<tr>
 		<td>
 			<a name="label">
+				<span class="ts" id="1047" data-target="#details-1047" data-toggle="collapse">
+					<span class="ident">
+						label
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The label of this color presentation.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#ColorPresentation">
+								ColorPresentation
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1047" data-target="#details-1047" data-toggle="collapse">
-				<span class="ident">
-					label
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The label of this color presentation.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ColorPresentation">
-					ColorPresentation
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -13142,77 +13143,77 @@ will be used as insert text as well as for sorting and filtering.</p>
 	<tr>
 		<td>
 			<a name="label">
-			</a>
-			<span class="ts" id="980" data-target="#details-980" data-toggle="collapse">
-				<span class="ident">
-					label
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The label of the completion.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="kind">
-			</a>
-			<span class="ts" id="981" data-target="#details-981" data-toggle="collapse">
-				<span class="ident">
-					kind
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CompletionItemKind">
-					CompletionItemKind
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<a href="#CompletionItemKind">
-						kind
+				<span class="ts" id="980" data-target="#details-980" data-toggle="collapse">
+					<span class="ident">
+						label
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					of the completion.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#CompletionItem">
-					CompletionItem
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The label of the completion.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="kind">
+							<span class="ts" id="981" data-target="#details-981" data-toggle="collapse">
+								<span class="ident">
+									kind
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CompletionItemKind">
+									CompletionItemKind
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The
+										<a href="#CompletionItemKind">
+											kind
+										</a>
+										of the completion.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#CompletionItem">
+											CompletionItem
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -13584,143 +13585,143 @@ implicitly when typing words or trigger characters.</p>
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="999" data-target="#details-999" data-toggle="collapse">
-				<span class="ident">
-					document
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="position">
-			</a>
-			<span class="ts" id="1000" data-target="#details-1000" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The position at which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="1001" data-target="#details-1001" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="context">
-			</a>
-			<span class="ts" id="1002" data-target="#details-1002" data-toggle="collapse">
-				<span class="ident">
-					context
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CompletionContext">
-					CompletionContext
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					How the completion was triggered.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#CompletionItem">
-					CompletionItem
-				</a>
-				[] |
-				<a class="type-ref" href="#CompletionList">
-					CompletionList
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of completions, a
-					<a href="#CompletionList">
-						completion list
+				<span class="ts" id="999" data-target="#details-999" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
 					</a>
-					, or a thenable that resolves to either.
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="position">
+							<span class="ts" id="1000" data-target="#details-1000" data-toggle="collapse">
+								<span class="ident">
+									position
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The position at which the command was invoked.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="1001" data-target="#details-1001" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A cancellation token.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="context">
+													<span class="ts" id="1002" data-target="#details-1002" data-toggle="collapse">
+														<span class="ident">
+															context
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-ref" href="#CompletionContext">
+															CompletionContext
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																How the completion was triggered.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<th>
+															Returns
+														</th>
+														<th>
+															Description
+														</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="ts">
+																<a class="type-ref" href="#ProviderResult">
+																	ProviderResult
+																</a>
+																<
+																<a class="type-ref" href="#CompletionItem">
+																	CompletionItem
+																</a>
+																[] |
+																<a class="type-ref" href="#CompletionList">
+																	CompletionList
+																</a>
+																>
+															</span>
+														</td>
+														<td>
+															<div class="comment">
+																<p>
+																	An array of completions, a
+																	<a href="#CompletionList">
+																		completion list
+																	</a>
+																	, or a thenable that resolves to either.
 The lack of a result can be signaled by returning
-					<code>
-						undefined
-					</code>
-					,
-					<code>
-						null
-					</code>
-					, or an empty array.
-				</p>
-			</div>
+																	<code>
+																		undefined
+																	</code>
+																	,
+																	<code>
+																		null
+																	</code>
+																	, or an empty array.
+																</p>
+															</div>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -13748,86 +13749,86 @@ or <a href="#CompletionItem.detail">details</a>.</p>
 	<tr>
 		<td>
 			<a name="item">
-			</a>
-			<span class="ts" id="1005" data-target="#details-1005" data-toggle="collapse">
-				<span class="ident">
-					item
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CompletionItem">
-					CompletionItem
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A completion item currently active in the UI.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="1006" data-target="#details-1006" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#CompletionItem">
-					CompletionItem
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The resolved completion item or a thenable that resolves to of such. It is OK to return the given
-					<code>
+				<span class="ts" id="1005" data-target="#details-1005" data-toggle="collapse">
+					<span class="ident">
 						item
-					</code>
-					. When no result is returned, the given
-					<code>
-						item
-					</code>
-					will be used.
-				</p>
-			</div>
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#CompletionItem">
+						CompletionItem
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A completion item currently active in the UI.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="token">
+							<span class="ts" id="1006" data-target="#details-1006" data-toggle="collapse">
+								<span class="ident">
+									token
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CancellationToken">
+									CancellationToken
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A cancellation token.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProviderResult">
+											ProviderResult
+										</a>
+										<
+										<a class="type-ref" href="#CompletionItem">
+											CompletionItem
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											The resolved completion item or a thenable that resolves to of such. It is OK to return the given
+											<code>
+												item
+											</code>
+											. When no result is returned, the given
+											<code>
+												item
+											</code>
+											will be used.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -13863,77 +13864,77 @@ in the editor.</p>
 	<tr>
 		<td>
 			<a name="items">
+				<span class="ts" id="987" data-target="#details-987" data-toggle="collapse">
+					<span class="ident">
+						items
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#CompletionItem">
+						CompletionItem
+					</a>
+					[]
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The completion items.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="isIncomplete">
+							<span class="ts" id="988" data-target="#details-988" data-toggle="collapse">
+								<span class="ident">
+									isIncomplete
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									boolean
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The list is not complete.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#CompletionList">
+											CompletionList
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="987" data-target="#details-987" data-toggle="collapse">
-				<span class="ident">
-					items
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CompletionItem">
-					CompletionItem
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The completion items.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="isIncomplete">
-			</a>
-			<span class="ts" id="988" data-target="#details-988" data-toggle="collapse">
-				<span class="ident">
-					isIncomplete
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The list is not complete.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#CompletionList">
-					CompletionList
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -14017,83 +14018,83 @@ this list.</p>
 	<tr>
 		<td>
 			<a name="section">
+				<span class="ts" id="1811" data-target="#details-1811" data-toggle="collapse">
+					<span class="ident">
+						section
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Configuration name, supports
+							<em>
+								dotted
+							</em>
+							names.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="resource">
+							<span class="ts" id="1812" data-target="#details-1812" data-toggle="collapse">
+								<span class="ident">
+									resource
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Uri">
+									Uri
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A resource Uri.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											boolean
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											<code>
+												true
+											</code>
+											if the given section for the given resource (if provided) is affected.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1811" data-target="#details-1811" data-toggle="collapse">
-				<span class="ident">
-					section
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configuration name, supports
-					<em>
-						dotted
-					</em>
-					names.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="resource">
-			</a>
-			<span class="ts" id="1812" data-target="#details-1812" data-toggle="collapse">
-				<span class="ident">
-					resource
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A resource Uri.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					<code>
-						true
-					</code>
-					if the given section for the given resource (if provided) is affected.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -14180,90 +14181,90 @@ createDebugAdapter(session: DebugSession, executable: DebugAdapterExecutable) {
 	<tr>
 		<td>
 			<a name="session">
-			</a>
-			<span class="ts" id="1912" data-target="#details-1912" data-toggle="collapse">
-				<span class="ident">
-					session
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DebugSession">
-					DebugSession
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<a href="#DebugSession">
-						debug session
+				<span class="ts" id="1912" data-target="#details-1912" data-toggle="collapse">
+					<span class="ident">
+						session
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DebugSession">
+						DebugSession
 					</a>
-					for which the debug adapter will be used.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="executable">
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The
+							<a href="#DebugSession">
+								debug session
+							</a>
+							for which the debug adapter will be used.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="executable">
+							<span class="ts" id="1913" data-target="#details-1913" data-toggle="collapse">
+								<span class="ident">
+									executable
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#DebugAdapterExecutable">
+									DebugAdapterExecutable
+								</a>
+								|
+								<a class="type-intrinsic">
+									undefined
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The debug adapter's executable information as specified in the package.json (or undefined if no such information exists).
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProviderResult">
+											ProviderResult
+										</a>
+										<
+										<a class="type-ref" href="#DebugAdapterDescriptor">
+											DebugAdapterDescriptor
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											a
+											<a href="#DebugAdapterDescriptor">
+												debug adapter descriptor
+											</a>
+											or undefined.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1913" data-target="#details-1913" data-toggle="collapse">
-				<span class="ident">
-					executable
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DebugAdapterExecutable">
-					DebugAdapterExecutable
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The debug adapter's executable information as specified in the package.json (or undefined if no such information exists).
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#DebugAdapterDescriptor">
-					DebugAdapterDescriptor
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					a
-					<a href="#DebugAdapterDescriptor">
-						debug adapter descriptor
-					</a>
-					or undefined.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -14298,101 +14299,101 @@ createDebugAdapter(session: DebugSession, executable: DebugAdapterExecutable) {
 	<tr>
 		<td>
 			<a name="command">
+				<span class="ts" id="1890" data-target="#details-1890" data-toggle="collapse">
+					<span class="ident">
+						command
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The command or executable path that implements the debug adapter.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="args">
+							<span class="ts" id="1891" data-target="#details-1891" data-toggle="collapse">
+								<span class="ident">
+									args
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+								[]
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Optional arguments to be passed to the command or executable.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="options">
+										<span class="ts" id="1892" data-target="#details-1892" data-toggle="collapse">
+											<span class="ident">
+												options
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#DebugAdapterExecutableOptions">
+												DebugAdapterExecutableOptions
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Optional options to be used when starting the command or executable.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#DebugAdapterExecutable">
+														DebugAdapterExecutable
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1890" data-target="#details-1890" data-toggle="collapse">
-				<span class="ident">
-					command
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The command or executable path that implements the debug adapter.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="args">
-			</a>
-			<span class="ts" id="1891" data-target="#details-1891" data-toggle="collapse">
-				<span class="ident">
-					args
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Optional arguments to be passed to the command or executable.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="1892" data-target="#details-1892" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DebugAdapterExecutableOptions">
-					DebugAdapterExecutableOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Optional options to be used when starting the command or executable.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#DebugAdapterExecutable">
-					DebugAdapterExecutable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -14483,67 +14484,67 @@ the parent process&#39; environment.</p>
 	<tr>
 		<td>
 			<a name="port">
+				<span class="ts" id="1907" data-target="#details-1907" data-toggle="collapse">
+					<span class="ident">
+						port
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						number
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="host">
+									<span class="ts" id="1908" data-target="#details-1908" data-toggle="collapse">
+										<span class="ident">
+											host
+										</span>
+										<span>
+											?
+										</span>
+										<span>
+											:
+										</span>
+										<a class="type-intrinsic">
+											string
+										</a>
+									</span>
+									<td>
+										<div class="comment">
+											<tr>
+												<th>
+													Returns
+												</th>
+												<th>
+													Description
+												</th>
+											</tr>
+											<tr>
+												<td>
+													<span class="ts">
+														<a class="type-ref" href="#DebugAdapterServer">
+															DebugAdapterServer
+														</a>
+													</span>
+												</td>
+												<td>
+													<div class="comment">
+													</div>
+												</td>
+											</tr>
+										</div>
+									</td>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="1907" data-target="#details-1907" data-toggle="collapse">
-				<span class="ident">
-					port
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="host">
-			</a>
-			<span class="ts" id="1908" data-target="#details-1908" data-toggle="collapse">
-				<span class="ident">
-					host
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#DebugAdapterServer">
-					DebugAdapterServer
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -14596,43 +14597,43 @@ the parent process&#39; environment.</p>
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="1922" data-target="#details-1922" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						any
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<th>
+								Returns
+							</th>
+							<th>
+								Description
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="ts">
+									<a class="type-intrinsic">
+										void
+									</a>
+								</span>
+							</td>
+							<td>
+								<div class="comment">
+								</div>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="1922" data-target="#details-1922" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -14658,43 +14659,43 @@ the parent process&#39; environment.</p>
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="1919" data-target="#details-1919" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						any
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<th>
+								Returns
+							</th>
+							<th>
+								Description
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="ts">
+									<a class="type-intrinsic">
+										void
+									</a>
+								</span>
+							</td>
+							<td>
+								<div class="comment">
+								</div>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="1919" data-target="#details-1919" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -14788,43 +14789,43 @@ the parent process&#39; environment.</p>
 	<tr>
 		<td>
 			<a name="error">
+				<span class="ts" id="1927" data-target="#details-1927" data-toggle="collapse">
+					<span class="ident">
+						error
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Error">
+						Error
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<th>
+								Returns
+							</th>
+							<th>
+								Description
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="ts">
+									<a class="type-intrinsic">
+										void
+									</a>
+								</span>
+							</td>
+							<td>
+								<div class="comment">
+								</div>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="1927" data-target="#details-1927" data-toggle="collapse">
-				<span class="ident">
-					error
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Error">
-					Error
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -14850,72 +14851,72 @@ the parent process&#39; environment.</p>
 	<tr>
 		<td>
 			<a name="code">
+				<span class="ts" id="1930" data-target="#details-1930" data-toggle="collapse">
+					<span class="ident">
+						code
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						number
+					</a>
+					|
+					<a class="type-intrinsic">
+						undefined
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="signal">
+									<span class="ts" id="1931" data-target="#details-1931" data-toggle="collapse">
+										<span class="ident">
+											signal
+										</span>
+										<span>
+											:
+										</span>
+										<a class="type-intrinsic">
+											string
+										</a>
+										|
+										<a class="type-intrinsic">
+											undefined
+										</a>
+									</span>
+									<td>
+										<div class="comment">
+											<tr>
+												<th>
+													Returns
+												</th>
+												<th>
+													Description
+												</th>
+											</tr>
+											<tr>
+												<td>
+													<span class="ts">
+														<a class="type-intrinsic">
+															void
+														</a>
+													</span>
+												</td>
+												<td>
+													<div class="comment">
+													</div>
+												</td>
+											</tr>
+										</div>
+									</td>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="1930" data-target="#details-1930" data-toggle="collapse">
-				<span class="ident">
-					code
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="signal">
-			</a>
-			<span class="ts" id="1931" data-target="#details-1931" data-toggle="collapse">
-				<span class="ident">
-					signal
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -14950,62 +14951,62 @@ to return a &quot;tracker&quot; object that provides read-access to the communic
 	<tr>
 		<td>
 			<a name="session">
+				<span class="ts" id="1935" data-target="#details-1935" data-toggle="collapse">
+					<span class="ident">
+						session
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DebugSession">
+						DebugSession
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The
+							<a href="#DebugSession">
+								debug session
+							</a>
+							for which the debug adapter tracker will be used.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#ProviderResult">
+								ProviderResult
+							</a>
+							<
+							<a class="type-ref" href="#DebugAdapterTracker">
+								DebugAdapterTracker
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A
+								<a href="#DebugAdapterTracker">
+									debug adapter tracker
+								</a>
+								or undefined.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1935" data-target="#details-1935" data-toggle="collapse">
-				<span class="ident">
-					session
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DebugSession">
-					DebugSession
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<a href="#DebugSession">
-						debug session
-					</a>
-					for which the debug adapter tracker will be used.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#DebugAdapterTracker">
-					DebugAdapterTracker
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#DebugAdapterTracker">
-						debug adapter tracker
-					</a>
-					or undefined.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -15076,93 +15077,93 @@ registered for the same type, debug configurations are concatenated in arbitrary
 	<tr>
 		<td>
 			<a name="folder">
-			</a>
-			<span class="ts" id="1880" data-target="#details-1880" data-toggle="collapse">
-				<span class="ident">
-					folder
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#WorkspaceFolder">
-					WorkspaceFolder
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The workspace folder for which the configurations are used or
-					<code>
-						undefined
-					</code>
-					for a folderless setup.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="1881" data-target="#details-1881" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#DebugConfiguration">
-					DebugConfiguration
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of
-					<a href="#DebugConfiguration">
-						debug configurations
+				<span class="ts" id="1880" data-target="#details-1880" data-toggle="collapse">
+					<span class="ident">
+						folder
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#WorkspaceFolder">
+						WorkspaceFolder
 					</a>
-					.
-				</p>
-			</div>
+					|
+					<a class="type-intrinsic">
+						undefined
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The workspace folder for which the configurations are used or
+							<code>
+								undefined
+							</code>
+							for a folderless setup.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="token">
+							<span class="ts" id="1881" data-target="#details-1881" data-toggle="collapse">
+								<span class="ident">
+									token
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CancellationToken">
+									CancellationToken
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A cancellation token.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProviderResult">
+											ProviderResult
+										</a>
+										<
+										<a class="type-ref" href="#DebugConfiguration">
+											DebugConfiguration
+										</a>
+										[]>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											An array of
+											<a href="#DebugConfiguration">
+												debug configurations
+											</a>
+											.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -15192,117 +15193,117 @@ Returning the value &#39;null&#39; prevents the debug session from starting and 
 	<tr>
 		<td>
 			<a name="folder">
-			</a>
-			<span class="ts" id="1884" data-target="#details-1884" data-toggle="collapse">
-				<span class="ident">
-					folder
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#WorkspaceFolder">
-					WorkspaceFolder
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The workspace folder from which the configuration originates from or
-					<code>
-						undefined
-					</code>
-					for a folderless setup.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="debugConfiguration">
-			</a>
-			<span class="ts" id="1885" data-target="#details-1885" data-toggle="collapse">
-				<span class="ident">
-					debugConfiguration
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DebugConfiguration">
-					DebugConfiguration
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<a href="#DebugConfiguration">
-						debug configuration
+				<span class="ts" id="1884" data-target="#details-1884" data-toggle="collapse">
+					<span class="ident">
+						folder
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#WorkspaceFolder">
+						WorkspaceFolder
 					</a>
-					to resolve.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
+					|
+					<a class="type-intrinsic">
+						undefined
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The workspace folder from which the configuration originates from or
+							<code>
+								undefined
+							</code>
+							for a folderless setup.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="debugConfiguration">
+							<span class="ts" id="1885" data-target="#details-1885" data-toggle="collapse">
+								<span class="ident">
+									debugConfiguration
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#DebugConfiguration">
+									DebugConfiguration
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The
+										<a href="#DebugConfiguration">
+											debug configuration
+										</a>
+										to resolve.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="1886" data-target="#details-1886" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A cancellation token.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#ProviderResult">
+														ProviderResult
+													</a>
+													<
+													<a class="type-ref" href="#DebugConfiguration">
+														DebugConfiguration
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														The resolved debug configuration or undefined or null.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1886" data-target="#details-1886" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#DebugConfiguration">
-					DebugConfiguration
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The resolved debug configuration or undefined or null.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -15337,46 +15338,46 @@ Returning the value &#39;null&#39; prevents the debug session from starting and 
 	<tr>
 		<td>
 			<a name="value">
+				<span class="ts" id="1939" data-target="#details-1939" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A string, falsy values will not be printed.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1939" data-target="#details-1939" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A string, falsy values will not be printed.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -15403,46 +15404,46 @@ to the debug console.</p>
 	<tr>
 		<td>
 			<a name="value">
+				<span class="ts" id="1942" data-target="#details-1942" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A string, falsy values will be printed.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1942" data-target="#details-1942" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A string, falsy values will be printed.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -15524,72 +15525,72 @@ to the debug console.</p>
 	<tr>
 		<td>
 			<a name="command">
+				<span class="ts" id="1871" data-target="#details-1871" data-toggle="collapse">
+					<span class="ident">
+						command
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="args">
+									<span class="ts" id="1872" data-target="#details-1872" data-toggle="collapse">
+										<span class="ident">
+											args
+										</span>
+										<span>
+											?
+										</span>
+										<span>
+											:
+										</span>
+										<a class="type-intrinsic">
+											any
+										</a>
+									</span>
+									<td>
+										<div class="comment">
+											<tr>
+												<th>
+													Returns
+												</th>
+												<th>
+													Description
+												</th>
+											</tr>
+											<tr>
+												<td>
+													<span class="ts">
+														<a class="type-ref" href="#Thenable">
+															Thenable
+														</a>
+														<
+														<a class="type-intrinsic">
+															any
+														</a>
+														>
+													</span>
+												</td>
+												<td>
+													<div class="comment">
+													</div>
+												</td>
+											</tr>
+										</div>
+									</td>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="1871" data-target="#details-1871" data-toggle="collapse">
-				<span class="ident">
-					command
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="args">
-			</a>
-			<span class="ts" id="1872" data-target="#details-1872" data-toggle="collapse">
-				<span class="ident">
-					args
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					any
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -15670,111 +15671,111 @@ the go to declaration feature.</p>
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="630" data-target="#details-630" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="630" data-target="#details-630" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="position">
-			</a>
-			<span class="ts" id="631" data-target="#details-631" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The position at which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="632" data-target="#details-632" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#Declaration">
-					Declaration
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A declaration or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="position">
+							<span class="ts" id="631" data-target="#details-631" data-toggle="collapse">
+								<span class="ident">
+									position
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The position at which the command was invoked.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="632" data-target="#details-632" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A cancellation token.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#ProviderResult">
+														ProviderResult
+													</a>
+													<
+													<a class="type-ref" href="#Declaration">
+														Declaration
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A declaration or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					or
-					<code>
-						null
-					</code>
-					.
-				</p>
-			</div>
+														<code>
+															undefined
+														</code>
+														or
+														<code>
+															null
+														</code>
+														.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -16194,115 +16195,115 @@ and peek definition features.</p>
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="612" data-target="#details-612" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="612" data-target="#details-612" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="position">
-			</a>
-			<span class="ts" id="613" data-target="#details-613" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The position at which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="614" data-target="#details-614" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#Definition">
-					Definition
-				</a>
-				|
-				<a class="type-ref" href="#DefinitionLink">
-					DefinitionLink
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A definition or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="position">
+							<span class="ts" id="613" data-target="#details-613" data-toggle="collapse">
+								<span class="ident">
+									position
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The position at which the command was invoked.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="614" data-target="#details-614" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A cancellation token.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#ProviderResult">
+														ProviderResult
+													</a>
+													<
+													<a class="type-ref" href="#Definition">
+														Definition
+													</a>
+													|
+													<a class="type-ref" href="#DefinitionLink">
+														DefinitionLink
+													</a>
+													[]>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A definition or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					or
-					<code>
-						null
-					</code>
-					.
-				</p>
-			</div>
+														<code>
+															undefined
+														</code>
+														or
+														<code>
+															null
+														</code>
+														.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -16338,101 +16339,101 @@ are only valid in the scope of a file.</p>
 	<tr>
 		<td>
 			<a name="range">
-			</a>
-			<span class="ts" id="1195" data-target="#details-1195" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The range to which this diagnostic applies.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="message">
-			</a>
-			<span class="ts" id="1196" data-target="#details-1196" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The human-readable message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="severity">
-			</a>
-			<span class="ts" id="1197" data-target="#details-1197" data-toggle="collapse">
-				<span class="ident">
-					severity
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DiagnosticSeverity">
-					DiagnosticSeverity
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The severity, default is
-					<a href="#DiagnosticSeverity.Error">
-						error
+				<span class="ts" id="1195" data-target="#details-1195" data-toggle="collapse">
+					<span class="ident">
+						range
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
 					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Diagnostic">
-					Diagnostic
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The range to which this diagnostic applies.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="message">
+							<span class="ts" id="1196" data-target="#details-1196" data-toggle="collapse">
+								<span class="ident">
+									message
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The human-readable message.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="severity">
+										<span class="ts" id="1197" data-target="#details-1197" data-toggle="collapse">
+											<span class="ident">
+												severity
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#DiagnosticSeverity">
+												DiagnosticSeverity
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													The severity, default is
+													<a href="#DiagnosticSeverity.Error">
+														error
+													</a>
+													.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Diagnostic">
+														Diagnostic
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -16596,46 +16597,46 @@ to the provided <code>uri</code>. The same as <code>#set(uri, undefined)</code>.
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="1208" data-target="#details-1208" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A resource identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1208" data-target="#details-1208" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A resource identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -16695,90 +16696,90 @@ to the provided <code>uri</code>. The same as <code>#set(uri, undefined)</code>.
 	<tr>
 		<td>
 			<a name="callback">
+				<span class="ts" id="1213" data-target="#details-1213" data-toggle="collapse">
+					<span class="ident">
+						callback
+					</span>
+					<span>
+						:
+					</span>
+					(uri:
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+					, diagnostics:
+					<a class="type-ref" href="#Diagnostic">
+						Diagnostic
+					</a>
+					[], collection:
+					<a class="type-ref" href="#DiagnosticCollection">
+						DiagnosticCollection
+					</a>
+					) =>
+					<a class="type-intrinsic">
+						any
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Function to execute for each entry.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="thisArg">
+							<span class="ts" id="1219" data-target="#details-1219" data-toggle="collapse">
+								<span class="ident">
+									thisArg
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									any
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The
+										<code>
+											this
+										</code>
+										context used when invoking the handler function.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											void
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1213" data-target="#details-1213" data-toggle="collapse">
-				<span class="ident">
-					callback
-				</span>
-				<span>
-					:
-				</span>
-				(uri:
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-				, diagnostics:
-				<a class="type-ref" href="#Diagnostic">
-					Diagnostic
-				</a>
-				[], collection:
-				<a class="type-ref" href="#DiagnosticCollection">
-					DiagnosticCollection
-				</a>
-				) =>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Function to execute for each entry.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="thisArg">
-			</a>
-			<span class="ts" id="1219" data-target="#details-1219" data-toggle="collapse">
-				<span class="ident">
-					thisArg
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<code>
-						this
-					</code>
-					context used when invoking the handler function.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -16805,61 +16806,61 @@ modify the diagnostics-array returned from this call.</p>
 	<tr>
 		<td>
 			<a name="uri">
-			</a>
-			<span class="ts" id="1222" data-target="#details-1222" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A resource identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Diagnostic">
-					Diagnostic
-				</a>
-				[] |
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An immutable array of
-					<a href="#Diagnostic">
-						diagnostics
+				<span class="ts" id="1222" data-target="#details-1222" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
 					</a>
-					or
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A resource identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Diagnostic">
+								Diagnostic
+							</a>
+							[] |
+							<a class="type-intrinsic">
+								undefined
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								An immutable array of
+								<a href="#Diagnostic">
+									diagnostics
+								</a>
+								or
+								<code>
+									undefined
+								</code>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -16886,52 +16887,52 @@ given resource.</p>
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="1225" data-target="#details-1225" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A resource identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								boolean
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								<code>
+									true
+								</code>
+								if this collection has diagnostic for the given resource.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1225" data-target="#details-1225" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A resource identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					<code>
-						true
-					</code>
-					if this collection has diagnostic for the given resource.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -16958,77 +16959,77 @@ existing diagnostics for that resource.</p>
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="1202" data-target="#details-1202" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A resource identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="diagnostics">
+							<span class="ts" id="1203" data-target="#details-1203" data-toggle="collapse">
+								<span class="ident">
+									diagnostics
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Diagnostic">
+									Diagnostic
+								</a>
+								[] |
+								<a class="type-intrinsic">
+									undefined
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Array of diagnostics or
+										<code>
+											undefined
+										</code>
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											void
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1202" data-target="#details-1202" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A resource identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="diagnostics">
-			</a>
-			<span class="ts" id="1203" data-target="#details-1203" data-toggle="collapse">
-				<span class="ident">
-					diagnostics
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Diagnostic">
-					Diagnostic
-				</a>
-				[] |
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Array of diagnostics or
-					<code>
-						undefined
-					</code>
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -17058,64 +17059,64 @@ all previous but not subsequent diagnostics are removed.</p>
 	<tr>
 		<td>
 			<a name="entries">
-			</a>
-			<span class="ts" id="1205" data-target="#details-1205" data-toggle="collapse">
-				<span class="ident">
-					entries
-				</span>
-				<span>
-					:
-				</span>
-				[
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-				,
-				<a class="type-ref" href="#Diagnostic">
-					Diagnostic
-				</a>
-				[] |
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				][]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of tuples, like
-					<code>
-						[[file1, [d1, d2]], [file2, [d3, d4, d5]]]
-					</code>
-					, or
-					<code>
+				<span class="ts" id="1205" data-target="#details-1205" data-toggle="collapse">
+					<span class="ident">
+						entries
+					</span>
+					<span>
+						:
+					</span>
+					[
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+					,
+					<a class="type-ref" href="#Diagnostic">
+						Diagnostic
+					</a>
+					[] |
+					<a class="type-intrinsic">
 						undefined
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+					</a>
+					][]
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							An array of tuples, like
+							<code>
+								[[file1, [d1, d2]], [file2, [d3, d4, d5]]]
+							</code>
+							, or
+							<code>
+								undefined
+							</code>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -17152,70 +17153,70 @@ a symbol in a scope.</p>
 	<tr>
 		<td>
 			<a name="location">
+				<span class="ts" id="1181" data-target="#details-1181" data-toggle="collapse">
+					<span class="ident">
+						location
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Location">
+						Location
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The location.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="message">
+							<span class="ts" id="1182" data-target="#details-1182" data-toggle="collapse">
+								<span class="ident">
+									message
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The message.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#DiagnosticRelatedInformation">
+											DiagnosticRelatedInformation
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1181" data-target="#details-1181" data-toggle="collapse">
-				<span class="ident">
-					location
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Location">
-					Location
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The location.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="message">
-			</a>
-			<span class="ts" id="1182" data-target="#details-1182" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#DiagnosticRelatedInformation">
-					DiagnosticRelatedInformation
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -17324,59 +17325,59 @@ instances of Disposable.</p>
 	<tr>
 		<td>
 			<a name="disposableLikes">
-			</a>
-			<span class="ts" id="437" data-target="#details-437" data-toggle="collapse">
-				<span>
-					...
+				<span class="ts" id="437" data-target="#details-437" data-toggle="collapse">
+					<span>
+						...
+					</span>
+					<span class="ident">
+						disposableLikes
+					</span>
+					<span>
+						:
+					</span>
+					{dispose: () =>
+					<a class="type-intrinsic">
+						any
+					</a>
+					}[]
 				</span>
-				<span class="ident">
-					disposableLikes
-				</span>
-				<span>
-					:
-				</span>
-				{dispose: () =>
-				<a class="type-intrinsic">
-					any
-				</a>
-				}[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Objects that have at least a
-					<code>
-						dispose
-					</code>
-					-function member.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Returns a new disposable which, upon dispose, will
+				<td>
+					<div class="comment">
+						<p>
+							Objects that have at least a
+							<code>
+								dispose
+							</code>
+							-function member.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Disposable">
+								Disposable
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								Returns a new disposable which, upon dispose, will
 dispose all provided disposables.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -17405,46 +17406,46 @@ on dispose.</p>
 	<tr>
 		<td>
 			<a name="callOnDispose">
+				<span class="ts" id="444" data-target="#details-444" data-toggle="collapse">
+					<span class="ident">
+						callOnDispose
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Function">
+						Function
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Function that disposes something.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Disposable">
+								Disposable
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="444" data-target="#details-444" data-toggle="collapse">
-				<span class="ident">
-					callOnDispose
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Function">
-					Function
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Function that disposes something.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -17515,117 +17516,117 @@ picking and modifying colors in the editor.</p>
 	<tr>
 		<td>
 			<a name="color">
-			</a>
-			<span class="ts" id="1055" data-target="#details-1055" data-toggle="collapse">
-				<span class="ident">
-					color
+				<span class="ts" id="1055" data-target="#details-1055" data-toggle="collapse">
+					<span class="ident">
+						color
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Color">
+						Color
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Color">
-					Color
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The color to show and insert.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="context">
-			</a>
-			<span class="ts" id="1056" data-target="#details-1056" data-toggle="collapse">
-				<span class="ident">
-					context
-				</span>
-				<span>
-					:
-				</span>
-				{document:
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-				, range:
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A context object with additional information
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="1060" data-target="#details-1060" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#ColorPresentation">
-					ColorPresentation
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of color presentations or a thenable that resolves to such. The lack of a result
+				<td>
+					<div class="comment">
+						<p>
+							The color to show and insert.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="context">
+							<span class="ts" id="1056" data-target="#details-1056" data-toggle="collapse">
+								<span class="ident">
+									context
+								</span>
+								<span>
+									:
+								</span>
+								{document:
+								<a class="type-ref" href="#TextDocument">
+									TextDocument
+								</a>
+								, range:
+								<a class="type-ref" href="#Range">
+									Range
+								</a>
+								}
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A context object with additional information
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="1060" data-target="#details-1060" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A cancellation token.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#ProviderResult">
+														ProviderResult
+													</a>
+													<
+													<a class="type-ref" href="#ColorPresentation">
+														ColorPresentation
+													</a>
+													[]>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														An array of color presentations or a thenable that resolves to such. The lack of a result
 can be signaled by returning
-					<code>
-						undefined
-					</code>
-					,
-					<code>
-						null
-					</code>
-					, or an empty array.
-				</p>
-			</div>
+														<code>
+															undefined
+														</code>
+														,
+														<code>
+															null
+														</code>
+														, or an empty array.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -17651,91 +17652,91 @@ can be signaled by returning
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="1051" data-target="#details-1051" data-toggle="collapse">
-				<span class="ident">
-					document
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="1052" data-target="#details-1052" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#ColorInformation">
-					ColorInformation
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of
-					<a href="#ColorInformation">
-						color information
+				<span class="ts" id="1051" data-target="#details-1051" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
 					</a>
-					or a thenable that resolves to such. The lack of a result
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="token">
+							<span class="ts" id="1052" data-target="#details-1052" data-toggle="collapse">
+								<span class="ident">
+									token
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CancellationToken">
+									CancellationToken
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A cancellation token.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProviderResult">
+											ProviderResult
+										</a>
+										<
+										<a class="type-ref" href="#ColorInformation">
+											ColorInformation
+										</a>
+										[]>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											An array of
+											<a href="#ColorInformation">
+												color information
+											</a>
+											or a thenable that resolves to such. The lack of a result
 can be signaled by returning
-					<code>
-						undefined
-					</code>
-					,
-					<code>
-						null
-					</code>
-					, or an empty array.
-				</p>
-			</div>
+											<code>
+												undefined
+											</code>
+											,
+											<code>
+												null
+											</code>
+											, or an empty array.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -17813,111 +17814,111 @@ the formatting-feature.</p>
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="882" data-target="#details-882" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="882" data-target="#details-882" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="883" data-target="#details-883" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#FormattingOptions">
-					FormattingOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Options controlling formatting.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="884" data-target="#details-884" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#TextEdit">
-					TextEdit
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of text edits or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="883" data-target="#details-883" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#FormattingOptions">
+									FormattingOptions
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Options controlling formatting.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="884" data-target="#details-884" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A cancellation token.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#ProviderResult">
+														ProviderResult
+													</a>
+													<
+													<a class="type-ref" href="#TextEdit">
+														TextEdit
+													</a>
+													[]>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A set of text edits or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					,
-					<code>
-						null
-					</code>
-					, or an empty array.
-				</p>
-			</div>
+														<code>
+															undefined
+														</code>
+														,
+														<code>
+															null
+														</code>
+														, or an empty array.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -17954,77 +17955,77 @@ the background color of its range.</p>
 	<tr>
 		<td>
 			<a name="range">
-			</a>
-			<span class="ts" id="671" data-target="#details-671" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The range the highlight applies to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="kind">
-			</a>
-			<span class="ts" id="672" data-target="#details-672" data-toggle="collapse">
-				<span class="ident">
-					kind
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentHighlightKind">
-					DocumentHighlightKind
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The highlight kind, default is
-					<a href="#DocumentHighlightKind.Text">
-						text
+				<span class="ts" id="671" data-target="#details-671" data-toggle="collapse">
+					<span class="ident">
+						range
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
 					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#DocumentHighlight">
-					DocumentHighlight
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The range the highlight applies to.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="kind">
+							<span class="ts" id="672" data-target="#details-672" data-toggle="collapse">
+								<span class="ident">
+									kind
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#DocumentHighlightKind">
+									DocumentHighlightKind
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The highlight kind, default is
+										<a href="#DocumentHighlightKind.Text">
+											text
+										</a>
+										.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#DocumentHighlight">
+											DocumentHighlight
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -18109,111 +18110,111 @@ all exit-points of a function.</p>
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="676" data-target="#details-676" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="676" data-target="#details-676" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="position">
-			</a>
-			<span class="ts" id="677" data-target="#details-677" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The position at which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="678" data-target="#details-678" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#DocumentHighlight">
-					DocumentHighlight
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of document highlights or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="position">
+							<span class="ts" id="677" data-target="#details-677" data-toggle="collapse">
+								<span class="ident">
+									position
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The position at which the command was invoked.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="678" data-target="#details-678" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A cancellation token.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#ProviderResult">
+														ProviderResult
+													</a>
+													<
+													<a class="type-ref" href="#DocumentHighlight">
+														DocumentHighlight
+													</a>
+													[]>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														An array of document highlights or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					,
-					<code>
-						null
-					</code>
-					, or an empty array.
-				</p>
-			</div>
+														<code>
+															undefined
+														</code>
+														,
+														<code>
+															null
+														</code>
+														, or an empty array.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -18249,73 +18250,73 @@ text document or a web site.</p>
 	<tr>
 		<td>
 			<a name="range">
+				<span class="ts" id="1012" data-target="#details-1012" data-toggle="collapse">
+					<span class="ident">
+						range
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The range the document link applies to. Must not be empty.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="target">
+							<span class="ts" id="1013" data-target="#details-1013" data-toggle="collapse">
+								<span class="ident">
+									target
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Uri">
+									Uri
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The uri the document link points to.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#DocumentLink">
+											DocumentLink
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1012" data-target="#details-1012" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The range the document link applies to. Must not be empty.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="target">
-			</a>
-			<span class="ts" id="1013" data-target="#details-1013" data-toggle="collapse">
-				<span class="ident">
-					target
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The uri the document link points to.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#DocumentLink">
-					DocumentLink
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -18370,91 +18371,91 @@ links in the editor.</p>
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="1017" data-target="#details-1017" data-toggle="collapse">
-				<span class="ident">
-					document
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="1018" data-target="#details-1018" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#DocumentLink">
-					DocumentLink
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of
-					<a href="#DocumentLink">
-						document links
+				<span class="ts" id="1017" data-target="#details-1017" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
 					</a>
-					or a thenable that resolves to such. The lack of a result
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="token">
+							<span class="ts" id="1018" data-target="#details-1018" data-toggle="collapse">
+								<span class="ident">
+									token
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CancellationToken">
+									CancellationToken
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A cancellation token.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProviderResult">
+											ProviderResult
+										</a>
+										<
+										<a class="type-ref" href="#DocumentLink">
+											DocumentLink
+										</a>
+										[]>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											An array of
+											<a href="#DocumentLink">
+												document links
+											</a>
+											or a thenable that resolves to such. The lack of a result
 can be signaled by returning
-					<code>
-						undefined
-					</code>
-					,
-					<code>
-						null
-					</code>
-					, or an empty array.
-				</p>
-			</div>
+											<code>
+												undefined
+											</code>
+											,
+											<code>
+												null
+											</code>
+											, or an empty array.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -18483,75 +18484,75 @@ often helps to improve performance.</p>
 	<tr>
 		<td>
 			<a name="link">
+				<span class="ts" id="1021" data-target="#details-1021" data-toggle="collapse">
+					<span class="ident">
+						link
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#DocumentLink">
+						DocumentLink
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The link that is to be resolved.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="token">
+							<span class="ts" id="1022" data-target="#details-1022" data-toggle="collapse">
+								<span class="ident">
+									token
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CancellationToken">
+									CancellationToken
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A cancellation token.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProviderResult">
+											ProviderResult
+										</a>
+										<
+										<a class="type-ref" href="#DocumentLink">
+											DocumentLink
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1021" data-target="#details-1021" data-toggle="collapse">
-				<span class="ident">
-					link
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#DocumentLink">
-					DocumentLink
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The link that is to be resolved.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="1022" data-target="#details-1022" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#DocumentLink">
-					DocumentLink
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -18590,135 +18591,135 @@ of the range to full syntax nodes.</p>
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="888" data-target="#details-888" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="888" data-target="#details-888" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="range">
-			</a>
-			<span class="ts" id="889" data-target="#details-889" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The range which should be formatted.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="890" data-target="#details-890" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#FormattingOptions">
-					FormattingOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Options controlling formatting.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="891" data-target="#details-891" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#TextEdit">
-					TextEdit
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of text edits or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="range">
+							<span class="ts" id="889" data-target="#details-889" data-toggle="collapse">
+								<span class="ident">
+									range
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Range">
+									Range
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The range which should be formatted.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="options">
+										<span class="ts" id="890" data-target="#details-890" data-toggle="collapse">
+											<span class="ident">
+												options
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#FormattingOptions">
+												FormattingOptions
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Options controlling formatting.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="token">
+													<span class="ts" id="891" data-target="#details-891" data-toggle="collapse">
+														<span class="ident">
+															token
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-ref" href="#CancellationToken">
+															CancellationToken
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																A cancellation token.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<th>
+															Returns
+														</th>
+														<th>
+															Description
+														</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="ts">
+																<a class="type-ref" href="#ProviderResult">
+																	ProviderResult
+																</a>
+																<
+																<a class="type-ref" href="#TextEdit">
+																	TextEdit
+																</a>
+																[]>
+															</span>
+														</td>
+														<td>
+															<div class="comment">
+																<p>
+																	A set of text edits or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					,
-					<code>
-						null
-					</code>
-					, or an empty array.
-				</p>
-			</div>
+																	<code>
+																		undefined
+																	</code>
+																	,
+																	<code>
+																		null
+																	</code>
+																	, or an empty array.
+																</p>
+															</div>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -18774,142 +18775,142 @@ its most interesting range, e.g. the range of an identifier.</p>
 	<tr>
 		<td>
 			<a name="name">
+				<span class="ts" id="732" data-target="#details-732" data-toggle="collapse">
+					<span class="ident">
+						name
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The name of the symbol.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="detail">
+							<span class="ts" id="733" data-target="#details-733" data-toggle="collapse">
+								<span class="ident">
+									detail
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Details for the symbol.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="kind">
+										<span class="ts" id="734" data-target="#details-734" data-toggle="collapse">
+											<span class="ident">
+												kind
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#SymbolKind">
+												SymbolKind
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													The kind of the symbol.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="range">
+													<span class="ts" id="735" data-target="#details-735" data-toggle="collapse">
+														<span class="ident">
+															range
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-ref" href="#Range">
+															Range
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																The full range of the symbol.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<td>
+															<a name="selectionRange">
+																<span class="ts" id="736" data-target="#details-736" data-toggle="collapse">
+																	<span class="ident">
+																		selectionRange
+																	</span>
+																	<span>
+																		:
+																	</span>
+																	<a class="type-ref" href="#Range">
+																		Range
+																	</a>
+																</span>
+																<td>
+																	<div class="comment">
+																		<p>
+																			The range that should be reveal.
+																		</p>
+																	</div>
+																</td>
+																<tr>
+																	<th>
+																		Returns
+																	</th>
+																	<th>
+																		Description
+																	</th>
+																</tr>
+																<tr>
+																	<td>
+																		<span class="ts">
+																			<a class="type-ref" href="#DocumentSymbol">
+																				DocumentSymbol
+																			</a>
+																		</span>
+																	</td>
+																	<td>
+																		<div class="comment">
+																		</div>
+																	</td>
+																</tr>
+															</a>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="732" data-target="#details-732" data-toggle="collapse">
-				<span class="ident">
-					name
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The name of the symbol.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="detail">
-			</a>
-			<span class="ts" id="733" data-target="#details-733" data-toggle="collapse">
-				<span class="ident">
-					detail
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Details for the symbol.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="kind">
-			</a>
-			<span class="ts" id="734" data-target="#details-734" data-toggle="collapse">
-				<span class="ident">
-					kind
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#SymbolKind">
-					SymbolKind
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The kind of the symbol.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="range">
-			</a>
-			<span class="ts" id="735" data-target="#details-735" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The full range of the symbol.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="selectionRange">
-			</a>
-			<span class="ts" id="736" data-target="#details-736" data-toggle="collapse">
-				<span class="ident">
-					selectionRange
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The range that should be reveal.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#DocumentSymbol">
-					DocumentSymbol
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -18996,91 +18997,91 @@ the <a href="https://code.visualstudio.com/docs/editor/editingevolved#_go-to-sym
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="740" data-target="#details-740" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="740" data-target="#details-740" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="741" data-target="#details-741" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#SymbolInformation">
-					SymbolInformation
-				</a>
-				[] |
-				<a class="type-ref" href="#DocumentSymbol">
-					DocumentSymbol
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of document highlights or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="token">
+							<span class="ts" id="741" data-target="#details-741" data-toggle="collapse">
+								<span class="ident">
+									token
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CancellationToken">
+									CancellationToken
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A cancellation token.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProviderResult">
+											ProviderResult
+										</a>
+										<
+										<a class="type-ref" href="#SymbolInformation">
+											SymbolInformation
+										</a>
+										[] |
+										<a class="type-ref" href="#DocumentSymbol">
+											DocumentSymbol
+										</a>
+										[]>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											An array of document highlights or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					,
-					<code>
-						null
-					</code>
-					, or an empty array.
-				</p>
-			</div>
+											<code>
+												undefined
+											</code>
+											,
+											<code>
+												null
+											</code>
+											, or an empty array.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -19194,117 +19195,117 @@ a listener function as argument.</p>
 	<tr>
 		<td>
 			<a name="listener">
-			</a>
-			<span class="ts" id="450" data-target="#details-450" data-toggle="collapse">
-				<span class="ident">
-					listener
-				</span>
-				<span>
-					:
-				</span>
-				(e:
-				<a class="type-intrinsic">
-					T
-				</a>
-				) =>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The listener function will be called when the event happens.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="thisArgs">
-			</a>
-			<span class="ts" id="454" data-target="#details-454" data-toggle="collapse">
-				<span class="ident">
-					thisArgs
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<code>
-						this
-					</code>
-					-argument which will be used when calling the event listener.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="disposables">
-			</a>
-			<span class="ts" id="455" data-target="#details-455" data-toggle="collapse">
-				<span class="ident">
-					disposables
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array to which a
-					<a href="#Disposable">
-						disposable
+				<span class="ts" id="450" data-target="#details-450" data-toggle="collapse">
+					<span class="ident">
+						listener
+					</span>
+					<span>
+						:
+					</span>
+					(e:
+					<a class="type-intrinsic">
+						T
 					</a>
-					will be added.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A disposable which unsubscribes the event listener.
-				</p>
-			</div>
+					) =>
+					<a class="type-intrinsic">
+						any
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The listener function will be called when the event happens.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="thisArgs">
+							<span class="ts" id="454" data-target="#details-454" data-toggle="collapse">
+								<span class="ident">
+									thisArgs
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									any
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The
+										<code>
+											this
+										</code>
+										-argument which will be used when calling the event listener.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="disposables">
+										<span class="ts" id="455" data-target="#details-455" data-toggle="collapse">
+											<span class="ident">
+												disposables
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#Disposable">
+												Disposable
+											</a>
+											[]
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													An array to which a
+													<a href="#Disposable">
+														disposable
+													</a>
+													will be added.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Disposable">
+														Disposable
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A disposable which unsubscribes the event listener.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -19387,49 +19388,49 @@ of one or more listener will not fail this function call.</p>
 	<tr>
 		<td>
 			<a name="data">
+				<span class="ts" id="461" data-target="#details-461" data-toggle="collapse">
+					<span class="ident">
+						data
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						T
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The event object.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="461" data-target="#details-461" data-toggle="collapse">
-				<span class="ident">
-					data
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The event object.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -19620,49 +19621,49 @@ of the currently opened <a href="#workspace.workspaceFolders">workspace</a>.</p>
 	<tr>
 		<td>
 			<a name="relativePath">
+				<span class="ts" id="1314" data-target="#details-1314" data-toggle="collapse">
+					<span class="ident">
+						relativePath
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A relative path to a resource contained in the extension.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								string
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								The absolute path of the resource.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1314" data-target="#details-1314" data-toggle="collapse">
-				<span class="ident">
-					relativePath
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A relative path to a resource contained in the extension.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The absolute path of the resource.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -19825,53 +19826,53 @@ creating but not overwriting a file.</p>
 	<tr>
 		<td>
 			<a name="messageOrUri">
+				<span class="ts" id="1483" data-target="#details-1483" data-toggle="collapse">
+					<span class="ident">
+						messageOrUri
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+					|
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Message or uri.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#FileSystemError">
+								FileSystemError
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1483" data-target="#details-1483" data-toggle="collapse">
-				<span class="ident">
-					messageOrUri
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Message or uri.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#FileSystemError">
-					FileSystemError
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -19897,53 +19898,53 @@ creating but not overwriting a file.</p>
 	<tr>
 		<td>
 			<a name="messageOrUri">
+				<span class="ts" id="1489" data-target="#details-1489" data-toggle="collapse">
+					<span class="ident">
+						messageOrUri
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+					|
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Message or uri.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#FileSystemError">
+								FileSystemError
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1489" data-target="#details-1489" data-toggle="collapse">
-				<span class="ident">
-					messageOrUri
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Message or uri.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#FileSystemError">
-					FileSystemError
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -19969,53 +19970,53 @@ creating but not overwriting a file.</p>
 	<tr>
 		<td>
 			<a name="messageOrUri">
+				<span class="ts" id="1486" data-target="#details-1486" data-toggle="collapse">
+					<span class="ident">
+						messageOrUri
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+					|
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Message or uri.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#FileSystemError">
+								FileSystemError
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1486" data-target="#details-1486" data-toggle="collapse">
-				<span class="ident">
-					messageOrUri
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Message or uri.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#FileSystemError">
-					FileSystemError
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -20041,53 +20042,53 @@ creating but not overwriting a file.</p>
 	<tr>
 		<td>
 			<a name="messageOrUri">
+				<span class="ts" id="1480" data-target="#details-1480" data-toggle="collapse">
+					<span class="ident">
+						messageOrUri
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+					|
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Message or uri.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#FileSystemError">
+								FileSystemError
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1480" data-target="#details-1480" data-toggle="collapse">
-				<span class="ident">
-					messageOrUri
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Message or uri.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#FileSystemError">
-					FileSystemError
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -20113,53 +20114,53 @@ creating but not overwriting a file.</p>
 	<tr>
 		<td>
 			<a name="messageOrUri">
+				<span class="ts" id="1492" data-target="#details-1492" data-toggle="collapse">
+					<span class="ident">
+						messageOrUri
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+					|
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Message or uri.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#FileSystemError">
+								FileSystemError
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1492" data-target="#details-1492" data-toggle="collapse">
-				<span class="ident">
-					messageOrUri
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Message or uri.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#FileSystemError">
-					FileSystemError
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -20186,53 +20187,53 @@ complete a request.</p>
 	<tr>
 		<td>
 			<a name="messageOrUri">
+				<span class="ts" id="1495" data-target="#details-1495" data-toggle="collapse">
+					<span class="ident">
+						messageOrUri
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+					|
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Message or uri.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#FileSystemError">
+								FileSystemError
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1495" data-target="#details-1495" data-toggle="collapse">
-				<span class="ident">
-					messageOrUri
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Message or uri.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#FileSystemError">
-					FileSystemError
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -20260,53 +20261,53 @@ complete a request.</p>
 	<tr>
 		<td>
 			<a name="messageOrUri">
+				<span class="ts" id="1498" data-target="#details-1498" data-toggle="collapse">
+					<span class="ident">
+						messageOrUri
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+					|
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Message or uri.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#FileSystemError">
+								FileSystemError
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1498" data-target="#details-1498" data-toggle="collapse">
-				<span class="ident">
-					messageOrUri
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Message or uri.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#FileSystemError">
-					FileSystemError
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -20376,105 +20377,105 @@ the copy operation.</p>
 	<tr>
 		<td>
 			<a name="source">
+				<span class="ts" id="1554" data-target="#details-1554" data-toggle="collapse">
+					<span class="ident">
+						source
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The existing file.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="destination">
+							<span class="ts" id="1555" data-target="#details-1555" data-toggle="collapse">
+								<span class="ident">
+									destination
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Uri">
+									Uri
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The destination location.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="options">
+										<span class="ts" id="1556" data-target="#details-1556" data-toggle="collapse">
+											<span class="ident">
+												options
+											</span>
+											<span>
+												:
+											</span>
+											{overwrite:
+											<a class="type-intrinsic">
+												boolean
+											</a>
+											}
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Defines if existing files should be overwriten.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-intrinsic">
+														void
+													</a>
+													|
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														void
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1554" data-target="#details-1554" data-toggle="collapse">
-				<span class="ident">
-					source
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The existing file.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="destination">
-			</a>
-			<span class="ts" id="1555" data-target="#details-1555" data-toggle="collapse">
-				<span class="ident">
-					destination
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The destination location.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="1556" data-target="#details-1556" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				{overwrite:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Defines if existing files should be overwriten.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-				|
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					void
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -20509,55 +20510,55 @@ the copy operation.</p>
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="1527" data-target="#details-1527" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The uri of the new folder.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+							|
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-intrinsic">
+								void
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1527" data-target="#details-1527" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The uri of the new folder.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-				|
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					void
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -20589,81 +20590,81 @@ the copy operation.</p>
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="1541" data-target="#details-1541" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The resource that is to be deleted.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="1542" data-target="#details-1542" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									:
+								</span>
+								{recursive:
+								<a class="type-intrinsic">
+									boolean
+								</a>
+								}
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Defines if deletion of folders is recursive.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											void
+										</a>
+										|
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-intrinsic">
+											void
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1541" data-target="#details-1541" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The resource that is to be deleted.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="1542" data-target="#details-1542" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				{recursive:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Defines if deletion of folders is recursive.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-				|
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					void
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -20692,67 +20693,68 @@ the copy operation.</p>
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="1524" data-target="#details-1524" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The uri of the folder.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							[
+							<a class="type-intrinsic">
+								string
+							</a>
+							,
+							<a class="type-ref" href="#FileType">
+								FileType
+							</a>
+							][] |
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							[
+							<a class="type-intrinsic">
+								string
+							</a>
+							,
+							<a class="type-ref" href="#FileType">
+								FileType
+							</a>
+							][]>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								An array of name/type-tuples or a thenable that resolves to such.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1524" data-target="#details-1524" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The uri of the folder.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				[
-				<a class="type-intrinsic">
-					string
-				</a>
-				,
-				<a class="type-ref" href="#FileType">
-					FileType
-				</a>
-				][] |
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<[
-				<a class="type-intrinsic">
-					string
-				</a>
-				,
-				<a class="type-ref" href="#FileType">
-					FileType
-				</a>
-				][]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of name/type-tuples or a thenable that resolves to such.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -20781,58 +20783,58 @@ the copy operation.</p>
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="1530" data-target="#details-1530" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The uri of the file.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Uint8Array">
+								Uint8Array
+							</a>
+							|
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-ref" href="#Uint8Array">
+								Uint8Array
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								An array of bytes or a thenable that resolves to such.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1530" data-target="#details-1530" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The uri of the file.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Uint8Array">
-					Uint8Array
-				</a>
-				|
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#Uint8Array">
-					Uint8Array
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of bytes or a thenable that resolves to such.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -20870,105 +20872,105 @@ the copy operation.</p>
 	<tr>
 		<td>
 			<a name="oldUri">
+				<span class="ts" id="1547" data-target="#details-1547" data-toggle="collapse">
+					<span class="ident">
+						oldUri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The existing file.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="newUri">
+							<span class="ts" id="1548" data-target="#details-1548" data-toggle="collapse">
+								<span class="ident">
+									newUri
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Uri">
+									Uri
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The new location.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="options">
+										<span class="ts" id="1549" data-target="#details-1549" data-toggle="collapse">
+											<span class="ident">
+												options
+											</span>
+											<span>
+												:
+											</span>
+											{overwrite:
+											<a class="type-intrinsic">
+												boolean
+											</a>
+											}
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Defines if existing files should be overwritten.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-intrinsic">
+														void
+													</a>
+													|
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														void
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1547" data-target="#details-1547" data-toggle="collapse">
-				<span class="ident">
-					oldUri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The existing file.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="newUri">
-			</a>
-			<span class="ts" id="1548" data-target="#details-1548" data-toggle="collapse">
-				<span class="ident">
-					newUri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The new location.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="1549" data-target="#details-1549" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				{overwrite:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Defines if existing files should be overwritten.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-				|
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					void
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -21000,58 +21002,58 @@ Still, the <a href="#FileType.SymbolicLink">SymbolicLink</a>-type must be used i
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="1521" data-target="#details-1521" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The uri of the file to retrieve metadata about.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#FileStat">
+								FileStat
+							</a>
+							|
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-ref" href="#FileStat">
+								FileStat
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								The file metadata about the file.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1521" data-target="#details-1521" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The uri of the file to retrieve metadata about.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#FileStat">
-					FileStat
-				</a>
-				|
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#FileStat">
-					FileStat
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The file metadata about the file.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -21080,83 +21082,83 @@ and if subfolders, sub-subfolder, etc. should be watched (<code>recursive</code>
 	<tr>
 		<td>
 			<a name="uri">
-			</a>
-			<span class="ts" id="1514" data-target="#details-1514" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The uri of the file to be watched.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="1515" data-target="#details-1515" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				{excludes:
-				<a class="type-intrinsic">
-					string
-				</a>
-				[], recursive:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configures the watch.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A disposable that tells the provider to stop watching the
-					<code>
+				<span class="ts" id="1514" data-target="#details-1514" data-toggle="collapse">
+					<span class="ident">
 						uri
-					</code>
-					.
-				</p>
-			</div>
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The uri of the file to be watched.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="1515" data-target="#details-1515" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									:
+								</span>
+								{excludes:
+								<a class="type-intrinsic">
+									string
+								</a>
+								[], recursive:
+								<a class="type-intrinsic">
+									boolean
+								</a>
+								}
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Configures the watch.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Disposable">
+											Disposable
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A disposable that tells the provider to stop watching the
+											<code>
+												uri
+											</code>
+											.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -21194,109 +21196,109 @@ and if subfolders, sub-subfolder, etc. should be watched (<code>recursive</code>
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="1533" data-target="#details-1533" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The uri of the file.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="content">
+							<span class="ts" id="1534" data-target="#details-1534" data-toggle="collapse">
+								<span class="ident">
+									content
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Uint8Array">
+									Uint8Array
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The new content of the file.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="options">
+										<span class="ts" id="1535" data-target="#details-1535" data-toggle="collapse">
+											<span class="ident">
+												options
+											</span>
+											<span>
+												:
+											</span>
+											{create:
+											<a class="type-intrinsic">
+												boolean
+											</a>
+											, overwrite:
+											<a class="type-intrinsic">
+												boolean
+											</a>
+											}
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Defines if missing files should or must be created.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-intrinsic">
+														void
+													</a>
+													|
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														void
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1533" data-target="#details-1533" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The uri of the file.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="content">
-			</a>
-			<span class="ts" id="1534" data-target="#details-1534" data-toggle="collapse">
-				<span class="ident">
-					content
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uint8Array">
-					Uint8Array
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The new content of the file.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="1535" data-target="#details-1535" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				{create:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				, overwrite:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Defines if missing files should or must be created.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-				|
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					void
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -21362,59 +21364,59 @@ instances of Disposable.</p>
 	<tr>
 		<td>
 			<a name="disposableLikes">
-			</a>
-			<span class="ts" id="473" data-target="#details-473" data-toggle="collapse">
-				<span>
-					...
+				<span class="ts" id="473" data-target="#details-473" data-toggle="collapse">
+					<span>
+						...
+					</span>
+					<span class="ident">
+						disposableLikes
+					</span>
+					<span>
+						:
+					</span>
+					{dispose: () =>
+					<a class="type-intrinsic">
+						any
+					</a>
+					}[]
 				</span>
-				<span class="ident">
-					disposableLikes
-				</span>
-				<span>
-					:
-				</span>
-				{dispose: () =>
-				<a class="type-intrinsic">
-					any
-				</a>
-				}[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Objects that have at least a
-					<code>
-						dispose
-					</code>
-					-function member.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Returns a new disposable which, upon dispose, will
+				<td>
+					<div class="comment">
+						<p>
+							Objects that have at least a
+							<code>
+								dispose
+							</code>
+							-function member.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Disposable">
+								Disposable
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								Returns a new disposable which, upon dispose, will
 dispose all provided disposables.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -21443,46 +21445,46 @@ on dispose.</p>
 	<tr>
 		<td>
 			<a name="callOnDispose">
+				<span class="ts" id="480" data-target="#details-480" data-toggle="collapse">
+					<span class="ident">
+						callOnDispose
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Function">
+						Function
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Function that disposes something.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#FileSystemWatcher">
+								FileSystemWatcher
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="480" data-target="#details-480" data-toggle="collapse">
-				<span class="ident">
-					callOnDispose
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Function">
-					Function
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Function that disposes something.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#FileSystemWatcher">
-					FileSystemWatcher
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -21628,97 +21630,97 @@ Invalid ranges will be ignored.</p>
 	<tr>
 		<td>
 			<a name="start">
+				<span class="ts" id="1067" data-target="#details-1067" data-toggle="collapse">
+					<span class="ident">
+						start
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						number
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The start line of the folded range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="end">
+							<span class="ts" id="1068" data-target="#details-1068" data-toggle="collapse">
+								<span class="ident">
+									end
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									number
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The end line of the folded range.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="kind">
+										<span class="ts" id="1069" data-target="#details-1069" data-toggle="collapse">
+											<span class="ident">
+												kind
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#FoldingRangeKind">
+												FoldingRangeKind
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													The kind of the folding range.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#FoldingRange">
+														FoldingRange
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1067" data-target="#details-1067" data-toggle="collapse">
-				<span class="ident">
-					start
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The start line of the folded range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="end">
-			</a>
-			<span class="ts" id="1068" data-target="#details-1068" data-toggle="collapse">
-				<span class="ident">
-					end
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The end line of the folded range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="kind">
-			</a>
-			<span class="ts" id="1069" data-target="#details-1069" data-toggle="collapse">
-				<span class="ident">
-					kind
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#FoldingRangeKind">
-					FoldingRangeKind
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The kind of the folding range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#FoldingRange">
-					FoldingRange
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -21820,99 +21822,99 @@ does not want to participate or was cancelled.</p>
 	<tr>
 		<td>
 			<a name="document">
+				<span class="ts" id="1078" data-target="#details-1078" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="context">
+							<span class="ts" id="1079" data-target="#details-1079" data-toggle="collapse">
+								<span class="ident">
+									context
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#FoldingContext">
+									FoldingContext
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Additional context information (for future use)
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="1080" data-target="#details-1080" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A cancellation token.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#ProviderResult">
+														ProviderResult
+													</a>
+													<
+													<a class="type-ref" href="#FoldingRange">
+														FoldingRange
+													</a>
+													[]>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1078" data-target="#details-1078" data-toggle="collapse">
-				<span class="ident">
-					document
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="context">
-			</a>
-			<span class="ts" id="1079" data-target="#details-1079" data-toggle="collapse">
-				<span class="ident">
-					context
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#FoldingContext">
-					FoldingContext
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Additional context information (for future use)
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="1080" data-target="#details-1080" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#FoldingRange">
-					FoldingRange
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -21972,139 +21974,139 @@ does not want to participate or was cancelled.</p>
 	<tr>
 		<td>
 			<a name="functionName">
+				<span class="ts" id="1977" data-target="#details-1977" data-toggle="collapse">
+					<span class="ident">
+						functionName
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="enabled">
+									<span class="ts" id="1978" data-target="#details-1978" data-toggle="collapse">
+										<span class="ident">
+											enabled
+										</span>
+										<span>
+											?
+										</span>
+										<span>
+											:
+										</span>
+										<a class="type-intrinsic">
+											boolean
+										</a>
+									</span>
+									<td>
+										<div class="comment">
+											<tr>
+												<td>
+													<a name="condition">
+														<span class="ts" id="1979" data-target="#details-1979" data-toggle="collapse">
+															<span class="ident">
+																condition
+															</span>
+															<span>
+																?
+															</span>
+															<span>
+																:
+															</span>
+															<a class="type-intrinsic">
+																string
+															</a>
+														</span>
+														<td>
+															<div class="comment">
+																<tr>
+																	<td>
+																		<a name="hitCondition">
+																			<span class="ts" id="1980" data-target="#details-1980" data-toggle="collapse">
+																				<span class="ident">
+																					hitCondition
+																				</span>
+																				<span>
+																					?
+																				</span>
+																				<span>
+																					:
+																				</span>
+																				<a class="type-intrinsic">
+																					string
+																				</a>
+																			</span>
+																			<td>
+																				<div class="comment">
+																					<tr>
+																						<td>
+																							<a name="logMessage">
+																								<span class="ts" id="1981" data-target="#details-1981" data-toggle="collapse">
+																									<span class="ident">
+																										logMessage
+																									</span>
+																									<span>
+																										?
+																									</span>
+																									<span>
+																										:
+																									</span>
+																									<a class="type-intrinsic">
+																										string
+																									</a>
+																								</span>
+																								<td>
+																									<div class="comment">
+																										<tr>
+																											<th>
+																												Returns
+																											</th>
+																											<th>
+																												Description
+																											</th>
+																										</tr>
+																										<tr>
+																											<td>
+																												<span class="ts">
+																													<a class="type-ref" href="#FunctionBreakpoint">
+																														FunctionBreakpoint
+																													</a>
+																												</span>
+																											</td>
+																											<td>
+																												<div class="comment">
+																												</div>
+																											</td>
+																										</tr>
+																									</div>
+																								</td>
+																							</a>
+																						</td>
+																					</tr>
+																				</div>
+																			</td>
+																		</a>
+																	</td>
+																</tr>
+															</div>
+														</td>
+													</a>
+												</td>
+											</tr>
+										</div>
+									</td>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="1977" data-target="#details-1977" data-toggle="collapse">
-				<span class="ident">
-					functionName
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="enabled">
-			</a>
-			<span class="ts" id="1978" data-target="#details-1978" data-toggle="collapse">
-				<span class="ident">
-					enabled
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="condition">
-			</a>
-			<span class="ts" id="1979" data-target="#details-1979" data-toggle="collapse">
-				<span class="ident">
-					condition
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="hitCondition">
-			</a>
-			<span class="ts" id="1980" data-target="#details-1980" data-toggle="collapse">
-				<span class="ident">
-					hitCondition
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="logMessage">
-			</a>
-			<span class="ts" id="1981" data-target="#details-1981" data-toggle="collapse">
-				<span class="ident">
-					logMessage
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#FunctionBreakpoint">
-					FunctionBreakpoint
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -22211,78 +22213,78 @@ rendered in a tooltip-like widget.</p>
 	<tr>
 		<td>
 			<a name="contents">
+				<span class="ts" id="654" data-target="#details-654" data-toggle="collapse">
+					<span class="ident">
+						contents
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#MarkedString">
+						MarkedString
+					</a>
+					|
+					<a class="type-ref" href="#MarkedString">
+						MarkedString
+					</a>
+					[]
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The contents of the hover.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="range">
+							<span class="ts" id="655" data-target="#details-655" data-toggle="collapse">
+								<span class="ident">
+									range
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Range">
+									Range
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The range to which the hover applies.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Hover">
+											Hover
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="654" data-target="#details-654" data-toggle="collapse">
-				<span class="ident">
-					contents
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#MarkedString">
-					MarkedString
-				</a>
-				|
-				<a class="type-ref" href="#MarkedString">
-					MarkedString
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The contents of the hover.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="range">
-			</a>
-			<span class="ts" id="655" data-target="#details-655" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The range to which the hover applies.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Hover">
-					Hover
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -22340,111 +22342,111 @@ to the word range at the position when omitted.</p>
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="659" data-target="#details-659" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="659" data-target="#details-659" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="position">
-			</a>
-			<span class="ts" id="660" data-target="#details-660" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The position at which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="661" data-target="#details-661" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#Hover">
-					Hover
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A hover or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="position">
+							<span class="ts" id="660" data-target="#details-660" data-toggle="collapse">
+								<span class="ident">
+									position
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The position at which the command was invoked.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="661" data-target="#details-661" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A cancellation token.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#ProviderResult">
+														ProviderResult
+													</a>
+													<
+													<a class="type-ref" href="#Hover">
+														Hover
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A hover or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					or
-					<code>
-						null
-					</code>
-					.
-				</p>
-			</div>
+														<code>
+															undefined
+														</code>
+														or
+														<code>
+															null
+														</code>
+														.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -22480,115 +22482,115 @@ the go to implementation feature.</p>
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="618" data-target="#details-618" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="618" data-target="#details-618" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="position">
-			</a>
-			<span class="ts" id="619" data-target="#details-619" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The position at which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="620" data-target="#details-620" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#Definition">
-					Definition
-				</a>
-				|
-				<a class="type-ref" href="#DefinitionLink">
-					DefinitionLink
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A definition or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="position">
+							<span class="ts" id="619" data-target="#details-619" data-toggle="collapse">
+								<span class="ident">
+									position
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The position at which the command was invoked.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="620" data-target="#details-620" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A cancellation token.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#ProviderResult">
+														ProviderResult
+													</a>
+													<
+													<a class="type-ref" href="#Definition">
+														Definition
+													</a>
+													|
+													<a class="type-ref" href="#DefinitionLink">
+														DefinitionLink
+													</a>
+													[]>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A definition or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					or
-					<code>
-						null
-					</code>
-					.
-				</p>
-			</div>
+														<code>
+															undefined
+														</code>
+														or
+														<code>
+															null
+														</code>
+														.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -23011,83 +23013,83 @@ to the user.</p>
 	<tr>
 		<td>
 			<a name="value">
-			</a>
-			<span class="ts" id="538" data-target="#details-538" data-toggle="collapse">
-				<span class="ident">
-					value
+				<span class="ts" id="538" data-target="#details-538" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The current value of the input box.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				|
-				<a class="type-intrinsic">
-					null
-				</a>
-				|
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-				|
-				<a class="type-intrinsic">
-					null
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A human readable string which is presented as diagnostic message.
+				<td>
+					<div class="comment">
+						<p>
+							The current value of the input box.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								string
+							</a>
+							|
+							<a class="type-intrinsic">
+								undefined
+							</a>
+							|
+							<a class="type-intrinsic">
+								null
+							</a>
+							|
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-intrinsic">
+								string
+							</a>
+							|
+							<a class="type-intrinsic">
+								undefined
+							</a>
+							|
+							<a class="type-intrinsic">
+								null
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A human readable string which is presented as diagnostic message.
 Return
-					<code>
-						undefined
-					</code>
-					,
-					<code>
-						null
-					</code>
-					, or the empty string when 'value' is valid.
-				</p>
-			</div>
+								<code>
+									undefined
+								</code>
+								,
+								<code>
+									null
+								</code>
+								, or the empty string when 'value' is valid.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -23200,74 +23202,74 @@ inside a text file.</p>
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="1162" data-target="#details-1162" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The resource identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="rangeOrPosition">
+							<span class="ts" id="1163" data-target="#details-1163" data-toggle="collapse">
+								<span class="ident">
+									rangeOrPosition
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Range">
+									Range
+								</a>
+								|
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The range or position. Positions will be converted to an empty range.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Location">
+											Location
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1162" data-target="#details-1162" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The resource identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="rangeOrPosition">
-			</a>
-			<span class="ts" id="1163" data-target="#details-1163" data-toggle="collapse">
-				<span class="ident">
-					rangeOrPosition
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-				|
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The range or position. Positions will be converted to an empty range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Location">
-					Location
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -23365,49 +23367,49 @@ markdown syntax. Standard markdown is supported, also tables, but no embedded ht
 	<tr>
 		<td>
 			<a name="value">
+				<span class="ts" id="638" data-target="#details-638" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Optional, initial value.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#MarkdownString">
+								MarkdownString
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="638" data-target="#details-638" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Optional, initial value.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#MarkdownString">
-					MarkdownString
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -23454,77 +23456,77 @@ markdown supports links that execute commands, e.g. <code>[Run it](command:myCom
 	<tr>
 		<td>
 			<a name="value">
-			</a>
-			<span class="ts" id="647" data-target="#details-647" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A code snippet.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="language">
-			</a>
-			<span class="ts" id="648" data-target="#details-648" data-toggle="collapse">
-				<span class="ident">
-					language
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An optional
-					<a href="#languages.getLanguages">
-						language identifier
+				<span class="ts" id="647" data-target="#details-647" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#MarkdownString">
-					MarkdownString
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A code snippet.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="language">
+							<span class="ts" id="648" data-target="#details-648" data-toggle="collapse">
+								<span class="ident">
+									language
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										An optional
+										<a href="#languages.getLanguages">
+											language identifier
+										</a>
+										.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#MarkdownString">
+											MarkdownString
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -23550,46 +23552,46 @@ markdown supports links that execute commands, e.g. <code>[Run it](command:myCom
 	<tr>
 		<td>
 			<a name="value">
+				<span class="ts" id="644" data-target="#details-644" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Markdown string.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#MarkdownString">
+								MarkdownString
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="644" data-target="#details-644" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Markdown string.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#MarkdownString">
-					MarkdownString
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -23615,46 +23617,46 @@ markdown supports links that execute commands, e.g. <code>[Run it](command:myCom
 	<tr>
 		<td>
 			<a name="value">
+				<span class="ts" id="641" data-target="#details-641" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Plain text.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#MarkdownString">
+								MarkdownString
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="641" data-target="#details-641" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Plain text.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#MarkdownString">
-					MarkdownString
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -23706,57 +23708,57 @@ values.</p>
 	<tr>
 		<td>
 			<a name="key">
+				<span class="ts" id="1321" data-target="#details-1321" data-toggle="collapse">
+					<span class="ident">
+						key
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A string.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								T
+							</a>
+							|
+							<a class="type-intrinsic">
+								undefined
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								The stored value or
+								<code>
+									undefined
+								</code>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1321" data-target="#details-1321" data-toggle="collapse">
-				<span class="ident">
-					key
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A string.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					T
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The stored value or
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -23782,78 +23784,78 @@ values.</p>
 	<tr>
 		<td>
 			<a name="key">
-			</a>
-			<span class="ts" id="1324" data-target="#details-1324" data-toggle="collapse">
-				<span class="ident">
-					key
+				<span class="ts" id="1324" data-target="#details-1324" data-toggle="collapse">
+					<span class="ident">
+						key
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A string.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="defaultValue">
-			</a>
-			<span class="ts" id="1325" data-target="#details-1325" data-toggle="collapse">
-				<span class="ident">
-					defaultValue
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A value that should be returned when there is no
+				<td>
+					<div class="comment">
+						<p>
+							A string.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="defaultValue">
+							<span class="ts" id="1325" data-target="#details-1325" data-toggle="collapse">
+								<span class="ident">
+									defaultValue
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									T
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A value that should be returned when there is no
 value (
-					<code>
-						undefined
-					</code>
-					) with the given key.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					T
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The stored value or the defaultValue.
-				</p>
-			</div>
+										<code>
+											undefined
+										</code>
+										) with the given key.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											T
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											The stored value or the defaultValue.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -23879,75 +23881,75 @@ value (
 	<tr>
 		<td>
 			<a name="key">
+				<span class="ts" id="1328" data-target="#details-1328" data-toggle="collapse">
+					<span class="ident">
+						key
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A string.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="value">
+							<span class="ts" id="1329" data-target="#details-1329" data-toggle="collapse">
+								<span class="ident">
+									value
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									any
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A value. MUST not contain cyclic references.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-intrinsic">
+											void
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1328" data-target="#details-1328" data-toggle="collapse">
-				<span class="ident">
-					key
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A string.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="value">
-			</a>
-			<span class="ts" id="1329" data-target="#details-1329" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A value. MUST not contain cyclic references.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					void
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -24083,159 +24085,159 @@ when <code>}</code> has been entered.</p>
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="895" data-target="#details-895" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="895" data-target="#details-895" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="position">
-			</a>
-			<span class="ts" id="896" data-target="#details-896" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The position at which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="ch">
-			</a>
-			<span class="ts" id="897" data-target="#details-897" data-toggle="collapse">
-				<span class="ident">
-					ch
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The character that has been typed.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="898" data-target="#details-898" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#FormattingOptions">
-					FormattingOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Options controlling formatting.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="899" data-target="#details-899" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#TextEdit">
-					TextEdit
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A set of text edits or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="position">
+							<span class="ts" id="896" data-target="#details-896" data-toggle="collapse">
+								<span class="ident">
+									position
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The position at which the command was invoked.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="ch">
+										<span class="ts" id="897" data-target="#details-897" data-toggle="collapse">
+											<span class="ident">
+												ch
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												string
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													The character that has been typed.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="options">
+													<span class="ts" id="898" data-target="#details-898" data-toggle="collapse">
+														<span class="ident">
+															options
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-ref" href="#FormattingOptions">
+															FormattingOptions
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																Options controlling formatting.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<td>
+															<a name="token">
+																<span class="ts" id="899" data-target="#details-899" data-toggle="collapse">
+																	<span class="ident">
+																		token
+																	</span>
+																	<span>
+																		:
+																	</span>
+																	<a class="type-ref" href="#CancellationToken">
+																		CancellationToken
+																	</a>
+																</span>
+																<td>
+																	<div class="comment">
+																		<p>
+																			A cancellation token.
+																		</p>
+																	</div>
+																</td>
+																<tr>
+																	<th>
+																		Returns
+																	</th>
+																	<th>
+																		Description
+																	</th>
+																</tr>
+																<tr>
+																	<td>
+																		<span class="ts">
+																			<a class="type-ref" href="#ProviderResult">
+																				ProviderResult
+																			</a>
+																			<
+																			<a class="type-ref" href="#TextEdit">
+																				TextEdit
+																			</a>
+																			[]>
+																		</span>
+																	</td>
+																	<td>
+																		<div class="comment">
+																			<p>
+																				A set of text edits or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					,
-					<code>
-						null
-					</code>
-					, or an empty array.
-				</p>
-			</div>
+																				<code>
+																					undefined
+																				</code>
+																				,
+																				<code>
+																					null
+																				</code>
+																				, or an empty array.
+																			</p>
+																		</div>
+																	</td>
+																</tr>
+															</a>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -24352,46 +24354,46 @@ like &quot;TypeScript&quot;, and an array of extensions, e.g.</p>
 	<tr>
 		<td>
 			<a name="value">
+				<span class="ts" id="1244" data-target="#details-1244" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A string, falsy values will not be printed.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1244" data-target="#details-1244" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A string, falsy values will not be printed.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -24418,46 +24420,46 @@ to the channel.</p>
 	<tr>
 		<td>
 			<a name="value">
+				<span class="ts" id="1247" data-target="#details-1247" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A string, falsy values will be printed.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1247" data-target="#details-1247" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A string, falsy values will be printed.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -24582,53 +24584,53 @@ to the channel.</p>
 	<tr>
 		<td>
 			<a name="preserveFocus">
+				<span class="ts" id="1252" data-target="#details-1252" data-toggle="collapse">
+					<span class="ident">
+						preserveFocus
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						boolean
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							When
+							<code>
+								true
+							</code>
+							the channel will not take focus.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1252" data-target="#details-1252" data-toggle="collapse">
-				<span class="ident">
-					preserveFocus
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					When
-					<code>
-						true
-					</code>
-					the channel will not take focus.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -24657,84 +24659,84 @@ to the channel.</p>
 	<tr>
 		<td>
 			<a name="column">
+				<span class="ts" id="1254" data-target="#details-1254" data-toggle="collapse">
+					<span class="ident">
+						column
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#ViewColumn">
+						ViewColumn
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							This argument is
+							<strong>
+								deprecated
+							</strong>
+							and will be ignored.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="preserveFocus">
+							<span class="ts" id="1255" data-target="#details-1255" data-toggle="collapse">
+								<span class="ident">
+									preserveFocus
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									boolean
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										When
+										<code>
+											true
+										</code>
+										the channel will not take focus.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											void
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1254" data-target="#details-1254" data-toggle="collapse">
-				<span class="ident">
-					column
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ViewColumn">
-					ViewColumn
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					This argument is
-					<strong>
-						deprecated
-					</strong>
-					and will be ignored.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="preserveFocus">
-			</a>
-			<span class="ts" id="1255" data-target="#details-1255" data-toggle="collapse">
-				<span class="ident">
-					preserveFocus
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					When
-					<code>
-						true
-					</code>
-					the channel will not take focus.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -24808,86 +24810,86 @@ have a label and a doc-comment.</p>
 	<tr>
 		<td>
 			<a name="label">
+				<span class="ts" id="905" data-target="#details-905" data-toggle="collapse">
+					<span class="ident">
+						label
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+					| [
+					<a class="type-intrinsic">
+						number
+					</a>
+					,
+					<a class="type-intrinsic">
+						number
+					</a>
+					]
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A label string or inclusive start and exclusive end offsets within its containing signature label.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="documentation">
+							<span class="ts" id="906" data-target="#details-906" data-toggle="collapse">
+								<span class="ident">
+									documentation
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+								|
+								<a class="type-ref" href="#MarkdownString">
+									MarkdownString
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A doc string.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ParameterInformation">
+											ParameterInformation
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="905" data-target="#details-905" data-toggle="collapse">
-				<span class="ident">
-					label
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				| [
-				<a class="type-intrinsic">
-					number
-				</a>
-				,
-				<a class="type-intrinsic">
-					number
-				</a>
-				]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A label string or inclusive start and exclusive end offsets within its containing signature label.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="documentation">
-			</a>
-			<span class="ts" id="906" data-target="#details-906" data-toggle="collapse">
-				<span class="ident">
-					documentation
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-ref" href="#MarkdownString">
-					MarkdownString
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A doc string.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ParameterInformation">
-					ParameterInformation
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -24947,70 +24949,70 @@ from an existing position.</p>
 	<tr>
 		<td>
 			<a name="line">
+				<span class="ts" id="79" data-target="#details-79" data-toggle="collapse">
+					<span class="ident">
+						line
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						number
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A zero-based line value.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="character">
+							<span class="ts" id="80" data-target="#details-80" data-toggle="collapse">
+								<span class="ident">
+									character
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									number
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A zero-based character value.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Position">
+											Position
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="79" data-target="#details-79" data-toggle="collapse">
-				<span class="ident">
-					line
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A zero-based line value.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="character">
-			</a>
-			<span class="ts" id="80" data-target="#details-80" data-toggle="collapse">
-				<span class="ident">
-					character
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A zero-based character value.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -25056,51 +25058,51 @@ from an existing position.</p>
 	<tr>
 		<td>
 			<a name="other">
-			</a>
-			<span class="ts" id="98" data-target="#details-98" data-toggle="collapse">
-				<span class="ident">
-					other
+				<span class="ts" id="98" data-target="#details-98" data-toggle="collapse">
+					<span class="ident">
+						other
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A number smaller than zero if this position is before the given position,
+				<td>
+					<div class="comment">
+						<p>
+							A position.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								number
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A number smaller than zero if this position is before the given position,
 a number greater than zero if this position is after the given position, or zero when
 this and the given position are equal.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -25126,53 +25128,53 @@ this and the given position are equal.
 	<tr>
 		<td>
 			<a name="other">
-			</a>
-			<span class="ts" id="89" data-target="#details-89" data-toggle="collapse">
-				<span class="ident">
-					other
+				<span class="ts" id="89" data-target="#details-89" data-toggle="collapse">
+					<span class="ident">
+						other
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					<code>
-						true
-					</code>
-					if position is on a greater line
+				<td>
+					<div class="comment">
+						<p>
+							A position.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								boolean
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								<code>
+									true
+								</code>
+								if position is on a greater line
 or on the same line on a greater character.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -25198,53 +25200,53 @@ or on the same line on a greater character.
 	<tr>
 		<td>
 			<a name="other">
-			</a>
-			<span class="ts" id="92" data-target="#details-92" data-toggle="collapse">
-				<span class="ident">
-					other
+				<span class="ts" id="92" data-target="#details-92" data-toggle="collapse">
+					<span class="ident">
+						other
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					<code>
-						true
-					</code>
-					if position is on a greater line
+				<td>
+					<div class="comment">
+						<p>
+							A position.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								boolean
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								<code>
+									true
+								</code>
+								if position is on a greater line
 or on the same line on a greater or equal character.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -25270,53 +25272,53 @@ or on the same line on a greater or equal character.
 	<tr>
 		<td>
 			<a name="other">
-			</a>
-			<span class="ts" id="83" data-target="#details-83" data-toggle="collapse">
-				<span class="ident">
-					other
+				<span class="ts" id="83" data-target="#details-83" data-toggle="collapse">
+					<span class="ident">
+						other
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					<code>
-						true
-					</code>
-					if position is on a smaller line
+				<td>
+					<div class="comment">
+						<p>
+							A position.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								boolean
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								<code>
+									true
+								</code>
+								if position is on a smaller line
 or on the same line on a smaller character.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -25342,53 +25344,53 @@ or on the same line on a smaller character.
 	<tr>
 		<td>
 			<a name="other">
-			</a>
-			<span class="ts" id="86" data-target="#details-86" data-toggle="collapse">
-				<span class="ident">
-					other
+				<span class="ts" id="86" data-target="#details-86" data-toggle="collapse">
+					<span class="ident">
+						other
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					<code>
-						true
-					</code>
-					if position is on a smaller line
+				<td>
+					<div class="comment">
+						<p>
+							A position.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								boolean
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								<code>
+									true
+								</code>
+								if position is on a smaller line
 or on the same line on a smaller or equal character.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -25414,53 +25416,53 @@ or on the same line on a smaller or equal character.
 	<tr>
 		<td>
 			<a name="other">
-			</a>
-			<span class="ts" id="95" data-target="#details-95" data-toggle="collapse">
-				<span class="ident">
-					other
+				<span class="ts" id="95" data-target="#details-95" data-toggle="collapse">
+					<span class="ident">
+						other
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					<code>
-						true
-					</code>
-					if the line and character of the given position are equal to
+				<td>
+					<div class="comment">
+						<p>
+							A position.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								boolean
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								<code>
+									true
+								</code>
+								if the line and character of the given position are equal to
 the line and character of this position.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -25486,88 +25488,88 @@ the line and character of this position.
 	<tr>
 		<td>
 			<a name="lineDelta">
-			</a>
-			<span class="ts" id="101" data-target="#details-101" data-toggle="collapse">
-				<span class="ident">
-					lineDelta
+				<span class="ts" id="101" data-target="#details-101" data-toggle="collapse">
+					<span class="ident">
+						lineDelta
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						number
+					</a>
 				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Delta value for the line value, default is
-					<code>
-						0
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="characterDelta">
-			</a>
-			<span class="ts" id="102" data-target="#details-102" data-toggle="collapse">
-				<span class="ident">
-					characterDelta
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Delta value for the character value, default is
-					<code>
-						0
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position which line and character is the sum of the current line and
+				<td>
+					<div class="comment">
+						<p>
+							Delta value for the line value, default is
+							<code>
+								0
+							</code>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="characterDelta">
+							<span class="ts" id="102" data-target="#details-102" data-toggle="collapse">
+								<span class="ident">
+									characterDelta
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									number
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Delta value for the character value, default is
+										<code>
+											0
+										</code>
+										.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Position">
+											Position
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A position which line and character is the sum of the current line and
 character and the corresponding deltas.
-				</p>
-			</div>
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -25593,60 +25595,60 @@ character and the corresponding deltas.
 	<tr>
 		<td>
 			<a name="change">
-			</a>
-			<span class="ts" id="104" data-target="#details-104" data-toggle="collapse">
-				<span class="ident">
-					change
+				<span class="ts" id="104" data-target="#details-104" data-toggle="collapse">
+					<span class="ident">
+						change
+					</span>
+					<span>
+						:
+					</span>
+					{characterDelta:
+					<a class="type-intrinsic">
+						number
+					</a>
+					, lineDelta:
+					<a class="type-intrinsic">
+						number
+					</a>
+					}
 				</span>
-				<span>
-					:
-				</span>
-				{characterDelta:
-				<a class="type-intrinsic">
-					number
-				</a>
-				, lineDelta:
-				<a class="type-intrinsic">
-					number
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An object that describes a delta to this position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position that reflects the given delta. Will return
-					<code>
-						this
-					</code>
-					position if the change
+				<td>
+					<div class="comment">
+						<p>
+							An object that describes a delta to this position.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Position">
+								Position
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A position that reflects the given delta. Will return
+								<code>
+									this
+								</code>
+								position if the change
 is not changing anything.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -25672,85 +25674,85 @@ is not changing anything.
 	<tr>
 		<td>
 			<a name="line">
-			</a>
-			<span class="ts" id="110" data-target="#details-110" data-toggle="collapse">
-				<span class="ident">
-					line
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Value that should be used as line value, default is the
-					<a href="#Position.line">
-						existing value
+				<span class="ts" id="110" data-target="#details-110" data-toggle="collapse">
+					<span class="ident">
+						line
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						number
 					</a>
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="character">
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Value that should be used as line value, default is the
+							<a href="#Position.line">
+								existing value
+							</a>
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="character">
+							<span class="ts" id="111" data-target="#details-111" data-toggle="collapse">
+								<span class="ident">
+									character
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									number
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Value that should be used as character value, default is the
+										<a href="#Position.character">
+											existing value
+										</a>
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Position">
+											Position
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A position where line and character are replaced by the given values.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="111" data-target="#details-111" data-toggle="collapse">
-				<span class="ident">
-					character
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Value that should be used as character value, default is the
-					<a href="#Position.character">
-						existing value
-					</a>
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position where line and character are replaced by the given values.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -25776,60 +25778,60 @@ is not changing anything.
 	<tr>
 		<td>
 			<a name="change">
-			</a>
-			<span class="ts" id="113" data-target="#details-113" data-toggle="collapse">
-				<span class="ident">
-					change
+				<span class="ts" id="113" data-target="#details-113" data-toggle="collapse">
+					<span class="ident">
+						change
+					</span>
+					<span>
+						:
+					</span>
+					{character:
+					<a class="type-intrinsic">
+						number
+					</a>
+					, line:
+					<a class="type-intrinsic">
+						number
+					</a>
+					}
 				</span>
-				<span>
-					:
-				</span>
-				{character:
-				<a class="type-intrinsic">
-					number
-				</a>
-				, line:
-				<a class="type-intrinsic">
-					number
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An object that describes a change to this position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position that reflects the given change. Will return
-					<code>
-						this
-					</code>
-					position if the change
+				<td>
+					<div class="comment">
+						<p>
+							An object that describes a change to this position.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Position">
+								Position
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A position that reflects the given change. Will return
+								<code>
+									this
+								</code>
+								position if the change
 is not changing anything.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -25865,73 +25867,73 @@ without shell interaction.</p>
 	<tr>
 		<td>
 			<a name="process">
+				<span class="ts" id="1367" data-target="#details-1367" data-toggle="collapse">
+					<span class="ident">
+						process
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The process to start.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="1368" data-target="#details-1368" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#ProcessExecutionOptions">
+									ProcessExecutionOptions
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Optional options for the started process.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProcessExecution">
+											ProcessExecution
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1367" data-target="#details-1367" data-toggle="collapse">
-				<span class="ident">
-					process
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The process to start.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="1368" data-target="#details-1368" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ProcessExecutionOptions">
-					ProcessExecutionOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Optional options for the started process.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProcessExecution">
-					ProcessExecution
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -25957,98 +25959,98 @@ without shell interaction.</p>
 	<tr>
 		<td>
 			<a name="process">
+				<span class="ts" id="1370" data-target="#details-1370" data-toggle="collapse">
+					<span class="ident">
+						process
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The process to start.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="args">
+							<span class="ts" id="1371" data-target="#details-1371" data-toggle="collapse">
+								<span class="ident">
+									args
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+								[]
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Arguments to be passed to the process.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="options">
+										<span class="ts" id="1372" data-target="#details-1372" data-toggle="collapse">
+											<span class="ident">
+												options
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#ProcessExecutionOptions">
+												ProcessExecutionOptions
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Optional options for the started process.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#ProcessExecution">
+														ProcessExecution
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1370" data-target="#details-1370" data-toggle="collapse">
-				<span class="ident">
-					process
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The process to start.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="args">
-			</a>
-			<span class="ts" id="1371" data-target="#details-1371" data-toggle="collapse">
-				<span class="ident">
-					args
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Arguments to be passed to the process.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="1372" data-target="#details-1372" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ProcessExecutionOptions">
-					ProcessExecutionOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Optional options for the started process.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProcessExecution">
-					ProcessExecution
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -26138,47 +26140,47 @@ the parent process&#39; environment.</p>
 	<tr>
 		<td>
 			<a name="value">
-			</a>
-			<span class="ts" id="1280" data-target="#details-1280" data-toggle="collapse">
-				<span class="ident">
-					value
+				<span class="ts" id="1280" data-target="#details-1280" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						T
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A progress item, like a message and/or an
+				<td>
+					<div class="comment">
+						<p>
+							A progress item, like a message and/or an
 report on how much work finished
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -26316,78 +26318,78 @@ let c: HoverProvider = {
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="1819" data-target="#details-1819" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The uri of the resource open in a text editor.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="token">
+							<span class="ts" id="1820" data-target="#details-1820" data-toggle="collapse">
+								<span class="ident">
+									token
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CancellationToken">
+									CancellationToken
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A cancellation token.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProviderResult">
+											ProviderResult
+										</a>
+										<
+										<a class="type-ref" href="#Uri">
+											Uri
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A thenable that resolves to uri of the matching original resource.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1819" data-target="#details-1819" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The uri of the resource open in a text editor.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="1820" data-target="#details-1820" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to uri of the matching original resource.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -27014,47 +27016,47 @@ a list of items.</p>
 	<tr>
 		<td>
 			<a name="item">
+				<span class="ts" id="503" data-target="#details-503" data-toggle="collapse">
+					<span class="ident">
+						item
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#QuickPickItem">
+						QuickPickItem
+					</a>
+					|
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<th>
+								Returns
+							</th>
+							<th>
+								Description
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="ts">
+									<a class="type-intrinsic">
+										any
+									</a>
+								</span>
+							</td>
+							<td>
+								<div class="comment">
+								</div>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="503" data-target="#details-503" data-toggle="collapse">
-				<span class="ident">
-					item
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#QuickPickItem">
-					QuickPickItem
-				</a>
-				|
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -27136,70 +27138,70 @@ before or equal to <code>end</code>, the values will be swapped.</p>
 	<tr>
 		<td>
 			<a name="start">
+				<span class="ts" id="122" data-target="#details-122" data-toggle="collapse">
+					<span class="ident">
+						start
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A position.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="end">
+							<span class="ts" id="123" data-target="#details-123" data-toggle="collapse">
+								<span class="ident">
+									end
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A position.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Range">
+											Range
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="122" data-target="#details-122" data-toggle="collapse">
-				<span class="ident">
-					start
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="end">
-			</a>
-			<span class="ts" id="123" data-target="#details-123" data-toggle="collapse">
-				<span class="ident">
-					end
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -27226,118 +27228,118 @@ using <code>new Range(new Position(startLine, startCharacter), new Position(endL
 	<tr>
 		<td>
 			<a name="startLine">
+				<span class="ts" id="125" data-target="#details-125" data-toggle="collapse">
+					<span class="ident">
+						startLine
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						number
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A zero-based line value.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="startCharacter">
+							<span class="ts" id="126" data-target="#details-126" data-toggle="collapse">
+								<span class="ident">
+									startCharacter
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									number
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A zero-based character value.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="endLine">
+										<span class="ts" id="127" data-target="#details-127" data-toggle="collapse">
+											<span class="ident">
+												endLine
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												number
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A zero-based line value.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="endCharacter">
+													<span class="ts" id="128" data-target="#details-128" data-toggle="collapse">
+														<span class="ident">
+															endCharacter
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-intrinsic">
+															number
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																A zero-based character value.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<th>
+															Returns
+														</th>
+														<th>
+															Description
+														</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="ts">
+																<a class="type-ref" href="#Range">
+																	Range
+																</a>
+															</span>
+														</td>
+														<td>
+															<div class="comment">
+															</div>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="125" data-target="#details-125" data-toggle="collapse">
-				<span class="ident">
-					startLine
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A zero-based line value.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="startCharacter">
-			</a>
-			<span class="ts" id="126" data-target="#details-126" data-toggle="collapse">
-				<span class="ident">
-					startCharacter
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A zero-based character value.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="endLine">
-			</a>
-			<span class="ts" id="127" data-target="#details-127" data-toggle="collapse">
-				<span class="ident">
-					endLine
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A zero-based line value.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="endCharacter">
-			</a>
-			<span class="ts" id="128" data-target="#details-128" data-toggle="collapse">
-				<span class="ident">
-					endCharacter
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A zero-based character value.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -27399,57 +27401,57 @@ using <code>new Range(new Position(startLine, startCharacter), new Position(endL
 	<tr>
 		<td>
 			<a name="positionOrRange">
-			</a>
-			<span class="ts" id="133" data-target="#details-133" data-toggle="collapse">
-				<span class="ident">
-					positionOrRange
+				<span class="ts" id="133" data-target="#details-133" data-toggle="collapse">
+					<span class="ident">
+						positionOrRange
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
+					|
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-				|
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position or a range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					<code>
-						true
-					</code>
-					if the position or range is inside or equal
+				<td>
+					<div class="comment">
+						<p>
+							A position or a range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								boolean
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								<code>
+									true
+								</code>
+								if the position or range is inside or equal
 to this range.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -27476,54 +27478,54 @@ if the ranges have no overlap.</p>
 	<tr>
 		<td>
 			<a name="range">
-			</a>
-			<span class="ts" id="139" data-target="#details-139" data-toggle="collapse">
-				<span class="ident">
-					range
+				<span class="ts" id="139" data-target="#details-139" data-toggle="collapse">
+					<span class="ident">
+						range
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range of the greater start and smaller end positions. Will
+				<td>
+					<div class="comment">
+						<p>
+							A range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Range">
+								Range
+							</a>
+							|
+							<a class="type-intrinsic">
+								undefined
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A range of the greater start and smaller end positions. Will
 return undefined when there is no overlap.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -27549,57 +27551,57 @@ return undefined when there is no overlap.
 	<tr>
 		<td>
 			<a name="other">
-			</a>
-			<span class="ts" id="136" data-target="#details-136" data-toggle="collapse">
-				<span class="ident">
-					other
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					<code>
-						true
-					</code>
-					when start and end are
-					<a href="#Position.isEqual">
-						equal
+				<span class="ts" id="136" data-target="#details-136" data-toggle="collapse">
+					<span class="ident">
+						other
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
 					</a>
-					to
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								boolean
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								<code>
+									true
+								</code>
+								when start and end are
+								<a href="#Position.isEqual">
+									equal
+								</a>
+								to
 start and end of this range.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -27625,49 +27627,49 @@ start and end of this range.
 	<tr>
 		<td>
 			<a name="other">
+				<span class="ts" id="142" data-target="#details-142" data-toggle="collapse">
+					<span class="ident">
+						other
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Range">
+								Range
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A range of smaller start position and the greater end position.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="142" data-target="#details-142" data-toggle="collapse">
-				<span class="ident">
-					other
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range of smaller start position and the greater end position.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -27693,92 +27695,92 @@ start and end of this range.
 	<tr>
 		<td>
 			<a name="start">
-			</a>
-			<span class="ts" id="145" data-target="#details-145" data-toggle="collapse">
-				<span class="ident">
-					start
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position that should be used as start. The default value is the
-					<a href="#Range.start">
-						current start
+				<span class="ts" id="145" data-target="#details-145" data-toggle="collapse">
+					<span class="ident">
+						start
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
 					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="end">
-			</a>
-			<span class="ts" id="146" data-target="#details-146" data-toggle="collapse">
-				<span class="ident">
-					end
 				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position that should be used as end. The default value is the
-					<a href="#Range.end">
-						current end
-					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range derived from this range with the given start and end position.
+				<td>
+					<div class="comment">
+						<p>
+							A position that should be used as start. The default value is the
+							<a href="#Range.start">
+								current start
+							</a>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="end">
+							<span class="ts" id="146" data-target="#details-146" data-toggle="collapse">
+								<span class="ident">
+									end
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A position that should be used as end. The default value is the
+										<a href="#Range.end">
+											current end
+										</a>
+										.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Range">
+											Range
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A range derived from this range with the given start and end position.
 If start and end are not different
-					<code>
-						this
-					</code>
-					range will be returned.
-				</p>
-			</div>
+											<code>
+												this
+											</code>
+											range will be returned.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -27804,60 +27806,60 @@ If start and end are not different
 	<tr>
 		<td>
 			<a name="change">
-			</a>
-			<span class="ts" id="148" data-target="#details-148" data-toggle="collapse">
-				<span class="ident">
-					change
+				<span class="ts" id="148" data-target="#details-148" data-toggle="collapse">
+					<span class="ident">
+						change
+					</span>
+					<span>
+						:
+					</span>
+					{end:
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
+					, start:
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
+					}
 				</span>
-				<span>
-					:
-				</span>
-				{end:
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-				, start:
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An object that describes a change to this range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range that reflects the given change. Will return
-					<code>
-						this
-					</code>
-					range if the change
+				<td>
+					<div class="comment">
+						<p>
+							An object that describes a change to this range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Range">
+								Range
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A range that reflects the given change. Will return
+								<code>
+									this
+								</code>
+								range if the change
 is not changing anything.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -27911,132 +27913,132 @@ the <a href="https://code.visualstudio.com/docs/editor/editingevolved#_peek">fin
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="758" data-target="#details-758" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="758" data-target="#details-758" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="position">
-			</a>
-			<span class="ts" id="759" data-target="#details-759" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The position at which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="context">
-			</a>
-			<span class="ts" id="760" data-target="#details-760" data-toggle="collapse">
-				<span class="ident">
-					context
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ReferenceContext">
-					ReferenceContext
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="761" data-target="#details-761" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#Location">
-					Location
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of locations or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="position">
+							<span class="ts" id="759" data-target="#details-759" data-toggle="collapse">
+								<span class="ident">
+									position
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The position at which the command was invoked.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="context">
+										<span class="ts" id="760" data-target="#details-760" data-toggle="collapse">
+											<span class="ident">
+												context
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#ReferenceContext">
+												ReferenceContext
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<tr>
+													<td>
+														<a name="token">
+															<span class="ts" id="761" data-target="#details-761" data-toggle="collapse">
+																<span class="ident">
+																	token
+																</span>
+																<span>
+																	:
+																</span>
+																<a class="type-ref" href="#CancellationToken">
+																	CancellationToken
+																</a>
+															</span>
+															<td>
+																<div class="comment">
+																	<p>
+																		A cancellation token.
+																	</p>
+																</div>
+															</td>
+															<tr>
+																<th>
+																	Returns
+																</th>
+																<th>
+																	Description
+																</th>
+															</tr>
+															<tr>
+																<td>
+																	<span class="ts">
+																		<a class="type-ref" href="#ProviderResult">
+																			ProviderResult
+																		</a>
+																		<
+																		<a class="type-ref" href="#Location">
+																			Location
+																		</a>
+																		[]>
+																	</span>
+																</td>
+																<td>
+																	<div class="comment">
+																		<p>
+																			An array of locations or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					,
-					<code>
-						null
-					</code>
-					, or an empty array.
-				</p>
-			</div>
+																			<code>
+																				undefined
+																			</code>
+																			,
+																			<code>
+																				null
+																			</code>
+																			, or an empty array.
+																		</p>
+																	</div>
+																</td>
+															</tr>
+														</a>
+													</td>
+												</tr>
+											</div>
+										</td>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -28074,79 +28076,79 @@ will be matched on file paths relative to the base path.</p>
 	<tr>
 		<td>
 			<a name="base">
-			</a>
-			<span class="ts" id="544" data-target="#details-544" data-toggle="collapse">
-				<span class="ident">
-					base
+				<span class="ts" id="544" data-target="#details-544" data-toggle="collapse">
+					<span class="ident">
+						base
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#WorkspaceFolder">
+						WorkspaceFolder
+					</a>
+					|
+					<a class="type-intrinsic">
+						string
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#WorkspaceFolder">
-					WorkspaceFolder
-				</a>
-				|
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A base file path to which this pattern will be matched against relatively.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="pattern">
-			</a>
-			<span class="ts" id="545" data-target="#details-545" data-toggle="collapse">
-				<span class="ident">
-					pattern
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A file glob pattern like
-					<code>
-						*.{ts,js}
-					</code>
-					that will be matched on file paths
+				<td>
+					<div class="comment">
+						<p>
+							A base file path to which this pattern will be matched against relatively.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="pattern">
+							<span class="ts" id="545" data-target="#details-545" data-toggle="collapse">
+								<span class="ident">
+									pattern
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A file glob pattern like
+										<code>
+											*.{ts,js}
+										</code>
+										that will be matched on file paths
 relative to the base path.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#RelativePattern">
-					RelativePattern
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#RelativePattern">
+											RelativePattern
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -28205,118 +28207,118 @@ which is being renamed - when omitted the text in the returned range is used.</p
 	<tr>
 		<td>
 			<a name="document">
+				<span class="ts" id="868" data-target="#details-868" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The document in which rename will be invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="position">
+							<span class="ts" id="869" data-target="#details-869" data-toggle="collapse">
+								<span class="ident">
+									position
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The position at which rename will be invoked.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="870" data-target="#details-870" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A cancellation token.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#ProviderResult">
+														ProviderResult
+													</a>
+													<
+													<a class="type-ref" href="#Range">
+														Range
+													</a>
+													| {placeholder:
+													<a class="type-intrinsic">
+														string
+													</a>
+													, range:
+													<a class="type-ref" href="#Range">
+														Range
+													</a>
+													}>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														The range or range and placeholder text of the identifier that is to be renamed. The lack of a result can signaled by returning
+														<code>
+															undefined
+														</code>
+														or
+														<code>
+															null
+														</code>
+														.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="868" data-target="#details-868" data-toggle="collapse">
-				<span class="ident">
-					document
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which rename will be invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="position">
-			</a>
-			<span class="ts" id="869" data-target="#details-869" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The position at which rename will be invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="870" data-target="#details-870" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-				| {placeholder:
-				<a class="type-intrinsic">
-					string
-				</a>
-				, range:
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-				}>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The range or range and placeholder text of the identifier that is to be renamed. The lack of a result can signaled by returning
-					<code>
-						undefined
-					</code>
-					or
-					<code>
-						null
-					</code>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -28343,135 +28345,135 @@ or many resources to rename a symbol to a different name.</p>
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="862" data-target="#details-862" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="862" data-target="#details-862" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="position">
-			</a>
-			<span class="ts" id="863" data-target="#details-863" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The position at which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="newName">
-			</a>
-			<span class="ts" id="864" data-target="#details-864" data-toggle="collapse">
-				<span class="ident">
-					newName
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The new name of the symbol. If the given name is not valid, the provider must return a rejected promise.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="865" data-target="#details-865" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#WorkspaceEdit">
-					WorkspaceEdit
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A workspace edit or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="position">
+							<span class="ts" id="863" data-target="#details-863" data-toggle="collapse">
+								<span class="ident">
+									position
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The position at which the command was invoked.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="newName">
+										<span class="ts" id="864" data-target="#details-864" data-toggle="collapse">
+											<span class="ident">
+												newName
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												string
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													The new name of the symbol. If the given name is not valid, the provider must return a rejected promise.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="token">
+													<span class="ts" id="865" data-target="#details-865" data-toggle="collapse">
+														<span class="ident">
+															token
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-ref" href="#CancellationToken">
+															CancellationToken
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																A cancellation token.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<th>
+															Returns
+														</th>
+														<th>
+															Description
+														</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="ts">
+																<a class="type-ref" href="#ProviderResult">
+																	ProviderResult
+																</a>
+																<
+																<a class="type-ref" href="#WorkspaceEdit">
+																	WorkspaceEdit
+																</a>
+																>
+															</span>
+														</td>
+														<td>
+															<div class="comment">
+																<p>
+																	A workspace edit or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					or
-					<code>
-						null
-					</code>
-					.
-				</p>
-			</div>
+																	<code>
+																		undefined
+																	</code>
+																	or
+																	<code>
+																		null
+																	</code>
+																	.
+																</p>
+															</div>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -28563,70 +28565,70 @@ like &quot;TypeScript&quot;, and an array of extensions, e.g.</p>
 	<tr>
 		<td>
 			<a name="anchor">
+				<span class="ts" id="157" data-target="#details-157" data-toggle="collapse">
+					<span class="ident">
+						anchor
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A position.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="active">
+							<span class="ts" id="158" data-target="#details-158" data-toggle="collapse">
+								<span class="ident">
+									active
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A position.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Selection">
+											Selection
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="157" data-target="#details-157" data-toggle="collapse">
-				<span class="ident">
-					anchor
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="active">
-			</a>
-			<span class="ts" id="158" data-target="#details-158" data-toggle="collapse">
-				<span class="ident">
-					active
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Selection">
-					Selection
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -28652,118 +28654,118 @@ like &quot;TypeScript&quot;, and an array of extensions, e.g.</p>
 	<tr>
 		<td>
 			<a name="anchorLine">
+				<span class="ts" id="160" data-target="#details-160" data-toggle="collapse">
+					<span class="ident">
+						anchorLine
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						number
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A zero-based line value.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="anchorCharacter">
+							<span class="ts" id="161" data-target="#details-161" data-toggle="collapse">
+								<span class="ident">
+									anchorCharacter
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									number
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A zero-based character value.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="activeLine">
+										<span class="ts" id="162" data-target="#details-162" data-toggle="collapse">
+											<span class="ident">
+												activeLine
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												number
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A zero-based line value.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="activeCharacter">
+													<span class="ts" id="163" data-target="#details-163" data-toggle="collapse">
+														<span class="ident">
+															activeCharacter
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-intrinsic">
+															number
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																A zero-based character value.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<th>
+															Returns
+														</th>
+														<th>
+															Description
+														</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="ts">
+																<a class="type-ref" href="#Selection">
+																	Selection
+																</a>
+															</span>
+														</td>
+														<td>
+															<div class="comment">
+															</div>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="160" data-target="#details-160" data-toggle="collapse">
-				<span class="ident">
-					anchorLine
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A zero-based line value.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="anchorCharacter">
-			</a>
-			<span class="ts" id="161" data-target="#details-161" data-toggle="collapse">
-				<span class="ident">
-					anchorCharacter
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A zero-based character value.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="activeLine">
-			</a>
-			<span class="ts" id="162" data-target="#details-162" data-toggle="collapse">
-				<span class="ident">
-					activeLine
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A zero-based line value.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="activeCharacter">
-			</a>
-			<span class="ts" id="163" data-target="#details-163" data-toggle="collapse">
-				<span class="ident">
-					activeCharacter
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A zero-based character value.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Selection">
-					Selection
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -28851,57 +28853,57 @@ This position might be before or after <a href="#Selection.active">active</a>.</
 	<tr>
 		<td>
 			<a name="positionOrRange">
-			</a>
-			<span class="ts" id="171" data-target="#details-171" data-toggle="collapse">
-				<span class="ident">
-					positionOrRange
+				<span class="ts" id="171" data-target="#details-171" data-toggle="collapse">
+					<span class="ident">
+						positionOrRange
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
+					|
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-				|
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position or a range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					<code>
-						true
-					</code>
-					if the position or range is inside or equal
+				<td>
+					<div class="comment">
+						<p>
+							A position or a range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								boolean
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								<code>
+									true
+								</code>
+								if the position or range is inside or equal
 to this range.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -28928,54 +28930,54 @@ if the ranges have no overlap.</p>
 	<tr>
 		<td>
 			<a name="range">
-			</a>
-			<span class="ts" id="177" data-target="#details-177" data-toggle="collapse">
-				<span class="ident">
-					range
+				<span class="ts" id="177" data-target="#details-177" data-toggle="collapse">
+					<span class="ident">
+						range
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range of the greater start and smaller end positions. Will
+				<td>
+					<div class="comment">
+						<p>
+							A range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Range">
+								Range
+							</a>
+							|
+							<a class="type-intrinsic">
+								undefined
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A range of the greater start and smaller end positions. Will
 return undefined when there is no overlap.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -29001,57 +29003,57 @@ return undefined when there is no overlap.
 	<tr>
 		<td>
 			<a name="other">
-			</a>
-			<span class="ts" id="174" data-target="#details-174" data-toggle="collapse">
-				<span class="ident">
-					other
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					<code>
-						true
-					</code>
-					when start and end are
-					<a href="#Position.isEqual">
-						equal
+				<span class="ts" id="174" data-target="#details-174" data-toggle="collapse">
+					<span class="ident">
+						other
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
 					</a>
-					to
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								boolean
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								<code>
+									true
+								</code>
+								when start and end are
+								<a href="#Position.isEqual">
+									equal
+								</a>
+								to
 start and end of this range.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -29077,49 +29079,49 @@ start and end of this range.
 	<tr>
 		<td>
 			<a name="other">
+				<span class="ts" id="180" data-target="#details-180" data-toggle="collapse">
+					<span class="ident">
+						other
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Range">
+								Range
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A range of smaller start position and the greater end position.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="180" data-target="#details-180" data-toggle="collapse">
-				<span class="ident">
-					other
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range of smaller start position and the greater end position.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -29145,92 +29147,92 @@ start and end of this range.
 	<tr>
 		<td>
 			<a name="start">
-			</a>
-			<span class="ts" id="183" data-target="#details-183" data-toggle="collapse">
-				<span class="ident">
-					start
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position that should be used as start. The default value is the
-					<a href="#Range.start">
-						current start
+				<span class="ts" id="183" data-target="#details-183" data-toggle="collapse">
+					<span class="ident">
+						start
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
 					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="end">
-			</a>
-			<span class="ts" id="184" data-target="#details-184" data-toggle="collapse">
-				<span class="ident">
-					end
 				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position that should be used as end. The default value is the
-					<a href="#Range.end">
-						current end
-					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range derived from this range with the given start and end position.
+				<td>
+					<div class="comment">
+						<p>
+							A position that should be used as start. The default value is the
+							<a href="#Range.start">
+								current start
+							</a>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="end">
+							<span class="ts" id="184" data-target="#details-184" data-toggle="collapse">
+								<span class="ident">
+									end
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A position that should be used as end. The default value is the
+										<a href="#Range.end">
+											current end
+										</a>
+										.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Range">
+											Range
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A range derived from this range with the given start and end position.
 If start and end are not different
-					<code>
-						this
-					</code>
-					range will be returned.
-				</p>
-			</div>
+											<code>
+												this
+											</code>
+											range will be returned.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -29256,60 +29258,60 @@ If start and end are not different
 	<tr>
 		<td>
 			<a name="change">
-			</a>
-			<span class="ts" id="186" data-target="#details-186" data-toggle="collapse">
-				<span class="ident">
-					change
+				<span class="ts" id="186" data-target="#details-186" data-toggle="collapse">
+					<span class="ident">
+						change
+					</span>
+					<span>
+						:
+					</span>
+					{end:
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
+					, start:
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
+					}
 				</span>
-				<span>
-					:
-				</span>
-				{end:
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-				, start:
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An object that describes a change to this range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range that reflects the given change. Will return
-					<code>
-						this
-					</code>
-					range if the change
+				<td>
+					<div class="comment">
+						<p>
+							An object that describes a change to this range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Range">
+								Range
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A range that reflects the given change. Will return
+								<code>
+									this
+								</code>
+								range if the change
 is not changing anything.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -29343,73 +29345,73 @@ is not changing anything.
 	<tr>
 		<td>
 			<a name="commandLine">
+				<span class="ts" id="1402" data-target="#details-1402" data-toggle="collapse">
+					<span class="ident">
+						commandLine
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The command line to execute.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="1403" data-target="#details-1403" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#ShellExecutionOptions">
+									ShellExecutionOptions
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Optional options for the started the shell.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ShellExecution">
+											ShellExecution
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1402" data-target="#details-1402" data-toggle="collapse">
-				<span class="ident">
-					commandLine
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The command line to execute.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="1403" data-target="#details-1403" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ShellExecutionOptions">
-					ShellExecutionOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Optional options for the started the shell.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ShellExecution">
-					ShellExecution
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -29438,106 +29440,106 @@ use the constructor that creates a <code>ShellExecution</code> with the full com
 	<tr>
 		<td>
 			<a name="command">
+				<span class="ts" id="1405" data-target="#details-1405" data-toggle="collapse">
+					<span class="ident">
+						command
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+					|
+					<a class="type-ref" href="#ShellQuotedString">
+						ShellQuotedString
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The command to execute.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="args">
+							<span class="ts" id="1406" data-target="#details-1406" data-toggle="collapse">
+								<span class="ident">
+									args
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+								|
+								<a class="type-ref" href="#ShellQuotedString">
+									ShellQuotedString
+								</a>
+								[]
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The command arguments.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="options">
+										<span class="ts" id="1407" data-target="#details-1407" data-toggle="collapse">
+											<span class="ident">
+												options
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#ShellExecutionOptions">
+												ShellExecutionOptions
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Optional options for the started the shell.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#ShellExecution">
+														ShellExecution
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1405" data-target="#details-1405" data-toggle="collapse">
-				<span class="ident">
-					command
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-ref" href="#ShellQuotedString">
-					ShellQuotedString
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The command to execute.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="args">
-			</a>
-			<span class="ts" id="1406" data-target="#details-1406" data-toggle="collapse">
-				<span class="ident">
-					args
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-ref" href="#ShellQuotedString">
-					ShellQuotedString
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The command arguments.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="1407" data-target="#details-1407" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ShellExecutionOptions">
-					ShellExecutionOptions
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Optional options for the started the shell.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ShellExecution">
-					ShellExecution
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -29827,135 +29829,135 @@ the <a href="https://code.visualstudio.com/docs/editor/intellisense">parameter h
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="930" data-target="#details-930" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="930" data-target="#details-930" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="position">
-			</a>
-			<span class="ts" id="931" data-target="#details-931" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The position at which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="932" data-target="#details-932" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="context">
-			</a>
-			<span class="ts" id="933" data-target="#details-933" data-toggle="collapse">
-				<span class="ident">
-					context
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#SignatureHelpContext">
-					SignatureHelpContext
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Information about how signature help was triggered.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#SignatureHelp">
-					SignatureHelp
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Signature help or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="position">
+							<span class="ts" id="931" data-target="#details-931" data-toggle="collapse">
+								<span class="ident">
+									position
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The position at which the command was invoked.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="932" data-target="#details-932" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A cancellation token.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="context">
+													<span class="ts" id="933" data-target="#details-933" data-toggle="collapse">
+														<span class="ident">
+															context
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-ref" href="#SignatureHelpContext">
+															SignatureHelpContext
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																Information about how signature help was triggered.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<th>
+															Returns
+														</th>
+														<th>
+															Description
+														</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="ts">
+																<a class="type-ref" href="#ProviderResult">
+																	ProviderResult
+																</a>
+																<
+																<a class="type-ref" href="#SignatureHelp">
+																	SignatureHelp
+																</a>
+																>
+															</span>
+														</td>
+														<td>
+															<div class="comment">
+																<p>
+																	Signature help or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					or
-					<code>
-						null
-					</code>
-					.
-				</p>
-			</div>
+																	<code>
+																		undefined
+																	</code>
+																	or
+																	<code>
+																		null
+																	</code>
+																	.
+																</p>
+															</div>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -30049,77 +30051,77 @@ a set of parameters.</p>
 	<tr>
 		<td>
 			<a name="label">
+				<span class="ts" id="913" data-target="#details-913" data-toggle="collapse">
+					<span class="ident">
+						label
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A label string.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="documentation">
+							<span class="ts" id="914" data-target="#details-914" data-toggle="collapse">
+								<span class="ident">
+									documentation
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+								|
+								<a class="type-ref" href="#MarkdownString">
+									MarkdownString
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A doc string.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#SignatureInformation">
+											SignatureInformation
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="913" data-target="#details-913" data-toggle="collapse">
-				<span class="ident">
-					label
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A label string.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="documentation">
-			</a>
-			<span class="ts" id="914" data-target="#details-914" data-toggle="collapse">
-				<span class="ident">
-					documentation
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-ref" href="#MarkdownString">
-					MarkdownString
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A doc string.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#SignatureInformation">
-					SignatureInformation
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -30187,46 +30189,46 @@ the end of the snippet. Variables are defined with <code>$name</code> and
 	<tr>
 		<td>
 			<a name="value">
+				<span class="ts" id="838" data-target="#details-838" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<th>
+								Returns
+							</th>
+							<th>
+								Description
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="ts">
+									<a class="type-ref" href="#SnippetString">
+										SnippetString
+									</a>
+								</span>
+							</td>
+							<td>
+								<div class="comment">
+								</div>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="838" data-target="#details-838" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#SnippetString">
-					SnippetString
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -30265,86 +30267,86 @@ the <a href="#SnippetString.value"><code>value</code></a> of this snippet string
 	<tr>
 		<td>
 			<a name="value">
-			</a>
-			<span class="ts" id="847" data-target="#details-847" data-toggle="collapse">
-				<span class="ident">
-					value
+				<span class="ts" id="847" data-target="#details-847" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+					| (snippet:
+					<a class="type-ref" href="#SnippetString">
+						SnippetString
+					</a>
+					) =>
+					<a class="type-intrinsic">
+						any
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				| (snippet:
-				<a class="type-ref" href="#SnippetString">
-					SnippetString
-				</a>
-				) =>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The value of this placeholder - either a string or a function
+				<td>
+					<div class="comment">
+						<p>
+							The value of this placeholder - either a string or a function
 with which a nested snippet can be created.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="number">
-			</a>
-			<span class="ts" id="851" data-target="#details-851" data-toggle="collapse">
-				<span class="ident">
-					number
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The number of this tabstop, defaults to an auto-increment
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="number">
+							<span class="ts" id="851" data-target="#details-851" data-toggle="collapse">
+								<span class="ident">
+									number
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									number
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The number of this tabstop, defaults to an auto-increment
 value starting at 1.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#SnippetString">
-					SnippetString
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					This snippet string.
-				</p>
-			</div>
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#SnippetString">
+											SnippetString
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											This snippet string.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -30371,53 +30373,53 @@ the <a href="#SnippetString.value"><code>value</code></a> of this snippet string
 	<tr>
 		<td>
 			<a name="number">
-			</a>
-			<span class="ts" id="844" data-target="#details-844" data-toggle="collapse">
-				<span class="ident">
-					number
+				<span class="ts" id="844" data-target="#details-844" data-toggle="collapse">
+					<span class="ident">
+						number
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						number
+					</a>
 				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The number of this tabstop, defaults to an auto-increment
+				<td>
+					<div class="comment">
+						<p>
+							The number of this tabstop, defaults to an auto-increment
 value starting at 1.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#SnippetString">
-					SnippetString
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					This snippet string.
-				</p>
-			</div>
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#SnippetString">
+								SnippetString
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								This snippet string.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -30444,49 +30446,49 @@ the <a href="#SnippetString.value"><code>value</code></a> of this snippet string
 	<tr>
 		<td>
 			<a name="string">
+				<span class="ts" id="841" data-target="#details-841" data-toggle="collapse">
+					<span class="ident">
+						string
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A value to append 'as given'. The string will be escaped.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#SnippetString">
+								SnippetString
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								This snippet string.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="841" data-target="#details-841" data-toggle="collapse">
-				<span class="ident">
-					string
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A value to append 'as given'. The string will be escaped.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#SnippetString">
-					SnippetString
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					This snippet string.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -30513,86 +30515,86 @@ the <a href="#SnippetString.value"><code>value</code></a> of this snippet string
 	<tr>
 		<td>
 			<a name="name">
-			</a>
-			<span class="ts" id="854" data-target="#details-854" data-toggle="collapse">
-				<span class="ident">
-					name
+				<span class="ts" id="854" data-target="#details-854" data-toggle="collapse">
+					<span class="ident">
+						name
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The name of the variable - excluding the
-					<code>
-						$
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="defaultValue">
-			</a>
-			<span class="ts" id="855" data-target="#details-855" data-toggle="collapse">
-				<span class="ident">
-					defaultValue
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				| (snippet:
-				<a class="type-ref" href="#SnippetString">
-					SnippetString
-				</a>
-				) =>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The default value which is used when the variable name cannot
+				<td>
+					<div class="comment">
+						<p>
+							The name of the variable - excluding the
+							<code>
+								$
+							</code>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="defaultValue">
+							<span class="ts" id="855" data-target="#details-855" data-toggle="collapse">
+								<span class="ident">
+									defaultValue
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+								| (snippet:
+								<a class="type-ref" href="#SnippetString">
+									SnippetString
+								</a>
+								) =>
+								<a class="type-intrinsic">
+									any
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The default value which is used when the variable name cannot
 be resolved - either a string or a function with which a nested snippet can be created.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#SnippetString">
-					SnippetString
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					This snippet string.
-				</p>
-			</div>
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#SnippetString">
+											SnippetString
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											This snippet string.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -30627,139 +30629,139 @@ be resolved - either a string or a function with which a nested snippet can be c
 	<tr>
 		<td>
 			<a name="location">
+				<span class="ts" id="1963" data-target="#details-1963" data-toggle="collapse">
+					<span class="ident">
+						location
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Location">
+						Location
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="enabled">
+									<span class="ts" id="1964" data-target="#details-1964" data-toggle="collapse">
+										<span class="ident">
+											enabled
+										</span>
+										<span>
+											?
+										</span>
+										<span>
+											:
+										</span>
+										<a class="type-intrinsic">
+											boolean
+										</a>
+									</span>
+									<td>
+										<div class="comment">
+											<tr>
+												<td>
+													<a name="condition">
+														<span class="ts" id="1965" data-target="#details-1965" data-toggle="collapse">
+															<span class="ident">
+																condition
+															</span>
+															<span>
+																?
+															</span>
+															<span>
+																:
+															</span>
+															<a class="type-intrinsic">
+																string
+															</a>
+														</span>
+														<td>
+															<div class="comment">
+																<tr>
+																	<td>
+																		<a name="hitCondition">
+																			<span class="ts" id="1966" data-target="#details-1966" data-toggle="collapse">
+																				<span class="ident">
+																					hitCondition
+																				</span>
+																				<span>
+																					?
+																				</span>
+																				<span>
+																					:
+																				</span>
+																				<a class="type-intrinsic">
+																					string
+																				</a>
+																			</span>
+																			<td>
+																				<div class="comment">
+																					<tr>
+																						<td>
+																							<a name="logMessage">
+																								<span class="ts" id="1967" data-target="#details-1967" data-toggle="collapse">
+																									<span class="ident">
+																										logMessage
+																									</span>
+																									<span>
+																										?
+																									</span>
+																									<span>
+																										:
+																									</span>
+																									<a class="type-intrinsic">
+																										string
+																									</a>
+																								</span>
+																								<td>
+																									<div class="comment">
+																										<tr>
+																											<th>
+																												Returns
+																											</th>
+																											<th>
+																												Description
+																											</th>
+																										</tr>
+																										<tr>
+																											<td>
+																												<span class="ts">
+																													<a class="type-ref" href="#SourceBreakpoint">
+																														SourceBreakpoint
+																													</a>
+																												</span>
+																											</td>
+																											<td>
+																												<div class="comment">
+																												</div>
+																											</td>
+																										</tr>
+																									</div>
+																								</td>
+																							</a>
+																						</td>
+																					</tr>
+																				</div>
+																			</td>
+																		</a>
+																	</td>
+																</tr>
+															</div>
+														</td>
+													</a>
+												</td>
+											</tr>
+										</div>
+									</td>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="1963" data-target="#details-1963" data-toggle="collapse">
-				<span class="ident">
-					location
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Location">
-					Location
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="enabled">
-			</a>
-			<span class="ts" id="1964" data-target="#details-1964" data-toggle="collapse">
-				<span class="ident">
-					enabled
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="condition">
-			</a>
-			<span class="ts" id="1965" data-target="#details-1965" data-toggle="collapse">
-				<span class="ident">
-					condition
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="hitCondition">
-			</a>
-			<span class="ts" id="1966" data-target="#details-1966" data-toggle="collapse">
-				<span class="ident">
-					hitCondition
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="logMessage">
-			</a>
-			<span class="ts" id="1967" data-target="#details-1967" data-toggle="collapse">
-				<span class="ident">
-					logMessage
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#SourceBreakpoint">
-					SourceBreakpoint
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -30927,64 +30929,64 @@ of this source control, if undefined.</p>
 	<tr>
 		<td>
 			<a name="id">
+				<span class="ts" id="1853" data-target="#details-1853" data-toggle="collapse">
+					<span class="ident">
+						id
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="label">
+									<span class="ts" id="1854" data-target="#details-1854" data-toggle="collapse">
+										<span class="ident">
+											label
+										</span>
+										<span>
+											:
+										</span>
+										<a class="type-intrinsic">
+											string
+										</a>
+									</span>
+									<td>
+										<div class="comment">
+											<tr>
+												<th>
+													Returns
+												</th>
+												<th>
+													Description
+												</th>
+											</tr>
+											<tr>
+												<td>
+													<span class="ts">
+														<a class="type-ref" href="#SourceControlResourceGroup">
+															SourceControlResourceGroup
+														</a>
+													</span>
+												</td>
+												<td>
+													<div class="comment">
+													</div>
+												</td>
+											</tr>
+										</div>
+									</td>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="1853" data-target="#details-1853" data-toggle="collapse">
-				<span class="ident">
-					id
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="label">
-			</a>
-			<span class="ts" id="1854" data-target="#details-1854" data-toggle="collapse">
-				<span class="ident">
-					label
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#SourceControlResourceGroup">
-					SourceControlResourceGroup
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -31462,118 +31464,118 @@ interfaces etc.</p>
 	<tr>
 		<td>
 			<a name="name">
+				<span class="ts" id="713" data-target="#details-713" data-toggle="collapse">
+					<span class="ident">
+						name
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The name of the symbol.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="kind">
+							<span class="ts" id="714" data-target="#details-714" data-toggle="collapse">
+								<span class="ident">
+									kind
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#SymbolKind">
+									SymbolKind
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The kind of the symbol.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="containerName">
+										<span class="ts" id="715" data-target="#details-715" data-toggle="collapse">
+											<span class="ident">
+												containerName
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												string
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													The name of the symbol containing the symbol.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="location">
+													<span class="ts" id="716" data-target="#details-716" data-toggle="collapse">
+														<span class="ident">
+															location
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-ref" href="#Location">
+															Location
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																The location of the symbol.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<th>
+															Returns
+														</th>
+														<th>
+															Description
+														</th>
+													</tr>
+													<tr>
+														<td>
+															<span class="ts">
+																<a class="type-ref" href="#SymbolInformation">
+																	SymbolInformation
+																</a>
+															</span>
+														</td>
+														<td>
+															<div class="comment">
+															</div>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="713" data-target="#details-713" data-toggle="collapse">
-				<span class="ident">
-					name
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The name of the symbol.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="kind">
-			</a>
-			<span class="ts" id="714" data-target="#details-714" data-toggle="collapse">
-				<span class="ident">
-					kind
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#SymbolKind">
-					SymbolKind
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The kind of the symbol.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="containerName">
-			</a>
-			<span class="ts" id="715" data-target="#details-715" data-toggle="collapse">
-				<span class="ident">
-					containerName
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The name of the symbol containing the symbol.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="location">
-			</a>
-			<span class="ts" id="716" data-target="#details-716" data-toggle="collapse">
-				<span class="ident">
-					location
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Location">
-					Location
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The location of the symbol.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#SymbolInformation">
-					SymbolInformation
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -31602,148 +31604,148 @@ interfaces etc.</p>
 	<tr>
 		<td>
 			<a name="name">
+				<span class="ts" id="718" data-target="#details-718" data-toggle="collapse">
+					<span class="ident">
+						name
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The name of the symbol.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="kind">
+							<span class="ts" id="719" data-target="#details-719" data-toggle="collapse">
+								<span class="ident">
+									kind
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#SymbolKind">
+									SymbolKind
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The kind of the symbol.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="range">
+										<span class="ts" id="720" data-target="#details-720" data-toggle="collapse">
+											<span class="ident">
+												range
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#Range">
+												Range
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													The range of the location of the symbol.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<td>
+												<a name="uri">
+													<span class="ts" id="721" data-target="#details-721" data-toggle="collapse">
+														<span class="ident">
+															uri
+														</span>
+														<span>
+															?
+														</span>
+														<span>
+															:
+														</span>
+														<a class="type-ref" href="#Uri">
+															Uri
+														</a>
+													</span>
+													<td>
+														<div class="comment">
+															<p>
+																The resource of the location of symbol, defaults to the current document.
+															</p>
+														</div>
+													</td>
+													<tr>
+														<td>
+															<a name="containerName">
+																<span class="ts" id="722" data-target="#details-722" data-toggle="collapse">
+																	<span class="ident">
+																		containerName
+																	</span>
+																	<span>
+																		?
+																	</span>
+																	<span>
+																		:
+																	</span>
+																	<a class="type-intrinsic">
+																		string
+																	</a>
+																</span>
+																<td>
+																	<div class="comment">
+																		<p>
+																			The name of the symbol containing the symbol.
+																		</p>
+																	</div>
+																</td>
+																<tr>
+																	<th>
+																		Returns
+																	</th>
+																	<th>
+																		Description
+																	</th>
+																</tr>
+																<tr>
+																	<td>
+																		<span class="ts">
+																			<a class="type-ref" href="#SymbolInformation">
+																				SymbolInformation
+																			</a>
+																		</span>
+																	</td>
+																	<td>
+																		<div class="comment">
+																		</div>
+																	</td>
+																</tr>
+															</a>
+														</td>
+													</tr>
+												</a>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="718" data-target="#details-718" data-toggle="collapse">
-				<span class="ident">
-					name
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The name of the symbol.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="kind">
-			</a>
-			<span class="ts" id="719" data-target="#details-719" data-toggle="collapse">
-				<span class="ident">
-					kind
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#SymbolKind">
-					SymbolKind
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The kind of the symbol.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="range">
-			</a>
-			<span class="ts" id="720" data-target="#details-720" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The range of the location of the symbol.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="uri">
-			</a>
-			<span class="ts" id="721" data-target="#details-721" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The resource of the location of symbol, defaults to the current document.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="containerName">
-			</a>
-			<span class="ts" id="722" data-target="#details-722" data-toggle="collapse">
-				<span class="ident">
-					containerName
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The name of the symbol containing the symbol.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#SymbolInformation">
-					SymbolInformation
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -32003,192 +32005,192 @@ interfaces etc.</p>
 	<tr>
 		<td>
 			<a name="taskDefinition">
-			</a>
-			<span class="ts" id="1420" data-target="#details-1420" data-toggle="collapse">
-				<span class="ident">
-					taskDefinition
+				<span class="ts" id="1420" data-target="#details-1420" data-toggle="collapse">
+					<span class="ident">
+						taskDefinition
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TaskDefinition">
+						TaskDefinition
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TaskDefinition">
-					TaskDefinition
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="scope">
-			</a>
-			<span class="ts" id="1421" data-target="#details-1421" data-toggle="collapse">
-				<span class="ident">
-					scope
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#WorkspaceFolder">
-					WorkspaceFolder
-				</a>
-				|
-				<a class="type-ref" href="#Global">
-					Global
-				</a>
-				|
-				<a class="type-ref" href="#Workspace">
-					Workspace
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Specifies the task's scope. It is either a global or a workspace task or a task for a specific workspace folder.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="name">
-			</a>
-			<span class="ts" id="1422" data-target="#details-1422" data-toggle="collapse">
-				<span class="ident">
-					name
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The task's name. Is presented in the user interface.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="source">
-			</a>
-			<span class="ts" id="1423" data-target="#details-1423" data-toggle="collapse">
-				<span class="ident">
-					source
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The task's source (e.g. 'gulp', 'npm', ...). Is presented in the user interface.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="execution">
-			</a>
-			<span class="ts" id="1424" data-target="#details-1424" data-toggle="collapse">
-				<span class="ident">
-					execution
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ProcessExecution">
-					ProcessExecution
-				</a>
-				|
-				<a class="type-ref" href="#ShellExecution">
-					ShellExecution
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The process or shell execution.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="problemMatchers">
-			</a>
-			<span class="ts" id="1425" data-target="#details-1425" data-toggle="collapse">
-				<span class="ident">
-					problemMatchers
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					the names of problem matchers to use, like '$tsc'
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="scope">
+									<span class="ts" id="1421" data-target="#details-1421" data-toggle="collapse">
+										<span class="ident">
+											scope
+										</span>
+										<span>
+											:
+										</span>
+										<a class="type-ref" href="#WorkspaceFolder">
+											WorkspaceFolder
+										</a>
+										|
+										<a class="type-ref" href="#Global">
+											Global
+										</a>
+										|
+										<a class="type-ref" href="#Workspace">
+											Workspace
+										</a>
+									</span>
+									<td>
+										<div class="comment">
+											<p>
+												Specifies the task's scope. It is either a global or a workspace task or a task for a specific workspace folder.
+											</p>
+										</div>
+									</td>
+									<tr>
+										<td>
+											<a name="name">
+												<span class="ts" id="1422" data-target="#details-1422" data-toggle="collapse">
+													<span class="ident">
+														name
+													</span>
+													<span>
+														:
+													</span>
+													<a class="type-intrinsic">
+														string
+													</a>
+												</span>
+												<td>
+													<div class="comment">
+														<p>
+															The task's name. Is presented in the user interface.
+														</p>
+													</div>
+												</td>
+												<tr>
+													<td>
+														<a name="source">
+															<span class="ts" id="1423" data-target="#details-1423" data-toggle="collapse">
+																<span class="ident">
+																	source
+																</span>
+																<span>
+																	:
+																</span>
+																<a class="type-intrinsic">
+																	string
+																</a>
+															</span>
+															<td>
+																<div class="comment">
+																	<p>
+																		The task's source (e.g. 'gulp', 'npm', ...). Is presented in the user interface.
+																	</p>
+																</div>
+															</td>
+															<tr>
+																<td>
+																	<a name="execution">
+																		<span class="ts" id="1424" data-target="#details-1424" data-toggle="collapse">
+																			<span class="ident">
+																				execution
+																			</span>
+																			<span>
+																				?
+																			</span>
+																			<span>
+																				:
+																			</span>
+																			<a class="type-ref" href="#ProcessExecution">
+																				ProcessExecution
+																			</a>
+																			|
+																			<a class="type-ref" href="#ShellExecution">
+																				ShellExecution
+																			</a>
+																		</span>
+																		<td>
+																			<div class="comment">
+																				<p>
+																					The process or shell execution.
+																				</p>
+																			</div>
+																		</td>
+																		<tr>
+																			<td>
+																				<a name="problemMatchers">
+																					<span class="ts" id="1425" data-target="#details-1425" data-toggle="collapse">
+																						<span class="ident">
+																							problemMatchers
+																						</span>
+																						<span>
+																							?
+																						</span>
+																						<span>
+																							:
+																						</span>
+																						<a class="type-intrinsic">
+																							string
+																						</a>
+																						|
+																						<a class="type-intrinsic">
+																							string
+																						</a>
+																						[]
+																					</span>
+																					<td>
+																						<div class="comment">
+																							<p>
+																								the names of problem matchers to use, like '$tsc'
  or '$eslint'. Problem matchers can be contributed by an extension using
  the
-					<code>
-						problemMatchers
-					</code>
-					extension point.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Task">
-					Task
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+																								<code>
+																									problemMatchers
+																								</code>
+																								extension point.
+																							</p>
+																						</div>
+																					</td>
+																					<tr>
+																						<th>
+																							Returns
+																						</th>
+																						<th>
+																							Description
+																						</th>
+																					</tr>
+																					<tr>
+																						<td>
+																							<span class="ts">
+																								<a class="type-ref" href="#Task">
+																									Task
+																								</a>
+																							</span>
+																						</td>
+																						<td>
+																							<div class="comment">
+																							</div>
+																						</td>
+																					</tr>
+																				</a>
+																			</td>
+																		</tr>
+																	</a>
+																</td>
+															</tr>
+														</a>
+													</td>
+												</tr>
+											</a>
+										</td>
+									</tr>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -32217,160 +32219,160 @@ interfaces etc.</p>
 	<tr>
 		<td>
 			<a name="taskDefinition">
-			</a>
-			<span class="ts" id="1427" data-target="#details-1427" data-toggle="collapse">
-				<span class="ident">
-					taskDefinition
+				<span class="ts" id="1427" data-target="#details-1427" data-toggle="collapse">
+					<span class="ident">
+						taskDefinition
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TaskDefinition">
+						TaskDefinition
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TaskDefinition">
-					TaskDefinition
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="name">
-			</a>
-			<span class="ts" id="1428" data-target="#details-1428" data-toggle="collapse">
-				<span class="ident">
-					name
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The task's name. Is presented in the user interface.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="source">
-			</a>
-			<span class="ts" id="1429" data-target="#details-1429" data-toggle="collapse">
-				<span class="ident">
-					source
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The task's source (e.g. 'gulp', 'npm', ...). Is presented in the user interface.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="execution">
-			</a>
-			<span class="ts" id="1430" data-target="#details-1430" data-toggle="collapse">
-				<span class="ident">
-					execution
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ProcessExecution">
-					ProcessExecution
-				</a>
-				|
-				<a class="type-ref" href="#ShellExecution">
-					ShellExecution
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The process or shell execution.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="problemMatchers">
-			</a>
-			<span class="ts" id="1431" data-target="#details-1431" data-toggle="collapse">
-				<span class="ident">
-					problemMatchers
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-				|
-				<a class="type-intrinsic">
-					string
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					the names of problem matchers to use, like '$tsc'
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="name">
+									<span class="ts" id="1428" data-target="#details-1428" data-toggle="collapse">
+										<span class="ident">
+											name
+										</span>
+										<span>
+											:
+										</span>
+										<a class="type-intrinsic">
+											string
+										</a>
+									</span>
+									<td>
+										<div class="comment">
+											<p>
+												The task's name. Is presented in the user interface.
+											</p>
+										</div>
+									</td>
+									<tr>
+										<td>
+											<a name="source">
+												<span class="ts" id="1429" data-target="#details-1429" data-toggle="collapse">
+													<span class="ident">
+														source
+													</span>
+													<span>
+														:
+													</span>
+													<a class="type-intrinsic">
+														string
+													</a>
+												</span>
+												<td>
+													<div class="comment">
+														<p>
+															The task's source (e.g. 'gulp', 'npm', ...). Is presented in the user interface.
+														</p>
+													</div>
+												</td>
+												<tr>
+													<td>
+														<a name="execution">
+															<span class="ts" id="1430" data-target="#details-1430" data-toggle="collapse">
+																<span class="ident">
+																	execution
+																</span>
+																<span>
+																	?
+																</span>
+																<span>
+																	:
+																</span>
+																<a class="type-ref" href="#ProcessExecution">
+																	ProcessExecution
+																</a>
+																|
+																<a class="type-ref" href="#ShellExecution">
+																	ShellExecution
+																</a>
+															</span>
+															<td>
+																<div class="comment">
+																	<p>
+																		The process or shell execution.
+																	</p>
+																</div>
+															</td>
+															<tr>
+																<td>
+																	<a name="problemMatchers">
+																		<span class="ts" id="1431" data-target="#details-1431" data-toggle="collapse">
+																			<span class="ident">
+																				problemMatchers
+																			</span>
+																			<span>
+																				?
+																			</span>
+																			<span>
+																				:
+																			</span>
+																			<a class="type-intrinsic">
+																				string
+																			</a>
+																			|
+																			<a class="type-intrinsic">
+																				string
+																			</a>
+																			[]
+																		</span>
+																		<td>
+																			<div class="comment">
+																				<p>
+																					the names of problem matchers to use, like '$tsc'
  or '$eslint'. Problem matchers can be contributed by an extension using
  the
-					<code>
-						problemMatchers
-					</code>
-					extension point.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Task">
-					Task
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+																					<code>
+																						problemMatchers
+																					</code>
+																					extension point.
+																				</p>
+																			</div>
+																		</td>
+																		<tr>
+																			<th>
+																				Returns
+																			</th>
+																			<th>
+																				Description
+																			</th>
+																		</tr>
+																		<tr>
+																			<td>
+																				<span class="ts">
+																					<a class="type-ref" href="#Task">
+																						Task
+																					</a>
+																				</span>
+																			</td>
+																			<td>
+																				<div class="comment">
+																				</div>
+																			</td>
+																		</tr>
+																	</a>
+																</td>
+															</tr>
+														</a>
+													</td>
+												</tr>
+											</a>
+										</td>
+									</tr>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -32652,64 +32654,64 @@ The string support the package.json semver notation.</p>
 	<tr>
 		<td>
 			<a name="id">
+				<span class="ts" id="1352" data-target="#details-1352" data-toggle="collapse">
+					<span class="ident">
+						id
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="label">
+									<span class="ts" id="1353" data-target="#details-1353" data-toggle="collapse">
+										<span class="ident">
+											label
+										</span>
+										<span>
+											:
+										</span>
+										<a class="type-intrinsic">
+											string
+										</a>
+									</span>
+									<td>
+										<div class="comment">
+											<tr>
+												<th>
+													Returns
+												</th>
+												<th>
+													Description
+												</th>
+											</tr>
+											<tr>
+												<td>
+													<span class="ts">
+														<a class="type-ref" href="#TaskGroup">
+															TaskGroup
+														</a>
+													</span>
+												</td>
+												<td>
+													<div class="comment">
+													</div>
+												</td>
+											</tr>
+										</div>
+									</td>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="1352" data-target="#details-1352" data-toggle="collapse">
-				<span class="ident">
-					id
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="label">
-			</a>
-			<span class="ts" id="1353" data-target="#details-1353" data-toggle="collapse">
-				<span class="ident">
-					label
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TaskGroup">
-					TaskGroup
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -32888,57 +32890,57 @@ A task provider is registered via #tasks.registerTaskProvider.</p>
 	<tr>
 		<td>
 			<a name="token">
+				<span class="ts" id="1445" data-target="#details-1445" data-toggle="collapse">
+					<span class="ident">
+						token
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#CancellationToken">
+						CancellationToken
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A cancellation token.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#ProviderResult">
+								ProviderResult
+							</a>
+							<
+							<a class="type-ref" href="#Task">
+								Task
+							</a>
+							[]>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								an array of tasks
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1445" data-target="#details-1445" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#Task">
-					Task
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					an array of tasks
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -32970,81 +32972,81 @@ tasks are always fully resolved. A valid default implementation for the
 	<tr>
 		<td>
 			<a name="task">
+				<span class="ts" id="1448" data-target="#details-1448" data-toggle="collapse">
+					<span class="ident">
+						task
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Task">
+						Task
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The task to resolve.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="token">
+							<span class="ts" id="1449" data-target="#details-1449" data-toggle="collapse">
+								<span class="ident">
+									token
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CancellationToken">
+									CancellationToken
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A cancellation token.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProviderResult">
+											ProviderResult
+										</a>
+										<
+										<a class="type-ref" href="#Task">
+											Task
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											The resolved task
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1448" data-target="#details-1448" data-toggle="collapse">
-				<span class="ident">
-					task
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Task">
-					Task
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The task to resolve.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="1449" data-target="#details-1449" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#Task">
-					Task
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The resolved task
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -33235,79 +33237,79 @@ tasks are always fully resolved. A valid default implementation for the
 	<tr>
 		<td>
 			<a name="text">
-			</a>
-			<span class="ts" id="1286" data-target="#details-1286" data-toggle="collapse">
-				<span class="ident">
-					text
+				<span class="ts" id="1286" data-target="#details-1286" data-toggle="collapse">
+					<span class="ident">
+						text
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The text to send.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="addNewLine">
-			</a>
-			<span class="ts" id="1287" data-target="#details-1287" data-toggle="collapse">
-				<span class="ident">
-					addNewLine
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Whether to add a new line to the text being sent, this is normally
+				<td>
+					<div class="comment">
+						<p>
+							The text to send.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="addNewLine">
+							<span class="ts" id="1287" data-target="#details-1287" data-toggle="collapse">
+								<span class="ident">
+									addNewLine
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									boolean
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Whether to add a new line to the text being sent, this is normally
 required to run a command in the terminal. The character(s) added are \n or \r\n
 depending on the platform. This defaults to
-					<code>
-						true
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+										<code>
+											true
+										</code>
+										.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											void
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -33333,53 +33335,53 @@ depending on the platform. This defaults to
 	<tr>
 		<td>
 			<a name="preserveFocus">
+				<span class="ts" id="1290" data-target="#details-1290" data-toggle="collapse">
+					<span class="ident">
+						preserveFocus
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						boolean
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							When
+							<code>
+								true
+							</code>
+							the terminal will not take focus.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1290" data-target="#details-1290" data-toggle="collapse">
-				<span class="ident">
-					preserveFocus
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					When
-					<code>
-						true
-					</code>
-					the terminal will not take focus.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -33553,52 +33555,52 @@ a range. The range will be <a href="#TextDocument.validateRange">adjusted</a>.</
 	<tr>
 		<td>
 			<a name="range">
+				<span class="ts" id="63" data-target="#details-63" data-toggle="collapse">
+					<span class="ident">
+						range
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Include only the text included by the range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								string
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								The text inside the provided range or the entire text.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="63" data-target="#details-63" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Include only the text included by the range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The text inside the provided range or the entire text.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -33635,84 +33637,84 @@ spaces. Use <a href="#TextLine.text"><code>TextLine.text</code></a> for more com
 	<tr>
 		<td>
 			<a name="position">
+				<span class="ts" id="66" data-target="#details-66" data-toggle="collapse">
+					<span class="ident">
+						position
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A position.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="regex">
+							<span class="ts" id="67" data-target="#details-67" data-toggle="collapse">
+								<span class="ident">
+									regex
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#RegExp">
+									RegExp
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Optional regular expression that describes what a word is.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Range">
+											Range
+										</a>
+										|
+										<a class="type-intrinsic">
+											undefined
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A range spanning a word, or
+											<code>
+												undefined
+											</code>
+											.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="66" data-target="#details-66" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="regex">
-			</a>
-			<span class="ts" id="67" data-target="#details-67" data-toggle="collapse">
-				<span class="ident">
-					regex
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#RegExp">
-					RegExp
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Optional regular expression that describes what a word is.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range spanning a word, or
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -33740,53 +33742,53 @@ document are not reflected.</p>
 	<tr>
 		<td>
 			<a name="line">
-			</a>
-			<span class="ts" id="52" data-target="#details-52" data-toggle="collapse">
-				<span class="ident">
-					line
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A line number in [0, lineCount).
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TextLine">
-					TextLine
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#TextLine">
+				<span class="ts" id="52" data-target="#details-52" data-toggle="collapse">
+					<span class="ident">
 						line
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						number
 					</a>
-					.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A line number in [0, lineCount).
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#TextLine">
+								TextLine
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A
+								<a href="#TextLine">
+									line
+								</a>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -33818,53 +33820,53 @@ document are not reflected.</p>
 	<tr>
 		<td>
 			<a name="position">
-			</a>
-			<span class="ts" id="54" data-target="#details-54" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TextLine">
-					TextLine
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A
-					<a href="#TextLine">
-						line
+				<span class="ts" id="54" data-target="#details-54" data-toggle="collapse">
+					<span class="ident">
+						position
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
 					</a>
-					.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A position.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#TextLine">
+								TextLine
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A
+								<a href="#TextLine">
+									line
+								</a>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -33891,49 +33893,49 @@ document are not reflected.</p>
 	<tr>
 		<td>
 			<a name="position">
+				<span class="ts" id="57" data-target="#details-57" data-toggle="collapse">
+					<span class="ident">
+						position
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A position.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								number
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A valid zero-based offset.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="57" data-target="#details-57" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A valid zero-based offset.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -33959,53 +33961,53 @@ document are not reflected.</p>
 	<tr>
 		<td>
 			<a name="offset">
-			</a>
-			<span class="ts" id="60" data-target="#details-60" data-toggle="collapse">
-				<span class="ident">
-					offset
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					number
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A zero-based offset.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A valid
-					<a href="#Position">
-						position
+				<span class="ts" id="60" data-target="#details-60" data-toggle="collapse">
+					<span class="ident">
+						offset
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						number
 					</a>
-					.
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A zero-based offset.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Position">
+								Position
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A valid
+								<a href="#Position">
+									position
+								</a>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -34074,49 +34076,49 @@ will return false.
 	<tr>
 		<td>
 			<a name="position">
+				<span class="ts" id="73" data-target="#details-73" data-toggle="collapse">
+					<span class="ident">
+						position
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A position.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Position">
+								Position
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								The given position or a new, adjusted position.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="73" data-target="#details-73" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The given position or a new, adjusted position.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -34142,49 +34144,49 @@ will return false.
 	<tr>
 		<td>
 			<a name="range">
+				<span class="ts" id="70" data-target="#details-70" data-toggle="collapse">
+					<span class="ident">
+						range
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Range">
+								Range
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								The given range or a new, adjusted range.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="70" data-target="#details-70" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The given range or a new, adjusted range.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -34305,82 +34307,82 @@ identical to the provided text due to end-of-line-sequence normalization.</p>
 	<tr>
 		<td>
 			<a name="uri">
-			</a>
-			<span class="ts" id="487" data-target="#details-487" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An uri which scheme matches the scheme this provider was
-					<a href="#workspace.registerTextDocumentContentProvider">
-						registered
+				<span class="ts" id="487" data-target="#details-487" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
 					</a>
-					for.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							An uri which scheme matches the scheme this provider was
+							<a href="#workspace.registerTextDocumentContentProvider">
+								registered
+							</a>
+							for.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="token">
+							<span class="ts" id="488" data-target="#details-488" data-toggle="collapse">
+								<span class="ident">
+									token
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CancellationToken">
+									CancellationToken
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A cancellation token.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProviderResult">
+											ProviderResult
+										</a>
+										<
+										<a class="type-intrinsic">
+											string
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A string or a thenable that resolves to such.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="488" data-target="#details-488" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-intrinsic">
-					string
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A string or a thenable that resolves to such.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -34525,55 +34527,55 @@ in an asynchronous manner:</p>
 	<tr>
 		<td>
 			<a name="thenable">
-			</a>
-			<span class="ts" id="1798" data-target="#details-1798" data-toggle="collapse">
-				<span class="ident">
-					thenable
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#TextEdit">
-					TextEdit
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that resolves to
-					<a href="#TextEdit">
-						pre-save-edits
+				<span class="ts" id="1798" data-target="#details-1798" data-toggle="collapse">
+					<span class="ident">
+						thenable
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Thenable">
+						Thenable
 					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+					<
+					<a class="type-ref" href="#TextEdit">
+						TextEdit
+					</a>
+					[]>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A thenable that resolves to
+							<a href="#TextEdit">
+								pre-save-edits
+							</a>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -34600,51 +34602,51 @@ in an asynchronous manner:</p>
 	<tr>
 		<td>
 			<a name="thenable">
+				<span class="ts" id="1800" data-target="#details-1800" data-toggle="collapse">
+					<span class="ident">
+						thenable
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Thenable">
+						Thenable
+					</a>
+					<
+					<a class="type-intrinsic">
+						any
+					</a>
+					>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A thenable that delays saving.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1800" data-target="#details-1800" data-toggle="collapse">
-				<span class="ident">
-					thenable
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					any
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A thenable that delays saving.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -34680,49 +34682,49 @@ to a document.</p>
 	<tr>
 		<td>
 			<a name="range">
+				<span class="ts" id="773" data-target="#details-773" data-toggle="collapse">
+					<span class="ident">
+						range
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#TextEdit">
+								TextEdit
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A new text edit object.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="773" data-target="#details-773" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TextEdit">
-					TextEdit
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A new text edit object.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -34748,73 +34750,73 @@ to a document.</p>
 	<tr>
 		<td>
 			<a name="position">
+				<span class="ts" id="769" data-target="#details-769" data-toggle="collapse">
+					<span class="ident">
+						position
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A position, will become an empty range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="newText">
+							<span class="ts" id="770" data-target="#details-770" data-toggle="collapse">
+								<span class="ident">
+									newText
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A string.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#TextEdit">
+											TextEdit
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A new text edit object.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="769" data-target="#details-769" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position, will become an empty range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="newText">
-			</a>
-			<span class="ts" id="770" data-target="#details-770" data-toggle="collapse">
-				<span class="ident">
-					newText
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A string.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TextEdit">
-					TextEdit
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A new text edit object.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -34840,73 +34842,73 @@ to a document.</p>
 	<tr>
 		<td>
 			<a name="range">
+				<span class="ts" id="765" data-target="#details-765" data-toggle="collapse">
+					<span class="ident">
+						range
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="newText">
+							<span class="ts" id="766" data-target="#details-766" data-toggle="collapse">
+								<span class="ident">
+									newText
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A string.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#TextEdit">
+											TextEdit
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A new text edit object.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="765" data-target="#details-765" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="newText">
-			</a>
-			<span class="ts" id="766" data-target="#details-766" data-toggle="collapse">
-				<span class="ident">
-					newText
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A string.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TextEdit">
-					TextEdit
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A new text edit object.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -34932,49 +34934,49 @@ to a document.</p>
 	<tr>
 		<td>
 			<a name="eol">
+				<span class="ts" id="776" data-target="#details-776" data-toggle="collapse">
+					<span class="ident">
+						eol
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#EndOfLine">
+						EndOfLine
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							An eol-sequence
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#TextEdit">
+								TextEdit
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A new text edit object.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="776" data-target="#details-776" data-toggle="collapse">
-				<span class="ident">
-					eol
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#EndOfLine">
-					EndOfLine
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An eol-sequence
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TextEdit">
-					TextEdit
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A new text edit object.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -35002,70 +35004,70 @@ to a document.</p>
 	<tr>
 		<td>
 			<a name="range">
+				<span class="ts" id="782" data-target="#details-782" data-toggle="collapse">
+					<span class="ident">
+						range
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="newText">
+							<span class="ts" id="783" data-target="#details-783" data-toggle="collapse">
+								<span class="ident">
+									newText
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A string.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#TextEdit">
+											TextEdit
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="782" data-target="#details-782" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="newText">
-			</a>
-			<span class="ts" id="783" data-target="#details-783" data-toggle="collapse">
-				<span class="ident">
-					newText
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A string.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TextEdit">
-					TextEdit
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -35184,96 +35186,96 @@ callback executes.</p>
 	<tr>
 		<td>
 			<a name="callback">
-			</a>
-			<span class="ts" id="344" data-target="#details-344" data-toggle="collapse">
-				<span class="ident">
-					callback
-				</span>
-				<span>
-					:
-				</span>
-				(editBuilder:
-				<a class="type-ref" href="#TextEditorEdit">
-					TextEditorEdit
-				</a>
-				) =>
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A function which can create edits using an
-					<a href="#TextEditorEdit">
-						edit-builder
+				<span class="ts" id="344" data-target="#details-344" data-toggle="collapse">
+					<span class="ident">
+						callback
+					</span>
+					<span>
+						:
+					</span>
+					(editBuilder:
+					<a class="type-ref" href="#TextEditorEdit">
+						TextEditorEdit
 					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
+					) =>
+					<a class="type-intrinsic">
+						void
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A function which can create edits using an
+							<a href="#TextEditorEdit">
+								edit-builder
+							</a>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="348" data-target="#details-348" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								{undoStopAfter:
+								<a class="type-intrinsic">
+									boolean
+								</a>
+								, undoStopBefore:
+								<a class="type-intrinsic">
+									boolean
+								</a>
+								}
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The undo/redo behavior around this edit. By default, undo stops will be created before and after this edit.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-intrinsic">
+											boolean
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											A promise that resolves with a value indicating if the edits could be applied.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="348" data-target="#details-348" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				{undoStopAfter:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				, undoStopBefore:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The undo/redo behavior around this edit. By default, undo stops will be created before and after this edit.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves with a value indicating if the edits could be applied.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -35338,128 +35340,128 @@ or accept the snippet.</p>
 	<tr>
 		<td>
 			<a name="snippet">
-			</a>
-			<span class="ts" id="354" data-target="#details-354" data-toggle="collapse">
-				<span class="ident">
-					snippet
+				<span class="ts" id="354" data-target="#details-354" data-toggle="collapse">
+					<span class="ident">
+						snippet
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#SnippetString">
+						SnippetString
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#SnippetString">
-					SnippetString
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The snippet to insert in this edit.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="location">
-			</a>
-			<span class="ts" id="355" data-target="#details-355" data-toggle="collapse">
-				<span class="ident">
-					location
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-				|
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-				|
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-				[] |
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Position or range at which to insert the snippet, defaults to the current editor selection or selections.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="356" data-target="#details-356" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				{undoStopAfter:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				, undoStopBefore:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The undo/redo behavior around this edit. By default, undo stops will be created before and after this edit.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A promise that resolves with a value indicating if the snippet could be inserted. Note that the promise does not signal
+				<td>
+					<div class="comment">
+						<p>
+							The snippet to insert in this edit.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="location">
+							<span class="ts" id="355" data-target="#details-355" data-toggle="collapse">
+								<span class="ident">
+									location
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+								|
+								<a class="type-ref" href="#Range">
+									Range
+								</a>
+								|
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+								[] |
+								<a class="type-ref" href="#Range">
+									Range
+								</a>
+								[]
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Position or range at which to insert the snippet, defaults to the current editor selection or selections.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="options">
+										<span class="ts" id="356" data-target="#details-356" data-toggle="collapse">
+											<span class="ident">
+												options
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											{undoStopAfter:
+											<a class="type-intrinsic">
+												boolean
+											</a>
+											, undoStopBefore:
+											<a class="type-intrinsic">
+												boolean
+											</a>
+											}
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													The undo/redo behavior around this edit. By default, undo stops will be created before and after this edit.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														boolean
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A promise that resolves with a value indicating if the snippet could be inserted. Note that the promise does not signal
 that the snippet is completely filled-in or accepted.
-				</p>
-			</div>
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -35485,77 +35487,77 @@ that the snippet is completely filled-in or accepted.
 	<tr>
 		<td>
 			<a name="range">
-			</a>
-			<span class="ts" id="366" data-target="#details-366" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="revealType">
-			</a>
-			<span class="ts" id="367" data-target="#details-367" data-toggle="collapse">
-				<span class="ident">
-					revealType
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextEditorRevealType">
-					TextEditorRevealType
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The scrolling strategy for revealing
-					<code>
+				<span class="ts" id="366" data-target="#details-366" data-toggle="collapse">
+					<span class="ident">
 						range
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A range.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="revealType">
+							<span class="ts" id="367" data-target="#details-367" data-toggle="collapse">
+								<span class="ident">
+									revealType
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#TextEditorRevealType">
+									TextEditorRevealType
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The scrolling strategy for revealing
+										<code>
+											range
+										</code>
+										.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											void
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -35585,83 +35587,83 @@ the given <a href="#TextEditorDecorationType">decoration type</a>, they will be 
 	<tr>
 		<td>
 			<a name="decorationType">
-			</a>
-			<span class="ts" id="362" data-target="#details-362" data-toggle="collapse">
-				<span class="ident">
-					decorationType
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextEditorDecorationType">
-					TextEditorDecorationType
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A decoration type.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="rangesOrOptions">
-			</a>
-			<span class="ts" id="363" data-target="#details-363" data-toggle="collapse">
-				<span class="ident">
-					rangesOrOptions
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-				[] |
-				<a class="type-ref" href="#DecorationOptions">
-					DecorationOptions
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Either
-					<a href="#Range">
-						ranges
+				<span class="ts" id="362" data-target="#details-362" data-toggle="collapse">
+					<span class="ident">
+						decorationType
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextEditorDecorationType">
+						TextEditorDecorationType
 					</a>
-					or more detailed
-					<a href="#DecorationOptions">
-						options
-					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A decoration type.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="rangesOrOptions">
+							<span class="ts" id="363" data-target="#details-363" data-toggle="collapse">
+								<span class="ident">
+									rangesOrOptions
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Range">
+									Range
+								</a>
+								[] |
+								<a class="type-ref" href="#DecorationOptions">
+									DecorationOptions
+								</a>
+								[]
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Either
+										<a href="#Range">
+											ranges
+										</a>
+										or more detailed
+										<a href="#DecorationOptions">
+											options
+										</a>
+										.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											void
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -35690,54 +35692,54 @@ the given <a href="#TextEditorDecorationType">decoration type</a>, they will be 
 	<tr>
 		<td>
 			<a name="column">
-			</a>
-			<span class="ts" id="370" data-target="#details-370" data-toggle="collapse">
-				<span class="ident">
-					column
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ViewColumn">
-					ViewColumn
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<a href="#ViewColumn">
+				<span class="ts" id="370" data-target="#details-370" data-toggle="collapse">
+					<span class="ident">
 						column
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#ViewColumn">
+						ViewColumn
 					</a>
-					in which to show this editor.
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The
+							<a href="#ViewColumn">
+								column
+							</a>
+							in which to show this editor.
 This method shows unexpected behavior and will be removed in the next major update.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -35880,50 +35882,50 @@ they can be applied on a <a href="#TextDocument">document</a> associated with a 
 	<tr>
 		<td>
 			<a name="location">
+				<span class="ts" id="387" data-target="#details-387" data-toggle="collapse">
+					<span class="ident">
+						location
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
+					|
+					<a class="type-ref" href="#Selection">
+						Selection
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The range this operation should remove.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="387" data-target="#details-387" data-toggle="collapse">
-				<span class="ident">
-					location
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-				|
-				<a class="type-ref" href="#Selection">
-					Selection
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The range this operation should remove.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -35951,70 +35953,70 @@ Although the equivalent text edit can be made with <a href="#TextEditorEdit.repl
 	<tr>
 		<td>
 			<a name="location">
+				<span class="ts" id="383" data-target="#details-383" data-toggle="collapse">
+					<span class="ident">
+						location
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The position where the new text should be inserted.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="value">
+							<span class="ts" id="384" data-target="#details-384" data-toggle="collapse">
+								<span class="ident">
+									value
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The new text this operation should insert.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											void
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="383" data-target="#details-383" data-toggle="collapse">
-				<span class="ident">
-					location
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The position where the new text should be inserted.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="value">
-			</a>
-			<span class="ts" id="384" data-target="#details-384" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The new text this operation should insert.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -36041,82 +36043,82 @@ You can use \r\n or \n in <code>value</code> and they will be normalized to the 
 	<tr>
 		<td>
 			<a name="location">
-			</a>
-			<span class="ts" id="379" data-target="#details-379" data-toggle="collapse">
-				<span class="ident">
-					location
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-				|
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-				|
-				<a class="type-ref" href="#Selection">
-					Selection
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The range this operation should remove.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="value">
-			</a>
-			<span class="ts" id="380" data-target="#details-380" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The new text this operation should insert after removing
-					<code>
+				<span class="ts" id="379" data-target="#details-379" data-toggle="collapse">
+					<span class="ident">
 						location
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Position">
+						Position
+					</a>
+					|
+					<a class="type-ref" href="#Range">
+						Range
+					</a>
+					|
+					<a class="type-ref" href="#Selection">
+						Selection
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The range this operation should remove.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="value">
+							<span class="ts" id="380" data-target="#details-380" data-toggle="collapse">
+								<span class="ident">
+									value
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									string
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The new text this operation should insert after removing
+										<code>
+											location
+										</code>
+										.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											void
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -36142,50 +36144,50 @@ You can use \r\n or \n in <code>value</code> and they will be normalized to the 
 	<tr>
 		<td>
 			<a name="endOfLine">
-			</a>
-			<span class="ts" id="390" data-target="#details-390" data-toggle="collapse">
-				<span class="ident">
-					endOfLine
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#EndOfLine">
-					EndOfLine
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The new end of line for the
-					<a href="#TextDocument">
-						document
+				<span class="ts" id="390" data-target="#details-390" data-toggle="collapse">
+					<span class="ident">
+						endOfLine
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#EndOfLine">
+						EndOfLine
 					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The new end of line for the
+							<a href="#TextDocument">
+								document
+							</a>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								void
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -36874,50 +36876,50 @@ Using a theme color is preferred over a custom color as it gives theme authors a
 	<tr>
 		<td>
 			<a name="id">
-			</a>
-			<span class="ts" id="250" data-target="#details-250" data-toggle="collapse">
-				<span class="ident">
-					id
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					of the color. The available colors are listed in
-					<a href="https://code.visualstudio.com/docs/getstarted/theme-color-reference">
-						https://code.visualstudio.com/docs/getstarted/theme-color-reference
+				<span class="ts" id="250" data-target="#details-250" data-toggle="collapse">
+					<span class="ident">
+						id
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ThemeColor">
-					ThemeColor
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							of the color. The available colors are listed in
+							<a href="https://code.visualstudio.com/docs/getstarted/theme-color-reference">
+								https://code.visualstudio.com/docs/getstarted/theme-color-reference
+							</a>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#ThemeColor">
+								ThemeColor
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -36970,43 +36972,43 @@ Using a theme icon is preferred over a custom icon as it gives theme authors the
 	<tr>
 		<td>
 			<a name="id">
+				<span class="ts" id="256" data-target="#details-256" data-toggle="collapse">
+					<span class="ident">
+						id
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<th>
+								Returns
+							</th>
+							<th>
+								Description
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="ts">
+									<a class="type-ref" href="#ThemeIcon">
+										ThemeIcon
+									</a>
+								</span>
+							</td>
+							<td>
+								<div class="comment">
+								</div>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="256" data-target="#details-256" data-toggle="collapse">
-				<span class="ident">
-					id
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ThemeIcon">
-					ThemeIcon
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -37053,65 +37055,65 @@ To signal that root has changed, do not pass any argument or pass <code>undefine
 	<tr>
 		<td>
 			<a name="element">
-			</a>
-			<span class="ts" id="1660" data-target="#details-1660" data-toggle="collapse">
-				<span class="ident">
-					element
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The element from which the provider gets children. Can be
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Children of
-					<code>
+				<span class="ts" id="1660" data-target="#details-1660" data-toggle="collapse">
+					<span class="ident">
 						element
-					</code>
-					or root if no element is passed.
-				</p>
-			</div>
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						T
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The element from which the provider gets children. Can be
+							<code>
+								undefined
+							</code>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#ProviderResult">
+								ProviderResult
+							</a>
+							<
+							<a class="type-intrinsic">
+								T
+							</a>
+							[]>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								Children of
+								<code>
+									element
+								</code>
+								or root if no element is passed.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -37139,58 +37141,58 @@ Return <code>null</code> or <code>undefined</code> if <code>element</code> is a 
 	<tr>
 		<td>
 			<a name="element">
-			</a>
-			<span class="ts" id="1663" data-target="#details-1663" data-toggle="collapse">
-				<span class="ident">
-					element
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The element for which the parent has to be returned.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-intrinsic">
-					T
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Parent of
-					<code>
+				<span class="ts" id="1663" data-target="#details-1663" data-toggle="collapse">
+					<span class="ident">
 						element
-					</code>
-					.
-				</p>
-			</div>
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						T
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The element for which the parent has to be returned.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#ProviderResult">
+								ProviderResult
+							</a>
+							<
+							<a class="type-intrinsic">
+								T
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								Parent of
+								<code>
+									element
+								</code>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -37216,62 +37218,62 @@ Return <code>null</code> or <code>undefined</code> if <code>element</code> is a 
 	<tr>
 		<td>
 			<a name="element">
-			</a>
-			<span class="ts" id="1657" data-target="#details-1657" data-toggle="collapse">
-				<span class="ident">
-					element
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The element for which
-					<a href="#TreeItem">
-						TreeItem
+				<span class="ts" id="1657" data-target="#details-1657" data-toggle="collapse">
+					<span class="ident">
+						element
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						T
 					</a>
-					representation is asked for.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TreeItem">
-					TreeItem
-				</a>
-				|
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-ref" href="#TreeItem">
-					TreeItem
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					(#TreeItem) representation of the element
-				</p>
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The element for which
+							<a href="#TreeItem">
+								TreeItem
+							</a>
+							representation is asked for.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#TreeItem">
+								TreeItem
+							</a>
+							|
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-ref" href="#TreeItem">
+								TreeItem
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								(#TreeItem) representation of the element
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -37304,76 +37306,76 @@ Return <code>null</code> or <code>undefined</code> if <code>element</code> is a 
 	<tr>
 		<td>
 			<a name="label">
-			</a>
-			<span class="ts" id="1679" data-target="#details-1679" data-toggle="collapse">
-				<span class="ident">
-					label
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A human-readable string describing this item
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="collapsibleState">
-			</a>
-			<span class="ts" id="1680" data-target="#details-1680" data-toggle="collapse">
-				<span class="ident">
-					collapsibleState
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TreeItemCollapsibleState">
-					TreeItemCollapsibleState
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					(#TreeItemCollapsibleState) of the tree item. Default is
-					<a href="#TreeItemCollapsibleState.None">
-						TreeItemCollapsibleState.None
+				<span class="ts" id="1679" data-target="#details-1679" data-toggle="collapse">
+					<span class="ident">
+						label
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TreeItem">
-					TreeItem
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A human-readable string describing this item
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="collapsibleState">
+							<span class="ts" id="1680" data-target="#details-1680" data-toggle="collapse">
+								<span class="ident">
+									collapsibleState
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#TreeItemCollapsibleState">
+									TreeItemCollapsibleState
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										(#TreeItemCollapsibleState) of the tree item. Default is
+										<a href="#TreeItemCollapsibleState.None">
+											TreeItemCollapsibleState.None
+										</a>
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#TreeItem">
+											TreeItem
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -37398,80 +37400,80 @@ Return <code>null</code> or <code>undefined</code> if <code>element</code> is a 
 	<tr>
 		<td>
 			<a name="resourceUri">
-			</a>
-			<span class="ts" id="1682" data-target="#details-1682" data-toggle="collapse">
-				<span class="ident">
-					resourceUri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<a href="#Uri">
-						uri
+				<span class="ts" id="1682" data-target="#details-1682" data-toggle="collapse">
+					<span class="ident">
+						resourceUri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
 					</a>
-					of the resource representing this item.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="collapsibleState">
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The
+							<a href="#Uri">
+								uri
+							</a>
+							of the resource representing this item.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="collapsibleState">
+							<span class="ts" id="1683" data-target="#details-1683" data-toggle="collapse">
+								<span class="ident">
+									collapsibleState
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#TreeItemCollapsibleState">
+									TreeItemCollapsibleState
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										(#TreeItemCollapsibleState) of the tree item. Default is
+										<a href="#TreeItemCollapsibleState.None">
+											TreeItemCollapsibleState.None
+										</a>
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#TreeItem">
+											TreeItem
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1683" data-target="#details-1683" data-toggle="collapse">
-				<span class="ident">
-					collapsibleState
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TreeItemCollapsibleState">
-					TreeItemCollapsibleState
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					(#TreeItemCollapsibleState) of the tree item. Default is
-					<a href="#TreeItemCollapsibleState.None">
-						TreeItemCollapsibleState.None
-					</a>
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TreeItem">
-					TreeItem
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -37666,59 +37668,59 @@ instances of Disposable.</p>
 	<tr>
 		<td>
 			<a name="disposableLikes">
-			</a>
-			<span class="ts" id="1642" data-target="#details-1642" data-toggle="collapse">
-				<span>
-					...
+				<span class="ts" id="1642" data-target="#details-1642" data-toggle="collapse">
+					<span>
+						...
+					</span>
+					<span class="ident">
+						disposableLikes
+					</span>
+					<span>
+						:
+					</span>
+					{dispose: () =>
+					<a class="type-intrinsic">
+						any
+					</a>
+					}[]
 				</span>
-				<span class="ident">
-					disposableLikes
-				</span>
-				<span>
-					:
-				</span>
-				{dispose: () =>
-				<a class="type-intrinsic">
-					any
-				</a>
-				}[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Objects that have at least a
-					<code>
-						dispose
-					</code>
-					-function member.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Disposable">
-					Disposable
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Returns a new disposable which, upon dispose, will
+				<td>
+					<div class="comment">
+						<p>
+							Objects that have at least a
+							<code>
+								dispose
+							</code>
+							-function member.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Disposable">
+								Disposable
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								Returns a new disposable which, upon dispose, will
 dispose all provided disposables.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -37747,46 +37749,46 @@ on dispose.</p>
 	<tr>
 		<td>
 			<a name="callOnDispose">
+				<span class="ts" id="1649" data-target="#details-1649" data-toggle="collapse">
+					<span class="ident">
+						callOnDispose
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Function">
+						Function
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Function that disposes something.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#TreeView">
+								TreeView
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1649" data-target="#details-1649" data-toggle="collapse">
-				<span class="ident">
-					callOnDispose
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Function">
-					Function
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Function that disposes something.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TreeView">
-					TreeView
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -37872,86 +37874,86 @@ In order to expand the revealed element, set the option <code>expand</code> to <
 	<tr>
 		<td>
 			<a name="element">
+				<span class="ts" id="1634" data-target="#details-1634" data-toggle="collapse">
+					<span class="ident">
+						element
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						T
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="options">
+									<span class="ts" id="1635" data-target="#details-1635" data-toggle="collapse">
+										<span class="ident">
+											options
+										</span>
+										<span>
+											?
+										</span>
+										<span>
+											:
+										</span>
+										{expand:
+										<a class="type-intrinsic">
+											boolean
+										</a>
+										|
+										<a class="type-intrinsic">
+											number
+										</a>
+										, focus:
+										<a class="type-intrinsic">
+											boolean
+										</a>
+										, select:
+										<a class="type-intrinsic">
+											boolean
+										</a>
+										}
+									</span>
+									<td>
+										<div class="comment">
+											<tr>
+												<th>
+													Returns
+												</th>
+												<th>
+													Description
+												</th>
+											</tr>
+											<tr>
+												<td>
+													<span class="ts">
+														<a class="type-ref" href="#Thenable">
+															Thenable
+														</a>
+														<
+														<a class="type-intrinsic">
+															void
+														</a>
+														>
+													</span>
+												</td>
+												<td>
+													<div class="comment">
+													</div>
+												</td>
+											</tr>
+										</div>
+									</td>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="1634" data-target="#details-1634" data-toggle="collapse">
-				<span class="ident">
-					element
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="1635" data-target="#details-1635" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				{expand:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				|
-				<a class="type-intrinsic">
-					number
-				</a>
-				, focus:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				, select:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					void
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -38063,115 +38065,115 @@ the go to type definition feature.</p>
 	<tr>
 		<td>
 			<a name="document">
-			</a>
-			<span class="ts" id="624" data-target="#details-624" data-toggle="collapse">
-				<span class="ident">
-					document
+				<span class="ts" id="624" data-target="#details-624" data-toggle="collapse">
+					<span class="ident">
+						document
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#TextDocument">
+						TextDocument
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextDocument">
-					TextDocument
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The document in which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="position">
-			</a>
-			<span class="ts" id="625" data-target="#details-625" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The position at which the command was invoked.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="626" data-target="#details-626" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#Definition">
-					Definition
-				</a>
-				|
-				<a class="type-ref" href="#DefinitionLink">
-					DefinitionLink
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A definition or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							The document in which the command was invoked.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="position">
+							<span class="ts" id="625" data-target="#details-625" data-toggle="collapse">
+								<span class="ident">
+									position
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The position at which the command was invoked.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="token">
+										<span class="ts" id="626" data-target="#details-626" data-toggle="collapse">
+											<span class="ident">
+												token
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#CancellationToken">
+												CancellationToken
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A cancellation token.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#ProviderResult">
+														ProviderResult
+													</a>
+													<
+													<a class="type-ref" href="#Definition">
+														Definition
+													</a>
+													|
+													<a class="type-ref" href="#DefinitionLink">
+														DefinitionLink
+													</a>
+													[]>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+													<p>
+														A definition or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					or
-					<code>
-						null
-					</code>
-					.
-				</p>
-			</div>
+														<code>
+															undefined
+														</code>
+														or
+														<code>
+															null
+														</code>
+														.
+													</p>
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -38223,49 +38225,49 @@ bad.fragment === &#39;/project1&#39;;
 	<tr>
 		<td>
 			<a name="path">
+				<span class="ts" id="397" data-target="#details-397" data-toggle="collapse">
+					<span class="ident">
+						path
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A file system or UNC path.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Uri">
+								Uri
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A new Uri instance.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="397" data-target="#details-397" data-toggle="collapse">
-				<span class="ident">
-					path
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A file system or UNC path.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A new Uri instance.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -38295,49 +38297,49 @@ bad.fragment === &#39;/project1&#39;;
 	<tr>
 		<td>
 			<a name="value">
+				<span class="ts" id="394" data-target="#details-394" data-toggle="collapse">
+					<span class="ident">
+						value
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The string value of an Uri.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Uri">
+								Uri
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A new Uri instance.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="394" data-target="#details-394" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The string value of an Uri.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A new Uri instance.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -38365,127 +38367,127 @@ bad.fragment === &#39;/project1&#39;;
 	<tr>
 		<td>
 			<a name="scheme">
+				<span class="ts" id="400" data-target="#details-400" data-toggle="collapse">
+					<span class="ident">
+						scheme
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<td>
+								<a name="authority">
+									<span class="ts" id="401" data-target="#details-401" data-toggle="collapse">
+										<span class="ident">
+											authority
+										</span>
+										<span>
+											:
+										</span>
+										<a class="type-intrinsic">
+											string
+										</a>
+									</span>
+									<td>
+										<div class="comment">
+											<tr>
+												<td>
+													<a name="path">
+														<span class="ts" id="402" data-target="#details-402" data-toggle="collapse">
+															<span class="ident">
+																path
+															</span>
+															<span>
+																:
+															</span>
+															<a class="type-intrinsic">
+																string
+															</a>
+														</span>
+														<td>
+															<div class="comment">
+																<tr>
+																	<td>
+																		<a name="query">
+																			<span class="ts" id="403" data-target="#details-403" data-toggle="collapse">
+																				<span class="ident">
+																					query
+																				</span>
+																				<span>
+																					:
+																				</span>
+																				<a class="type-intrinsic">
+																					string
+																				</a>
+																			</span>
+																			<td>
+																				<div class="comment">
+																					<tr>
+																						<td>
+																							<a name="fragment">
+																								<span class="ts" id="404" data-target="#details-404" data-toggle="collapse">
+																									<span class="ident">
+																										fragment
+																									</span>
+																									<span>
+																										:
+																									</span>
+																									<a class="type-intrinsic">
+																										string
+																									</a>
+																								</span>
+																								<td>
+																									<div class="comment">
+																										<tr>
+																											<th>
+																												Returns
+																											</th>
+																											<th>
+																												Description
+																											</th>
+																										</tr>
+																										<tr>
+																											<td>
+																												<span class="ts">
+																													<a class="type-ref" href="#Uri">
+																														Uri
+																													</a>
+																												</span>
+																											</td>
+																											<td>
+																												<div class="comment">
+																												</div>
+																											</td>
+																										</tr>
+																									</div>
+																								</td>
+																							</a>
+																						</td>
+																					</tr>
+																				</div>
+																			</td>
+																		</a>
+																	</td>
+																</tr>
+															</div>
+														</td>
+													</a>
+												</td>
+											</tr>
+										</div>
+									</td>
+								</a>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="400" data-target="#details-400" data-toggle="collapse">
-				<span class="ident">
-					scheme
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="authority">
-			</a>
-			<span class="ts" id="401" data-target="#details-401" data-toggle="collapse">
-				<span class="ident">
-					authority
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="path">
-			</a>
-			<span class="ts" id="402" data-target="#details-402" data-toggle="collapse">
-				<span class="ident">
-					path
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="query">
-			</a>
-			<span class="ts" id="403" data-target="#details-403" data-toggle="collapse">
-				<span class="ident">
-					query
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="fragment">
-			</a>
-			<span class="ts" id="404" data-target="#details-404" data-toggle="collapse">
-				<span class="ident">
-					fragment
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -38627,65 +38629,65 @@ the <code>skipEncoding</code>-argument: <code>uri.toString(true)</code>.</p>
 	<tr>
 		<td>
 			<a name="skipEncoding">
-			</a>
-			<span class="ts" id="422" data-target="#details-422" data-toggle="collapse">
-				<span class="ident">
-					skipEncoding
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Do not percentage-encode the result, defaults to
-					<code>
-						false
-					</code>
-					. Note that
-    the
-					<code>
-						#
-					</code>
-					and
-					<code>
+				<span class="ts" id="422" data-target="#details-422" data-toggle="collapse">
+					<span class="ident">
+						skipEncoding
+					</span>
+					<span>
 						?
-					</code>
-					characters occurring in the path will always be encoded.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A string representation of this Uri.
-				</p>
-			</div>
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						boolean
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Do not percentage-encode the result, defaults to
+							<code>
+								false
+							</code>
+							. Note that
+    the
+							<code>
+								#
+							</code>
+							and
+							<code>
+								?
+							</code>
+							characters occurring in the path will always be encoded.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								string
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A string representation of this Uri.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -38716,77 +38718,77 @@ assert.ok(other.toString() === &#39;after:some/file/path&#39;);
 	<tr>
 		<td>
 			<a name="change">
-			</a>
-			<span class="ts" id="413" data-target="#details-413" data-toggle="collapse">
-				<span class="ident">
-					change
+				<span class="ts" id="413" data-target="#details-413" data-toggle="collapse">
+					<span class="ident">
+						change
+					</span>
+					<span>
+						:
+					</span>
+					{authority:
+					<a class="type-intrinsic">
+						string
+					</a>
+					, fragment:
+					<a class="type-intrinsic">
+						string
+					</a>
+					, path:
+					<a class="type-intrinsic">
+						string
+					</a>
+					, query:
+					<a class="type-intrinsic">
+						string
+					</a>
+					, scheme:
+					<a class="type-intrinsic">
+						string
+					</a>
+					}
 				</span>
-				<span>
-					:
-				</span>
-				{authority:
-				<a class="type-intrinsic">
-					string
-				</a>
-				, fragment:
-				<a class="type-intrinsic">
-					string
-				</a>
-				, path:
-				<a class="type-intrinsic">
-					string
-				</a>
-				, query:
-				<a class="type-intrinsic">
-					string
-				</a>
-				, scheme:
-				<a class="type-intrinsic">
-					string
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An object that describes a change to this Uri. To unset components use
-					<code>
-						null
-					</code>
-					or
+				<td>
+					<div class="comment">
+						<p>
+							An object that describes a change to this Uri. To unset components use
+							<code>
+								null
+							</code>
+							or
  the empty string.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A new Uri that reflects the given change. Will return
-					<code>
-						this
-					</code>
-					Uri if the change
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Uri">
+								Uri
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								A new Uri that reflects the given change. Will return
+								<code>
+									this
+								</code>
+								Uri if the change
  is not changing anything.
-				</p>
-			</div>
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -38827,48 +38829,48 @@ assert.ok(other.toString() === &#39;after:some/file/path&#39;);
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="1611" data-target="#details-1611" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<tr>
+							<th>
+								Returns
+							</th>
+							<th>
+								Description
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="ts">
+									<a class="type-ref" href="#ProviderResult">
+										ProviderResult
+									</a>
+									<
+									<a class="type-intrinsic">
+										void
+									</a>
+									>
+								</span>
+							</td>
+							<td>
+								<div class="comment">
+								</div>
+							</td>
+						</tr>
+					</div>
+				</td>
 			</a>
-			<span class="ts" id="1611" data-target="#details-1611" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-intrinsic">
-					void
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -39021,51 +39023,51 @@ in order of their appearance.</p>
 	<tr>
 		<td>
 			<a name="message">
+				<span class="ts" id="1569" data-target="#details-1569" data-toggle="collapse">
+					<span class="ident">
+						message
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						any
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Body of the message.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#Thenable">
+								Thenable
+							</a>
+							<
+							<a class="type-intrinsic">
+								boolean
+							</a>
+							>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1569" data-target="#details-1569" data-toggle="collapse">
-				<span class="ident">
-					message
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Body of the message.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -39263,84 +39265,84 @@ method moves it to a new column.</p>
 	<tr>
 		<td>
 			<a name="viewColumn">
-			</a>
-			<span class="ts" id="1589" data-target="#details-1589" data-toggle="collapse">
-				<span class="ident">
-					viewColumn
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ViewColumn">
-					ViewColumn
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					View column to show the panel in. Shows in the current
-					<code>
+				<span class="ts" id="1589" data-target="#details-1589" data-toggle="collapse">
+					<span class="ident">
 						viewColumn
-					</code>
-					if undefined.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="preserveFocus">
+					</span>
+					<span>
+						?
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#ViewColumn">
+						ViewColumn
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							View column to show the panel in. Shows in the current
+							<code>
+								viewColumn
+							</code>
+							if undefined.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="preserveFocus">
+							<span class="ts" id="1590" data-target="#details-1590" data-toggle="collapse">
+								<span class="ident">
+									preserveFocus
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									boolean
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										When
+										<code>
+											true
+										</code>
+										, the webview will not take focus.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											void
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1590" data-target="#details-1590" data-toggle="collapse">
-				<span class="ident">
-					preserveFocus
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					When
-					<code>
-						true
-					</code>
-					, the webview will not take focus.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -39454,83 +39456,83 @@ The extension can then restore the old <code>WebviewPanel</code> from this state
 	<tr>
 		<td>
 			<a name="webviewPanel">
-			</a>
-			<span class="ts" id="1598" data-target="#details-1598" data-toggle="collapse">
-				<span class="ident">
-					webviewPanel
+				<span class="ts" id="1598" data-target="#details-1598" data-toggle="collapse">
+					<span class="ident">
+						webviewPanel
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#WebviewPanel">
+						WebviewPanel
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#WebviewPanel">
-					WebviewPanel
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Webview panel to restore. The serializer should take ownership of this panel. The
+				<td>
+					<div class="comment">
+						<p>
+							Webview panel to restore. The serializer should take ownership of this panel. The
 serializer must restore the webview's
-					<code>
-						.html
-					</code>
-					and hook up all webview events.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="state">
+							<code>
+								.html
+							</code>
+							and hook up all webview events.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="state">
+							<span class="ts" id="1599" data-target="#details-1599" data-toggle="collapse">
+								<span class="ident">
+									state
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									any
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Persisted state from the webview content.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#Thenable">
+											Thenable
+										</a>
+										<
+										<a class="type-intrinsic">
+											void
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											Thanble indicating that the webview has been fully restored.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1599" data-target="#details-1599" data-toggle="collapse">
-				<span class="ident">
-					state
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Persisted state from the webview content.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					void
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Thanble indicating that the webview has been fully restored.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -39602,65 +39604,65 @@ const values = config.get(&#39;configurations&#39;);
 	<tr>
 		<td>
 			<a name="section">
-			</a>
-			<span class="ts" id="1132" data-target="#details-1132" data-toggle="collapse">
-				<span class="ident">
-					section
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configuration name, supports
-					<em>
-						dotted
-					</em>
-					names.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					T
-				</a>
-				|
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The value
-					<code>
+				<span class="ts" id="1132" data-target="#details-1132" data-toggle="collapse">
+					<span class="ident">
 						section
-					</code>
-					denotes or
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Configuration name, supports
+							<em>
+								dotted
+							</em>
+							names.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								T
+							</a>
+							|
+							<a class="type-intrinsic">
+								undefined
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								The value
+								<code>
+									section
+								</code>
+								denotes or
+								<code>
+									undefined
+								</code>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -39686,85 +39688,85 @@ const values = config.get(&#39;configurations&#39;);
 	<tr>
 		<td>
 			<a name="section">
-			</a>
-			<span class="ts" id="1135" data-target="#details-1135" data-toggle="collapse">
-				<span class="ident">
-					section
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configuration name, supports
-					<em>
-						dotted
-					</em>
-					names.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="defaultValue">
-			</a>
-			<span class="ts" id="1136" data-target="#details-1136" data-toggle="collapse">
-				<span class="ident">
-					defaultValue
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					T
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A value should be returned when no value could be found, is
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					T
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The value
-					<code>
+				<span class="ts" id="1135" data-target="#details-1135" data-toggle="collapse">
+					<span class="ident">
 						section
-					</code>
-					denotes or the default.
-				</p>
-			</div>
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Configuration name, supports
+							<em>
+								dotted
+							</em>
+							names.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="defaultValue">
+							<span class="ts" id="1136" data-target="#details-1136" data-toggle="collapse">
+								<span class="ident">
+									defaultValue
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									T
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A value should be returned when no value could be found, is
+										<code>
+											undefined
+										</code>
+										.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											T
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											The value
+											<code>
+												section
+											</code>
+											denotes or the default.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -39790,60 +39792,60 @@ const values = config.get(&#39;configurations&#39;);
 	<tr>
 		<td>
 			<a name="section">
+				<span class="ts" id="1139" data-target="#details-1139" data-toggle="collapse">
+					<span class="ident">
+						section
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Configuration name, supports
+							<em>
+								dotted
+							</em>
+							names.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								boolean
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								<code>
+									true
+								</code>
+								if the section doesn't resolve to
+								<code>
+									undefined
+								</code>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1139" data-target="#details-1139" data-toggle="collapse">
-				<span class="ident">
-					section
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configuration name, supports
-					<em>
-						dotted
-					</em>
-					names.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					<code>
-						true
-					</code>
-					if the section doesn't resolve to
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -39878,78 +39880,78 @@ for more information.</p>
 	<tr>
 		<td>
 			<a name="section">
+				<span class="ts" id="1143" data-target="#details-1143" data-toggle="collapse">
+					<span class="ident">
+						section
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Configuration name, supports
+							<em>
+								dotted
+							</em>
+							names.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							{defaultValue:
+							<a class="type-intrinsic">
+								T
+							</a>
+							, globalValue:
+							<a class="type-intrinsic">
+								T
+							</a>
+							, key:
+							<a class="type-intrinsic">
+								string
+							</a>
+							, workspaceFolderValue:
+							<a class="type-intrinsic">
+								T
+							</a>
+							, workspaceValue:
+							<a class="type-intrinsic">
+								T
+							</a>
+							} |
+							<a class="type-intrinsic">
+								undefined
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								Information about a configuration setting or
+								<code>
+									undefined
+								</code>
+								.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="1143" data-target="#details-1143" data-toggle="collapse">
-				<span class="ident">
-					section
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configuration name, supports
-					<em>
-						dotted
-					</em>
-					names.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				{defaultValue:
-				<a class="type-intrinsic">
-					T
-				</a>
-				, globalValue:
-				<a class="type-intrinsic">
-					T
-				</a>
-				, key:
-				<a class="type-intrinsic">
-					string
-				</a>
-				, workspaceFolderValue:
-				<a class="type-intrinsic">
-					T
-				</a>
-				, workspaceValue:
-				<a class="type-intrinsic">
-					T
-				</a>
-				} |
-				<a class="type-intrinsic">
-					undefined
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Information about a configuration setting or
-					<code>
-						undefined
-					</code>
-					.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -39996,123 +39998,123 @@ under respective <a href="#workspace.workspaceFolders">folder</a>, but in others
 	<tr>
 		<td>
 			<a name="section">
-			</a>
-			<span class="ts" id="1152" data-target="#details-1152" data-toggle="collapse">
-				<span class="ident">
-					section
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Configuration name, supports
-					<em>
-						dotted
-					</em>
-					names.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="value">
-			</a>
-			<span class="ts" id="1153" data-target="#details-1153" data-toggle="collapse">
-				<span class="ident">
-					value
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					any
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The new value.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="configurationTarget">
-			</a>
-			<span class="ts" id="1154" data-target="#details-1154" data-toggle="collapse">
-				<span class="ident">
-					configurationTarget
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#ConfigurationTarget">
-					ConfigurationTarget
-				</a>
-				|
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The
-					<a href="#ConfigurationTarget">
-						configuration target
+				<span class="ts" id="1152" data-target="#details-1152" data-toggle="collapse">
+					<span class="ident">
+						section
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
 					</a>
-					or a boolean value.
-				</p>
-				<pre>
-					<code>
-						- If `true` configuration target is `ConfigurationTarget.Global`.
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							Configuration name, supports
+							<em>
+								dotted
+							</em>
+							names.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="value">
+							<span class="ts" id="1153" data-target="#details-1153" data-toggle="collapse">
+								<span class="ident">
+									value
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-intrinsic">
+									any
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The new value.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="configurationTarget">
+										<span class="ts" id="1154" data-target="#details-1154" data-toggle="collapse">
+											<span class="ident">
+												configurationTarget
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-ref" href="#ConfigurationTarget">
+												ConfigurationTarget
+											</a>
+											|
+											<a class="type-intrinsic">
+												boolean
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													The
+													<a href="#ConfigurationTarget">
+														configuration target
+													</a>
+													or a boolean value.
+												</p>
+												<pre>
+													<code>
+														- If `true` configuration target is `ConfigurationTarget.Global`.
 - If `false` configuration target is `ConfigurationTarget.Workspace`.
 - If `undefined` or `null` configuration target is
 `ConfigurationTarget.WorkspaceFolder` when configuration is resource specific
 `ConfigurationTarget.Workspace` otherwise.
-					</code>
-				</pre>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#Thenable">
-					Thenable
-				</a>
-				<
-				<a class="type-intrinsic">
-					void
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+													</code>
+												</pre>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-ref" href="#Thenable">
+														Thenable
+													</a>
+													<
+													<a class="type-intrinsic">
+														void
+													</a>
+													>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -40159,80 +40161,80 @@ multiple resources and documents.</p>
 	<tr>
 		<td>
 			<a name="uri">
-			</a>
-			<span class="ts" id="812" data-target="#details-812" data-toggle="collapse">
-				<span class="ident">
-					uri
+				<span class="ts" id="812" data-target="#details-812" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Uri of the new file..
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="813" data-target="#details-813" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				{ignoreIfExists:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				, overwrite:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Defines if an existing file should be overwritten or be
+				<td>
+					<div class="comment">
+						<p>
+							Uri of the new file..
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="813" data-target="#details-813" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								{ignoreIfExists:
+								<a class="type-intrinsic">
+									boolean
+								</a>
+								, overwrite:
+								<a class="type-intrinsic">
+									boolean
+								</a>
+								}
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										Defines if an existing file should be overwritten or be
 ignored. When overwrite and ignoreIfExists are both set overwrite wins.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											void
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -40258,70 +40260,70 @@ ignored. When overwrite and ignoreIfExists are both set overwrite wins.
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="798" data-target="#details-798" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A resource identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="range">
+							<span class="ts" id="799" data-target="#details-799" data-toggle="collapse">
+								<span class="ident">
+									range
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Range">
+									Range
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A range.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											void
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="798" data-target="#details-798" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A resource identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="range">
-			</a>
-			<span class="ts" id="799" data-target="#details-799" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -40347,76 +40349,76 @@ ignored. When overwrite and ignoreIfExists are both set overwrite wins.
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="819" data-target="#details-819" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The uri of the file that is to be deleted.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="options">
+							<span class="ts" id="820" data-target="#details-820" data-toggle="collapse">
+								<span class="ident">
+									options
+								</span>
+								<span>
+									?
+								</span>
+								<span>
+									:
+								</span>
+								{ignoreIfNotExists:
+								<a class="type-intrinsic">
+									boolean
+								</a>
+								, recursive:
+								<a class="type-intrinsic">
+									boolean
+								</a>
+								}
+							</span>
+							<td>
+								<div class="comment">
+									<tr>
+										<th>
+											Returns
+										</th>
+										<th>
+											Description
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<span class="ts">
+												<a class="type-intrinsic">
+													void
+												</a>
+											</span>
+										</td>
+										<td>
+											<div class="comment">
+											</div>
+										</td>
+									</tr>
+								</div>
+							</td>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="819" data-target="#details-819" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The uri of the file that is to be deleted.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="820" data-target="#details-820" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				{ignoreIfNotExists:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				, recursive:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -40488,50 +40490,50 @@ ignored. When overwrite and ignoreIfExists are both set overwrite wins.
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="809" data-target="#details-809" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A resource identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-ref" href="#TextEdit">
+								TextEdit
+							</a>
+							[]
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								An array of text edits.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="809" data-target="#details-809" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A resource identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#TextEdit">
-					TextEdit
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of text edits.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -40557,52 +40559,52 @@ ignored. When overwrite and ignoreIfExists are both set overwrite wins.
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="802" data-target="#details-802" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A resource identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<th>
+						Returns
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<span class="ts">
+							<a class="type-intrinsic">
+								boolean
+							</a>
+						</span>
+					</td>
+					<td>
+						<div class="comment">
+							<p>
+								<code>
+									true
+								</code>
+								if the given resource will be touched by this edit.
+							</p>
+						</div>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="802" data-target="#details-802" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A resource identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					boolean
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					<code>
-						true
-					</code>
-					if the given resource will be touched by this edit.
-				</p>
-			</div>
 		</td>
 	</tr>
 </table>
@@ -40628,94 +40630,94 @@ ignored. When overwrite and ignoreIfExists are both set overwrite wins.
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="793" data-target="#details-793" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A resource identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="position">
+							<span class="ts" id="794" data-target="#details-794" data-toggle="collapse">
+								<span class="ident">
+									position
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Position">
+									Position
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A position.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="newText">
+										<span class="ts" id="795" data-target="#details-795" data-toggle="collapse">
+											<span class="ident">
+												newText
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												string
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A string.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-intrinsic">
+														void
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="793" data-target="#details-793" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A resource identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="position">
-			</a>
-			<span class="ts" id="794" data-target="#details-794" data-toggle="collapse">
-				<span class="ident">
-					position
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Position">
-					Position
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A position.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="newText">
-			</a>
-			<span class="ts" id="795" data-target="#details-795" data-toggle="collapse">
-				<span class="ident">
-					newText
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A string.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -40741,104 +40743,104 @@ ignored. When overwrite and ignoreIfExists are both set overwrite wins.
 	<tr>
 		<td>
 			<a name="oldUri">
-			</a>
-			<span class="ts" id="826" data-target="#details-826" data-toggle="collapse">
-				<span class="ident">
-					oldUri
+				<span class="ts" id="826" data-target="#details-826" data-toggle="collapse">
+					<span class="ident">
+						oldUri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The existing file.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="newUri">
-			</a>
-			<span class="ts" id="827" data-target="#details-827" data-toggle="collapse">
-				<span class="ident">
-					newUri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The new location.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="options">
-			</a>
-			<span class="ts" id="828" data-target="#details-828" data-toggle="collapse">
-				<span class="ident">
-					options
-				</span>
-				<span>
-					?
-				</span>
-				<span>
-					:
-				</span>
-				{ignoreIfExists:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				, overwrite:
-				<a class="type-intrinsic">
-					boolean
-				</a>
-				}
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					Defines if existing files should be overwritten or be
+				<td>
+					<div class="comment">
+						<p>
+							The existing file.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="newUri">
+							<span class="ts" id="827" data-target="#details-827" data-toggle="collapse">
+								<span class="ident">
+									newUri
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Uri">
+									Uri
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										The new location.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="options">
+										<span class="ts" id="828" data-target="#details-828" data-toggle="collapse">
+											<span class="ident">
+												options
+											</span>
+											<span>
+												?
+											</span>
+											<span>
+												:
+											</span>
+											{ignoreIfExists:
+											<a class="type-intrinsic">
+												boolean
+											</a>
+											, overwrite:
+											<a class="type-intrinsic">
+												boolean
+											</a>
+											}
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													Defines if existing files should be overwritten or be
 ignored. When overwrite and ignoreIfExists are both set overwrite wins.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-intrinsic">
+														void
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -40864,94 +40866,94 @@ ignored. When overwrite and ignoreIfExists are both set overwrite wins.
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="788" data-target="#details-788" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A resource identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="range">
+							<span class="ts" id="789" data-target="#details-789" data-toggle="collapse">
+								<span class="ident">
+									range
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#Range">
+									Range
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A range.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<td>
+									<a name="newText">
+										<span class="ts" id="790" data-target="#details-790" data-toggle="collapse">
+											<span class="ident">
+												newText
+											</span>
+											<span>
+												:
+											</span>
+											<a class="type-intrinsic">
+												string
+											</a>
+										</span>
+										<td>
+											<div class="comment">
+												<p>
+													A string.
+												</p>
+											</div>
+										</td>
+										<tr>
+											<th>
+												Returns
+											</th>
+											<th>
+												Description
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<span class="ts">
+													<a class="type-intrinsic">
+														void
+													</a>
+												</span>
+											</td>
+											<td>
+												<div class="comment">
+												</div>
+											</td>
+										</tr>
+									</a>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="788" data-target="#details-788" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A resource identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="range">
-			</a>
-			<span class="ts" id="789" data-target="#details-789" data-toggle="collapse">
-				<span class="ident">
-					range
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Range">
-					Range
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A range.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="newText">
-			</a>
-			<span class="ts" id="790" data-target="#details-790" data-toggle="collapse">
-				<span class="ident">
-					newText
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A string.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -40977,71 +40979,71 @@ ignored. When overwrite and ignoreIfExists are both set overwrite wins.
 	<tr>
 		<td>
 			<a name="uri">
+				<span class="ts" id="805" data-target="#details-805" data-toggle="collapse">
+					<span class="ident">
+						uri
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#Uri">
+						Uri
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							A resource identifier.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="edits">
+							<span class="ts" id="806" data-target="#details-806" data-toggle="collapse">
+								<span class="ident">
+									edits
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#TextEdit">
+									TextEdit
+								</a>
+								[]
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										An array of text edits.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-intrinsic">
+											void
+										</a>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
 			</a>
-			<span class="ts" id="805" data-target="#details-805" data-toggle="collapse">
-				<span class="ident">
-					uri
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#Uri">
-					Uri
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A resource identifier.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="edits">
-			</a>
-			<span class="ts" id="806" data-target="#details-806" data-toggle="collapse">
-				<span class="ident">
-					edits
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#TextEdit">
-					TextEdit
-				</a>
-				[]
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of text edits.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-intrinsic">
-					void
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-			</div>
 		</td>
 	</tr>
 </table>
@@ -41171,87 +41173,87 @@ strict matching.</p>
 	<tr>
 		<td>
 			<a name="query">
-			</a>
-			<span class="ts" id="747" data-target="#details-747" data-toggle="collapse">
-				<span class="ident">
-					query
+				<span class="ts" id="747" data-target="#details-747" data-toggle="collapse">
+					<span class="ident">
+						query
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-intrinsic">
+						string
+					</a>
 				</span>
-				<span>
-					:
-				</span>
-				<a class="type-intrinsic">
-					string
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A non-empty query string.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="748" data-target="#details-748" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#SymbolInformation">
-					SymbolInformation
-				</a>
-				[]>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					An array of document highlights or a thenable that resolves to such. The lack of a result can be
+				<td>
+					<div class="comment">
+						<p>
+							A non-empty query string.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="token">
+							<span class="ts" id="748" data-target="#details-748" data-toggle="collapse">
+								<span class="ident">
+									token
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CancellationToken">
+									CancellationToken
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A cancellation token.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProviderResult">
+											ProviderResult
+										</a>
+										<
+										<a class="type-ref" href="#SymbolInformation">
+											SymbolInformation
+										</a>
+										[]>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											An array of document highlights or a thenable that resolves to such. The lack of a result can be
 signaled by returning
-					<code>
-						undefined
-					</code>
-					,
-					<code>
-						null
-					</code>
-					, or an empty array.
-				</p>
-			</div>
+											<code>
+												undefined
+											</code>
+											,
+											<code>
+												null
+											</code>
+											, or an empty array.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
@@ -41280,88 +41282,88 @@ performance.</p>
 	<tr>
 		<td>
 			<a name="symbol">
-			</a>
-			<span class="ts" id="751" data-target="#details-751" data-toggle="collapse">
-				<span class="ident">
-					symbol
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#SymbolInformation">
-					SymbolInformation
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The symbol that is to be resolved. Guaranteed to be an instance of an object returned from an
-earlier call to
-					<code>
-						provideWorkspaceSymbols
-					</code>
-					.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a name="token">
-			</a>
-			<span class="ts" id="752" data-target="#details-752" data-toggle="collapse">
-				<span class="ident">
-					token
-				</span>
-				<span>
-					:
-				</span>
-				<a class="type-ref" href="#CancellationToken">
-					CancellationToken
-				</a>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					A cancellation token.
-				</p>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<th>
-			Returns
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<span class="ts">
-				<a class="type-ref" href="#ProviderResult">
-					ProviderResult
-				</a>
-				<
-				<a class="type-ref" href="#SymbolInformation">
-					SymbolInformation
-				</a>
-				>
-			</span>
-		</td>
-		<td>
-			<div class="comment">
-				<p>
-					The resolved symbol or a thenable that resolves to that. When no result is returned,
-the given
-					<code>
+				<span class="ts" id="751" data-target="#details-751" data-toggle="collapse">
+					<span class="ident">
 						symbol
-					</code>
-					is used.
-				</p>
-			</div>
+					</span>
+					<span>
+						:
+					</span>
+					<a class="type-ref" href="#SymbolInformation">
+						SymbolInformation
+					</a>
+				</span>
+				<td>
+					<div class="comment">
+						<p>
+							The symbol that is to be resolved. Guaranteed to be an instance of an object returned from an
+earlier call to
+							<code>
+								provideWorkspaceSymbols
+							</code>
+							.
+						</p>
+					</div>
+				</td>
+				<tr>
+					<td>
+						<a name="token">
+							<span class="ts" id="752" data-target="#details-752" data-toggle="collapse">
+								<span class="ident">
+									token
+								</span>
+								<span>
+									:
+								</span>
+								<a class="type-ref" href="#CancellationToken">
+									CancellationToken
+								</a>
+							</span>
+							<td>
+								<div class="comment">
+									<p>
+										A cancellation token.
+									</p>
+								</div>
+							</td>
+							<tr>
+								<th>
+									Returns
+								</th>
+								<th>
+									Description
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<span class="ts">
+										<a class="type-ref" href="#ProviderResult">
+											ProviderResult
+										</a>
+										<
+										<a class="type-ref" href="#SymbolInformation">
+											SymbolInformation
+										</a>
+										>
+									</span>
+								</td>
+								<td>
+									<div class="comment">
+										<p>
+											The resolved symbol or a thenable that resolves to that. When no result is returned,
+the given
+											<code>
+												symbol
+											</code>
+											is used.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</a>
+					</td>
+				</tr>
+			</a>
 		</td>
 	</tr>
 </table>
